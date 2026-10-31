@@ -1,0 +1,27 @@
+root,path,type,lines,size_bytes,mtime,sha256,status,notes
+writable,default-workspace\TRINETRA_Deep_Analysis.md,md,183,INFEASIBLE,INFEASIBLE,INFEASIBLE,preexisting-do-not-modify,PhD deep analysis
+writable,default-workspace\TRINETRA_MetaFusion_Design.md,md,126,INFEASIBLE,INFEASIBLE,INFEASIBLE,preexisting-do-not-modify,GMF design
+writable,default-workspace\TRINETRA_Bug_Report.md,md,406,INFEASIBLE,INFEASIBLE,INFEASIBLE,preexisting-do-not-modify,33 findings #0-#32
+writable,default-workspace\TRINETRA_Bug_Robustification.md,md,333,INFEASIBLE,INFEASIBLE,INFEASIBLE,preexisting-do-not-modify,FIX #0-#15 + Appx C-E
+writable,default-workspace\TRINETRA_Corrected_Patches.md,md,297,INFEASIBLE,INFEASIBLE,INFEASIBLE,preexisting-do-not-modify,9 patches A-I
+writable,default-workspace\TRINETRA_Workstreams.md,md,235,INFEASIBLE,INFEASIBLE,INFEASIBLE,preexisting-do-not-modify,WS1-WS7
+writable,default-workspace\analysis\00_system_model.md,md,110,INFEASIBLE,INFEASIBLE,INFEASIBLE,preexisting-do-not-modify,architecture + 14 axes
+writable,default-workspace\analysis\02_paper_ledger.csv,csv,251,INFEASIBLE,INFEASIBLE,INFEASIBLE,preexisting-do-not-modify,1 header + 250 rows ~236 unique
+writable,default-workspace\analysis\02_search_log.md,md,170,INFEASIBLE,INFEASIBLE,INFEASIBLE,preexisting-do-not-modify,135 queries
+writable,default-workspace\analysis\04_synthesis.md,md,546,INFEASIBLE,INFEASIBLE,INFEASIBLE,preexisting-do-not-modify,synthesis @250 checkpoint
+writable,default-workspace\analysis\11_reading_audit.md,md,191,INFEASIBLE,INFEASIBLE,INFEASIBLE,preexisting-do-not-modify,6 audits all 0%
+writable,default-workspace\analysis\PROGRESS.md,md,109,INFEASIBLE,INFEASIBLE,INFEASIBLE,preexisting-do-not-modify,stale OLD phase scheme
+writable,default-workspace\analysis\RESUME_STATE_2026-10-04.md,md,137,INFEASIBLE,INFEASIBLE,INFEASIBLE,preexisting-do-not-modify,prior snapshot 98-line era
+writable,default-workspace\PROGRAM\MASTER_PROMPT.md,md,827,INFEASIBLE,INFEASIBLE,INFEASIBLE,preexisting-governing-directive,saved verbatim task 0.0
+writable,default-workspace\PROGRAM\manifests\folder_inventory.md,md,NA,INFEASIBLE,INFEASIBLE,INFEASIBLE,net-new-P0,this inventory
+writable,default-workspace\PROGRAM\manifests\file_manifest.csv,csv,NA,INFEASIBLE,INFEASIBLE,INFEASIBLE,net-new-P0,this file
+readonly,trinetra\deliverables\TRINETRA_Complete_Report.md,md,2966,INFEASIBLE,INFEASIBLE,INFEASIBLE,readonly-source,source of truth v1.0
+readonly,trinetra\deliverables\(HIMKAVACH/TRINETRA pptx+pdf+docx),mixed,NA,INFEASIBLE,INFEASIBLE,INFEASIBLE,readonly-source-known,decks/docs not re-read
+readonly,trinetra\deliverables\unstop_deck_src\,dir,NA,INFEASIBLE,INFEASIBLE,INFEASIBLE,readonly-source-known,deck source
+readonly,trinetra\deliverables\TRINETRA-explainer.mp4,mp4,NA,INFEASIBLE,INFEASIBLE,INFEASIBLE,readonly-source-known,binary not read
+readonly,trinetra\papers\(cctv_comms+iot+multimodal)\*.txt,txt,NA,INFEASIBLE,INFEASIBLE,INFEASIBLE,readonly-source-known,110 unique/116 extracts baseline NOT counted
+readonly,trinetra\research\(00_master..08_closure 11 files),md,NA,INFEASIBLE,INFEASIBLE,INFEASIBLE,readonly-source-known,incl 06_physics
+readonly,trinetra\CLAUDE.md,md,NA,INFEASIBLE,INFEASIBLE,INFEASIBLE,readonly-source-known,agent instructions
+readonly,trinetra\AGENTS.md,md,41,INFEASIBLE,INFEASIBLE,INFEASIBLE,readonly-source-known,Figma Make stack
+readonly,trinetra\.figma\,dir,NA,INFEASIBLE,INFEASIBLE,INFEASIBLE,readonly-source-known,figma assets
+readonly,trinetra\Proxy.py,py,NA,INFEASIBLE,INFEASIBLE,INFEASIBLE,readonly-source-known,Bug #12 cred exfil to api.justwoker.icu

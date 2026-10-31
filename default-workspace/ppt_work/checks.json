@@ -1,0 +1,44 @@
+{
+  "format": "pptx",
+  "verdict": "pass",
+  "checks": [
+    {
+      "id": "package",
+      "status": "pass"
+    },
+    {
+      "id": "contains",
+      "status": "pass",
+      "text": "PHARAOH"
+    },
+    {
+      "id": "contains",
+      "status": "pass",
+      "text": "Factor of Safety"
+    },
+    {
+      "id": "contains",
+      "status": "pass",
+      "text": "Fourth Eye"
+    },
+    {
+      "id": "contains",
+      "status": "pass",
+      "text": "Problem Statement:"
+    },
+    {
+      "id": "contains",
+      "status": "pass",
+      "text": "SAARTHI"
+    },
+    {
+      "id": "count",
+      "status": "pass",
+      "expected": 16,
+      "actual": 16
+    }
+  ],
+  "summary": {
+    "slides": 16
+  }
+}

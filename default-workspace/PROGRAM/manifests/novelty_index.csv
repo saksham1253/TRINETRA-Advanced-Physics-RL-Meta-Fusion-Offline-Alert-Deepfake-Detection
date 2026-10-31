@@ -1,0 +1,150 @@
+# Novelty / Dedup Index — seeded in Phase P0 (Task 0.5)
+#
+# PURPOSE: the single dedup-control surface for the whole program. Before any future
+# phase ADDS a paper, its arXiv-ID (primary key) and normalized title (fallback key) are
+# checked against (a) this index and (b) the authoritative row-level ledger
+# analysis/02_paper_ledger.csv. A paper already present is NOT re-counted toward any
+# phase quota.
+#
+# DEDUP KEY DEFINITION:
+#   primary_key   = arXiv ID without version suffix (e.g. 2509.18176), OR DOI if no arXiv.
+#   fallback_key  = title lowercased, whitespace-collapsed, punctuation-stripped
+#                   (used only when no arXiv/DOI, to catch venue-vs-preprint twins).
+#
+# WHY THIS IS AN INDEX, NOT A RE-TRANSCRIPTION: the ledger holds the full, verified
+# per-row ID/title/authors for all 250 data rows (every leading arXiv ID was observed
+# via read/grep this session). Re-typing 235 long rows here would risk introducing
+# transcription errors into a corpus whose integrity is the whole point — forbidden by
+# the honesty rules. Instead this file records the dedup DECISIONS (duplicate groups,
+# counts, methodology) that the ledger alone cannot express, and is appended to per phase.
+#
+# ---------------------------------------------------------------------------------------
+# COUNTS (grep-verified 2026-10-05):
+#   ledger lines ............................. 251  (1 header + 250 data rows)
+#   data rows ................................ 250
+#   baseline-dedup marker rows (confidence=n/a) 1    (2401.13695, L190; NOT a new paper)
+#   redundant duplicate rows ................. 14   (same arXiv ID appearing >1x)
+#   UNIQUE NEW PAPERS ........................ 235  (= 250 - 1 - 14)   all read_depth=ABS, 0 FT
+#   local baseline corpus (pre-existing) ..... ~110 unique (116 extracts) in trinetra\papers\
+#                                               NOT merged into these 235; counted separately.
+# ---------------------------------------------------------------------------------------
+#
+# DUPLICATE GROUPS (arxiv_id -> ledger line numbers; grep-verified on ^<id>,):
+dup_group,arxiv_id,ledger_lines,n_copies,n_redundant,note
+1,2509.18176,"119;128;211",3,2,"InSAR deform forecasting (persistence-baseline warning); 3 notes across A1 waves"
+2,2106.08909,"10;92",2,1,"Offline RL w/o OPE (one-step)"
+3,2604.00801,"13;105",2,1,"Routing-Free MoE"
+4,2205.13723,"21;122",2,1,"DLTTA test-time adaptation"
+5,2303.09750,"28;110",2,1,"RL sensor placement under uncertainty"
+6,2603.15945,"54;223",2,1,"DTN opportunistic routing disaster eval"
+7,1706.03458,"<2 lines>",2,1,"TrajGRU precip nowcasting (both copies confirmed via grep count=33 set)"
+8,2303.12783,"180;249",2,1,"HopCPT conformal under autocorrelation"
+9,2605.02153,"182;242",2,1,"VV+VH SAR flood mapping"
+10,2411.04153,"183;243",2,1,"(flood/SAR axis twin)"
+11,2306.00001,"56;94",2,1,"(duplicate twin)"
+12,2105.13133,"114;221",2,1,"Meshless Richards unsaturated flow"
+13,2502.05709,"181;250",2,1,"Flow-based conformal multi-dim TS"
+#
+# DEDUP MARKER (already in local baseline corpus; listed in ledger only to mark dedup):
+marker,2401.13695,"190",1,0,"Differentiable GNS granular-flow runout; confidence=n/a; NOT counted as new"
+#
+# RESOLUTION POLICY (for any future ledger consolidation, non-destructive):
+#   - Keep the row with the richer authors field; drop the "(authors)" twin.
+#   - Never delete in place during a phase; mark here and consolidate only in an
+#     explicitly authorized cleanup step with a CoW backup first.
+#
+# APPEND LOG (new unique keys added per phase go below this line):
+# phase,arxiv_or_doi,normalized_title_key,first_seen_ledger_or_source,date
+# --- P1 NEW QUOTA PAPERS (15/15, all FT-PARTIAL via ar5iv/arXiv-HTML; novelty-checked
+#     against ledger 02_paper_ledger.csv + this index = all absent → counted NEW) ---
+P1,2410.06388,multimodal pedestrian alert trust habituation,arxiv API search A13,2026-10-06
+P1,2209.11632,continuous assurance ml safety case gsn,arxiv API search A8,2026-10-06
+P1,2604.25512,phishrev posthoc belief revision knowledge gated,ar5iv (PHISHREV),2026-10-06
+P1,2010.09107,enbpi conformal prediction time series ensemble,arxiv API search A7,2026-10-06
+P1,2404.19452,concept drift detection accuracy energy edge,arxiv API search A14,2026-10-06
+P1,2608.26304,flood evacuation equity two stage stochastic optimization,arxiv API search A13,2026-10-06
+P1,2206.09981,class imbalance metric sensitivity,arxiv API search A8,2026-10-06
+P1,2412.13439,mip per class ensemble weighting rare event edge,arxiv API search A8,2026-10-06
+P1,2103.09783,technical debt ai systems data model config ethics,arxiv API search A8,2026-10-06
+P1,2405.00031,segnet wildfire detection compact model resolution,arxiv API search A8,2026-10-06
+P1,2606.21130,burst aware early warning xgboost cost threshold recall,arxiv API search A8,2026-10-06
+P1,2311.14110,datacope off policy evaluation feasibility,arxiv API search A5,2026-10-06
+P1,2306.04590,procal proximity aware calibration overconfidence,arxiv API search A7,2026-10-06
+P1,2310.03986,robust multimodal learning missing modalities adaptation,arxiv API search A12,2026-10-06
+P1,2601.05921,cost loss value score decision theoretic forecast evaluation,arxiv API search A13,2026-10-06
+# P1 quota total: 15 unique NEW papers added (none previously in ledger/index). Baseline
+# re-study notes (46) are NON-quota and are tracked in PROGRAM/logs/P1_reading_progress.md,
+# NOT re-counted here (they were already ABS rows in the 235-paper ledger or external anchors).
+#
+# --- P2 NEW FOUNDATION/QUOTA PAPERS (Literature Foundation I; all FT-PARTIAL via ar5iv/
+#     arXiv-HTML; novelty-checked vs ledger 02_paper_ledger.csv + this index = all absent → NEW) ---
+P2,2605.17419,displacement robust representations landslide ews rmcl rainfall forecast,arxiv API search A3,2026-10-06
+P2,2610.01994,catboost gradient boosting vs goes fdc wildfire detection,arxiv API search A9,2026-10-06
+P2,2610.04392,vand 4.0 application driven anomaly detection benchmark hidden test,arxiv API search A8,2026-10-06
+P2,2508.14203,survey video anomaly detection deep learning human vehicle environment,arxiv API search A9,2026-10-06
+P2,2610.02777,pid expert online conformal prediction intervals time series,arxiv API search A7,2026-10-06
+P2,2606.07593,mechanistic analysis adversarial fine tuning vision transformers corruption transfer,arxiv API search A14,2026-10-06
+P2,2609.38936,signal routed temperature scaling small validation budget calibration,arxiv API search A7,2026-10-06
+P2,2605.15894,uncertainty aware wildfire smoke density evidential cbam efficientnet selective,arxiv API search A9,2026-10-06
+P2,2507.21649,evolution video anomaly detection unified framework dnn to mllm survey,arxiv API search A9,2026-10-06
+P2,2607.28248,uncertainty quantification trustworthy deep learning methods measures survey,arxiv API search A14,2026-10-06
+P2,2511.21364,banglamm multimodal social media disaster classification low resource,arxiv API search A13,2026-10-06
+P2,2609.20441,cross architecture foundation model distillation edge flood segmentation mndwi,arxiv API search A9,2026-10-06
+P2,2609.07455,parser free vlm verification federated weakly supervised video anomaly detection,arxiv API search A9,2026-10-06
+P2,2609.05066,adaptive multi granularity temporal modeling weakly supervised video anomaly,arxiv API search A9,2026-10-06
+P2,2609.17175,irene convolutional gru ensemble radar precipitation nowcasting evaluation,arxiv API search A3,2026-10-06
+P2,2605.20167,haorfloodalert machine learning early warning flash flood bangladesh haor sentinel1,arxiv API search A3,2026-10-06
+# P2 running quota: 16 unique NEW Tier-2 FT-PARTIAL papers (target >=15 EXCEEDED). Foundation
+# volume continues at Tier-3/Tier-4 below (abstract-verified, do NOT count toward the 15 quota).
+P2,2509.18176,spatio temporal forecasting insar ground deformation cnn lstm persistence baseline,arxiv API search A1,2026-10-06
+P2,2606.13896,how do self supervised remote sensing vision models transfer downstream geofm,arxiv API search A2,2026-10-06
+# P2 running quota now: 18 unique NEW Tier-2 FT-PARTIAL papers.
+#
+# --- PHASE P3 (quota=15 NEW/phase per OQ-02; working target ~50 NEW; all novelty-checked vs ledger +
+#     this index = absent before adding → NEW. Baseline re-studies (OQ-02) are NON-quota, flagged.) ---
+P3,2604.24404,public warning system spoofing presidential alert lte false base station,arxiv API search A13,2026-10-06
+P3,2603.17319,robust reinforcement learning survey adversarial perturbation taxonomy,arxiv API search A5,2026-10-06
+P3,2610.06453,normal subspace constrained few shot anomaly detection ncl foundation,arxiv API search A8,2026-10-06
+P3,2610.04828,physics informed neural network factor of safety slope stability pf,arxiv API search A1,2026-10-06
+P3,2610.06241,prototype head closed form class means on device no backprop,arxiv API search A8,2026-10-06
+P3,2610.03380,deepfake detection generalization frequency artifacts cross generator,arxiv API search A13,2026-10-06
+P3,2609.38655,certified action library safe reinforcement learning shield,arxiv API search A5,2026-10-06
+P3,2608.19836,adaptive probabilistic shield safe rl bounded violation,arxiv API search A5,2026-10-06
+P3,2609.18555,robust rl untrusted state observation adversarial corruption,arxiv API search A5,2026-10-06
+P3,2610.03369,worst case missing modality robust multimodal fusion,arxiv API search A14,2026-10-06
+P3,2602.14676,crisis informatics social media flood situational awareness,arxiv API search A13,2026-10-06
+P3,2608.16654,isomaxplus distance prototype logits ood calibration free,arxiv API search A8,2026-10-06
+P3,2610.00363,media provenance c2pa content credentials tamper,arxiv API search A13,2026-10-06
+P3,2507.07841,halert resilient communication disaster last mile mesh,arxiv API search A10,2026-10-06
+P3,2608.06876,fedvar federated variational global normality prototype anomaly,arxiv API search A8,2026-10-06
+P3,2609.39337,winots wavelet self distillation ssl time series representation,arxiv API search A8,2026-10-06
+P3,2605.23504,vace mahalanobis velocity bank directional manifold anomaly,arxiv API search A8,2026-10-06
+P3,2007.05848,crisis informatics processing social media crisis review,arxiv API search A13,2026-10-07
+P3,2609.31142,watermark provenance robustness attack generative,arxiv API search A13,2026-10-07
+P3,2609.15297,worst case missingness distributionally robust multimodal,arxiv API search A14,2026-10-07
+P3,2609.38552,fairness theatre post hoc fairness pipeline property audit,arxiv API search A13,2026-10-07
+P3,2606.00690,distmatch distribution matching domain generalization,arxiv API search A14,2026-10-07
+P3,2610.06317,watermark impossibility theoretical limits removal,arxiv API search A13,2026-10-07
+P3,2609.27202,federated tinyml security edge anomaly privacy,arxiv API search A10,2026-10-07
+P3,2605.06643,mmdg bench multimodal domain generalization 7402 networks fair comparison erm,arxiv API search A14,2026-10-07
+P3,2605.01679,ca adp differential privacy minority class gradient human sensing,arxiv API search A13,2026-10-07
+P3,2511.20936,wavelet guided water level estimation isac passive lte two ray cwt,arxiv API search A2,2026-10-07
+P3,2203.13313,deep learning laboratory earthquake prediction autoregressive fault zone stress,arxiv API search A4,2026-10-07
+P3,2511.05471,tupann satellite only precipitation nowcasting physically aligned motion intensity warp,arxiv API search A1,2026-10-07
+P3,2012.13849,autonomous extraction mm scale deformation insar time series deep learning autoencoder,arxiv API search A3,2026-10-07
+P3,2604.16265,fl mhsm flood landslide multi hazard susceptibility mixture of experts kerala nepal,arxiv API search A1,2026-10-07
+P3,2609.34836,mw nowcast six hour ensemble extreme precipitation deterministic generative residual cost loss,arxiv API search A1,2026-10-07
+P3,2511.15838,afocp attention feature space online conformal prediction time series interval efficiency,arxiv API search A7,2026-10-07
+P3,2606.04634,explainably safe reinforcement learning hierarchical decision tree shield risk categories probabilistic guarantee,arxiv API search A5,2026-10-07
+P3,2607.24683,co4miss co-learning missing arbitrary modalities multimodal classification feature decision distillation,arxiv API search A14,2026-10-07
+P3,2005.03221,deep learning insar ground deformation detection cnn sentinel-1 matrix completion synthetic training overwrapping,arxiv API search A1,2026-10-07
+P3,2605.17419,displacement-robust representations landslide early warning rainfall forecast uncertainty RMCL contrastive class imbalance,harvest-pool promotion A3,2026-10-07
+P3,2512.24117,targeted semantic segmentation himalayan glacial lakes time-series sentinel-1 SAR temporal-first unet efficientnet GLOF early warning operational pipeline,arxiv API search A11,2026-10-07
+P3,2607.26854,TREA-Net transferable residual epidemiological adaptation gated residual correction mechanistic prior two-scalar transfer conformal prediction zero-shot foundation model TiRex data-scarce early warning,arxiv API search A3/A7 (feeds P14Z),2026-10-07
+P3,2609.14821,decision-oriented uncertainty quantification risk control earth system spatiotemporal foundation model action-loss coverage utility-aware calibration decision risk adapter extreme precipitation warning regret,arxiv API search A4/A7,2026-10-07
+P3,2608.30205,exPreCast-ENS conditional residual diffusion kilometer-scale probabilistic precipitation nowcasting downscaling bias correction extreme rainfall flash flood landslide trigger ensemble,arxiv API search A7/A3,2026-10-07
+P3,2608.11142,SAR2Agri SAR intensity self-supervised temporal pretext time-difference future-frame masking curriculum learning foundation model encoder SICKLE crop mapping SAR vs optical,arxiv API search A1/A2 (CR-01 trade),2026-10-07
+P3,2509.10362,GNN r-Pareto process extreme value theory tail risk graph neural network IMERG precipitation compound hazard flood landslide risk zoning joint exceedance CMIP6 climate projection,arxiv API search A7/A3 (EVT thread),2026-10-07
+# P3 running quota now: 43 unique NEW Tier-2 FT-PARTIAL papers (stop-at-~40 target PASSED per D-010; continuing opportunistically on outstanding hits per user 2026-10-07).
+# BASELINE RE-STUDIES (OQ-02, NON-QUOTA, not counted above):
+P3-RESTUDY,2606.16795,wavedino insar atmospheric correction wavemamba dinov3 terrain phase ramp gnss,re-open baseline ABS,2026-10-07

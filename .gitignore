@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+**/node_modules/
+.pnpm-store/
+**/.pnpm-store/
+
+# Large video outputs & intermediate frames (>100MB / GitHub hard limit)
+*.avi
+**/output/*.avi
+**/viz/video/output/
+**/viz/video/frames3d/
+
+# Python & OS
+__pycache__/
+**/__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

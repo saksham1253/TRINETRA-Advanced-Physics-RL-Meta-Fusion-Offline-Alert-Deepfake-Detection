@@ -1,0 +1,20 @@
+id,title,read_depth,consensus_tie,workstream,takeaway_short,novelty
+2606.21773,Decision-Focused Learning: When & Why Traditional Prediction Models Fail,FT-PARTIAL,C-04/C-11,WS5,"DFL: better prediction != better decision; SPO/surrogate taxonomy; consolidates action-loss doctrine",NEW
+2512.14221,Weighted CP for Mask-Conditional Valid Coverage under General Missing Data,FT-PARTIAL,C-05,WS6,"mask-conditional valid conformal under general missingness; closes CR-04 missingness edge",NEW
+2610.08227,How Many Independent Samples Does a Satellite Image Contain? (TGRS 2026),FT-PARTIAL,C-01,WS6,"theorem: effective N=Theta(n^2/r^2); block buffer g=Theta(r log n/delta); random holdout CI underest ∝ r",NEW
+2510.22016,Cost-Sensitive Evaluation for Binary Classifiers (v2),FT-PARTIAL,C-14,WS6,"Total Classification Cost as selection criterion; metric value ∝ base rate",NEW
+2610.01384,CLEAR: Robust Evidential Learning Through Latent Consistency,FT-PARTIAL,C-13,WS6,"post-hoc frozen EDL; s(x)=exp(-delta C(x)); +8.29/+5.01 OOD/adv AUROC; 17.4x",NEW
+2107.11003,Model Selection for Offline RL: Practical Considerations for Healthcare,FT,C-11,WS5,"FQE/OPE ranks policies but compute-heavy; iterative RL only if OPE-feasible; sepsis analogue",NEW
+2610.07232,Benchmarking TSFM for Load Forecasting Under Covariate Uncertainty,FT-PARTIAL,C-07/P14Z,WS1,"Chronos-2 SOTA ZS w/ good covariates, degrades under noise; TimesNet robust; feeds P14Z",NEW
+2608.08158,A Unified Framework for Dynamic Reward Shaping in RL,FT-PARTIAL,C-10,WS5,"PBRS optimal iff time-invariant potential; dynamic classes C1-C4; §2.7 limits",NEW
+2608.15261,Boundary-Aligned Contribution Routing for Robust Optical-SAR Detection,FT-PARTIAL,C-08,WS6/WS8,"route by task-utility before mixing; missing-mod +7.6..41.6pt; neg-transfer -12.7pp",NEW
+2407.06785,Towards Physics-Informed Neural Networks for Landslide Prediction (JGR-ML 2024),FT-PARTIAL,C-15/C-03,WS1,"Newmark constraint on DL backbone; retrieves geotech params; code open; ABS->FT upgrade",NEW(ABS->FT)
+2608.14391,Can We Defend Against AI-Generated Video Attacks on Real-World Crisis Events? (RA-Bench),FT-PARTIAL,C-16,WS2,"17,886 videos; NO detector family generalizes; dissemination worsens detection; life-safety anchor",NEW
+2507.15614,Accelerating HEC-RAS: A Recurrent Neural Operator for Rapid River Forecasting,FT,C-03,WS1,"GRU+Geo-FNO surrogate; 0.31 ft median; ensemble 139->40 min (3.5x); cheap ensembles",NEW
+2610.03649,On-Board Anomaly Detection for Efficient Marine Environmental Monitoring,FT,C-08,WS8,"SSL encoder->ML anomaly vs iForest/OCSVM/LOF; edge-feasible; Phi-sat-2/IMAGIN-e",NEW
+2609.16707,Predictability-Guided Multiscale Probabilistic Forecasting of Wind Direction,FT,C-05/C-06/C-13,WS1/WS8,"predictability decays per scale; FMs phase-lag at >=90deg turning events; per-regime UQ",NEW
+2605.14365,LoMETab: Beyond Rank-1 Ensembles for Tabular Deep Learning,FT-PARTIAL,C-02,WS6,"2026 currency: tabular benchmarks a tight cluster; GBDT still exceptionally strong; parsimony not reversed",NEW
+# NON-QUOTA this phase: 2510.12328 (ABS/NO-HTML, C-06 corroborator); 2509.18176 (RE-STUDY, already P2 FT-PARTIAL);
+# 2601.12330 (ABS GLOF); 2608.12422 (baseline re-study); 2109.07745 (C-12, older cs.CY); 2504.03166 RingMoE (park P7);
+# 2609.34041 (VLM-Safe caveat); 2608.19672 / 2609.36975 (C-02 Indian-conditions corroborators).
+# P4 NEW deep-read quota = 15, all Tier-2+ (100% >= 60% floor). Running total P1 15 + P2 18 + P3 43 + P4 15 = 91.

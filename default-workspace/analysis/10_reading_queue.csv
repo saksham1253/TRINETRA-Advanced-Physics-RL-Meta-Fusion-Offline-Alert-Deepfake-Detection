@@ -1,0 +1,93 @@
+id,title,source_index,discovered_via,tags,priority_score,status,tier
+# MASTER_PROMPT §0.8 reading queue. priority = relevance x evidence-strength x recency x novelty.
+# Surveys read early (seed the queue). Every rejected-irrelevant item needs a one-line reason.
+# Seeded in P0 with the highest-priority Tier-2+ promotion targets from the 235 ABS backlog.
+# status: queued/fetching/reading/noted/audited/fetch-failed/rejected-irrelevant
+2608.12422,"Which Site and When: Free-Satellite-Data Test of Himalayan GLOF/Landslide/Ice Floods",arXiv,"A11 reality-check","WS8;eval-rigor;P2","9.8",noted,T2
+2509.18176,"Spatio-Temporal Forecasting of InSAR Ground Deformation",arXiv,"A1 core front-end","WS1;forecast-residual;P2","9.2",queued,T2
+2501.15196,"Review: SSL for Time Series Anomaly Detection",arXiv,"A8 survey (seed)","WS8;anomaly;P2","8.8",queued,T2
+2305.03360,"Survey on Offline Model-Based RL",arXiv,"A5 survey (seed)","WS5;offline-RL;P2","8.5",queued,T2
+2303.12783,"HopCPT: Conformal Prediction for Time Series",arXiv,"A7 core","WS6;conformal;P2","8.5",queued,T2
+2510.17014,"Do Satellite Tasks Need Special Pretraining?",arXiv,"A2 baseline challenge","WS1;encoder;P2","8.3",queued,T2
+2507.23603,"Explanations for Unrealizability of Infinite-State Safety Shields",arXiv,"A6 shield correctness","WS5;shield;P2","8.0",queued,T2
+2510.09452,"Uniformly Scaling Flows / Deep One-Class (Deep SVDD upgrade)",arXiv,"A8 anomaly head","WS8;anomaly;P2","7.8",queued,T2
+2011.06125,"Hurricast: Multimodal ML framework (stacking)",arXiv,"A12 fusion precedent","WS5;fusion;P2","7.5",queued,T2
+2104.11422,"Socio-meteorology: cry-wolf / trust",arXiv,"A13 decision-layer","WS3;decision;P2","7.5",queued,T2
+2601.03425,"Illusion of Specialization: MoE standing committee",arXiv,"A12 GMF caution","WS5;fusion;P2","7.3",queued,T2
+1509.06065,"DependSHM: faulty sensors corrupt events",arXiv,"A8 sensor integrity","WS7;robustness;P2","7.0",queued,T2
+2502.15901,"TS-OOD: OOD detection on time series",arXiv,"A14 drift","WS6;OOD;P2","7.0",queued,T2
+1706.03458,"TrajGRU precipitation nowcasting benchmark",arXiv,"A3 input + eval protocol","WS3;nowcast;P2","6.8",queued,T2
+2310.18653,"FG-MAE: feature-guided MAE for RS/SAR",arXiv,"A2 encoder design","WS1;encoder;P2","6.8",queued,T2
+# --- P2 NEW candidates (2026-10-06), novelty-checked vs ledger + novelty_index. priority = relevance x evidence x recency x novelty ---
+2605.17419,"Displacement-Robust Representations for Landslide EWS under Rainfall-Forecast Uncertainty (RMCL)",arXiv,"A3/A4 LEWS core (query147)","WS1;WS3;LEWS;forecast-uncertainty;P2","9.5",read-P3-#37,T2
+2610.01994,"CatBoost vs operational GOES-FDC for wildfire detection",arXiv,"A9 fire + CR-02 (query136)","WS4;fire;baseline-beats-operational;P2","9.3",queued,T2
+2610.04392,"VAND 4.0: application-driven hidden-test AD benchmark (efficiency-first)",arXiv,"A8 eval-rigor (query141)","WS6;WS8;benchmark;rare-event;P2","9.0",queued,T2
+2508.14203,"Survey: Video Anomaly Detection via Deep Learning (human/vehicle/environment)",arXiv,"A9 survey-seed (query144)","WS4;WS8;VAD;survey;P2","8.9",queued,T2
+2610.02777,"PID-Expert: online CP interval aggregation for time series (post-shift coverage)",arXiv,"A7 conformal (query138)","WS6;conformal;CR-04;P2","8.7",queued,T2
+2605.15894,"Evidential (Dirichlet) smoke-severity + selective prediction",arXiv,"A9 fire+UQ (query136)","WS4;fire;uncertainty;selective;P2","8.5",queued,T2
+2609.38936,"Signal-Routed Temperature Scaling: calibrator capacity at small budgets",arXiv,"A7 calibration (query148)","WS6;calibration;FM-20;P2","8.4",queued,T2
+2606.07593,"Corruption fine-tuning of ViTs does NOT transfer across corruption classes",arXiv,"A14 robustness (query149)","WS6;robustness;distribution-shift;P2","8.3",queued,T2
+2507.21649,"Survey: Evolution of VAD — DNN to MLLM unified framework",arXiv,"A9 survey-seed (query144)","WS4;WS8;VAD;survey;P2","8.2",queued,T2
+2610.05129,"Representation-Behavior Alignment for explainable weakly-supervised VAD",arXiv,"A9 VAD-SOTA (query137)","WS4;WS8;VAD;weakly-supervised;P2","8.0",queued,T2
+2609.05782,"Distilling VLMs for on-device fire understanding (false-alarm reduction)",arXiv,"A9 edge-fire (query140)","WS4;fire;edge;KD;P2","7.9",queued,T2
+2607.28248,"Survey: UQ for trustworthy deep learning — methods and measures",arXiv,"A14 UQ-survey-seed (query143)","WS6;uncertainty;survey;P2","7.8",queued,T2
+2609.17175,"IRENE: ConvGRU ensemble precip nowcasting vs STEPS/DGMR (afCRPS)",arXiv,"A3 nowcast-eval (query150)","WS3;nowcast;probabilistic-eval;P2","7.6",queued,T2
+2606.12066,"YOLOv8 vs YOLOv11 adverse-weather object detection, developing countries",arXiv,"A9 edge (query145)","WS4;edge;adverse-weather;P2","7.4",queued,T2
+2610.04927,"MLE-InsightBench: data leakage as a validity threat in agentic ML",arXiv,"A8 leakage (query139)","WS6;leakage;FM-01;P2","7.2",queued,T2
+2609.07455,"Federated parser-free VLM verification for weakly-supervised VAD",arXiv,"A9 VAD (query137)","WS4;WS8;VAD;federated;P2","7.0",queued,T2
+2601.03569,"Local Intrinsic Dimensionality of ground-motion for early slope-failure detection",arXiv,"A4/A11 precursor (query147)","WS1;precursor;slope-failure;P2","6.9",queued,T2
+# --- P2-noted status updates (read + full note on disk this phase) ---
+# noted this phase: 2605.17419, 2610.01994, 2610.04392, 2508.14203, 2610.02777, 2606.07593,
+#   2609.38936, 2605.15894, 2507.21649, 2607.28248, 2511.21364, 2609.20441, 2609.07455,
+#   2609.05066, 2609.17175, 2605.20167, 2509.18176, 2606.13896  (all read_depth FT-PARTIAL, Tier-2)
+# non-counting: 2606.12066 (no-HTML, abstract-only; PDF route deferred to P3)
+# --- NEW P3 candidates surfaced in P2 searches (abstract-verified via arXiv API; NOT yet read) ---
+2609.20441,"Cross-architecture foundation-model distillation for edge flood segmentation",arXiv,"A9 flood-seg (query152)","WS4;flood;edge;KD;CR-02;P3","8.6",queued,T2
+2605.20167,"HaorFloodAlert operational free-data flash-flood EWS (Bangladesh haor)",arXiv,"A3 flashflood (query155)","WS1;WS3;EWS;operational;analog;P3","9.4",noted,T2
+2501.08639,"Detecting wildfire flame+smoke via UAV edge computing + transfer learning",arXiv,"A9 wildfire-edge (query158)","WS4;fire;edge;UAV;P3","7.7",queued,T3
+2610.02357,"Conformal prediction for time series with deep sequence models (non-exchangeability)",arXiv,"A7 conformal-ts (query159)","WS6;conformal;CR-04;P3","8.1",queued,T2
+2608.11142,"SAR2Agri: SSL SAR intensity representations (SAR-only pretraining)",arXiv,"A2 SSL-RS (query156)","WS2;SAR;SSL;CR-01;P3","7.5",queued,T3
+2505.17782,"Thalia: global multimodal dataset for volcanic activity monitoring (InSAR)",arXiv,"A1 InSAR (query157)","WS2;InSAR;dataset;GLOF-adjacent;P3","7.3",queued,T3
+2511.21364,"BanglaMM-Disaster multimodal social-media disaster classification",arXiv,"A13 disaster-social (query151)","WS8;crowd;multimodal;low-resource;P3","7.0",noted,T2
+2609.05066,"Adaptive multi-granularity temporal modeling for weakly-supervised VAD",arXiv,"A9 WSVAD (query154)","WS4;VAD;temporal;P3","7.1",noted,T2
+# --- P3 READ this phase (32 NEW FT-PARTIAL Tier-2 notes on disk; see P3_reading_progress.md). ---
+# noted P3: 2604.24404, 2603.17319, 2610.06453, 2610.04828, 2610.06241, 2610.03380, 2609.38655,
+#   2608.19836, 2609.18555, 2610.03369, 2602.14676, 2608.16654, 2610.00363, 2507.07841, 2608.06876,
+#   2609.39337, 2605.23504, 2007.05848, 2609.31142, 2609.15297, 2609.38552, 2606.00690, 2610.06317,
+#   2609.27202, 2605.06643, 2605.01679, 2511.20936, 2203.13313, 2511.05471, 2012.13849, 2604.16265,
+#   2609.34836
+# baseline re-study P3 (OQ-02 non-quota): 2606.16795 (WaveDINO ABS→FT-PARTIAL)
+# non-counting P3: 2111.12209 (no-HTML both hosts), 2601.07268 (no-HTML both hosts), 2610.04151 (Tier-3)
+# --- P3 HARVEST POOL (arXiv-confirmed, NOT yet read; triaged from P3 searches; already-read excluded) ---
+2601.07268,"AlphaEarth satellite-embeddings for landslide susceptibility (eval of Google embeddings)",arXiv,"A1/A2 encoder-trade (query193)","WS1;WS2;encoder;CR-01;susceptibility;P3","8.3",queued-nohtml,T2
+2609.34836-nb,"Vicens-Miquel residual-learning precip forecast to 12h w/ calibrated UQ",arXiv,"A1 nowcast-UQ (query194)","WS3;nowcast;UQ;P3","7.8",queued,T2
+2604.16265-nb,"Lombardo & Tanyas Bayesian earthquake-scenario landslide hazard (95% credible intervals)",arXiv,"A1/A4 UQ-seminal (query193)","WS1;susceptibility;UQ;Bayesian;P3","7.6",queued,T2
+2402.17069,"Deep-learning elite-pixel selection for time-series SAR interferometry",arXiv,"A3 InSAR-pixel (query192a)","WS1;InSAR;PS-selection;P3","7.2",nohtml-fatal,T2
+2412.11942,"DRUM: Diffusion-based runoff model for probabilistic flood forecasting (GRL 2025)",arXiv,"A3/A7 flood-forecast (query202)","WS3;flood;diffusion;forecast-ceiling;ABS-lead","8.0",nohtml-abs-noted,T2
+2601.12330,"IceWatch: Forecasting GLOFs using Multimodal data",arXiv,"A11 GLOF-forecast (query196)","WS1;WS8;GLOF;multimodal;P3","8.4",nohtml-abs-only,T2
+2606.00270,"Robust Shielding for Safe Reinforcement Learning",arXiv,"A5/A6 shield-robustness (query198)","WS5;shield;robust-RL;P3","8.2",queued,T2
+2610.08192,"MacJEPA: Missingness-Robust Audio-Visual Recognition (temporal sensor outages)",arXiv,"A14 temporal-missing (query199)","WS6;missing-modality;temporal;P3","6.9",queued,T3
+2512.17785,"Parametric Anticipatory Flashflood Warning (landscape-vuln + precip-forecast)",arXiv,"A3 flashflood (query197)","WS1;WS3;flashflood;P3","7.9",queued-nohtml,T2
+2510.GLOFNet,"GLOFNet: public multimodal GLOF dataset (class-imbalance/cloud/coarse-res benchmark)",arXiv,"A11 GLOF-dataset (query196)","WS8;GLOF;dataset;rare-event;P3","8.0",ALREADY-NOTED-ABS=2510.10546,T2
+2610.02413,"LLM activation-probe LODO out-of-distribution detection",arXiv,"A14 OOD-LLM (harvest)","WS6;OOD;P3","7.0",queued,T3
+2610.05726,"FreSia frequency-semantic multivariate time-series AD",arXiv,"A8 TSAD (harvest)","WS8;TSAD;frequency;P3","7.4",queued,T2
+2609.17763,"Modular auditable next-day wildfire spread prediction",arXiv,"A9 fire-auditable (harvest)","WS4;fire;auditable;P3","7.3",queued,T2
+2609.16314,"Cross-modal SSL for fault detection",arXiv,"A8 SSL-fault (harvest)","WS8;SSL;fault;P3","7.1",queued,T3
+2610.01005,"Tolerance-based fairness auditing",arXiv,"A13 fairness (harvest)","WS3;fairness;audit;P3","7.0",queued,T2
+2606.27704,"AdvScan adversarial robustness scanning",arXiv,"A14 robustness (harvest)","WS7;robustness;P3","6.8",queued,T3
+2209.07620,"Fuzzy WSN forest-fire + Lamport-signature authentication",arXiv,"A10 WSN-security (harvest)","WS7;WS3;WSN;security;P3","6.9",queued,T3
+# NOTE: GPU-RL enablers (2609.13243 GzDRL, 2608.17641 rl-triton, MAVEN) logged for awareness; LOG-ONLY,
+#   not reading targets (research-only; infra not algorithm). Watermark/provenance WS2 extras (2610.06339
+#   BabelFake, FlowMark, 2610.05215 NeuMark) queued-low. UNCONFIRMED (verify before fetch): ModSync,
+#   TinyML-autonomous-AD, LEARN-TS. OFF-AXIS do-not-read: 2401.13877 (AscDAMs SLAM debris-flow mapping).
+# ALREADY P2 (do NOT re-queue/re-count): 2610.02777 PID-Expert, 2508.14203 & 2507.21649 VAD surveys.
+# --- P3 READ #38–#43 status updates (2026-10-07; full FT-PARTIAL notes on disk; see P3_reading_progress.md) ---
+# 2512.24117  → read-P3-#38 (GLOF S1-SAR segmentation, IoU 0.9130; WS8 architecture ref)
+# 2607.26854  → read-P3-#39 (TREA-Net residual + conformal + TiRex zero-shot; TiRex→P14Z parked)
+# 2609.14821  → read-P3-#40 (decision-oriented UQ; action-loss≠predictive coverage; sharpens CR-04)
+# 2608.30205  → read-P3-#41 (exPreCast-ENS residual diffusion ensemble; 5th residual-doctrine corroboration)
+# 2608.11142  → read-P3-#42 (SAR2Agri SSL; was queued row 49; SAR>optical +15.3pt; SAMBA/OceanSAR→P7)
+# 2509.10362  → read-P3-#43 (GNN-rP EVT/tail-risk; FIRST EVT paper; opens tail-risk thread)
+# non-counting #38–#43 batch: 2108.06868 (NowcastingNets no-HTML ABS), 2608.19672 (SAGE no-HTML ABS)
+# P14Z-parked (compulsory zero-shot phase): TiRex (via 2607.26854), OmniRSCLIP 2609.03391 (+OmniRS5M corpus)
+# pool-parked this batch: NowcastDiT 2609.37038, PixelFlowCast, GTS_Forecaster 2509.10560, GNS granular-flow

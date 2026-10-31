@@ -1,0 +1,6 @@
+phase,paper_id,title,axis,discovered_via,novelty_checked,read_depth,tier,relevance,status
+# PHASE QUOTA / NEW-PAPER LIST TEMPLATE (MASTER_PROMPT §0.6/§0.8).
+# Copy to PROGRAM/phase_papers/<PHASE_ID>_papers.csv at the start of each phase P1+.
+# Lists the NEW novelty-checked papers read in that phase (quota: >=15, >=60% Tier 2+;
+# heavy phases ~30-40). abstract-only does NOT count toward quota. Each row IS a quota item.
+# novelty_checked = yes means verified NOT already in novelty_index.csv / ledger.

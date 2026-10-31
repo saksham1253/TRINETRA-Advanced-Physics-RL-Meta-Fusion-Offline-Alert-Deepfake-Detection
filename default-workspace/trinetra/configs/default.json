@@ -1,0 +1,5 @@
+{
+  "seeds": [0, 1, 2, 3, 4],
+  "cost": {"C_FA": 5.0, "C_miss": 100.0},
+  "alert": {"require_human_approval": true}
+}

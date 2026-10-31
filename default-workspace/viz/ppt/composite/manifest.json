@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "backend": "native",
+  "rasterEngine": "libreoffice",
+  "source": "saved",
+  "inputPath": "C:\\Users\\Dell\\Downloads\\Enhance Presentation with Additions\\deck\\final\\TRINETRA_SAARTHI26_SANKAT_MOCHAK_FIRE.pptx",
+  "sourceSha256": "8a38d410e0154a67f2c44b29fe37c3adb1cfcf281e2c414ae1d299e4cdf194e5",
+  "dpi": 120,
+  "pageCount": 8,
+  "images": [
+    {
+      "index": 1,
+      "page": 1,
+      "path": "C:\\Users\\Dell\\Documents\\deepseek-harness\\default-workspace\\viz\\ppt\\composite\\page-0001.png",
+      "width": 2401,
+      "height": 1351,
+      "rectangle": {
+        "x": 0,
+        "y": 0,
+        "width": 1920.0666666666666,
+        "height": 1080.0666666666666
+      },
+      "byteLength": 2544572
+    },
+    {
+      "index": 2,
+      "page": 2,
+      "path": "C:\\Users\\Dell\\Documents\\deepseek-harness\\default-workspace\\viz\\ppt\\composite\\page-0002.png",
+      "width": 2401,
+      "height": 1351,
+      "rectangle": {
+        "x": 0,
+        "y": 0,
+        "width": 1920.0666666666666,
+        "height": 1080.0666666666666
+      },
+      "byteLength": 991498
+    },
+    {
+      "index": 3,
+      "page": 3,
+      "path": "C:\\Users\\Dell\\Documents\\deepseek-harness\\default-workspace\\viz\\ppt\\composite\\page-0003.png",
+      "width": 2401,
+      "height": 1351,
+      "rectangle": {
+        "x": 0,
+        "y": 0,
+        "width": 1920.0666666666666,
+        "height": 1080.0666666666666
+      },
+      "byteLength": 928251
+    },
+    {
+      "index": 4,
+      "page": 4,
+      "path": "C:\\Users\\Dell\\Documents\\deepseek-harness\\default-workspace\\viz\\ppt\\composite\\page-0004.png",
+      "width": 2401,
+      "height": 1351,
+      "rectangle": {
+        "x": 0,
+        "y": 0,
+        "width": 1920.0666666666666,
+        "height": 1080.0666666666666
+      },
+      "byteLength": 978889
+    },
+    {
+      "index": 5,
+      "page": 5,
+      "path": "C:\\Users\\Dell\\Documents\\deepseek-harness\\default-workspace\\viz\\ppt\\composite\\page-0005.png",
+      "width": 2401,
+      "height": 1351,
+      "rectangle": {
+        "x": 0,
+        "y": 0,
+        "width": 1920.0666666666666,
+        "height": 1080.0666666666666
+      },
+      "byteLength": 1240540
+    },
+    {
+      "index": 6,
+      "page": 6,
+      "path": "C:\\Users\\Dell\\Documents\\deepseek-harness\\default-workspace\\viz\\ppt\\composite\\page-0006.png",
+      "width": 2401,
+      "height": 1351,
+      "rectangle": {
+        "x": 0,
+        "y": 0,
+        "width": 1920.0666666666666,
+        "height": 1080.0666666666666
+      },
+      "byteLength": 740941
+    },
+    {
+      "index": 7,
+      "page": 7,
+      "path": "C:\\Users\\Dell\\Documents\\deepseek-harness\\default-workspace\\viz\\ppt\\composite\\page-0007.png",
+      "width": 2401,
+      "height": 1351,
+      "rectangle": {
+        "x": 0,
+        "y": 0,
+        "width": 1920.0666666666666,
+        "height": 1080.0666666666666
+      },
+      "byteLength": 1430659
+    },
+    {
+      "index": 8,
+      "page": 8,
+      "path": "C:\\Users\\Dell\\Documents\\deepseek-harness\\default-workspace\\viz\\ppt\\composite\\page-0008.png",
+      "width": 2401,
+      "height": 1351,
+      "rectangle": {
+        "x": 0,
+        "y": 0,
+        "width": 1920.0666666666666,
+        "height": 1080.0666666666666
+      },
+      "byteLength": 901127
+    }
+  ],
+  "missingFonts": [
+    "Press Start 2P",
+    "Calibri (MS)"
+  ]
+}

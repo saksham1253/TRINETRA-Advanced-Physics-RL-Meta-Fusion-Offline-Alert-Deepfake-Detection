@@ -1,0 +1,7 @@
+id,claim_paraphrased,paper_id,table_or_figure,setting,metric,value_as_stated,evidence_type,caveats,applicability
+# MASTER_PROMPT §0.8 claims table. abstract-only claims MUST be marked evidence_type=abstract-level.
+# Populated as papers are promoted to full-text in P2/P3. Seeded with the single most
+# load-bearing external benchmark (abstract-level, live-verified 2026-10-05):
+C001,"Antecedent weather times trigger: ROC 0.73 big bursts / 0.83 landslides / 0.82 small floods",2608.12422,abstract,"Nepal Himalaya, 589 HMAGLOFDB outbursts + thousands of landslides, spatial-CV withholding whole map tiles",ROC-AUC,"0.73 / 0.83 / 0.82",abstract-level,"ABS only; not full-text verified; numbers from abstract read on arXiv 2026-10-05",high
+C002,"Terrain susceptibility: naive ~0.9 collapses to 0.76/0.71/0.54 under matched spatial-CV (last = chance)",2608.12422,abstract,"same, matched against comparable nearby unfailed sites",ROC-AUC,"naive ~0.90 -> honest 0.76/0.71/0.54",abstract-level,"ABS only; quantifies ~0.15-0.35 leakage inflation (ties Bug #11)",high
+C003,"Five deep-learning models do NOT decisively beat a simple gradient-boosted baseline; 3-rule decision tree wins lake hazards",2608.12422,abstract,"same",relative skill,"DL ≯ GB; 3-rule tree wins",abstract-level,"ABS only; grounds 'simple beats deep' + mandatory GB/decision-tree + persistence baselines",high

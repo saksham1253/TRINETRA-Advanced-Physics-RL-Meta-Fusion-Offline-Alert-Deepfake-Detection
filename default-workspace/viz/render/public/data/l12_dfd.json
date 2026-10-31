@@ -1,0 +1,35 @@
+{
+  "provenance": {
+    "layer": "L12 — high-level model data-flow (DFD)",
+    "kind": "ILLUSTRATIVE",
+    "origin": "Authored from 02_system_architecture.md + _CANON.md decision rule.",
+    "disclaimer": "Conceptual high-level data flow of the TRINETRA pipeline. Advisory, human-in-loop, never autonomous. No performance numbers implied.",
+    "source_files": ["02_system_architecture.md", "_CANON.md"]
+  },
+  "nodes": [
+    { "id": "eo",      "label": "EO / satellite streams",        "group": "sensing",   "kind": "REAL",        "detail": "Sentinel-1/2, DEM, ERA5-Land, FIRMS, MODIS/VIIRS" },
+    { "id": "iot",     "label": "Ground IoT / sensors",          "group": "sensing",   "kind": "REAL",        "detail": "WS7 LoRa nodes: rain, tilt, soil, thermal (edge)" },
+    { "id": "cctv",    "label": "WS4 CCTV fire/smoke",           "group": "perception","kind": "SIMULATED",   "detail": "FireSmokeNet (reference arch; no trained weights)" },
+    { "id": "social",  "label": "WS2 social-media intake",       "group": "perception","kind": "SIMULATED",   "detail": "AuthenticityNet; reliability capped at 0.40" },
+    { "id": "ws1",     "label": "WS1 physics models (×6)",        "group": "physics",   "kind": "SIMULATED",   "detail": "Fire (Heskestad/Byram) + geo (FS/Iverson/Caine/Fukuzono)" },
+    { "id": "anom",    "label": "WS8 anomaly / drift",           "group": "physics",   "kind": "SIMULATED",   "detail": "EO change + drift monitor (WS6/WS8)" },
+    { "id": "fusion",  "label": "WS5 meta-fusion",               "group": "fusion",    "kind": "SIMULATED",   "detail": "Gated multimodal fusion + conformal uncertainty" },
+    { "id": "decision","label": "Decision + shield",             "group": "decision",  "kind": "SIMULATED",   "detail": "level = max(conformal_level(risk, p*≈0.0476), shield_floor)" },
+    { "id": "human",   "label": "Human operator gate",           "group": "decision",  "kind": "REAL",        "detail": "Mandatory human-in-loop for any public message (R19)" },
+    { "id": "alert",   "label": "WS3 tiered alerting",           "group": "action",    "kind": "SIMULATED",   "detail": "Siren → LAN/mesh → cell-broadcast → DTN" },
+    { "id": "rl",      "label": "WS5 advisory routing",          "group": "action",    "kind": "SIMULATED",   "detail": "Rule-baseline evacuation advisory over OSM roads" }
+  ],
+  "edges": [
+    { "from": "eo",      "to": "ws1" },
+    { "from": "iot",     "to": "ws1" },
+    { "from": "eo",      "to": "anom" },
+    { "from": "cctv",    "to": "fusion" },
+    { "from": "social",  "to": "fusion" },
+    { "from": "ws1",     "to": "fusion" },
+    { "from": "anom",    "to": "fusion" },
+    { "from": "fusion",  "to": "decision" },
+    { "from": "decision","to": "human" },
+    { "from": "human",   "to": "alert" },
+    { "from": "human",   "to": "rl" }
+  ]
+}

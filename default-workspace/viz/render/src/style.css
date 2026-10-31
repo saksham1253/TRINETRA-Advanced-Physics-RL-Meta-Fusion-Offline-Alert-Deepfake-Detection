@@ -1,0 +1,105 @@
+/* TRINETRA / HIMKAVACH 3D viz — dark, restrained, cinematic geospatial-intelligence palette.
+   No cartoon colors, no neon. Technical sans for labels, monospace for data readouts. */
+:root {
+  /* tokens aligned to DESIGN_SPEC.md §1 */
+  --bg:#05070A;            /* --bg-void */
+  --panel:rgba(14,20,27,0.85);  /* --bg-panel 85% */
+  --panel-2:#161F29;
+  --panel-brd:#2A3744;     /* --stroke-hair */
+  --ink:#E6EDF3;           /* --ink-primary */
+  --ink-dim:#9FB0BF;       /* --ink-secondary */
+  --ink-faint:#64748B;     /* --ink-mute */
+  --accent:#4CA6FF;        /* --accent-focus */
+  --real:#38D39F;          /* --accent-real (teal-green) */
+  --sim:#F2B141;           /* --accent-sim (amber) */
+  --illus:#8B9DC9;         /* --accent-illus (slate-blue) */
+  --warn:#E5484D;
+  --mono:"JetBrains Mono","SFMono-Regular",ui-monospace,Consolas,monospace;
+  --sans:"Inter","Segoe UI",system-ui,sans-serif;
+}
+* { box-sizing:border-box; }
+html,body { margin:0; height:100%; background:var(--bg); color:var(--ink);
+  font-family:var(--sans); overflow:hidden; -webkit-font-smoothing:antialiased; }
+#cesiumContainer { position:absolute; inset:0; }
+
+/* hide Cesium's default widget chrome we replace, keep credits visible */
+.cesium-viewer-toolbar,
+.cesium-viewer-animationContainer,
+.cesium-viewer-fullscreenContainer,
+.cesium-viewer-geocoderContainer { display:none !important; }
+.cesium-viewer-timelineContainer { left:0 !important; right:0 !important; bottom:0 !important; }
+.cesium-credit-textContainer, .cesium-credit-logoContainer { color:var(--ink-faint) !important; }
+
+.panel { position:absolute; z-index:10; background:var(--panel);
+  border:1px solid var(--panel-brd); border-radius:8px; padding:11px 13px;
+  backdrop-filter:blur(9px); box-shadow:0 6px 26px rgba(0,0,0,0.45); }
+.panel-h { font-size:10.5px; letter-spacing:0.18em; color:var(--ink-dim);
+  text-transform:uppercase; margin-bottom:7px; font-weight:600; }
+
+/* title */
+#titlebar { position:absolute; top:16px; left:18px; z-index:11; }
+.brand-main { font-size:22px; font-weight:700; letter-spacing:0.19em; }
+.brand-sub { font-size:14px; color:var(--ink-dim); margin-left:7px; letter-spacing:0.14em; }
+.brand-tag { font-size:11px; color:var(--ink-faint); margin-top:3px; letter-spacing:0.04em; }
+
+/* provenance */
+#provenance { top:16px; right:16px; width:328px; }
+.prov-kind { display:inline-block; font-family:var(--mono); font-size:10.5px; font-weight:700;
+  padding:2px 8px; border-radius:4px; letter-spacing:0.1em; margin-bottom:6px; }
+.prov-kind.real { background:rgba(57,217,138,0.16); color:var(--real); border:1px solid rgba(57,217,138,0.4); }
+.prov-kind.sim  { background:rgba(242,166,90,0.16); color:var(--sim); border:1px solid rgba(242,166,90,0.4); }
+.prov-kind.ui   { background:rgba(95,176,217,0.14); color:var(--accent); border:1px solid rgba(95,176,217,0.35); }
+.prov-title { font-size:14px; font-weight:600; margin-bottom:7px; line-height:1.3; }
+.prov-meta { width:100%; border-collapse:collapse; font-family:var(--mono); font-size:11px; }
+.prov-meta td { padding:1.5px 0; vertical-align:top; }
+.prov-meta td.k { color:var(--ink-faint); width:84px; white-space:nowrap; }
+.prov-meta td.v { color:var(--ink); }
+.prov-note { font-size:10.5px; color:var(--ink-dim); margin-top:7px; line-height:1.4; font-style:italic; }
+
+/* layer panel */
+#layers { top:112px; left:18px; width:244px; max-height:62vh; overflow-y:auto; }
+.layer-item { display:flex; align-items:center; gap:8px; padding:5px 0; }
+.layer-item .sw { width:11px; height:11px; border-radius:2px; flex:0 0 auto; border:1px solid rgba(255,255,255,0.2); }
+.layer-item label { flex:1; font-size:12px; cursor:pointer; display:flex; align-items:center; gap:6px; }
+.layer-item .kindtag { font-family:var(--mono); font-size:8.5px; padding:0 4px; border-radius:3px; letter-spacing:0.06em; }
+.kindtag.real { color:var(--real); border:1px solid rgba(57,217,138,0.4); }
+.kindtag.sim  { color:var(--sim);  border:1px solid rgba(242,166,90,0.4); }
+.layer-item input[type=range] { width:52px; accent-color:var(--accent); }
+.layer-item input[type=checkbox] { accent-color:var(--accent); }
+.explode-row { display:flex; align-items:center; gap:8px; margin-top:10px; font-size:12px;
+  color:var(--ink-dim); cursor:pointer; }
+
+/* legend */
+#legend { bottom:66px; left:18px; width:224px; }
+#legendCanvas { width:200px; height:18px; border-radius:3px; display:block; }
+.legend-labels { display:flex; justify-content:space-between; font-family:var(--mono);
+  font-size:10px; color:var(--ink-dim); margin-top:4px; }
+
+/* tour */
+#tourbar { bottom:14px; left:50%; transform:translateX(-50%); display:flex; align-items:center;
+  gap:10px; min-width:460px; }
+#tourbar button { background:rgba(95,176,217,0.12); color:var(--ink); border:1px solid var(--panel-brd);
+  border-radius:5px; padding:5px 11px; font-size:12px; cursor:pointer; font-family:var(--sans); }
+#tourbar button:hover { background:rgba(95,176,217,0.24); }
+#tourCaption { font-size:12px; color:var(--ink-dim); flex:1; min-width:160px; }
+#tourProgress { width:120px; height:3px; background:rgba(255,255,255,0.1); border-radius:2px; overflow:hidden; }
+#tourProgressBar { height:100%; width:0%; background:var(--accent); transition:width 0.3s linear; }
+
+/* readouts */
+#readout { bottom:66px; right:16px; width:188px; font-family:var(--mono); }
+.ro-row { display:flex; justify-content:space-between; font-size:11px; padding:1px 0; }
+.ro-k { color:var(--ink-faint); letter-spacing:0.08em; }
+.ro-v { color:var(--ink); }
+.northwrap { display:flex; justify-content:center; margin-top:7px; }
+#northArrow { width:30px; height:30px; border:1px solid var(--panel-brd); border-radius:50%;
+  display:flex; align-items:center; justify-content:center; font-size:11px; color:var(--accent);
+  font-weight:700; transition:transform 0.15s linear; }
+
+/* attributions */
+#attrib { position:absolute; bottom:2px; left:50%; transform:translateX(-50%); z-index:9;
+  font-size:9.5px; color:var(--ink-faint); font-family:var(--mono); max-width:70vw; text-align:center;
+  pointer-events:none; letter-spacing:0.02em; }
+
+#bootError { position:absolute; inset:0; z-index:50; background:#0a0e14; color:#e2574c;
+  font-family:var(--mono); font-size:13px; padding:40px; white-space:pre-wrap; overflow:auto; }
+.hidden { display:none !important; }
