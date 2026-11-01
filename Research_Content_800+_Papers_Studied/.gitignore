@@ -1,0 +1,50 @@
+﻿# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build outputs
+dist/
+build/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Large binaries (tracked via Git LFS)
+*.avi
+*.mp4
+*.mov
+*.mkv
+*.flv
+*.wmv
+*.m4v
+*.webm
+*.exe
+*.dll
+*.so
+*.dylib
+*.bin
+*.dat
+*.pyd
+*.whl
+*.egg
+*.tar.gz
+*.tgz
+*.zip
+*.rar
+*.7z
+*.iso
+*.img
+*.vhd
+*.vmdk
+*.qcow2
+
+# Video output
+viz/video/output/

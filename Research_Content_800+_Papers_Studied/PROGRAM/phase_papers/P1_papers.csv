@@ -1,0 +1,18 @@
+phase,paper_id,title,axis,discovered_via,novelty_checked,read_depth,tier,relevance,status
+# PHASE P1 QUOTA / NEW-PAPER LIST (MASTER_PROMPT §0.6/§0.8). Quota >=15, >=60% Tier 2+.
+# Baseline re-study papers are NOT listed here (they do not count toward quota).
+P1,2410.06388,Evaluating Impact of Warning Modalities and False Alarms in Pedestrian Crossing Alert,A8/alert-fatigue,arXiv-API "alert fatigue"+"false alarm",yes,FT-PARTIAL,2,high,done
+P1,2209.11632,Facilitating Change Implementation for Continuous ML-Safety Assurance,methodology/safety-case,arXiv-API "safety-critical ML"+assurance,yes,FT-PARTIAL,2,high,done
+P1,2604.25512,PHISHREV Hybrid ML + Post-Hoc Non-monotonic Reasoning (confidence-gated),methodology/posthoc-fusion,arXiv-API "alert fatigue"+"false alarm",yes,FT-PARTIAL,2,high,done
+P1,2010.09107,Conformal prediction for time series (EnbPI),A7/conformal-timeseries,arXiv-API "conformal prediction"+"time series"+shift,yes,FT-PARTIAL,2,high,done
+P1,2404.19452,Accuracy vs Energy Tradeoffs in Concept-Drift Detection,A14/drift-monitoring,arXiv-API "concept drift"+monitoring+deployed,yes,FT-PARTIAL,2,high,done
+P1,2608.26304,Multi-Objective Flood Resilience: Mitigate Now or Respond Later (evacuation equity),A13/evacuation-costloss,arXiv-API evacuation+decision+uncertainty+flood,yes,FT-PARTIAL,2,high,done
+P1,2206.09981,Measuring Class-Imbalance Sensitivity of Evaluation Metrics,A8/evaluation-metrics,arXiv-API "rare event"+evaluation+imbalanced+metrics,yes,FT-PARTIAL,2,high,done
+P1,2412.13439,MIP-Based Ensemble Weighting for Rare-Event Detection in CPS,A8/ensemble-rareevent,arXiv-API "rare event"+evaluation+imbalanced+metrics,yes,FT-PARTIAL,2,med-high,done
+P1,2103.09783,Characterizing Technical Debt and Antipatterns in AI-Based Systems,methodology/ML-systems-reliability,arXiv-API "machine learning"+"technical debt"+systems,yes,FT-PARTIAL,2,high,done
+P1,2405.00031,SegNet Segmented CNN for Real-Time Drone Wildfire Detection,WS4/end-to-end-detection,arXiv-API wildfire+detection+"deep learning"+early,yes,FT-PARTIAL,2,med-high,done
+P1,2606.21130,Burst-Aware High-Recall Early-Warning (XGBoost deployment threshold),A8/EWS-false-alarm,arXiv-API "false alarm"+"early warning"+threshold,yes,FT-PARTIAL,2,high,done
+P1,2311.14110,DataCOPE Data-Centric Evaluation of Off-Policy Evaluation,A5/OPE-feasibility,arXiv-API "off-policy evaluation"+safe+policy,yes,FT-PARTIAL,2,high,done
+P1,2306.04590,ProCal Proximity-Informed Calibration (overconfidence in sparse regions),A7/calibration,arXiv-API calibration+"neural network"+"safety-critical",yes,FT-PARTIAL,2,high,done
+P1,2310.03986,Robust Multimodal Learning with Missing Modalities (param-efficient adaptation),A12/fusion-robustness,arXiv-API multimodal+"missing modality"+robust,yes,FT-PARTIAL,2,high,done
+P1,2601.05921,Evaluating Forecasts in a Cost-Loss Situation (Value Score),A8/EWS-evaluation,arXiv-API "cost-loss"+decision+forecast,yes,FT-PARTIAL,2,high,done

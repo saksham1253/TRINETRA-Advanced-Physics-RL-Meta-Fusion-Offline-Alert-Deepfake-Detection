@@ -4,11 +4,30 @@ node_modules/
 .pnpm-store/
 **/.pnpm-store/
 
-# Large video outputs & intermediate frames (>100MB / GitHub hard limit)
+# Build outputs
+dist/
+build/
+.cache/
+.env*
+.vite/
+vite.config.*.timestamp-*
+*.tsbuildinfo
+*-debug.log*
+logs/
+*.log
+.claude-replay.*
+.tmp-*
+/.figma/design-context/
+
+# Platform-managed agentplat state
+/.plugins/
+/.opencode-skills/
+
+# Large binary/video render files (>100MB / GitHub hard limit)
 *.avi
 **/output/*.avi
-**/viz/video/output/
-**/viz/video/frames3d/
+**/frames3d/
+**/output/
 
 # Python & OS
 __pycache__/
@@ -16,15 +35,3 @@ __pycache__/
 *.pyc
 .DS_Store
 Thumbs.db
-
-# App build / env (never commit secrets)
-dist/
-build/
-.cache/
-.vite/
-.env*
-*.tsbuildinfo
-
-# editor / agent metadata
-.figaro/
-.figma/

@@ -1,0 +1,10 @@
+{
+  "description": "Helps users organize and manage content workflows with a streamlined interface for planning, tracking, and reviewing their work.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

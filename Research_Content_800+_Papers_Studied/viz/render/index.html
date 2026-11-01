@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TRINETRA / HIMKAVACH — 3D Data Stack</title>
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+<body>
+  <!-- Cesium globe -->
+  <div id="cesiumContainer"></div>
+
+  <!-- Top-left: title + persistent REAL/SIMULATED mode tag -->
+  <header id="titlebar">
+    <div class="brand">
+      <span class="brand-main">TRINETRA</span><span class="brand-sub">/ HIMKAVACH</span>
+      <div class="brand-tag">Multi-hazard early-warning · 3D data-stack reveal</div>
+    </div>
+  </header>
+
+  <!-- Top-right: active-layer provenance caption -->
+  <section id="provenance" class="panel" aria-live="polite">
+    <div class="prov-kind" id="provKind">—</div>
+    <div class="prov-title" id="provTitle">Select a layer</div>
+    <table class="prov-meta">
+      <tbody id="provMeta"></tbody>
+    </table>
+    <div class="prov-note" id="provNote"></div>
+  </section>
+
+  <!-- Left: layer stack with toggles + opacity -->
+  <aside id="layers" class="panel">
+    <div class="panel-h">DATA LAYERS</div>
+    <div id="layerList"></div>
+    <div class="panel-h" style="margin-top:10px">BASEMAP (imagery)</div>
+    <div id="basemapList"></div>
+    <label class="explode-row">
+      <input type="checkbox" id="explodeToggle" />
+      <span>Exploded layer stack</span>
+    </label>
+  </aside>
+
+  <!-- Bottom-left: legend for the active scalar field -->
+  <section id="legend" class="panel">
+    <div class="panel-h" id="legendTitle">LEGEND</div>
+    <canvas id="legendCanvas" width="200" height="18"></canvas>
+    <div class="legend-labels"><span id="legendMin">0</span><span id="legendUnit"></span><span id="legendMax">1</span></div>
+  </section>
+
+  <!-- Bottom-center: guided tour transport -->
+  <section id="tourbar" class="panel">
+    <button id="tourPrev" title="Previous shot">◀</button>
+    <button id="tourPlay" title="Play / pause tour">▶ Tour</button>
+    <button id="tourNext" title="Next shot">▶</button>
+    <div id="tourCaption">Guided tour — press ▶</div>
+    <div id="tourProgress"><div id="tourProgressBar"></div></div>
+  </section>
+
+  <!-- Bottom-right: geospatial readouts -->
+  <section id="readout" class="panel">
+    <div class="ro-row"><span class="ro-k">LON</span><span id="roLon" class="ro-v">—</span></div>
+    <div class="ro-row"><span class="ro-k">LAT</span><span id="roLat" class="ro-v">—</span></div>
+    <div class="ro-row"><span class="ro-k">ELEV</span><span id="roElev" class="ro-v">—</span></div>
+    <div class="ro-row"><span class="ro-k">EYE</span><span id="roEye" class="ro-v">—</span></div>
+    <div class="ro-row"><span class="ro-k">UTC</span><span id="roTime" class="ro-v">—</span></div>
+    <div class="ro-row"><span class="ro-k">SCALE</span><span id="roScale" class="ro-v">—</span></div>
+    <div class="northwrap"><div id="northArrow">N</div></div>
+  </section>
+
+  <!-- Persistent attributions (license compliance) -->
+  <footer id="attrib"></footer>
+
+  <!-- Boot error surface -->
+  <div id="bootError" class="hidden"></div>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>

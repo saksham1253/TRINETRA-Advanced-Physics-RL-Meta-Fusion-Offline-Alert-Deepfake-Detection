@@ -1,0 +1,19 @@
+id,title,read_depth,focus,workstream,takeaway_short,novelty
+2610.05790,FairRSFM: Biome-Aware Benchmark and Debiasing for RS Foundation Models,FT-PARTIAL,benchmark/robustness,WS4/WS6,"aggregate RS metrics hide biome/geographic worst-group gaps; report worst-REGION; Indian authors",NEW
+2608.02315,GEOID-Flood: Large-Scale Multi-Modal Flood Segmentation Benchmark,FT-PARTIAL,dataset/flood,WS1/WS8,"14,282 tiles S1+S2+DEM, event-level leakage-safe split; GFM modest; fusion best; +census of 10 flood sets",NEW
+2604.23066,UFO: Urban Flood Observations hand-labeled dataset,ABS,dataset/flood,WS1/WS4,"215 chips leave-one-event-out CV; off-the-shelf water products weak (IMPACT 44.1, DynWorld 48.1)",NEW
+2512.02055,TerraMind GFM for near-real-time global flood mapping (FloodsNet),ABS,benchmark/efficiency,WS1/WS8,"base-unfrozen best accuracy/compute; U-Net higher recall than GFM; GFM not a free win",NEW
+2604.16663,Benchmark of Segmentation + Adaptation for Landslide Detection,ABS,benchmark/efficiency,WS1/WS6,"GDCLD; LoRA/AdaLoRA -95% trainable params ~ full-FT accuracy; PEFT = Kaggle-budget lever",NEW
+2502.19866,LMHLD: Large-scale Multi-source High-res Landslide Dataset,ABS,dataset/landslide,WS1/WS8,"25,365 patches 5 sensors 7 areas incl Gorkha Nepal; open Zenodo 10.5281/zenodo.11424988",NEW
+2603.00604,Data-Centric Benchmark for Label Noise Estimation & Ranking (RS seg),ABS,benchmark/data-quality,WS6,"estimate+rank label noise before trusting a dataset; data-quality gate",NEW
+2609.16964,HUMAID-NER: Disaster Tweet NER + Event Classification Dataset,ABS,dataset/crisis-NLP,WS2/WS3,"60k tweets, 175k spans, 10 entity types; crisis-media advisory reference; English-only gap",NEW
+2605.28174,FLORO: Multimodal Geospatial FM from a Small Diverse Corpus,ABS,efficiency/missing-modality,WS8/WS6,"availability-aware inputs (= missing-modality mask); 2nd-best PANGAEA with 100x less data",NEW
+2606.16302,Explainable Flood Segmentation on S1 SAR (CNN vs Transformer),ABS,benchmark/flood,WS1,"ETCI+Sen1Floods11, scene-based splits, Wilcoxon; U-Net better boundary uncertainty",NEW
+2609.37487,PG-FMM: Physics-Guided Flow-Map Matching Precipitation Nowcasting,ABS,method/nowcasting,WS1/WS3,"physics prior as guidance not residual; 4-step; heavy-rain CSI +58.9% (tail); 4 radar benchmarks",NEW
+2505.17782,Thalia: Global Multi-Modal InSAR Volcanic-Deformation Dataset,ABS,dataset/InSAR,WS1/WS8,"38 datacubes 7yr InSAR+topo+atmospheric(confound)+expert labels; closest InSAR-anomaly analogue",NEW
+2605.21527,CryoNet: Multimodal Debris-Covered Glacier Mapping (Central Himalaya),ABS,dataset/glacier,WS8,"Poiqu Basin Himalaya; S2+DEM+InSAR coherence/phase; glacial-lake mapping IoU 90.52%",NEW
+2606.07374,Beyond Backscatter: InSAR Coherence from Detected SAR,ABS,method/InSAR,WS1/WS8,"coherence regression from GEE-available GRD without SLC/coregistration; cheap coherence feature",NEW
+2610.12189,JWS: Efficient End-to-End Nowcasting with Distributional Diffusion,ABS,efficiency/nowcasting,WS1/WS6,"few-step radar-space diffusion; SOTA on SEVIR+MeteoNet; 17x faster inference; efficiency template",NEW
+# P5 quota = 15 NEW (FT-PARTIAL x2 + ABS x13; Tier-3+ acceptable for dataset/benchmark phase per §0.9).
+# Running body-level NEW reads (FT/FT-PARTIAL): P1 15 + P2 18 + P3 43 + P4 15 + P5 2 = 93.
+# Datasets catalogued this phase: see DATASETS.md D01-D26 (+ 10 further flood sets from GEOID-Flood Table 1).

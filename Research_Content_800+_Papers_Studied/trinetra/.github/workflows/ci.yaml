@@ -1,0 +1,20 @@
+name: trinetra-ci
+on: [push, pull_request]
+jobs:
+  gates-and-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install core deps
+        run: pip install numpy pandas lxml
+      - name: Safety/honesty CI gates (fail-closed)
+        run: python scripts/ci_gates.py
+      - name: BOM budget gate (G5, <= Rs2000/node)
+        run: python scripts/bom_price_check.py
+      - name: Unit + golden + contract tests
+        run: python run_tests.py
+      - name: End-to-end advisory demo (smoke)
+        run: python demo.py

@@ -1,0 +1,177 @@
+﻿=== DECK ===
+slides: 8
+size (in): 20.0 x 11.25
+layouts in master: ['Title Slide', 'Title and Content', 'Section Header', 'Two Content', 'Comparison', 'Title Only', 'Blank', 'Content with Caption', 'Picture with Caption', 'Title and Vertical Text', 'Vertical Title and Text']
+
+===== SLIDE 1 | layout=Blank =====
+  [FREEFORM (5)] name='Freeform 2' pos=(0.0,0.0) size=(20.0x11.25)
+  [GROUP (6)] name='Group 3' pos=(-6.61,-1.77) size=(27.22x3.54)
+  [FREEFORM (5)] name='Freeform 6' pos=(4.64,10.43) size=(0.9x1.11)
+  [FREEFORM (5)] name='Freeform 7' pos=(5.31,10.43) size=(0.9x1.11)
+  [PICTURE (13)] name='S1/content-layer' pos=(0.0,0.0) size=(20.0x11.25)
+  [GROUP (6)] name='Group 8' pos=(0.62,0.27) size=(5.14x1.28)
+  [FREEFORM (5)] name='Freeform 10' pos=(16.6,0.17) size=(2.9x1.49)
+  [TEXT_BOX (17)] name='TextBox 11' pos=(0.7,10.65) size=(3.3x0.26)
+      | SANKAT MOCHAK
+  [TEXT_BOX (17)] name='TextBox 12' pos=(4.32,2.85) size=(11.54x0.72)
+      | SAARTHI’26 Submission
+  [TEXT_BOX (17)] name='S1 track' pos=(2.9,6.2) size=(14.9x0.4)
+      | Track: Disaster Resilience · Multi-Hazard Early Warning, India
+  [TEXT_BOX (17)] name='S1 team fields' pos=(3.3,6.72) size=(14.0x1.3)
+      | Team Leader Name: Saksham Aggarwal
+      | Team Member(s) Name: Utkarsh Saini, Mohit Kaintura, Naina Joshi
+      | College Name: Graphic Era Hill University, Dehradun
+  NOTES: Namaste. We are team SANKAT MOCHAK from Graphic Era Hill University, Dehradun.
+Track (self-identified): Disaster Resilience - multi-hazard early warning for India.
+TRINETRA means 'three eyes': satellites, cameras and our own low-cost IoT sensor nodes. A physics gate checks all three before any alarm
+
+===== SLIDE 2 | layout=Blank =====
+  [FREEFORM (5)] name='Freeform 2' pos=(0.0,0.0) size=(20.0x11.25)
+  [GROUP (6)] name='Group 3' pos=(1.93,0.76) size=(16.14x1.6)
+  [GROUP (6)] name='Group 6' pos=(14.33,10.43) size=(4.67x0.6)
+  [GROUP (6)] name='Group 9' pos=(0.56,0.38) size=(3.91x0.98)
+  [GROUP (6)] name='Group 11' pos=(0.84,2.25) size=(18.31x8.24)
+  [PICTURE (13)] name='S2/content-layer' pos=(0.0,0.0) size=(20.0x11.25)
+  [FREEFORM (5)] name='Freeform 15' pos=(17.36,0.3) size=(2.07x1.06)
+  [TEXT_BOX (17)] name='TextBox 16' pos=(0.56,10.6) size=(3.3x0.26)
+      | SANKAT MOCHAK
+  [TEXT_BOX (17)] name='HEADING Problem Statement:' pos=(1.18,2.5) size=(8.0x0.46)
+      | Problem Statement:
+  [TEXT_BOX (17)] name='HEADING Detailed description about the problem:' pos=(1.18,5.74) size=(14.0x0.42)
+      | Detailed description about the problem:
+  NOTES: Problem: mountain India faces landslides, flash floods, cloudbursts and glacial-lake floods, and each is watched by a separate system.
+Three gaps we attack first. Gap 1, offline: storms cut towers and power, so app and SMS alerts fail when needed most [12]. Gap 2, IoT: slopes have almost no ground s
+
+===== SLIDE 3 | layout=Blank =====
+  [FREEFORM (5)] name='Freeform 2' pos=(0.0,0.0) size=(20.0x11.25)
+  [GROUP (6)] name='Group 3' pos=(4.09,0.79) size=(12.35x1.78)
+  [GROUP (6)] name='Group 6' pos=(14.33,10.43) size=(4.67x0.6)
+  [TEXT_BOX (17)] name='TextBox 9' pos=(0.49,10.6) size=(3.3x0.26)
+      | SANKAT MOCHAK
+  [GROUP (6)] name='Group 10' pos=(0.84,2.25) size=(18.31x8.24)
+  [PICTURE (13)] name='S3/content-layer' pos=(0.0,0.0) size=(20.0x11.25)
+  [GROUP (6)] name='Group 13' pos=(0.56,0.38) size=(3.91x0.98)
+  [FREEFORM (5)] name='Freeform 15' pos=(17.36,0.3) size=(2.07x1.06)
+  [TEXT_BOX (17)] name='HEADING Solution Statement:' pos=(1.18,2.5) size=(8.0x0.46)
+      | Solution Statement:
+  [TEXT_BOX (17)] name='HEADING Detailed Solution description:' pos=(1.18,5.74) size=(14.0x0.42)
+      | Detailed Solution description:
+  NOTES: Solution: three eyes, one physics referee, one decision. Fuse, verify, a human decides, warn by tier.
+If it is unsure, it abstains and escalates. It never guesses silently.
+Five things we build: the Himalayan datacube, zero-shot plus anomaly AI, the physics and fusion brain, the offline alert stack,
+
+===== SLIDE 4 | layout=Blank =====
+  [FREEFORM (5)] name='Freeform 2' pos=(0.0,0.0) size=(20.0x11.25)
+  [GROUP (6)] name='Group 3' pos=(0.84,2.25) size=(18.31x8.24)
+  [PICTURE (13)] name='S4/content-layer' pos=(0.0,0.0) size=(20.0x11.25)
+  [GROUP (6)] name='Group 6' pos=(18.28,10.43) size=(0.72x0.6)
+  [TEXT_BOX (17)] name='TextBox 10' pos=(0.32,10.73) size=(3.3x0.26)
+      | SANKAT MOCHAK
+  [GROUP (6)] name='Group 11' pos=(0.56,0.38) size=(3.91x0.98)
+  [FREEFORM (5)] name='Freeform 13' pos=(17.36,0.3) size=(2.07x1.06)
+  [GROUP (6)] name='Group 14' pos=(4.09,0.79) size=(12.35x1.78)
+  [TEXT_BOX (17)] name='HEADING Technologies To Be Used:' pos=(1.18,2.5) size=(8.0x0.46)
+      | Technologies To Be Used:
+  NOTES: Workflow: sense, detect, verify, physics gate. Do the eyes agree? If not, re-check and test for sensor faults.
+Then fuse into one risk score with confidence. Is it above the threshold? Does a human approve? Only then alert by tier.
+The IoT edge shortcut: if a node sees a sharp tilt plus heavy rain, 
+
+===== SLIDE 5 | layout=Blank =====
+  [FREEFORM (5)] name='Freeform 2' pos=(0.0,0.0) size=(20.0x11.25)
+  [GROUP (6)] name='Group 3' pos=(0.84,2.25) size=(18.31x8.24)
+  [PICTURE (13)] name='S5/content-layer' pos=(0.0,0.0) size=(20.0x11.25)
+  [GROUP (6)] name='Group 7' pos=(0.56,0.38) size=(3.91x0.98)
+  [FREEFORM (5)] name='Freeform 9' pos=(17.36,0.3) size=(2.07x1.06)
+  [TEXT_BOX (17)] name='TextBox 10' pos=(0.32,10.73) size=(3.3x0.26)
+      | SANKAT MOCHAK
+  [GROUP (6)] name='Group 11' pos=(18.28,10.43) size=(0.72x0.6)
+  [TEXT_BOX (17)] name='HEADING Detailed Description:' pos=(1.18,2.5) size=(8.0x0.46)
+      | Detailed Description:
+  NOTES: Six model cards, each with an everyday analogy, and five formulas tagged established, derived or hypothesis.
+The Hazard Energy Index is a team hypothesis; validation is pending.
+Evaluation is pre-registered: hold out whole map tiles and monsoon years, report calibration and false alarms, beat baseli
+
+===== SLIDE 6 | layout=Blank =====
+  [FREEFORM (5)] name='Freeform 2' pos=(0.0,0.0) size=(20.0x11.25)
+  [GROUP (6)] name='Group 3' pos=(4.21,0.5) size=(11.67x1.88)
+  [TABLE (19)] name='Table 6' pos=(0.67,2.38) size=(18.77x7.97)
+      TABLE 5x2
+      || Impact Metric | Details
+      || Social Impact | ▸ Lead time: earlier, uncertainty-aware warnings; targets from published benchmarks.
+▸ Works offline: T1 siren + T2 LoRa mesh keep warning villages when towers or power fail.
+▸ Fewer false alarms: physics gate + two-source rule before any public siren, protecting trust.
+▸ Anti-rumour: deepfake and misinformation checks stop fake photos from driving panic or false calm.
+▸ Inclusive: plain multilingual alerts by place, not by phone number or IP; tested with communities.
+▸ Human in charge: an operator approves every public alert; the AI only advises.
+      || Economic Impact | ▸ Low-cost node: our IoT prototype node, capped under INR 2,000 (BOM pending).
+▸ Free data backbone: Sentinel-1/2, GPM IMERG, SMAP, ERA5-Land (licences to be verified).
+▸ Reuse CCTV: zero-shot classification on existing road and bridge cameras; no new camera network.
+▸ One framework: many hazards instead of a separate system per hazard; less duplicate monitoring.
+▸ Protects lifelines: earlier hill-road and bridge closure decisions (benefit to be modelled in pilot).
+▸ Open + modular: local teams and startups can extend the stack; costs measured in the pilot.
+      || Environmental Impact | ▸ Low power: solar-assisted, duty-cycled nodes; on-device TinyML sends alerts, not raw data.
+▸ Orbit-first: slopes, water and vegetation watched from space; no heavy new infrastructure.
+▸ Glacial-lake watch: Sentinel-2 and SAR track GLOF risk (designed; validation pending).
+▸ Climate adaptation: long-term hazard logs (D1-D4) support planning for changing monsoons.
+▸ Small footprint: few nodes per slope, low-power radio; battery life measured in the field.
+▸ Staged pilot: shadow mode first, running beside existing systems; no disruption.
+      || Target Audience | ▸ Disaster agencies: DEOCs, SDMA, SDRF / NDRF get decision support (complement, not replace).
+▸ Forecast bodies: IMD and CWC gain cross-checked ground truth from sensors and cameras.
+▸ Infrastructure: BRO, NH authorities and bridge operators on single-valley Himalayan roads.
+▸ Pilgrimage routes: administrators of Kedarnath, Badrinath and similar seasonal-crowd corridors.
+▸ Communities: village volunteers and panchayats receiving siren and mesh alerts.
+▸ Researchers: open benchmark, honest spatial tests; regulation under expert review.
+  [PICTURE (13)] name='S6/content-layer' pos=(0.0,0.0) size=(20.0x11.25)
+  [GROUP (6)] name='Group 7' pos=(18.49,10.45) size=(0.52x0.55)
+  [TEXT_BOX (17)] name='TextBox 10' pos=(0.48,10.73) size=(3.3x0.26)
+      | SANKAT MOCHAK
+  [GROUP (6)] name='Group 11' pos=(0.56,0.38) size=(3.91x0.98)
+  [FREEFORM (5)] name='Freeform 13' pos=(17.36,0.3) size=(2.07x1.06)
+  NOTES: All impact items are projections, not measurements.
+Social: warnings reach people offline through IoT node, siren and LoRa mesh. Economic: one framework instead of one system per hazard, with an IoT node capped under 2,000 rupees. Environmental: solar, duty-cycled nodes that send alerts, not raw vid
+
+===== SLIDE 7 | layout=Blank =====
+  [FREEFORM (5)] name='Freeform 2' pos=(0.0,0.0) size=(20.0x11.25)
+  [GROUP (6)] name='Group 3' pos=(7.35,1.12) size=(5.3x1.54)
+  [GROUP (6)] name='Group 6' pos=(18.48,10.45) size=(0.52x0.55)
+  [GROUP (6)] name='Group 9' pos=(0.84,2.25) size=(18.31x8.24)
+  [PICTURE (13)] name='S7/content-layer' pos=(0.0,0.0) size=(20.0x11.25)
+  [TEXT_BOX (17)] name='TextBox 13' pos=(0.42,10.6) size=(3.3x0.26)
+      | SANKAT MOCHAK
+  [GROUP (6)] name='Group 14' pos=(0.56,0.38) size=(3.91x0.98)
+  [FREEFORM (5)] name='Freeform 16' pos=(17.36,0.3) size=(2.07x1.06)
+  NOTES: The prototype is planned. On the left, eight layers on real Joshimath terrain.
+The hero is our IoT prototype: sensors for tilt, soil moisture and rain; an ESP32 running a tiny AI model that asks 'is this slope moving?'; a LoRa radio that needs no mobile tower; and a siren and gateway. Solar and batt
+
+===== SLIDE 8 | layout=Blank =====
+  [FREEFORM (5)] name='Freeform 2' pos=(0.0,0.0) size=(20.0x11.25)
+  [GROUP (6)] name='Group 3' pos=(3.93,0.87) size=(12.14x1.81)
+  [GROUP (6)] name='Group 6' pos=(18.48,10.45) size=(0.52x0.55)
+  [TEXT_BOX (17)] name='TextBox 9' pos=(0.65,10.6) size=(3.3x0.26)
+      | SANKAT MOCHAK
+  [GROUP (6)] name='Group 10' pos=(0.84,2.25) size=(18.31x8.24)
+  [PICTURE (13)] name='S8/content-layer' pos=(0.0,0.0) size=(20.0x11.25)
+  [GROUP (6)] name='Group 14' pos=(0.56,0.38) size=(3.91x0.98)
+  [FREEFORM (5)] name='Freeform 16' pos=(17.36,0.3) size=(2.07x1.06)
+  [TEXT_BOX (17)] name='HEADING Research Work:' pos=(1.18,2.5) size=(6.0x0.46)
+      | Research Work:
+  [TEXT_BOX (17)] name='HEADING Links:' pos=(3.62,8.32) size=(3.0x0.38)
+      | Links:
+  [TEXT_BOX (17)] name='S8 links col 1' pos=(3.75,8.8) size=(4.55x1.45)
+      | › Copernicus Data Space (Sentinel-1/2)
+      | › NASA GPM IMERG rainfall
+      | › NASA SMAP soil moisture (NSIDC)
+      | › ERA5-Land reanalysis (Copernicus CDS)
+  [TEXT_BOX (17)] name='S8 links col 2' pos=(8.35,8.8) size=(4.55x1.45)
+      | › NASA landslide hazard (LHASA / COOLR)
+      | › ASF HyP3 InSAR processing
+      | › ISRIC SoilGrids
+      | › arXiv (all cited preprints)
+  [TEXT_BOX (17)] name='S8 links col 3' pos=(12.95,8.8) size=(4.55x1.45)
+      | › Esri World Imagery (S7 imagery)
+      | › AWS Terrain Tiles (S7 elevation)
+      | › Team research repository (GitHub)
+      | › Full ledger (500+ papers): REFERENCES_FULL.md
+  NOTES: We have analysed 500+ papers across eight workstreams, and the count keeps rising. Our goal is 700+ for a true state-of-the-art review.
+Twelve key references are numbered as cited on slides 2 to 7. Links are clickable.
+Conclusion: not done yet. No reviewed system joins offline alerts, IoT nodes, zer

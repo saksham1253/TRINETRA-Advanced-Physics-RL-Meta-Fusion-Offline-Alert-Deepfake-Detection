@@ -1,0 +1,24 @@
+id,title,read_depth,theme,source_reported_headline,novelty,node_implication
+2409.12635,EFA-YOLO: Efficient Feature Attention for Fire and Flame Detection,ABS,vision,"1.4M params / 4.6 GFLOPs / 22.19 ms per image on desktop CPU",NEW,camera-stage ceiling + INT8 shrink target for ESP32-CAM
+2508.14597,Reliable Smoke Detection via Optical-Flow + Transformer Uncertainty,ABS,vision,"calibrated aleatoric+epistemic uncertainty; no params/latency given",NEW,emit uncertainty + temporal persistence before alarm
+2512.03257,PyroFocus two-stage wildfire detection,ABS,vision/arch,"cheap classify then FRP only when needed; no MCU numbers",NEW,two-stage gate: cheap sensors wake camera CNN
+2512.12199,Thermal-RGB Fusion for Micro-UAV Wildfire,ABS,fusion/edge,"rule-based sub-50 ms on embedded SoC (simulation)",NEW,precomputed-LUT RGB+thermal rule fusion if thermal added
+2310.06224,Context-aware Status Updating (AoI CO fire),ABS,comms,"up to 100x vs periodic, 10x vs random (simulation)",NEW,value-aware reporting rate as readings trend dangerous
+2608.23192,Energy-Proportional Multimodal Vision IoT Node,FT-PARTIAL,arch/power,"222 uW idle; 28.7 mJ/cycle; 82.7 ms; ~11 FPS; ~3-mo on 1.85 Wh @1% duty; HM0360@25fps=13.5 mW",NEW,cheap always-on trigger gates camera; duty cycle dominates energy
+2608.21646,Power-Performance Characterization of TinyML Systems,ABS,TinyML,"per-abstraction-layer energy/latency cost model",NEW,budget interpreter overhead on ESP32; fuse ops
+2609.30272,ENAS Hardware-Aware NAS for TinyML MCUs,ABS,TinyML,"79.4% acc on STM32H743; peak activation RAM = binding constraint",NEW,optimize model for peak SRAM not params/FLOPs
+2610.06241,Few-Shot Prototype Head On-Device ECG on PSoC6,ABS,TinyML,"1314-param 1-D CNN; 11.39 ms; 5.2 KB flash; 22.2 KB SRAM",NEW,tiny 1-D sensor-CNN fits MCU; on-device prototype calibration
+2608.25646,LDAC-Net Drift-Robust Low-Cost MOX Gas Sensors,ABS,gas sensor,"68.2% SmellNet / 70.6% eNose-Drift under drift",NEW,MQ drift: per-window baseline norm + multi-lag delta features
+2507.17071,Sensor Drift Compensation via Knowledge Distillation (e-nose),ABS,gas sensor,"KD +up to 18% acc vs DRCA; warns over-compensation",NEW,slow drift correction; alarm on fast transients mid-adaptation
+2511.00348,Ultralow-power Standoff Acoustic Leak Detection,ABS,comms/power,"20-200 uW; 0.15 L/min leak detected >10 m behind walls",NEW,classify on-device transmit few bytes = biggest battery lever
+2406.16917,GreenShield CNN Forest Monitoring,ABS,low-cost BOM,"Arduino+DHT11+flame+gas/smoke+GSM adaptive threshold; no FA metrics",NEW,validates DHT+flame+MQ BOM; we must test nuisance false alarms
+2610.11236,Low-Cost Indoor Air-Quality Calibration Dataset+Model,ABS,calibration,"6-mo 5-location dataset; 4 eval scenarios incl drift+event-shift",NEW,evaluate node for transfer/drift/abrupt-event
+2604.21527,Temporal DL Calibration of Low-Cost AQ Sensors,ABS,calibration,"NO2 22.11% / PM10 12.42% / PM2.5 9.1% expanded uncertainty",NEW,feed temp+humidity into gas interpretation
+2511.19810,RESPIRE Outlier-Resistant CO Calibration (India),ABS,calibration/India,"4 India sites 2 seasons 6 sensor packages; provable outlier resistance",NEW,India: survive season/site/unit; robust fit + re-calibration
+2605.26159,Device Context Protocol (DCP) Safety-First Constrained Devices,ABS,security,"<50-byte frame; 16-B HMAC; 27.6 KB flash / 0.6 KB RAM on ESP32",NEW,16-B HMAC + monotonic nonce fits ESP32; no unauth endpoints
+2605.19793,Motion-Coupled (Batteryless) Sensing + LoRa,ABS,power/comms,"one actuation powers wake-sense-LoRa; 99.3% tx over 5945 events",NEW,one event-triggered LoRa uplink not streaming
+2608.00409,SIC-Aided Decentralized LoRa Resource Allocation,ABS,comms,"tx success 64.0->71.1%; 293.9->328.3 bit/J vs UCB1",NEW,adaptive SF/power tiny bandit improves alarm delivery dense nets
+2208.00210,Multiple Categories Visual Smoke Detection Database,ABS,dataset,"70196 images; smoke TYPES; current algorithms underperform",NEW,multi-class smoke labels so steam/clean-exhaust != alarm
+# P6 quota = 20 NEW (target >=15; aim ~30). Depth: 1 FT-PARTIAL + 19 ABS (arXiv-only; web_search gap = no MDPI/standards).
+# All metrics source-reported, not ours (Rule 16). Datasheets/standards to be added to ledger do NOT count toward quota (task 2).
+# Running body-level FT/FT-PARTIAL NEW reads: P1 15 + P2 18 + P3 43 + P4 15 + P5 2 + P6 1 = 94.

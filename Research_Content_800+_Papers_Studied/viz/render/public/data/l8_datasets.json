@@ -1,0 +1,383 @@
+{
+  "provenance": {
+    "layer": "L8 \u2014 dataset registry",
+    "kind": "REAL(metadata) / ILLUSTRATIVE(panel geometry)",
+    "origin": "Parsed VERBATIM from DATASETS.md QUICK LINKS table (no inference).",
+    "disclaimer": "Counts/licenses/status copied exactly from the registry. [V]=verified, [V*]=one fact unverified, [D]=discovery-only. 'candidate' datasets are NOT downloaded or owned \u2014 shown honestly as registry entries, not as held data.",
+    "source_file": "DATASETS.md",
+    "generated_utc": "2026-10-10T13:27:01.824188+00:00",
+    "generator": "viz/pipeline/gen_dataset_panels.py"
+  },
+  "counts": {
+    "total_in_quick_links": 26,
+    "by_status": {
+      "selected": 13,
+      "candidate": 13
+    },
+    "by_verification": {
+      "[V]": 12,
+      "[V*]": 5,
+      "[D]": 9
+    }
+  },
+  "groups": [
+    {
+      "workstream": "WS1",
+      "datasets": [
+        {
+          "id": "D01",
+          "name": "Sentinel-1 SAR (Copernicus CDSE)",
+          "ws": "WS1/WS8",
+          "link": "https://dataspace.copernicus.eu/",
+          "cost": "free-with-registration",
+          "license": "Copernicus free/open",
+          "access": "open; reg for bulk/API",
+          "size_n": "continuous mission (C-band GRD/SLC ~10 m)",
+          "kaggle_hf": "AWS/GEE mirror",
+          "status": "selected",
+          "ver": "[V]"
+        },
+        {
+          "id": "D03",
+          "name": "GPM IMERG precipitation (NASA)",
+          "ws": "WS1/WS3",
+          "link": "https://gpm.nasa.gov/data/imerg",
+          "cost": "free-with-registration",
+          "license": "NASA open data",
+          "access": "Earthdata/PPS login",
+          "size_n": "0.1\u00b0, half-hourly, 2000\u2013present (V07)",
+          "kaggle_hf": "Giovanni/GeoTIFF",
+          "status": "selected",
+          "ver": "[V]"
+        },
+        {
+          "id": "D04",
+          "name": "SMAP soil moisture (NASA NSIDC)",
+          "ws": "WS1",
+          "link": "https://nsidc.org/data/smap",
+          "cost": "free-with-registration",
+          "license": "NASA open data",
+          "access": "Earthdata login",
+          "size_n": "global 2015\u2013present, ~9\u201336 km",
+          "kaggle_hf": "NSIDC/ASF",
+          "status": "selected",
+          "ver": "[V]"
+        },
+        {
+          "id": "D05",
+          "name": "ERA5-Land reanalysis (ECMWF/C3S)",
+          "ws": "WS1",
+          "link": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-land",
+          "cost": "free-with-registration",
+          "license": "CC-BY (DOI 10.24381/cds.e2161bac)",
+          "access": "CDS API",
+          "size_n": "0.1\u00b0 (9 km) hourly 1950\u2013present",
+          "kaggle_hf": "GEE mirror",
+          "status": "selected",
+          "ver": "[V]"
+        },
+        {
+          "id": "D08",
+          "name": "NASA Global Landslide Catalog / COOLR",
+          "ws": "WS1/WS8",
+          "link": "https://gpm.nasa.gov/applications/landslides/coolr",
+          "cost": "free",
+          "license": "NASA open data",
+          "access": "viewer/open-data portal",
+          "size_n": "point events (count UNVERIFIED)",
+          "kaggle_hf": "data.nasa.gov",
+          "status": "selected",
+          "ver": "[V*]"
+        },
+        {
+          "id": "D09",
+          "name": "Landslide4Sense",
+          "ws": "WS1/WS8",
+          "link": "https://huggingface.co/datasets/ibm-nasa-geospatial/Landslide4sense",
+          "cost": "free",
+          "license": "UNVERIFIED (no license on card)",
+          "access": "HF/GitHub download",
+          "size_n": "3,799/245/800 patches, 14-band 128\u00b2",
+          "kaggle_hf": "HF yes",
+          "status": "candidate",
+          "ver": "[V*]"
+        },
+        {
+          "id": "D10",
+          "name": "SSL4EO-S12",
+          "ws": "WS1/WS8",
+          "link": "https://github.com/zhu-xlab/SSL4EO-S12",
+          "cost": "free",
+          "license": "code Apache-2.0; data+weights CC-BY-4.0",
+          "access": "mediaTUM/HF",
+          "size_n": "251,079 locs \u00d74 seasons (~1.5 TB raw)",
+          "kaggle_hf": "HF yes",
+          "status": "candidate",
+          "ver": "[V]"
+        },
+        {
+          "id": "D12",
+          "name": "Sen1Floods11",
+          "ws": "WS1/WS8",
+          "link": "https://github.com/cloudtostreet/Sen1Floods11",
+          "cost": "free",
+          "license": "UNVERIFIED (open GCS bucket; CVPRW2020)",
+          "access": "gsutil gs://sen1floods11 (~14 GB)",
+          "size_n": "11 events, 512\u00b2 chips (4,831 count UNVERIFIED)",
+          "kaggle_hf": "Radiant/HF copies",
+          "status": "selected",
+          "ver": "[V*]"
+        },
+        {
+          "id": "D17",
+          "name": "GEOID-Flood",
+          "ws": "WS1/WS8",
+          "link": "https://github.com/links-ads/geoid-flood",
+          "cost": "free",
+          "license": "per repo (verify)",
+          "access": "GitHub",
+          "size_n": "14,282 tiles, 219 events, S1+S2+DEM",
+          "kaggle_hf": "\u2014",
+          "status": "selected",
+          "ver": "[D]"
+        },
+        {
+          "id": "D18",
+          "name": "LMHLD landslide dataset",
+          "ws": "WS1/WS8",
+          "link": "https://doi.org/10.5281/zenodo.11424988",
+          "cost": "free",
+          "license": "open-access Zenodo (verify per-source)",
+          "access": "Zenodo",
+          "size_n": "25,365 patches, 5 sensors, 7 areas (Gorkha)",
+          "kaggle_hf": "Zenodo",
+          "status": "selected",
+          "ver": "[D]"
+        },
+        {
+          "id": "D19",
+          "name": "UFO Urban Flood Observations",
+          "ws": "WS1/WS4",
+          "link": "arXiv:2604.23066",
+          "cost": "free (PlanetScope reg)",
+          "license": "per paper (verify)",
+          "access": "per paper repo",
+          "size_n": "215 chips, 14 events, 3 m",
+          "kaggle_hf": "\u2014",
+          "status": "candidate",
+          "ver": "[D]"
+        },
+        {
+          "id": "D20",
+          "name": "GDCLD (coseismic landslide)",
+          "ws": "WS1",
+          "link": "arXiv:2604.16663",
+          "cost": "unclear",
+          "license": "UNVERIFIED",
+          "access": "per paper",
+          "size_n": "global coseismic landslide seg",
+          "kaggle_hf": "\u2014",
+          "status": "candidate",
+          "ver": "[D]"
+        },
+        {
+          "id": "D21",
+          "name": "Thalia (InSAR deformation)",
+          "ws": "WS1/WS8",
+          "link": "https://github.com/Orion-AI-Lab/Thalia",
+          "cost": "free",
+          "license": "per repo (verify)",
+          "access": "GitHub",
+          "size_n": "38 datacubes, 7 yr, InSAR+topo+atmos",
+          "kaggle_hf": "\u2014",
+          "status": "candidate",
+          "ver": "[D]"
+        },
+        {
+          "id": "D22",
+          "name": "India Flood Inventory \u2013 Impacts (IFI)",
+          "ws": "WS1/WS3",
+          "link": "https://zenodo.org/records/11275211",
+          "cost": "free",
+          "license": "CC BY 4.0",
+          "access": "Zenodo (CSV, ~1.9 MB)",
+          "size_n": "district-level flood events 1967\u20132023 (3 CSVs)",
+          "kaggle_hf": "GitHub hydrosenselab",
+          "status": "selected",
+          "ver": "[V]"
+        },
+        {
+          "id": "D23",
+          "name": "Kerala 2018 monsoon landslide inventory (ITC)",
+          "ws": "WS1",
+          "link": "https://research.utwente.nl/en/datasets/landslide-inventory-of-the-2018-monsoon-rainfall-in-kerala-india/",
+          "cost": "unclear",
+          "license": "UNVERIFIED",
+          "access": "institutional page",
+          "size_n": "2018 Kerala landslides",
+          "kaggle_hf": "\u2014",
+          "status": "candidate",
+          "ver": "[D]"
+        },
+        {
+          "id": "D24",
+          "name": "Bhuvan/NRSC-ISRO landslide inventories",
+          "ws": "WS1/WS8",
+          "link": "https://bhuvan-app1.nrsc.gov.in/disaster/usrtasks/landslide/landslide.php",
+          "cost": "free-with-registration (likely)",
+          "license": "UNVERIFIED (ISRO terms)",
+          "access": "Bhuvan portal",
+          "size_n": "Landslide Atlas of India; Uttarakhand 2013; J&K; Sikkim; Wayanad",
+          "kaggle_hf": "\u2014",
+          "status": "candidate",
+          "ver": "[D]"
+        },
+        {
+          "id": "D25",
+          "name": "INDOFLOODS (station discharge flood events)",
+          "ws": "WS1/WS3",
+          "link": "https://zenodo.org/records/14584654",
+          "cost": "free (likely)",
+          "license": "UNVERIFIED",
+          "access": "Zenodo",
+          "size_n": "Indian observational flood events",
+          "kaggle_hf": "\u2014",
+          "status": "candidate",
+          "ver": "[D]"
+        },
+        {
+          "id": "D26",
+          "name": "Landslide Reference Data S1&S2 (DLR/GFZ)",
+          "ws": "WS1",
+          "link": "https://zenodo.org/records/15421843",
+          "cost": "free",
+          "license": "CC BY 4.0",
+          "access": "Zenodo (6.2 GB)",
+          "size_n": "worldwide large landslides 2015+",
+          "kaggle_hf": "Zenodo",
+          "status": "candidate",
+          "ver": "[V]"
+        }
+      ]
+    },
+    {
+      "workstream": "WS2",
+      "datasets": [
+        {
+          "id": "D16",
+          "name": "CrisisMMD / CrisisNLP",
+          "ws": "WS2/WS3",
+          "link": "https://crisisnlp.qcri.org/crisismmd",
+          "cost": "free",
+          "license": "UNVERIFIED (\"Terms of use\", research)",
+          "access": "open download (~1.8 GB)",
+          "size_n": "7 events; ~16k tweets/18k imgs",
+          "kaggle_hf": "HF copies",
+          "status": "candidate",
+          "ver": "[V*]"
+        }
+      ]
+    },
+    {
+      "workstream": "WS4",
+      "datasets": [
+        {
+          "id": "D02",
+          "name": "Sentinel-2 MSI (Copernicus CDSE)",
+          "ws": "WS4/WS8",
+          "link": "https://dataspace.copernicus.eu/",
+          "cost": "free-with-registration",
+          "license": "Copernicus free/open",
+          "access": "open; reg for download",
+          "size_n": "continuous mission (13-band 10/20/60 m)",
+          "kaggle_hf": "AWS/GEE mirror",
+          "status": "selected",
+          "ver": "[V]"
+        },
+        {
+          "id": "D13",
+          "name": "BigEarthNet v2 (reBEN)",
+          "ws": "WS4/WS8",
+          "link": "https://bigearth.net/",
+          "cost": "free",
+          "license": "CDLA-Permissive-1.0",
+          "access": "Zenodo 10891137",
+          "size_n": "549,488 S1+S2 patches (~110 GiB)",
+          "kaggle_hf": "HF models",
+          "status": "candidate",
+          "ver": "[V]"
+        },
+        {
+          "id": "D14",
+          "name": "EuroSAT",
+          "ws": "WS4",
+          "link": "https://github.com/phelber/EuroSAT",
+          "cost": "free",
+          "license": "MIT (+ Copernicus S2)",
+          "access": "Zenodo 7711810",
+          "size_n": "27,000 imgs, 10 cls, 13-band 64\u00b2",
+          "kaggle_hf": "HF/TorchGeo/TFDS",
+          "status": "candidate",
+          "ver": "[V]"
+        }
+      ]
+    },
+    {
+      "workstream": "WS8",
+      "datasets": [
+        {
+          "id": "D06",
+          "name": "MODIS (NASA LP DAAC)",
+          "ws": "WS8",
+          "link": "https://www.earthdata.nasa.gov/centers/lp-daac",
+          "cost": "free-with-registration",
+          "license": "NASA open data",
+          "access": "Earthdata/AppEEARS/GEE",
+          "size_n": "Terra/Aqua 2000\u2013present 250 m\u20131 km",
+          "kaggle_hf": "GEE/AWS",
+          "status": "selected",
+          "ver": "[V]"
+        },
+        {
+          "id": "D07",
+          "name": "ITS_LIVE glacier velocity (NASA/JPL)",
+          "ws": "WS8",
+          "link": "https://its-live.jpl.nasa.gov/",
+          "cost": "free (newer cloud); reg for V1",
+          "license": "NASA open (MEaSUREs)",
+          "access": "portal/STAC/Zarr/S3",
+          "size_n": "global 1985\u2013present 120 m",
+          "kaggle_hf": "AWS S3",
+          "status": "selected",
+          "ver": "[V]"
+        },
+        {
+          "id": "D11",
+          "name": "GLOFNet (multimodal GLOF)",
+          "ws": "WS8",
+          "link": "https://arxiv.org/abs/2510.10546",
+          "cost": "unclear",
+          "license": "paper CC BY-NC-ND 4.0; data license UNVERIFIED",
+          "access": "download URL UNVERIFIED",
+          "size_n": "S2+ITS_LIVE+MODIS, Shisper/Karakoram",
+          "kaggle_hf": "none confirmed",
+          "status": "candidate",
+          "ver": "[V*]"
+        },
+        {
+          "id": "D15",
+          "name": "HMAGLOFDB (High Mtn Asia GLOF DB)",
+          "ws": "WS8",
+          "link": "https://github.com/fidelsteiner/HMAGLOFDB",
+          "cost": "free",
+          "license": "CC BY 4.0 (confirm on release)",
+          "access": "GitHub/ICIMOD RDS",
+          "size_n": "766 GLOFs 1533\u20132025 (v4.0, [D])",
+          "kaggle_hf": "\u2014",
+          "status": "selected",
+          "ver": "[D]"
+        }
+      ]
+    }
+  ]
+}

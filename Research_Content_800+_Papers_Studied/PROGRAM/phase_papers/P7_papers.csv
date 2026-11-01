@@ -1,0 +1,28 @@
+id,title,read_depth,theme,source_reported_headline,novelty,model_implication
+2404.11439,Börger — waypoint visibility / Jin's law V=C/σ,FT,smoke-optics,"V=C/σ, C≈3 reflecting /8 emitting; Jin's law for homogeneous smoke",NEW,camera-contrast forward model → B-01 path-integrated extinction
+2208.03542,Sitte & Doan — velocity reconstruction in puffing pool fires (HFM PINN),FT,fire-physics/PINN,"PINN soft-sensor infers velocity from T/ρ; flame T≈1750K fireFoam",NEW,physics soft-sensor concept; large-ΔT stresses HFM assumptions
+2202.06567,Coenen et al. — pool-fire characteristics vs swirl,ABS,flame-dynamics,"moderate swirl suppresses puffing → fire whirl",NEW,documents where EF-08 f≈1.5/√D breaks → B-05 uses a band
+2212.00970,Dabrowski — Bayesian PINN wildfire (level-set + DA/UQ),FT,spread/PINN,"MSE PINN breaks temporal continuity under abrupt wind; B-PINN UQ",NEW,level-set as Class-C simulator; causality/continuity fix
+2206.08501,Dabrowski — Bayesian filtering for level-set wildfire DA,ABS,spread/DA,"adds DA + UQ absent from bare level-set",NEW,level-set weakness (no native DA/UQ)
+2302.04960,Yoo & Wikle — echo-state net informs front speed,ABS,spread/hybrid,"learns ROS s inside level-set with UQ",NEW,physics-guided-feature pattern for ROS
+2210.14978,Yoo & Wikle — Bayesian spatio-temporal level-set,ABS,spread/Bayes,"probabilistic front velocity + UQ (Thomas/Haypress)",NEW,uncertainty-aware spread forecasting prior
+1601.06272,Kaur et al. — turbulence & fire-spotting in spread sims,ABS,spread/stochastic,"random-PDF front augmentation; flank/spotting reproduced",NEW,deterministic ROS misses turbulence/spotting
+2606.11676,Neural-parameterized cellular automata wildfire,ABS,spread/CA,"CNN per-cell CA params; IoU>0.6 over 72h (reported)",NEW,physics-guided learned CA parameterization
+2502.18738,PyTorchFire — differentiable CA wildfire,ABS,spread/diff-physics,"ms/step; gradient calibration vs perimeters",NEW,differentiable physics (not PINN) for calibratable params
+2510.09708,Real-time CA wildfire California,ABS,spread/CA,"recall 0.860 precision 0.605 F1 0.711 ~1.22s (reported)",NEW,cheap CA baseline; over-spread failure mode
+2309.02615,Shaddy — cWGAN fusion of physics sim + satellite,ABS,spread/DA-GAN,"Sørensen 0.81; ignition-time err 32 min (reported)",NEW,physics-informed DA from sparse IR detections
+1101.5745,Mandel — WRF-Fire coupled atmosphere-wildland model,ABS,spread/coupled,"level-set fire module + two-way heat-flux coupling",NEW,canonical operational spread architecture
+2109.01050,Krishnapriyan — characterizing PINN failure modes,FT,PINN-failure,"β>10 conv ~100% err; curriculum/seq2seq 1-2 OOM cut (reported)",NEW,evidence to scope out live fire-PINN; mitigations
+2001.04536,Wang — gradient pathologies in PINNs,FT-PARTIAL,PINN-failure,"LR annealing 50-100x improvement (reported)",NEW,loss-weight balancing if physics enters a loss
+2203.07404,Wang — causality is all you need for PINNs,FT,PINN-failure,"causal weighting; first wins on chaotic systems (reported)",NEW,causal/sequential time-weighting for transient models
+2602.19265,Khodakarami — spectral bias analysis & mitigation,ABS,PINN-failure,"spectral bias dynamical; 2nd-order opt recovers high-freq",NEW,sharp fire-front/edge resolution guidance
+2206.14862,Farhani — momentum diminishes spectral bias,ABS,PINN-failure,"momentum/Adam + width reduce high-freq bias (NTK)",NEW,cheap optimizer-side mitigation
+2412.05994,Kang — Physics-Informed Gaussians (PIG),ABS,PINN-method,"learnable Gaussian features; fewer collocation points",NEW,efficient sharp-gradient representation
+2505.10949,Xu — FP64 is all you need (PINN failure),ABS,PINN-failure,"FP32 L-BFGS precision stall; FP64 fixes (reported)",NEW,check numerical precision before architecture
+2501.17281,Seiler — stiff transfer learning for PINNs,ABS,PINN-failure,"train low-stiff → transfer high-stiff; solver-comparable",NEW,stiffness mitigation if a stiff reduced model appears
+2609.13171,Koyamada — derivative-fidelity failure mode,ABS,PINN-failure,"good values ≠ good derivatives; worst at high curvature",NEW,QA: validate autodiff derivatives for flux/HRR estimates
+# NOTED/SKIM (not counted toward quota): 2408.09446 P2INN; 2604.00029 UM-PINN; 2409.01536 causal adaptive sampling; 2609.36615 Volterra causal CI-PINN
+# TALLY: P7 NEW quota = 22 (>=15 required; aim ~30 → 22 solid + 4 noted = 26, honest convergence; arXiv-only, web_search had no API key)
+# DEPTH: 5 FT (2404.11439, 2208.03542, 2212.00970, 2109.01050, 2203.07404) + 1 FT-PARTIAL (2001.04536) + 16 ABS
+# ABS-CANONICAL inventory SOURCES (NOT quota papers): Heskestad 1983, McCaffrey 1979 NBS, Zukoski, Alpert 1972, point-source/solid-flame radiation, Mulholland Km≈8.7, NFPA72 t², Heskestad&Bill RTI, Cetegen&Ahmed 1993 flicker, IR radiometry
+# RUNNING body-level NEW FT reads: P1 15 + P2 18 + P3 43 + P4 15 + P5 2 + P6 1 + P7 6 = 100

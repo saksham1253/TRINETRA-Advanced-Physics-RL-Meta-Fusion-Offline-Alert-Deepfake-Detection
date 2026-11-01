@@ -1,0 +1,50 @@
+﻿
+########## SLIDE 1 NOTES ##########
+Namaste. We are team SANKAT MOCHAK from Graphic Era Hill University, Dehradun.
+Track (self-identified): Disaster Resilience - multi-hazard early warning for India.
+TRINETRA means 'three eyes': satellites, cameras and our own low-cost IoT sensor nodes. A physics gate checks all three before any alarm.
+Each letter of the title maps to a real part of the design.
+Status: research stage. Designed and sourced, build planned. We have analysed 500+ papers and are working toward 700+ for a true state-of-the-art review. We are also building an IoT prototype node.
+
+########## SLIDE 2 NOTES ##########
+Problem: mountain India faces landslides, flash floods, cloudbursts and glacial-lake floods, and each is watched by a separate system.
+Three gaps we attack first. Gap 1, offline: storms cut towers and power, so app and SMS alerts fail when needed most [12]. Gap 2, IoT: slopes have almost no ground sensors; our IoT prototype node, capped under 2,000 rupees, lets a village watch its own slope. Gap 3, zero-shot: normal AI only knows disasters it was trained on; zero-shot AI matches a scene to a plain sentence, so it can flag a disaster it never saw.
+Supporting gaps: silos, late detection, fake media [10], models that look good only on familiar places [7], models that do not know when they are wrong [9][11].
+Conclusion from 500+ papers: not done yet. Parts exist, but no single system combines offline alerts, IoT ground truth, zero-shot AI and physics checks.
+
+########## SLIDE 3 NOTES ##########
+Solution: three eyes, one physics referee, one decision. Fuse, verify, a human decides, warn by tier.
+If it is unsure, it abstains and escalates. It never guesses silently.
+Five things we build: the Himalayan datacube, zero-shot plus anomaly AI, the physics and fusion brain, the offline alert stack, and our IoT prototype node.
+Zero-shot in simple words: like recognising a zebra from 'a horse with stripes'. A new hazard needs only a new sentence, not retraining. That is why the framework can extend to any hazard with a visible or measurable sign. Earthquakes are the exception: alerts after onset only.
+The matrix summarises our synthesis of 500+ papers: each existing family covers some parts; none covers all.
+An IP address does not locate a person, so we warn by place. We complement IMD, CWC and NDMA; we never replace them.
+
+########## SLIDE 4 NOTES ##########
+Workflow: sense, detect, verify, physics gate. Do the eyes agree? If not, re-check and test for sensor faults.
+Then fuse into one risk score with confidence. Is it above the threshold? Does a human approve? Only then alert by tier.
+The IoT edge shortcut: if a node sees a sharp tilt plus heavy rain, it can sound the local siren in seconds, even with no network.
+Below: DFD level 0 and level 1, and the offline-first alert path: T0 IoT node, T1 siren, T2 signed LoRa mesh, T3 CAP to SACHET.
+The safety shield may only raise an alert, never lower it [5].
+
+########## SLIDE 5 NOTES ##########
+Six model cards, each with an everyday analogy, and five formulas tagged established, derived or hypothesis.
+The Hazard Energy Index is a team hypothesis; validation is pending.
+Evaluation is pre-registered: hold out whole map tiles and monsoon years, report calibration and false alarms, beat baselines or say so, and hindcast Kedarnath 2013, Chamoli 2021, Joshimath 2022-23 and South Lhonak 2023.
+
+########## SLIDE 6 NOTES ##########
+All impact items are projections, not measurements.
+Social: warnings reach people offline through IoT node, siren and LoRa mesh. Economic: one framework instead of one system per hazard, with an IoT node capped under 2,000 rupees. Environmental: solar, duty-cycled nodes that send alerts, not raw video. Users: SDMA and NDRF, IMD and CWC, BRO, pilgrimage routes, villages and researchers.
+Regulatory points are under expert review.
+
+########## SLIDE 7 NOTES ##########
+The prototype is planned. On the left, eight layers on real Joshimath terrain.
+The hero is our IoT prototype: sensors for tilt, soil moisture and rain; an ESP32 running a tiny AI model that asks 'is this slope moving?'; a LoRa radio that needs no mobile tower; and a siren and gateway. Solar and battery power, duty-cycled. Budget cap under 2,000 rupees; the parts list is still being priced.
+Test ladder: bench, rooftop, test slope, then a monsoon week.
+Roadmap: datacube, IoT node v1, baselines, integration, hindcast and field test. Go/no-go gate G5 is for the node: it must survive a monsoon week, hold its LoRa link and fire the siren offline.
+
+########## SLIDE 8 NOTES ##########
+We have analysed 500+ papers across eight workstreams, and the count keeps rising. Our goal is 700+ for a true state-of-the-art review.
+Twelve key references are numbered as cited on slides 2 to 7. Links are clickable.
+Conclusion: not done yet. No reviewed system joins offline alerts, IoT nodes, zero-shot AI and physics checks in one. That is our contribution.
+Thank you. We welcome questions, especially on the physics and the IoT node.
