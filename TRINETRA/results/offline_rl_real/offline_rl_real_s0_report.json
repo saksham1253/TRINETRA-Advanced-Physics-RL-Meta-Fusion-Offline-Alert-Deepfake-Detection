@@ -1,0 +1,17 @@
+{
+  "name": "offline_rl_real",
+  "seed": 0,
+  "ope_value_target": -1.483422850143962,
+  "ope_value_baseline": -10.249853134155273,
+  "ess": 1374.6865152911182,
+  "feasible": true,
+  "legacy_deploy_vs_logging_policy": true,
+  "ope_value_rule_baseline": -2.580798827409308,
+  "ess_rule": 2729.0000000000005,
+  "gain_vs_rule_mean": 1.0996885685384756,
+  "gain_vs_rule_lcb95": 0.7941730307255835,
+  "deploy_learned": true,
+  "note": "DEPLOY learned policy (OPE-admitted); still shielded upward at inference",
+  "input": "results/fire_meta/fire_meta_cache.npz (REAL pairing, stacked meta risk in column 0)",
+  "caveat": "OPE (WIS) on the same logs the policy was trained on: in-sample, optimistic; not a held-out or field result"
+}

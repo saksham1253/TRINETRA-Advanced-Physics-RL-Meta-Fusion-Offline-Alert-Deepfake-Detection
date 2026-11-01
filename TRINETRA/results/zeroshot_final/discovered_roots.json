@@ -1,0 +1,234 @@
+{
+ "dataset": "/kaggle/input/datasets/happyparsi/trinetra-dataset",
+ "selected": {
+  "DFIRE": "/kaggle/input/datasets/happyparsi/trinetra-dataset/Smoke-Fire-Detection-YOLO",
+  "DFIRE_NOYAML": "/kaggle/input/datasets/happyparsi/trinetra-dataset/Smoke-Fire-Detection-YOLO/data/val",
+  "HOMEFIRE": "/kaggle/input/datasets/happyparsi/trinetra-dataset/Home fire dataset/val",
+  "DEEPFIRE": [
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Forest Fire Dataset/Forest Fire Dataset",
+   "Training/fire",
+   "Training/nofire"
+  ],
+  "FIREDS": [
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/FIRE Dataset/fire_dataset",
+   "fire_images",
+   "non_fire_images"
+  ],
+  "WEATHER": [
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Weather Image Recognition/dataset",
+   [
+    "fogsmog",
+    "sandstorm",
+    "lightning",
+    "rain"
+   ]
+  ],
+  "SCENES": [
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Intel Image Classification Dataset/Intel-Image-Classification/train",
+   [
+    "street",
+    "buildings",
+    "forest",
+    "mountain"
+   ]
+  ],
+  "CANDLE": [
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Flame Dataset (CandleLighterMatch Stick Flames )/Flame",
+   "train/images"
+  ],
+  "FIRESENSE": [
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/FireSense",
+   [
+    "fire/pos=fire",
+    "fire/neg=none",
+    "smoke/pos=smoke",
+    "smoke/neg=none"
+   ]
+  ],
+  "CIFAKE": [
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/CIFAKE",
+   "REAL",
+   "FAKE"
+  ],
+  "FACES": [
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/StyleGAN/Final Dataset",
+   "Real",
+   "Fake"
+  ],
+  "AIART": [
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/AI Generated Images vs Real Images",
+   "AiArtData",
+   "RealArt"
+  ],
+  "L4S": "/kaggle/input/datasets/happyparsi/trinetra-dataset/Landslide4Sense",
+  "S1F": "/kaggle/input/datasets/happyparsi/trinetra-dataset/Sen1Floods11-master/Sen1Floods11-master/sample/S1",
+  "HEPH": "/kaggle/input/datasets/happyparsi/trinetra-dataset/Hephaestus-master/Hephaestus-master/docs",
+  "HEPH_ANN": "/kaggle/input/datasets/happyparsi/trinetra-dataset/Hephaestus-master/Hephaestus-master",
+  "GLC_CSV": "/kaggle/input/datasets/happyparsi/trinetra-dataset/Global_Landslide_Catalog_Export_rows.csv",
+  "GLOF_CSV": "/kaggle/input/datasets/happyparsi/trinetra-dataset/HMAGLOFDB_v4_0_13122025.csv",
+  "IMERG_CSV": "/kaggle/input/datasets/happyparsi/trinetra-dataset/ERA5 and IMERG dataset for cloudburst prediction/labeled_cloudburst.csv"
+ },
+ "all_candidates": {
+  "GLC_CSV": [
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Global_Landslide_Catalog_Export_rows.csv"
+  ],
+  "GLOF_CSV": [
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/HMAGLOFDB_v4_0_13122025.csv",
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/GLOF database of High Mountain Asia/data/HMAGLOFDB v1.0_30122022.csv",
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/GLOF database of High Mountain Asia/data/HMAGLOFDB v2.0_13122023.csv",
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/GLOF database of High Mountain Asia/data/HMAGLOFDB v3.0_13122024.csv",
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/GLOF database of High Mountain Asia/data/HMAGLOFDB v4.0_13122025.csv"
+  ],
+  "AIART": [
+   [
+    "/kaggle/input/datasets/happyparsi/trinetra-dataset/AI Generated Images vs Real Images",
+    "AiArtData",
+    "RealArt"
+   ]
+  ],
+  "CIFAKE": [
+   [
+    "/kaggle/input/datasets/happyparsi/trinetra-dataset/CIFAKE/test",
+    "REAL",
+    "FAKE"
+   ],
+   [
+    "/kaggle/input/datasets/happyparsi/trinetra-dataset/CIFAKE/train",
+    "REAL",
+    "FAKE"
+   ]
+  ],
+  "IMERG_CSV": [
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/ERA5 and IMERG dataset for cloudburst prediction/labeled_cloudburst.csv"
+  ],
+  "FIREDS": [
+   [
+    "/kaggle/input/datasets/happyparsi/trinetra-dataset/FIRE Dataset/fire_dataset",
+    "fire_images",
+    "non_fire_images"
+   ]
+  ],
+  "FIRESENSE": [
+   [
+    "/kaggle/input/datasets/happyparsi/trinetra-dataset/FireSense",
+    [
+     "fire/pos=fire",
+     "fire/neg=none",
+     "smoke/pos=smoke",
+     "smoke/neg=none"
+    ]
+   ]
+  ],
+  "DFIRE": [
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Flame Dataset (CandleLighterMatch Stick Flames )/Flame",
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Smoke-Fire-Detection-YOLO",
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/WildFire-Smoke-Dataset-Yolo/WildFire_Smoke_Dataset_YOLO"
+  ],
+  "CANDLE": [
+   [
+    "/kaggle/input/datasets/happyparsi/trinetra-dataset/Flame Dataset (CandleLighterMatch Stick Flames )/Flame",
+    "train/images"
+   ]
+  ],
+  "DEEPFIRE": [
+   [
+    "/kaggle/input/datasets/happyparsi/trinetra-dataset/Forest Fire Dataset/Forest Fire Dataset",
+    "Training/fire",
+    "Training/nofire"
+   ]
+  ],
+  "HEPH_ANN": [
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Hephaestus-master/Hephaestus-master",
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Hephaestus-master/Hephaestus-master/configs",
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Hephaestus-master/Hephaestus-master/configs/augmentations",
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Hephaestus-master/Hephaestus-master/configs/method/mae",
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Hephaestus-master/Hephaestus-master/configs/method/mocov2",
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Hephaestus_Classification/Hephaestus_Classification/cls_labels"
+  ],
+  "HEPH": [
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Hephaestus-master/Hephaestus-master/docs",
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Hephaestus_Classification/Hephaestus_Classification/InSARLabelled/0",
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Hephaestus_Classification/Hephaestus_Classification/InSARLabelled/1",
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Hephaestus_Classification/Hephaestus_Classification/InSARLabelled/2",
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Hephaestus_Classification/Hephaestus_Classification/InSARLabelled/3",
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Hephaestus_Classification/Hephaestus_Classification/InSARLabelled/4",
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Hephaestus_Classification/Hephaestus_Classification/InSARLabelled/5",
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Hephaestus_Classification/Hephaestus_Classification/InSARLabelled/6",
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Hephaestus_Classification/Hephaestus_Classification/masks/1",
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Hephaestus_Classification/Hephaestus_Classification/masks/2",
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Hephaestus_Classification/Hephaestus_Classification/masks/3",
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Hephaestus_Classification/Hephaestus_Classification/masks/4",
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Hephaestus_Classification/Hephaestus_Classification/masks/5",
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Hephaestus_Classification/Hephaestus_Classification/masks/6"
+  ],
+  "HOMEFIRE_NOYAML": [
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Home fire dataset/test",
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Home fire dataset/train",
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Home fire dataset/val"
+  ],
+  "SCENES": [
+   [
+    "/kaggle/input/datasets/happyparsi/trinetra-dataset/Intel Image Classification Dataset/Intel-Image-Classification/test",
+    [
+     "street",
+     "buildings",
+     "forest",
+     "mountain"
+    ]
+   ],
+   [
+    "/kaggle/input/datasets/happyparsi/trinetra-dataset/Intel Image Classification Dataset/Intel-Image-Classification/train",
+    [
+     "street",
+     "buildings",
+     "forest",
+     "mountain"
+    ]
+   ],
+   [
+    "/kaggle/input/datasets/happyparsi/trinetra-dataset/Intel Image Classification Dataset/Intel-Image-Classification/val",
+    [
+     "street",
+     "buildings",
+     "forest",
+     "mountain"
+    ]
+   ]
+  ],
+  "L4S": [
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Landslide4Sense",
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Landslide4Sense",
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Landslide4Sense"
+  ],
+  "S1F": [
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/SEN1FLOODS11-essentials/v1.2/data/flood_events/HandLabeled/S1Hand",
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Sen1Floods11-master/Sen1Floods11-master/sample/S1"
+  ],
+  "DFIRE_NOYAML": [
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Smoke-Fire-Detection-YOLO/data/test",
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Smoke-Fire-Detection-YOLO/data/train",
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Smoke-Fire-Detection-YOLO/data/val",
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/WildFire-Smoke-Dataset-Yolo/WildFire_Smoke_Dataset_YOLO/test",
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/WildFire-Smoke-Dataset-Yolo/WildFire_Smoke_Dataset_YOLO/train",
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/WildFire-Smoke-Dataset-Yolo/WildFire_Smoke_Dataset_YOLO/valid"
+  ],
+  "FACES": [
+   [
+    "/kaggle/input/datasets/happyparsi/trinetra-dataset/StyleGAN/Final Dataset",
+    "Real",
+    "Fake"
+   ]
+  ],
+  "WEATHER": [
+   [
+    "/kaggle/input/datasets/happyparsi/trinetra-dataset/Weather Image Recognition/dataset",
+    [
+     "fogsmog",
+     "sandstorm",
+     "lightning",
+     "rain"
+    ]
+   ]
+  ]
+ }
+}

@@ -1,0 +1,1986 @@
+{
+  "pack": "prototype-v1",
+  "models": {
+    "colorhist": {
+      "n_seeds": 3,
+      "runs": [
+        {
+          "file": "A_final/colorhist/colorhist_s0_report.json",
+          "run_id": null,
+          "seed": 0,
+          "oof_roc_auc": 0.6819797385566299,
+          "oof_pr_auc": 0.7019968026842047,
+          "oof_recall_at_fpr05": 0.11680761099365751,
+          "value_score": -0.012516469038208244,
+          "ece": 0.058101455447773676,
+          "dry_run": false
+        },
+        {
+          "file": "A_final/colorhist/colorhist_s1_report.json",
+          "run_id": null,
+          "seed": 1,
+          "oof_roc_auc": 0.674577027745977,
+          "oof_pr_auc": 0.7066606235084995,
+          "oof_recall_at_fpr05": 0.1744186046511628,
+          "value_score": -0.011857707509881354,
+          "ece": 0.03360987780428859,
+          "dry_run": false
+        },
+        {
+          "file": "A_final/colorhist/colorhist_s2_report.json",
+          "run_id": null,
+          "seed": 2,
+          "oof_roc_auc": 0.6854121228833978,
+          "oof_pr_auc": 0.7151492809900382,
+          "oof_recall_at_fpr05": 0.13266384778012685,
+          "value_score": -0.011857707509881354,
+          "ece": 0.02820521019662515,
+          "dry_run": false
+        }
+      ],
+      "oof_pr_auc": {
+        "mean": 0.707935569060914,
+        "sd": 0.0054446325873941355
+      },
+      "ece": {
+        "mean": 0.039972181149562476,
+        "sd": 0.01300783220274533
+      },
+      "value_score": {
+        "mean": -0.012077294685990317,
+        "sd": 0.0003105431625765052
+      },
+      "oof_roc_auc": {
+        "mean": 0.6806562963953349,
+        "sd": 0.004521315886992747
+      },
+      "oof_recall_at_fpr05": {
+        "mean": 0.14129668780831572,
+        "sd": 0.024298848981868855
+      }
+    },
+    "fire": {
+      "n_seeds": 3,
+      "runs": [
+        {
+          "file": "A_final/fire/fire_s0_report.json",
+          "run_id": "fire-20261101-0051-0",
+          "seed": 0,
+          "oof_roc_auc": 0.767534825226249,
+          "oof_pr_auc": 0.8146891279103139,
+          "oof_recall_at_fpr05": 0.3440803382663848,
+          "test_roc_auc": 0.9830329218106996,
+          "test_pr_auc": 0.9886769536195431,
+          "test_recall_at_fpr05": 0.8796296296296297,
+          "value_score_calibrated": 0.0013175230566534468,
+          "admitted": false,
+          "value_score_model": -0.924901185770751,
+          "ece_crossfit_calibrated": 0.11016216161249713,
+          "test_ece_calibrated": 0.2598008075381766,
+          "test_n": 1023,
+          "stress:stress_weather:fa_rate_at_0p5_cal": 0.413,
+          "stress:stress_weather:fa_rate_at_pstar_cal": 1.0,
+          "stress:stress_weather:mean_prob_neg_cal": 0.458767759883512,
+          "stress:stress_small_flames:fa_rate_at_0p5_cal": 0.725,
+          "stress:stress_small_flames:fa_rate_at_pstar_cal": 1.0,
+          "stress:stress_small_flames:mean_prob_neg_cal": 0.5735910932940279,
+          "stress:stress_scenes:fa_rate_at_0p5_cal": 0.08375,
+          "stress:stress_scenes:fa_rate_at_pstar_cal": 1.0,
+          "stress:stress_scenes:mean_prob_neg_cal": 0.3445083845204976,
+          "stress:heldout_firedataset:fa_rate_at_0p5_cal": 0.07567567567567568,
+          "stress:heldout_firedataset:fa_rate_at_pstar_cal": 1.0,
+          "stress:heldout_firedataset:mean_prob_neg_cal": 0.3001623340057015,
+          "stress:heldout_firedataset:recall_at_0p5_cal": 0.9373040752351097,
+          "stress:heldout_homefire:fa_rate_at_0p5_cal": 0.5454545454545454,
+          "stress:heldout_homefire:fa_rate_at_pstar_cal": 1.0,
+          "stress:heldout_homefire:mean_prob_neg_cal": 0.5179639516114195,
+          "stress:heldout_homefire:recall_at_0p5_cal": 0.6527229676400947,
+          "stress:fire_test_same_source:fa_rate_at_0p5_cal": 0.11148648648648649,
+          "stress:fire_test_same_source:fa_rate_at_pstar_cal": 1.0,
+          "stress:fire_test_same_source:mean_prob_neg_cal": 0.3528124384759613,
+          "stress:fire_test_same_source:recall_at_0p5_cal": 0.5680272108843537,
+          "raw_ece": 0.15686800593719885,
+          "raw_brier": 0.22777693725717083,
+          "dry_run": false
+        },
+        {
+          "file": "A_final/fire/fire_s1_report.json",
+          "run_id": "fire-20261101-0059-1",
+          "seed": 1,
+          "oof_roc_auc": 0.768463776472325,
+          "oof_pr_auc": 0.8050658933501355,
+          "oof_recall_at_fpr05": 0.3044397463002114,
+          "test_roc_auc": 0.9782716049382716,
+          "test_pr_auc": 0.9866314405436823,
+          "test_recall_at_fpr05": 0.9151234567901234,
+          "value_score_calibrated": 0.0039525691699604515,
+          "admitted": false,
+          "value_score_model": -0.13899868247694336,
+          "ece_crossfit_calibrated": 0.03784653355500464,
+          "test_ece_calibrated": 0.237292972727419,
+          "test_n": 1023,
+          "stress:stress_weather:fa_rate_at_0p5_cal": 0.773,
+          "stress:stress_weather:fa_rate_at_pstar_cal": 1.0,
+          "stress:stress_weather:mean_prob_neg_cal": 0.5681815901628081,
+          "stress:stress_small_flames:fa_rate_at_0p5_cal": 0.84,
+          "stress:stress_small_flames:fa_rate_at_pstar_cal": 1.0,
+          "stress:stress_small_flames:mean_prob_neg_cal": 0.627967717448506,
+          "stress:stress_scenes:fa_rate_at_0p5_cal": 0.605,
+          "stress:stress_scenes:fa_rate_at_pstar_cal": 1.0,
+          "stress:stress_scenes:mean_prob_neg_cal": 0.5147011396609076,
+          "stress:heldout_firedataset:fa_rate_at_0p5_cal": 0.17297297297297298,
+          "stress:heldout_firedataset:fa_rate_at_pstar_cal": 1.0,
+          "stress:heldout_firedataset:mean_prob_neg_cal": 0.3943740585145454,
+          "stress:heldout_firedataset:recall_at_0p5_cal": 0.9890282131661442,
+          "stress:heldout_homefire:fa_rate_at_0p5_cal": 0.9090909090909091,
+          "stress:heldout_homefire:fa_rate_at_pstar_cal": 1.0,
+          "stress:heldout_homefire:mean_prob_neg_cal": 0.6407558496438006,
+          "stress:heldout_homefire:recall_at_0p5_cal": 0.8863456985003947,
+          "stress:fire_test_same_source:fa_rate_at_0p5_cal": 0.3614864864864865,
+          "stress:fire_test_same_source:fa_rate_at_pstar_cal": 1.0,
+          "stress:fire_test_same_source:mean_prob_neg_cal": 0.43722629096862237,
+          "stress:fire_test_same_source:recall_at_0p5_cal": 0.9285714285714286,
+          "raw_ece": 0.12913811029518113,
+          "raw_brier": 0.21417798285342976,
+          "dry_run": false
+        },
+        {
+          "file": "A_final/fire/fire_s2_report.json",
+          "run_id": "fire-20261101-0105-2",
+          "seed": 2,
+          "oof_roc_auc": 0.7684348773143699,
+          "oof_pr_auc": 0.8033599044763864,
+          "oof_recall_at_fpr05": 0.3144820295983087,
+          "test_roc_auc": 0.9538600823045268,
+          "test_pr_auc": 0.9732644590643734,
+          "test_recall_at_fpr05": 0.7762345679012346,
+          "value_score_calibrated": 0.007246376811594235,
+          "admitted": false,
+          "value_score_model": -0.5210803689064558,
+          "ece_crossfit_calibrated": 0.03608391683173877,
+          "test_ece_calibrated": 0.23659831925196292,
+          "test_n": 1023,
+          "stress:stress_weather:fa_rate_at_0p5_cal": 0.604,
+          "stress:stress_weather:fa_rate_at_pstar_cal": 1.0,
+          "stress:stress_weather:mean_prob_neg_cal": 0.5133556036195853,
+          "stress:stress_small_flames:fa_rate_at_0p5_cal": 0.855,
+          "stress:stress_small_flames:fa_rate_at_pstar_cal": 1.0,
+          "stress:stress_small_flames:mean_prob_neg_cal": 0.6240562922480777,
+          "stress:stress_scenes:fa_rate_at_0p5_cal": 0.46625,
+          "stress:stress_scenes:fa_rate_at_pstar_cal": 1.0,
+          "stress:stress_scenes:mean_prob_neg_cal": 0.49144537449683606,
+          "stress:heldout_firedataset:fa_rate_at_0p5_cal": 0.2594594594594595,
+          "stress:heldout_firedataset:fa_rate_at_pstar_cal": 1.0,
+          "stress:heldout_firedataset:mean_prob_neg_cal": 0.4460541967872657,
+          "stress:heldout_firedataset:recall_at_0p5_cal": 0.9639498432601881,
+          "stress:heldout_homefire:fa_rate_at_0p5_cal": 0.9090909090909091,
+          "stress:heldout_homefire:fa_rate_at_pstar_cal": 1.0,
+          "stress:heldout_homefire:mean_prob_neg_cal": 0.6250220795888307,
+          "stress:heldout_homefire:recall_at_0p5_cal": 0.8547750591949487,
+          "stress:fire_test_same_source:fa_rate_at_0p5_cal": 0.22635135135135134,
+          "stress:fire_test_same_source:fa_rate_at_pstar_cal": 1.0,
+          "stress:fire_test_same_source:mean_prob_neg_cal": 0.4115599565321282,
+          "stress:fire_test_same_source:recall_at_0p5_cal": 0.7244897959183674,
+          "raw_ece": 0.13774526725622863,
+          "raw_brier": 0.21525797106306852,
+          "dry_run": false
+        }
+      ],
+      "stress:stress_scenes:mean_prob_neg_cal": {
+        "mean": 0.4502182995594137,
+        "sd": 0.07534873259935106
+      },
+      "raw_ece": {
+        "mean": 0.14125046116286955,
+        "sd": 0.011588832737357195
+      },
+      "stress:stress_scenes:fa_rate_at_pstar_cal": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "stress:fire_test_same_source:fa_rate_at_0p5_cal": {
+        "mean": 0.23310810810810811,
+        "sd": 0.10217383983976358
+      },
+      "test_recall_at_fpr05": {
+        "mean": 0.8569958847736626,
+        "sd": 0.05891658322776529
+      },
+      "stress:heldout_homefire:recall_at_0p5_cal": {
+        "mean": 0.7979479084451461,
+        "sd": 0.10349521370708126
+      },
+      "stress:fire_test_same_source:fa_rate_at_pstar_cal": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "stress:heldout_firedataset:fa_rate_at_pstar_cal": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "stress:heldout_homefire:fa_rate_at_0p5_cal": {
+        "mean": 0.7878787878787877,
+        "sd": 0.17141982574219333
+      },
+      "stress:fire_test_same_source:recall_at_0p5_cal": {
+        "mean": 0.7403628117913832,
+        "sd": 0.14761887345813876
+      },
+      "stress:stress_weather:mean_prob_neg_cal": {
+        "mean": 0.5134349845553018,
+        "sd": 0.04466804443220657
+      },
+      "stress:stress_small_flames:fa_rate_at_pstar_cal": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "ece_crossfit_calibrated": {
+        "mean": 0.06136420399974685,
+        "sd": 0.03451286914384367
+      },
+      "stress:stress_small_flames:mean_prob_neg_cal": {
+        "mean": 0.6085383676635372,
+        "sd": 0.02476299391118337
+      },
+      "stress:heldout_firedataset:fa_rate_at_0p5_cal": {
+        "mean": 0.1693693693693694,
+        "sd": 0.075072672634233
+      },
+      "oof_recall_at_fpr05": {
+        "mean": 0.32100070472163494,
+        "sd": 0.016826843175509122
+      },
+      "test_n": {
+        "mean": 1023.0,
+        "sd": 0.0
+      },
+      "stress:heldout_firedataset:recall_at_0p5_cal": {
+        "mean": 0.9634273772204806,
+        "sd": 0.021119522394365448
+      },
+      "stress:stress_scenes:fa_rate_at_0p5_cal": {
+        "mean": 0.385,
+        "sd": 0.2204186357820046
+      },
+      "oof_roc_auc": {
+        "mean": 0.7681444930043146,
+        "sd": 0.000431261629826726
+      },
+      "test_ece_calibrated": {
+        "mean": 0.2445640331725195,
+        "sd": 0.010777758136248289
+      },
+      "stress:stress_small_flames:fa_rate_at_0p5_cal": {
+        "mean": 0.8066666666666666,
+        "sd": 0.05807083796728115
+      },
+      "test_roc_auc": {
+        "mean": 0.9717215363511661,
+        "sd": 0.012778659034631906
+      },
+      "test_pr_auc": {
+        "mean": 0.9828576177425329,
+        "sd": 0.0068345958673082284
+      },
+      "oof_pr_auc": {
+        "mean": 0.8077049752456119,
+        "sd": 0.004987410205857461
+      },
+      "stress:stress_weather:fa_rate_at_0p5_cal": {
+        "mean": 0.5966666666666667,
+        "sd": 0.14706083397318573
+      },
+      "stress:heldout_homefire:mean_prob_neg_cal": {
+        "mean": 0.5945806269480169,
+        "sd": 0.054555623509471816
+      },
+      "stress:fire_test_same_source:mean_prob_neg_cal": {
+        "mean": 0.4005328953255706,
+        "sd": 0.035332908949996
+      },
+      "raw_brier": {
+        "mean": 0.21907096372455637,
+        "sd": 0.00617182171897284
+      },
+      "stress:heldout_firedataset:mean_prob_neg_cal": {
+        "mean": 0.38019686310250417,
+        "sd": 0.06039786728454402
+      },
+      "stress:heldout_homefire:fa_rate_at_pstar_cal": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "stress:stress_weather:fa_rate_at_pstar_cal": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "value_score_model": {
+        "mean": -0.52832674571805,
+        "sd": 0.3208842664196756
+      },
+      "value_score_calibrated": {
+        "mean": 0.004172156346069378,
+        "sd": 0.002425419634867678
+      },
+      "admitted": "0/3"
+    },
+    "ready_pack": {
+      "n_seeds": 3,
+      "runs": [
+        {
+          "file": "A_final/ready_pack_report.json",
+          "run_id": null,
+          "seed": null,
+          "dry_run": false
+        },
+        {
+          "file": "B_final/ready_pack_report.json",
+          "run_id": null,
+          "seed": null,
+          "dry_run": false
+        },
+        {
+          "file": "C_final/ready_pack_report.json",
+          "run_id": null,
+          "seed": null,
+          "dry_run": false
+        }
+      ]
+    },
+    "video": {
+      "n_seeds": 3,
+      "runs": [
+        {
+          "file": "A_final/video/video_s0_report.json",
+          "run_id": null,
+          "seed": 0,
+          "detect_rate_raw": 0.7916666666666666,
+          "detect_rate_validated": 0.625,
+          "false_alarm_video_rate_raw": 0.72,
+          "false_alarm_video_rate_validated": 0.6,
+          "false_alarm_frames_raw": 674,
+          "false_alarm_frames_validated": 646,
+          "n_videos": 49,
+          "n_pos": 24,
+          "n_neg": 25,
+          "dry_run": false
+        },
+        {
+          "file": "A_final/video/video_s1_report.json",
+          "run_id": null,
+          "seed": 1,
+          "detect_rate_raw": 1.0,
+          "detect_rate_validated": 1.0,
+          "false_alarm_video_rate_raw": 1.0,
+          "false_alarm_video_rate_validated": 1.0,
+          "false_alarm_frames_raw": 2066,
+          "false_alarm_frames_validated": 2035,
+          "n_videos": 49,
+          "n_pos": 24,
+          "n_neg": 25,
+          "dry_run": false
+        },
+        {
+          "file": "A_final/video/video_s2_report.json",
+          "run_id": null,
+          "seed": 2,
+          "detect_rate_raw": 1.0,
+          "detect_rate_validated": 0.9583333333333334,
+          "false_alarm_video_rate_raw": 0.96,
+          "false_alarm_video_rate_validated": 0.96,
+          "false_alarm_frames_raw": 1830,
+          "false_alarm_frames_validated": 1805,
+          "n_videos": 49,
+          "n_pos": 24,
+          "n_neg": 25,
+          "dry_run": false
+        }
+      ],
+      "false_alarm_frames_raw": {
+        "mean": 1523.3333333333333,
+        "sd": 608.2484872338132
+      },
+      "false_alarm_frames_validated": {
+        "mean": 1495.3333333333333,
+        "sd": 607.8652994062272
+      },
+      "detect_rate_validated": {
+        "mean": 0.8611111111111112,
+        "sd": 0.1678200829665913
+      },
+      "n_pos": {
+        "mean": 24.0,
+        "sd": 0.0
+      },
+      "false_alarm_video_rate_validated": {
+        "mean": 0.8533333333333334,
+        "sd": 0.1798765008430939
+      },
+      "false_alarm_video_rate_raw": {
+        "mean": 0.8933333333333332,
+        "sd": 0.12364824660660939
+      },
+      "n_videos": {
+        "mean": 49.0,
+        "sd": 0.0
+      },
+      "n_neg": {
+        "mean": 25.0,
+        "sd": 0.0
+      },
+      "detect_rate_raw": {
+        "mean": 0.9305555555555555,
+        "sd": 0.09820927516479828
+      }
+    },
+    "clip_probe": {
+      "n_seeds": 1,
+      "runs": [
+        {
+          "file": "B_final/clip_probe/clip_probe_s0_report.json",
+          "run_id": "clip_probe-20261031-1912-0",
+          "seed": 0,
+          "oof_roc_auc": 0.9623207207658904,
+          "oof_pr_auc": 0.9741087723783308,
+          "oof_recall_at_fpr05": 0.8446088794926004,
+          "test_roc_auc": 0.9981415870598169,
+          "test_pr_auc": 0.9987883978618364,
+          "test_recall_at_fpr05": 0.9969040247678018,
+          "admitted": false,
+          "value_score_model": 0.16864295125164686,
+          "ece_crossfit_calibrated": 0.019175727941293033,
+          "test_ece_calibrated": 0.028246188666658945,
+          "test_n": 1020,
+          "stress:stress_weather:fa_rate_at_0p5_cal": 0.23,
+          "stress:stress_weather:fa_rate_at_pstar_cal": 0.896,
+          "stress:stress_weather:mean_prob_neg_cal": 0.3068142294464143,
+          "stress:stress_small_flames:fa_rate_at_0p5_cal": 0.74,
+          "stress:stress_small_flames:fa_rate_at_pstar_cal": 0.9916666666666667,
+          "stress:stress_small_flames:mean_prob_neg_cal": 0.6303403528277518,
+          "stress:stress_scenes:fa_rate_at_0p5_cal": 0.0125,
+          "stress:stress_scenes:fa_rate_at_pstar_cal": 0.44875,
+          "stress:stress_scenes:mean_prob_neg_cal": 0.07746746733622199,
+          "stress:heldout_firedataset:fa_rate_at_0p5_cal": 0.021621621621621623,
+          "stress:heldout_firedataset:fa_rate_at_pstar_cal": 0.22702702702702704,
+          "stress:heldout_firedataset:mean_prob_neg_cal": 0.06007643498585236,
+          "stress:heldout_firedataset:recall_at_0p5_cal": 1.0,
+          "stress:heldout_homefire:fa_rate_at_0p5_cal": 0.3333333333333333,
+          "stress:heldout_homefire:fa_rate_at_pstar_cal": 0.9090909090909091,
+          "stress:heldout_homefire:mean_prob_neg_cal": 0.4044237424228981,
+          "stress:heldout_homefire:recall_at_0p5_cal": 0.6172059984214681,
+          "raw_ece": 0.019175727941293033,
+          "raw_brier": 0.07526621298210273,
+          "dry_run": false
+        }
+      ],
+      "stress:stress_scenes:mean_prob_neg_cal": {
+        "mean": 0.07746746733622199,
+        "sd": 0.0
+      },
+      "raw_ece": {
+        "mean": 0.019175727941293033,
+        "sd": 0.0
+      },
+      "stress:stress_scenes:fa_rate_at_pstar_cal": {
+        "mean": 0.44875,
+        "sd": 0.0
+      },
+      "test_recall_at_fpr05": {
+        "mean": 0.9969040247678018,
+        "sd": 0.0
+      },
+      "stress:heldout_homefire:recall_at_0p5_cal": {
+        "mean": 0.6172059984214681,
+        "sd": 0.0
+      },
+      "stress:heldout_firedataset:fa_rate_at_pstar_cal": {
+        "mean": 0.22702702702702704,
+        "sd": 0.0
+      },
+      "stress:heldout_homefire:fa_rate_at_0p5_cal": {
+        "mean": 0.3333333333333333,
+        "sd": 0.0
+      },
+      "stress:stress_weather:mean_prob_neg_cal": {
+        "mean": 0.3068142294464143,
+        "sd": 0.0
+      },
+      "stress:stress_small_flames:fa_rate_at_pstar_cal": {
+        "mean": 0.9916666666666667,
+        "sd": 0.0
+      },
+      "ece_crossfit_calibrated": {
+        "mean": 0.019175727941293033,
+        "sd": 0.0
+      },
+      "stress:stress_small_flames:mean_prob_neg_cal": {
+        "mean": 0.6303403528277518,
+        "sd": 0.0
+      },
+      "stress:heldout_firedataset:fa_rate_at_0p5_cal": {
+        "mean": 0.021621621621621623,
+        "sd": 0.0
+      },
+      "oof_recall_at_fpr05": {
+        "mean": 0.8446088794926004,
+        "sd": 0.0
+      },
+      "test_n": {
+        "mean": 1020.0,
+        "sd": 0.0
+      },
+      "stress:heldout_firedataset:recall_at_0p5_cal": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "stress:stress_scenes:fa_rate_at_0p5_cal": {
+        "mean": 0.0125,
+        "sd": 0.0
+      },
+      "oof_roc_auc": {
+        "mean": 0.9623207207658904,
+        "sd": 0.0
+      },
+      "test_ece_calibrated": {
+        "mean": 0.028246188666658945,
+        "sd": 0.0
+      },
+      "stress:stress_small_flames:fa_rate_at_0p5_cal": {
+        "mean": 0.74,
+        "sd": 0.0
+      },
+      "test_roc_auc": {
+        "mean": 0.9981415870598169,
+        "sd": 0.0
+      },
+      "test_pr_auc": {
+        "mean": 0.9987883978618364,
+        "sd": 0.0
+      },
+      "oof_pr_auc": {
+        "mean": 0.9741087723783308,
+        "sd": 0.0
+      },
+      "stress:stress_weather:fa_rate_at_0p5_cal": {
+        "mean": 0.23,
+        "sd": 0.0
+      },
+      "stress:heldout_homefire:mean_prob_neg_cal": {
+        "mean": 0.4044237424228981,
+        "sd": 0.0
+      },
+      "raw_brier": {
+        "mean": 0.07526621298210273,
+        "sd": 0.0
+      },
+      "stress:heldout_firedataset:mean_prob_neg_cal": {
+        "mean": 0.06007643498585236,
+        "sd": 0.0
+      },
+      "stress:heldout_homefire:fa_rate_at_pstar_cal": {
+        "mean": 0.9090909090909091,
+        "sd": 0.0
+      },
+      "stress:stress_weather:fa_rate_at_pstar_cal": {
+        "mean": 0.896,
+        "sd": 0.0
+      },
+      "value_score_model": {
+        "mean": 0.16864295125164686,
+        "sd": 0.0
+      },
+      "admitted": "0/1"
+    },
+    "zeroshot": {
+      "n_seeds": 1,
+      "runs": [
+        {
+          "file": "B_final/zeroshot/zeroshot_s0_report.json",
+          "run_id": "zeroshot-20261031-1912-0",
+          "seed": 0,
+          "oof_roc_auc": 0.9168066360823048,
+          "oof_pr_auc": 0.9416337856852484,
+          "oof_recall_at_fpr05": 0.6775898520084567,
+          "test_roc_auc": 0.9999379149351832,
+          "test_pr_auc": 0.9999647676333929,
+          "test_recall_at_fpr05": 1.0,
+          "admitted": false,
+          "value_score_model": -0.06719367588932812,
+          "ece_crossfit_calibrated": 0.03439156919798463,
+          "test_ece_calibrated": 0.042311198883408854,
+          "test_n": 1020,
+          "stress:stress_weather:fa_rate_at_0p5_cal": 0.006,
+          "stress:stress_weather:fa_rate_at_pstar_cal": 0.278,
+          "stress:stress_weather:mean_prob_neg_cal": 0.044078634730582406,
+          "stress:stress_small_flames:fa_rate_at_0p5_cal": 0.025,
+          "stress:stress_small_flames:fa_rate_at_pstar_cal": 0.615,
+          "stress:stress_small_flames:mean_prob_neg_cal": 0.11152011957057312,
+          "stress:stress_scenes:fa_rate_at_0p5_cal": 0.01125,
+          "stress:stress_scenes:fa_rate_at_pstar_cal": 0.18,
+          "stress:stress_scenes:mean_prob_neg_cal": 0.04006318114621102,
+          "stress:heldout_firedataset:fa_rate_at_0p5_cal": 0.021621621621621623,
+          "stress:heldout_firedataset:fa_rate_at_pstar_cal": 0.16216216216216217,
+          "stress:heldout_firedataset:mean_prob_neg_cal": 0.049298674906925875,
+          "stress:heldout_firedataset:recall_at_0p5_cal": 1.0,
+          "stress:heldout_homefire:fa_rate_at_0p5_cal": 0.21212121212121213,
+          "stress:heldout_homefire:fa_rate_at_pstar_cal": 0.8787878787878788,
+          "stress:heldout_homefire:mean_prob_neg_cal": 0.3050905900443286,
+          "stress:heldout_homefire:recall_at_0p5_cal": 0.611681136543015,
+          "raw_ece": 0.03439156919798463,
+          "raw_brier": 0.11570656438196956,
+          "dry_run": false
+        }
+      ],
+      "stress:stress_scenes:mean_prob_neg_cal": {
+        "mean": 0.04006318114621102,
+        "sd": 0.0
+      },
+      "raw_ece": {
+        "mean": 0.03439156919798463,
+        "sd": 0.0
+      },
+      "stress:stress_scenes:fa_rate_at_pstar_cal": {
+        "mean": 0.18,
+        "sd": 0.0
+      },
+      "test_recall_at_fpr05": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "stress:heldout_homefire:recall_at_0p5_cal": {
+        "mean": 0.611681136543015,
+        "sd": 0.0
+      },
+      "stress:heldout_firedataset:fa_rate_at_pstar_cal": {
+        "mean": 0.16216216216216217,
+        "sd": 0.0
+      },
+      "stress:heldout_homefire:fa_rate_at_0p5_cal": {
+        "mean": 0.21212121212121213,
+        "sd": 0.0
+      },
+      "stress:stress_weather:mean_prob_neg_cal": {
+        "mean": 0.044078634730582406,
+        "sd": 0.0
+      },
+      "stress:stress_small_flames:fa_rate_at_pstar_cal": {
+        "mean": 0.615,
+        "sd": 0.0
+      },
+      "ece_crossfit_calibrated": {
+        "mean": 0.03439156919798463,
+        "sd": 0.0
+      },
+      "stress:stress_small_flames:mean_prob_neg_cal": {
+        "mean": 0.11152011957057312,
+        "sd": 0.0
+      },
+      "stress:heldout_firedataset:fa_rate_at_0p5_cal": {
+        "mean": 0.021621621621621623,
+        "sd": 0.0
+      },
+      "oof_recall_at_fpr05": {
+        "mean": 0.6775898520084567,
+        "sd": 0.0
+      },
+      "test_n": {
+        "mean": 1020.0,
+        "sd": 0.0
+      },
+      "stress:heldout_firedataset:recall_at_0p5_cal": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "stress:stress_scenes:fa_rate_at_0p5_cal": {
+        "mean": 0.01125,
+        "sd": 0.0
+      },
+      "oof_roc_auc": {
+        "mean": 0.9168066360823048,
+        "sd": 0.0
+      },
+      "test_ece_calibrated": {
+        "mean": 0.042311198883408854,
+        "sd": 0.0
+      },
+      "stress:stress_small_flames:fa_rate_at_0p5_cal": {
+        "mean": 0.025,
+        "sd": 0.0
+      },
+      "test_roc_auc": {
+        "mean": 0.9999379149351832,
+        "sd": 0.0
+      },
+      "test_pr_auc": {
+        "mean": 0.9999647676333929,
+        "sd": 0.0
+      },
+      "oof_pr_auc": {
+        "mean": 0.9416337856852484,
+        "sd": 0.0
+      },
+      "stress:stress_weather:fa_rate_at_0p5_cal": {
+        "mean": 0.006,
+        "sd": 0.0
+      },
+      "stress:heldout_homefire:mean_prob_neg_cal": {
+        "mean": 0.3050905900443286,
+        "sd": 0.0
+      },
+      "raw_brier": {
+        "mean": 0.11570656438196956,
+        "sd": 0.0
+      },
+      "stress:heldout_firedataset:mean_prob_neg_cal": {
+        "mean": 0.049298674906925875,
+        "sd": 0.0
+      },
+      "stress:heldout_homefire:fa_rate_at_pstar_cal": {
+        "mean": 0.8787878787878788,
+        "sd": 0.0
+      },
+      "stress:stress_weather:fa_rate_at_pstar_cal": {
+        "mean": 0.278,
+        "sd": 0.0
+      },
+      "value_score_model": {
+        "mean": -0.06719367588932812,
+        "sd": 0.0
+      },
+      "admitted": "0/1"
+    },
+    "deepfake": {
+      "n_seeds": 3,
+      "runs": [
+        {
+          "file": "C_final/deepfake/deepfake_s0_report.json",
+          "run_id": "deepfake-20261031-1901-0",
+          "seed": 0,
+          "oof_roc_auc": 0.956901005,
+          "oof_pr_auc": 0.958036762468129,
+          "oof_recall_at_fpr05": 0.7887,
+          "test_roc_auc": 0.453474,
+          "test_pr_auc": 0.4613973160001151,
+          "test_recall_at_fpr05": 0.028,
+          "value_score_calibrated": 0.2864,
+          "admitted": false,
+          "value_score_model": -0.3568,
+          "ece_crossfit_calibrated": 0.04654751526406006,
+          "test_ece_calibrated": 0.19983424277381845,
+          "test_n": 2000,
+          "stress:aiart_test:fa_rate_at_0p5_cal": 0.44930875576036866,
+          "stress:aiart_test:fa_rate_at_pstar_cal": 0.9493087557603687,
+          "stress:aiart_test:mean_prob_neg_cal": 0.4686258975274412,
+          "stress:aiart_test:recall_at_0p5_cal": 0.5788497217068646,
+          "raw_ece": 0.06570076869588568,
+          "raw_brier": 0.09294921618595467,
+          "dry_run": false
+        },
+        {
+          "file": "C_final/deepfake/deepfake_s1_report.json",
+          "run_id": "deepfake-20261031-1910-1",
+          "seed": 1,
+          "oof_roc_auc": 0.954390895,
+          "oof_pr_auc": 0.9554342731016952,
+          "oof_recall_at_fpr05": 0.7636,
+          "test_roc_auc": 0.434518,
+          "test_pr_auc": 0.45173132118126796,
+          "test_recall_at_fpr05": 0.024,
+          "value_score_calibrated": 0.24519999999999997,
+          "admitted": false,
+          "value_score_model": -0.37139999999999995,
+          "ece_crossfit_calibrated": 0.046868213604770184,
+          "test_ece_calibrated": 0.20049665757153456,
+          "test_n": 2000,
+          "stress:aiart_test:fa_rate_at_0p5_cal": 0.45161290322580644,
+          "stress:aiart_test:fa_rate_at_pstar_cal": 0.9354838709677419,
+          "stress:aiart_test:mean_prob_neg_cal": 0.4584507092027004,
+          "stress:aiart_test:recall_at_0p5_cal": 0.5343228200371057,
+          "raw_ece": 0.07054203465709309,
+          "raw_brier": 0.09726521747702048,
+          "dry_run": false
+        },
+        {
+          "file": "C_final/deepfake/deepfake_s2_report.json",
+          "run_id": "deepfake-20261031-1918-2",
+          "seed": 2,
+          "oof_roc_auc": 0.97213381,
+          "oof_pr_auc": 0.971770448156436,
+          "oof_recall_at_fpr05": 0.8507,
+          "test_roc_auc": 0.46091,
+          "test_pr_auc": 0.4647714937287655,
+          "test_recall_at_fpr05": 0.033,
+          "value_score_calibrated": 0.4457,
+          "admitted": false,
+          "value_score_model": 0.20920000000000005,
+          "ece_crossfit_calibrated": 0.036420591175367514,
+          "test_ece_calibrated": 0.24605277311930931,
+          "test_n": 2000,
+          "stress:aiart_test:fa_rate_at_0p5_cal": 0.46543778801843316,
+          "stress:aiart_test:fa_rate_at_pstar_cal": 0.9308755760368663,
+          "stress:aiart_test:mean_prob_neg_cal": 0.48211657794585144,
+          "stress:aiart_test:recall_at_0p5_cal": 0.5454545454545454,
+          "raw_ece": 0.04429014666557597,
+          "raw_brier": 0.06965570873069764,
+          "dry_run": false
+        }
+      ],
+      "test_roc_auc": {
+        "mean": 0.44963400000000003,
+        "sd": 0.011111364032676924
+      },
+      "test_pr_auc": {
+        "mean": 0.4593000436367161,
+        "sd": 0.005526327203597614
+      },
+      "oof_pr_auc": {
+        "mean": 0.9617471612420867,
+        "sd": 0.00716672627034708
+      },
+      "test_n": {
+        "mean": 2000.0,
+        "sd": 0.0
+      },
+      "stress:aiart_test:recall_at_0p5_cal": {
+        "mean": 0.5528756957328386,
+        "sd": 0.018920295041160613
+      },
+      "raw_ece": {
+        "mean": 0.06017765000618491,
+        "sd": 0.011406694988037555
+      },
+      "stress:aiart_test:fa_rate_at_pstar_cal": {
+        "mean": 0.9385560675883257,
+        "sd": 0.007832595258975108
+      },
+      "test_ece_calibrated": {
+        "mean": 0.21546122448822078,
+        "sd": 0.021633181829113807
+      },
+      "ece_crossfit_calibrated": {
+        "mean": 0.04327877334806592,
+        "sd": 0.004851234131082676
+      },
+      "raw_brier": {
+        "mean": 0.08662338079789093,
+        "sd": 0.012126648020536673
+      },
+      "stress:aiart_test:mean_prob_neg_cal": {
+        "mean": 0.46973106155866434,
+        "sd": 0.00969310326964298
+      },
+      "test_recall_at_fpr05": {
+        "mean": 0.028333333333333335,
+        "sd": 0.0036817870057290875
+      },
+      "oof_roc_auc": {
+        "mean": 0.9611419033333334,
+        "sd": 0.007839713947994046
+      },
+      "oof_recall_at_fpr05": {
+        "mean": 0.801,
+        "sd": 0.03660664784798888
+      },
+      "value_score_model": {
+        "mean": -0.17299999999999996,
+        "sd": 0.2703219315310296
+      },
+      "stress:aiart_test:fa_rate_at_0p5_cal": {
+        "mean": 0.4554531490015361,
+        "sd": 0.007122594850611135
+      },
+      "value_score_calibrated": {
+        "mean": 0.32576666666666665,
+        "sd": 0.08645755541818707
+      },
+      "admitted": "0/3"
+    },
+    "offline_rl": {
+      "n_seeds": 3,
+      "runs": [
+        {
+          "file": "F_final/rl/offline_rl_s0_report.json",
+          "run_id": null,
+          "seed": 0,
+          "deploy_learned": true,
+          "gain_vs_rule_mean": 0.6147121891840136,
+          "gain_vs_rule_lcb95": 0.2456189199647043,
+          "feasible": true,
+          "dry_run": false
+        },
+        {
+          "file": "F_final/rl/offline_rl_s1_report.json",
+          "run_id": null,
+          "seed": 1,
+          "deploy_learned": true,
+          "gain_vs_rule_mean": 0.5851243167485036,
+          "gain_vs_rule_lcb95": 0.2572501516942901,
+          "feasible": true,
+          "dry_run": false
+        },
+        {
+          "file": "F_final/rl/offline_rl_s2_report.json",
+          "run_id": null,
+          "seed": 2,
+          "deploy_learned": true,
+          "gain_vs_rule_mean": 0.6464538984951467,
+          "gain_vs_rule_lcb95": 0.20902415199166394,
+          "feasible": true,
+          "dry_run": false
+        }
+      ],
+      "gain_vs_rule_lcb95": {
+        "mean": 0.2372977412168861,
+        "sd": 0.020548613475435608
+      },
+      "gain_vs_rule_mean": {
+        "mean": 0.6154301348092214,
+        "sd": 0.02504284307269057
+      },
+      "deploy_learned": "3/3"
+    },
+    "stress": {
+      "n_seeds": 3,
+      "runs": [
+        {
+          "file": "S_final/stress/stress_s0_report.json",
+          "run_id": "stress-s0",
+          "seed": 0,
+          "admitted": true,
+          "fa_thr90_probe_base_mean": 0.42333333333333334,
+          "fa_thr90_probe_conf_mean": 0.3155,
+          "fa_thr90_stack_base_mean": 0.3528055555555556,
+          "fa_thr90_stack_conf_mean": 0.14347222222222222,
+          "test_auc_probe_base": 0.9976625514403293,
+          "test_auc_probe_conf": 0.996846364883402,
+          "dry_run": false
+        },
+        {
+          "file": "S_final/stress/stress_s1_report.json",
+          "run_id": "stress-s1",
+          "seed": 1,
+          "admitted": true,
+          "fa_thr90_probe_base_mean": 0.43149999999999994,
+          "fa_thr90_probe_conf_mean": 0.32055555555555554,
+          "fa_thr90_stack_base_mean": 0.35366666666666674,
+          "fa_thr90_stack_conf_mean": 0.17827777777777776,
+          "test_auc_probe_base": 0.9976625514403293,
+          "test_auc_probe_conf": 0.996846364883402,
+          "dry_run": false
+        },
+        {
+          "file": "S_final/stress/stress_s2_report.json",
+          "run_id": "stress-s2",
+          "seed": 2,
+          "admitted": true,
+          "fa_thr90_probe_base_mean": 0.42683333333333334,
+          "fa_thr90_probe_conf_mean": 0.32205555555555554,
+          "fa_thr90_stack_base_mean": 0.33249999999999996,
+          "fa_thr90_stack_conf_mean": 0.14866666666666667,
+          "test_auc_probe_base": 0.9976625514403293,
+          "test_auc_probe_conf": 0.996846364883402,
+          "dry_run": false
+        }
+      ],
+      "test_auc_probe_base": {
+        "mean": 0.9976625514403293,
+        "sd": 0.0
+      },
+      "fa_thr90_stack_base_mean": {
+        "mean": 0.34632407407407406,
+        "sd": 0.009781415919675988
+      },
+      "fa_thr90_stack_conf_mean": {
+        "mean": 0.15680555555555556,
+        "sd": 0.015330531815997661
+      },
+      "test_auc_probe_conf": {
+        "mean": 0.996846364883402,
+        "sd": 0.0
+      },
+      "fa_thr90_probe_base_mean": {
+        "mean": 0.4272222222222222,
+        "sd": 0.003345348714960993
+      },
+      "fa_thr90_probe_conf_mean": {
+        "mean": 0.31937037037037036,
+        "sd": 0.0028044399444310426
+      },
+      "admitted": "3/3"
+    },
+    "crossmodal": {
+      "n_seeds": 3,
+      "runs": [
+        {
+          "file": "X_final/crossmodal/crossmodal_s0_report.json",
+          "run_id": null,
+          "seed": 0,
+          "detect_rate_validated": 1.0,
+          "false_alarm_video_rate_validated": 0.52,
+          "n_videos": 49,
+          "stack_video_J": 0.48,
+          "clip_video_J": 0.31999999999999995,
+          "fire_cnn_video_J": 0.025000000000000022,
+          "dry_run": false
+        },
+        {
+          "file": "X_final/crossmodal/crossmodal_s1_report.json",
+          "run_id": null,
+          "seed": 1,
+          "detect_rate_validated": 1.0,
+          "false_alarm_video_rate_validated": 0.56,
+          "n_videos": 49,
+          "stack_video_J": 0.43999999999999995,
+          "clip_video_J": 0.31999999999999995,
+          "fire_cnn_video_J": 0.0,
+          "dry_run": false
+        },
+        {
+          "file": "X_final/crossmodal/crossmodal_s2_report.json",
+          "run_id": null,
+          "seed": 2,
+          "detect_rate_validated": 1.0,
+          "false_alarm_video_rate_validated": 0.52,
+          "n_videos": 49,
+          "stack_video_J": 0.48,
+          "clip_video_J": 0.31999999999999995,
+          "fire_cnn_video_J": -0.0016666666666665941,
+          "dry_run": false
+        }
+      ],
+      "clip_video_J": {
+        "mean": 0.31999999999999995,
+        "sd": 0.0
+      },
+      "stack_video_J": {
+        "mean": 0.4666666666666666,
+        "sd": 0.018856180831641284
+      },
+      "detect_rate_validated": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "false_alarm_video_rate_validated": {
+        "mean": 0.5333333333333333,
+        "sd": 0.018856180831641284
+      },
+      "n_videos": {
+        "mean": 49.0,
+        "sd": 0.0
+      },
+      "fire_cnn_video_J": {
+        "mean": 0.00777777777777781,
+        "sd": 0.012196943555611186
+      }
+    },
+    "fire_meta_fusion": {
+      "n_seeds": 3,
+      "runs": [
+        {
+          "file": "dir__work/fire_meta_fusion_s0_report.json",
+          "run_id": "fire_meta_fusion-20261101-0509-0",
+          "seed": 0,
+          "oof_roc_auc": 0.9491928430364868,
+          "oof_pr_auc": 0.9654992091459534,
+          "oof_recall_at_fpr05": 0.8150105708245243,
+          "test_roc_auc": 0.9995473251028807,
+          "test_pr_auc": 0.9997291066273168,
+          "test_recall_at_fpr05": 1.0,
+          "admitted": false,
+          "value_score_model": 0.10737812911725952,
+          "ece_crossfit_calibrated": 0.018814065724628612,
+          "test_ece_calibrated": 0.02610435108641956,
+          "meta_minus_best_auc_mean": -0.010095683334073936,
+          "dry_run": false
+        },
+        {
+          "file": "dir__work/fire_meta_fusion_s1_report.json",
+          "run_id": "fire_meta_fusion-20261101-0510-1",
+          "seed": 1,
+          "oof_roc_auc": 0.9504981797012314,
+          "oof_pr_auc": 0.9654644031819377,
+          "oof_recall_at_fpr05": 0.7912262156448203,
+          "test_roc_auc": 0.9995308641975309,
+          "test_pr_auc": 0.999721478821209,
+          "test_recall_at_fpr05": 1.0,
+          "admitted": false,
+          "value_score_model": 0.23978919631093543,
+          "ece_crossfit_calibrated": 0.031828671555543364,
+          "test_ece_calibrated": 0.027425262451242823,
+          "meta_minus_best_auc_mean": -0.008699117233542022,
+          "dry_run": false
+        },
+        {
+          "file": "dir__work/fire_meta_fusion_s2_report.json",
+          "run_id": "fire_meta_fusion-20261101-0510-2",
+          "seed": 2,
+          "oof_roc_auc": 0.9545297863272861,
+          "oof_pr_auc": 0.9683439389541806,
+          "oof_recall_at_fpr05": 0.8028541226215645,
+          "test_roc_auc": 0.9992674897119341,
+          "test_pr_auc": 0.999552617441132,
+          "test_recall_at_fpr05": 1.0,
+          "admitted": false,
+          "value_score_model": 0.20685111989459815,
+          "ece_crossfit_calibrated": 0.023488503368824756,
+          "test_ece_calibrated": 0.027602573032910645,
+          "meta_minus_best_auc_mean": -0.004724274388572875,
+          "dry_run": false
+        }
+      ],
+      "test_roc_auc": {
+        "mean": 0.9994485596707818,
+        "sd": 0.0001282120323242845
+      },
+      "test_pr_auc": {
+        "mean": 0.9996677342965526,
+        "sd": 8.145945272732279e-05
+      },
+      "oof_pr_auc": {
+        "mean": 0.9664358504273572,
+        "sd": 0.0013492971586296094
+      },
+      "test_ece_calibrated": {
+        "mean": 0.02704406219019101,
+        "sd": 0.0006684073007313039
+      },
+      "ece_crossfit_calibrated": {
+        "mean": 0.024710413549665577,
+        "sd": 0.005382984896941591
+      },
+      "meta_minus_best_auc_mean": {
+        "mean": -0.007839691652062945,
+        "sd": 0.0022755171957934742
+      },
+      "test_recall_at_fpr05": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "oof_roc_auc": {
+        "mean": 0.9514069363550014,
+        "sd": 0.002271580934669446
+      },
+      "oof_recall_at_fpr05": {
+        "mean": 0.8030303030303031,
+        "sd": 0.009710721479577635
+      },
+      "value_score_model": {
+        "mean": 0.1846728151075977,
+        "sd": 0.056285466337595264
+      },
+      "admitted": "0/3"
+    },
+    "geo_fusion": {
+      "n_seeds": 3,
+      "runs": [
+        {
+          "file": "repo/geo_fusion/geo_fusion_s0_report.json",
+          "run_id": "geo_fusion-20261101-0145-0",
+          "seed": 0,
+          "oof_roc_auc": 0.7786507561436673,
+          "oof_pr_auc": 0.5090353119375942,
+          "oof_recall_at_fpr05": 0.18478260869565216,
+          "admitted": false,
+          "value_score_model": 0.010869565217391353,
+          "ece_crossfit_calibrated": 0.07040035542296635,
+          "n_pos": 184,
+          "dry_run": false
+        },
+        {
+          "file": "repo/geo_fusion/geo_fusion_s1_report.json",
+          "run_id": "geo_fusion-20261101-0145-1",
+          "seed": 1,
+          "oof_roc_auc": 0.7794285601764335,
+          "oof_pr_auc": 0.506717990584918,
+          "oof_recall_at_fpr05": 0.18478260869565216,
+          "admitted": false,
+          "value_score_model": 0.005434782608695676,
+          "ece_crossfit_calibrated": 0.06414369192989312,
+          "n_pos": 184,
+          "dry_run": false
+        },
+        {
+          "file": "repo/geo_fusion/geo_fusion_s2_report.json",
+          "run_id": "geo_fusion-20261101-0146-2",
+          "seed": 2,
+          "oof_roc_auc": 0.7778335696282294,
+          "oof_pr_auc": 0.5118930648865362,
+          "oof_recall_at_fpr05": 0.20108695652173914,
+          "admitted": false,
+          "value_score_model": 0.019927536231884035,
+          "ece_crossfit_calibrated": 0.06598495206384263,
+          "n_pos": 184,
+          "dry_run": false
+        }
+      ],
+      "oof_pr_auc": {
+        "mean": 0.5092154558030161,
+        "sd": 0.0021165518130525757
+      },
+      "n_pos": {
+        "mean": 184.0,
+        "sd": 0.0
+      },
+      "ece_crossfit_calibrated": {
+        "mean": 0.06684299980556736,
+        "sd": 0.0026253436551809148
+      },
+      "oof_roc_auc": {
+        "mean": 0.7786376286494434,
+        "sd": 0.0006512183251637208
+      },
+      "oof_recall_at_fpr05": {
+        "mean": 0.1902173913043478,
+        "sd": 0.007685943273766829
+      },
+      "value_score_model": {
+        "mean": 0.012077294685990355,
+        "sd": 0.005977955879596394
+      },
+      "admitted": "0/3"
+    },
+    "geo_pinn": {
+      "n_seeds": 1,
+      "runs": [
+        {
+          "file": "repo/geo_pinn/geo_pinn_s0_report.json",
+          "run_id": "geo_pinn-20261031-1105-0",
+          "seed": 0,
+          "oof_roc_auc": 0.7160375315059861,
+          "oof_pr_auc": 0.4625424351390813,
+          "oof_recall_at_fpr05": 0.22826086956521738,
+          "admitted": false,
+          "value_score_model": 0.0,
+          "raw_ece": 0.09898779341829536,
+          "raw_brier": 0.17464051783416076,
+          "dry_run": false
+        }
+      ],
+      "oof_pr_auc": {
+        "mean": 0.4625424351390813,
+        "sd": 0.0
+      },
+      "raw_ece": {
+        "mean": 0.09898779341829536,
+        "sd": 0.0
+      },
+      "raw_brier": {
+        "mean": 0.17464051783416076,
+        "sd": 0.0
+      },
+      "oof_roc_auc": {
+        "mean": 0.7160375315059861,
+        "sd": 0.0
+      },
+      "oof_recall_at_fpr05": {
+        "mean": 0.22826086956521738,
+        "sd": 0.0
+      },
+      "value_score_model": {
+        "mean": 0.0,
+        "sd": 0.0
+      },
+      "admitted": "0/1"
+    },
+    "offline_rl_heldout": {
+      "n_seeds": 3,
+      "runs": [
+        {
+          "file": "repo/offline_rl_heldout/offline_rl_heldout_s0_report.json",
+          "run_id": null,
+          "seed": 0,
+          "deploy_learned": false,
+          "gain_vs_rule_mean": 0.1217008797653959,
+          "gain_vs_rule_lcb95": -0.4767223318696325,
+          "gain_vs_tuned_rule_mean": 0.06950146627565983,
+          "gain_vs_tuned_rule_lcb95": -0.5044767330739999,
+          "dry_run": false
+        },
+        {
+          "file": "repo/offline_rl_heldout/offline_rl_heldout_s1_report.json",
+          "run_id": null,
+          "seed": 1,
+          "deploy_learned": false,
+          "gain_vs_rule_mean": 0.6703812316715543,
+          "gain_vs_rule_lcb95": 0.08546931921280071,
+          "gain_vs_tuned_rule_mean": -0.06217008797653959,
+          "gain_vs_tuned_rule_lcb95": -0.4329568949845939,
+          "dry_run": false
+        },
+        {
+          "file": "repo/offline_rl_heldout/offline_rl_heldout_s2_report.json",
+          "run_id": null,
+          "seed": 2,
+          "deploy_learned": false,
+          "gain_vs_rule_mean": 0.6621700879765395,
+          "gain_vs_rule_lcb95": 0.14689766023922218,
+          "gain_vs_tuned_rule_mean": -0.05337243401759531,
+          "gain_vs_tuned_rule_lcb95": -0.3601249544399471,
+          "dry_run": false
+        }
+      ],
+      "gain_vs_rule_lcb95": {
+        "mean": -0.08145178413920319,
+        "sd": 0.280621292489421
+      },
+      "gain_vs_tuned_rule_mean": {
+        "mean": -0.015347018572825026,
+        "sd": 0.060104346568325126
+      },
+      "gain_vs_tuned_rule_lcb95": {
+        "mean": -0.43251952749951367,
+        "sd": 0.05893217834336574
+      },
+      "gain_vs_rule_mean": {
+        "mean": 0.48475073313782985,
+        "sd": 0.2567368987186486
+      },
+      "deploy_learned": "0/3"
+    },
+    "offline_rl_real": {
+      "n_seeds": 3,
+      "runs": [
+        {
+          "file": "repo/offline_rl_real/offline_rl_real_s0_report.json",
+          "run_id": null,
+          "seed": 0,
+          "deploy_learned": true,
+          "gain_vs_rule_mean": 1.0996885685384756,
+          "gain_vs_rule_lcb95": 0.7941730307255835,
+          "feasible": true,
+          "dry_run": false
+        },
+        {
+          "file": "repo/offline_rl_real/offline_rl_real_s1_report.json",
+          "run_id": null,
+          "seed": 1,
+          "deploy_learned": true,
+          "gain_vs_rule_mean": 1.0195449770891196,
+          "gain_vs_rule_lcb95": 0.7110693694696366,
+          "feasible": true,
+          "dry_run": false
+        },
+        {
+          "file": "repo/offline_rl_real/offline_rl_real_s2_report.json",
+          "run_id": null,
+          "seed": 2,
+          "deploy_learned": true,
+          "gain_vs_rule_mean": 1.1072877310268165,
+          "gain_vs_rule_lcb95": 0.8144659069687529,
+          "feasible": true,
+          "dry_run": false
+        }
+      ],
+      "gain_vs_rule_lcb95": {
+        "mean": 0.7732361023879909,
+        "sd": 0.044732368726770645
+      },
+      "gain_vs_rule_mean": {
+        "mean": 1.0755070922181373,
+        "sd": 0.03969261530743572
+      },
+      "deploy_learned": "3/3"
+    }
+  },
+  "fusion": {
+    "synthetic_pairing": true,
+    "sources": [
+      "fire_cnn",
+      "zeroshot"
+    ],
+    "deepfake": false,
+    "fake_frac": 0.0,
+    "n_per_seed": 5000,
+    "pos_rate": 0.2,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "C_FA": 5.0,
+    "C_miss": 100.0,
+    "rules": {
+      "fm1": {
+        "value_score": {
+          "mean": 0.004720146021993665,
+          "sd": 0.0009808200502845826
+        },
+        "ece": {
+          "mean": 0.1839971381415013,
+          "sd": 0.004498124163146825
+        },
+        "miss_rate": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "false_alarm_rate": {
+          "mean": 0.9952798539780063,
+          "sd": 0.0009808200502846184
+        }
+      },
+      "pharaoh": {
+        "value_score": {
+          "mean": 0.004720146021993665,
+          "sd": 0.0009808200502845826
+        },
+        "ece": {
+          "mean": 0.1915474838825339,
+          "sd": 0.004712594422741773
+        },
+        "miss_rate": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "false_alarm_rate": {
+          "mean": 0.9952798539780063,
+          "sd": 0.0009808200502846184
+        }
+      },
+      "median": {
+        "value_score": {
+          "mean": 0.005272173193852758,
+          "sd": 0.0007427071982938686
+        },
+        "ece": {
+          "mean": 0.18859928743186022,
+          "sd": 0.0028134473323839534
+        },
+        "miss_rate": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "false_alarm_rate": {
+          "mean": 0.994727826806147,
+          "sd": 0.0007427071982939127
+        }
+      },
+      "max": {
+        "value_score": {
+          "mean": 0.0023096344705584746,
+          "sd": 0.000299309936487406
+        },
+        "ece": {
+          "mean": 0.29896226964439926,
+          "sd": 0.005123461341808808
+        },
+        "miss_rate": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "false_alarm_rate": {
+          "mean": 0.9976903655294416,
+          "sd": 0.0002993099364874204
+        }
+      },
+      "p_fire_cnn": {
+        "value_score": {
+          "mean": 0.014107229547324972,
+          "sd": 0.0012591333223416143
+        },
+        "ece": {
+          "mean": 0.17743008103792585,
+          "sd": 0.003996082538194363
+        },
+        "miss_rate": {
+          "mean": 0.0002008032128514056,
+          "sd": 0.00040160642570281115
+        },
+        "false_alarm_rate": {
+          "mean": 0.984893769453674,
+          "sd": 0.0020826033654437618
+        }
+      },
+      "p_zeroshot": {
+        "value_score": {
+          "mean": 0.10762184824609725,
+          "sd": 0.028056063594224093
+        },
+        "ece": {
+          "mean": 0.1508622832225246,
+          "sd": 0.004165525039471539
+        },
+        "miss_rate": {
+          "mean": 0.010980708970705947,
+          "sd": 0.0052824815602909485
+        },
+        "false_alarm_rate": {
+          "mean": 0.8360909233831055,
+          "sd": 0.003407536689023371
+        }
+      }
+    }
+  },
+  "geo": {
+    "repo/geo_large/geo_physics_s0_report.json": {
+      "name": "geo_physics",
+      "seed": 0,
+      "n": 736,
+      "n_pos": 184,
+      "n_blocks": 101,
+      "design": "case-control (controls = same place, other monsoon days)",
+      "scores": {
+        "caine_ratio": {
+          "roc_auc": 0.7581866335853812,
+          "pr_auc": 0.49936304570687573,
+          "n": 736,
+          "pos_rate": 0.25,
+          "recall_at_fpr05": 0.20108695652173914,
+          "recall_at_fpr01": 0.08695652173913043,
+          "n_scored": 736
+        },
+        "dFS_iverson": {
+          "roc_auc": 0.7501870667926906,
+          "pr_auc": 0.47899457958643155,
+          "n": 736,
+          "pos_rate": 0.25,
+          "recall_at_fpr05": 0.19021739130434784,
+          "recall_at_fpr01": 0.07065217391304347,
+          "n_scored": 736
+        },
+        "geo_gate_repo": {
+          "roc_auc": 0.7118482199117833,
+          "pr_auc": 0.47783409726981935,
+          "n": 736,
+          "pos_rate": 0.25,
+          "recall_at_fpr05": 0.20108695652173914,
+          "recall_at_fpr01": 0.09782608695652174,
+          "n_scored": 736
+        },
+        "logit_rain": {
+          "roc_auc": 0.7806789540012602,
+          "pr_auc": 0.5097620754871837,
+          "n": 736,
+          "pos_rate": 0.25,
+          "recall_at_fpr05": 0.21739130434782608,
+          "recall_at_fpr01": 0.043478260869565216,
+          "n_scored": 736,
+          "ece": 0.027913327680864044,
+          "value_score": -0.019927536231884035
+        },
+        "logit_physics": {
+          "roc_auc": 0.7729993698802773,
+          "pr_auc": 0.49345588487004977,
+          "n": 736,
+          "pos_rate": 0.25,
+          "recall_at_fpr05": 0.1956521739130435,
+          "recall_at_fpr01": 0.07608695652173914,
+          "n_scored": 736,
+          "ece": 0.03352998473665269,
+          "value_score": 0.009057971014492794
+        },
+        "logit_hybrid": {
+          "roc_auc": 0.7803540485192186,
+          "pr_auc": 0.5039130118946558,
+          "n": 736,
+          "pos_rate": 0.25,
+          "recall_at_fpr05": 0.22282608695652173,
+          "recall_at_fpr01": 0.02717391304347826,
+          "n_scored": 736,
+          "ece": 0.030439548050861527,
+          "value_score": -0.016304347826086918
+        }
+      },
+      "hybrid_minus_rain_auc": {
+        "mean": -0.00023531395748424588,
+        "ci95": [
+          -0.003707383706846096,
+          0.0036147559357454654
+        ],
+        "n_boot": 1000
+      },
+      "physics_minus_rain_auc": {
+        "mean": -0.007366338326561129,
+        "ci95": [
+          -0.02424010363376176,
+          0.011266142851836204
+        ],
+        "n_boot": 1000
+      },
+      "real_win_hybrid_vs_rain_costloss": {
+        "mean_cost_saving_per_sample": 0.01358695652173913,
+        "ci_low": -0.04596888260254597,
+        "ci_high": 0.1112903159339258,
+        "ci_level": 0.95,
+        "ci_method": "bca",
+        "n_blocks": 101,
+        "real_win": false
+      },
+      "oof_roc_auc": 0.7803540485192186,
+      "oof_recall_at_fpr05": 0.22282608695652173,
+      "physics_only_caine_auc": 0.7581866335853812,
+      "physics_only_dfs_auc": 0.7501870667926906,
+      "note": "Soil parameters ASSUMED; absolute FS uncalibrated. Physics adds value only if the CI of hybrid-minus-rain AUC excludes 0. Small n -> wide CIs."
+    },
+    "repo/glof/glof_physics_report.json": {
+      "name": "glof_physics",
+      "source": "hmaglofdb_v4.csv",
+      "records": 766,
+      "repeat_flag_Y": 450,
+      "area_volume": {
+        "n": 21,
+        "coef": 1.3961338006489397,
+        "exponent": 1.1320091162951673,
+        "r2_log": 0.7186391146758924,
+        "exponent_ci95": [
+          0.7112340996126426,
+          1.4960858157878896
+        ],
+        "log10_rmse": 0.4865371406874073,
+        "x_range": [
+          14703.0,
+          4330000.0
+        ]
+      },
+      "volume_peakQ": {
+        "n": 31,
+        "coef": 0.29069479295633055,
+        "exponent": 0.5350959199772437,
+        "r2_log": 0.3627614174345666,
+        "exponent_ci95": [
+          0.3600616951401991,
+          0.7888000708027495
+        ],
+        "log10_rmse": 0.8236413247948962,
+        "x_range": [
+          26000.0,
+          1350300000.0
+        ]
+      },
+      "not_testable": {
+        "GH-13 Froehlich Qp=c V^p h_b^q": "no breach-height column",
+        "Costa-Schuster Qp=0.763 PE^0.42": "no dam height -> no potential energy"
+      },
+      "note": "Class B empirical fits on HMAGLOFDB; small n; heterogeneous sources (moraine/ice/landslide dams mixed)."
+    },
+    "repo/rl_env/rl_env_cmiss1000_s0_report.json": {
+      "name": "rl_env_cmiss1000",
+      "seed": 0,
+      "n_seasons": 360,
+      "slope_deg": 39.61807823181152,
+      "c_backcalc_kpa": 8.308995108003572,
+      "hazard_beta_fitted_on_real_events": 24.318120532087878,
+      "hazard_fit": {
+        "logit_intercept_case_control": -2.4065286447765306,
+        "logit_slope_dfs": 24.318120532087878,
+        "n_fit": 736
+      },
+      "hazard_alpha": -7.014501250099142,
+      "season_fail_target": 0.3,
+      "season_fail_achieved_hold": 0.30000000000000004,
+      "C_FA": 5.0,
+      "C_miss": 1000.0,
+      "policies": {
+        "always_hold": {
+          "return_mean": -226.66666666666666,
+          "return_sd": 418.67515914953555,
+          "episodes": 300,
+          "failures": 68,
+          "missed_failures": 68,
+          "miss_rate": 1.0,
+          "alarm_days_per_season": 0.0,
+          "watch_days_per_season": 0.0,
+          "mean_lead_days_when_caught": null
+        },
+        "always_alarm": {
+          "return_mean": -540.45,
+          "return_sd": 148.52793508293314,
+          "episodes": 300,
+          "failures": 68,
+          "missed_failures": 0,
+          "miss_rate": 0.0,
+          "alarm_days_per_season": 108.31666666666666,
+          "watch_days_per_season": 0.0,
+          "mean_lead_days_when_caught": 60.63235294117647
+        },
+        "caine_rule": {
+          "return_mean": -204.92666666666668,
+          "return_sd": 384.1299623246741,
+          "episodes": 300,
+          "failures": 68,
+          "missed_failures": 66,
+          "miss_rate": 0.9705882352941176,
+          "alarm_days_per_season": 0.06666666666666667,
+          "watch_days_per_season": 6.336666666666667,
+          "mean_lead_days_when_caught": 0.0
+        },
+        "physics_rule": {
+          "return_mean": -200.0,
+          "return_sd": 274.07477081993517,
+          "episodes": 300,
+          "failures": 68,
+          "missed_failures": 55,
+          "miss_rate": 0.8088235294117647,
+          "alarm_days_per_season": 5.53,
+          "watch_days_per_season": 46.013333333333335,
+          "mean_lead_days_when_caught": 7.0
+        },
+        "oracle_true_hazard": {
+          "return_mean": -200.01333333333332,
+          "return_sd": 274.8821319927668,
+          "episodes": 300,
+          "failures": 68,
+          "missed_failures": 55,
+          "miss_rate": 0.8088235294117647,
+          "alarm_days_per_season": 5.483333333333333,
+          "watch_days_per_season": 46.26,
+          "mean_lead_days_when_caught": 8.384615384615385
+        },
+        "cql_learned": {
+          "return_mean": -200.88,
+          "return_sd": 259.6737933125585,
+          "episodes": 300,
+          "failures": 68,
+          "missed_failures": 57,
+          "miss_rate": 0.8382352941176471,
+          "alarm_days_per_season": 5.243333333333333,
+          "watch_days_per_season": 51.64666666666667,
+          "mean_lead_days_when_caught": 6.454545454545454
+        },
+        "cql_learned_shielded": {
+          "return_mean": -200.88,
+          "return_sd": 259.6737933125585,
+          "episodes": 300,
+          "failures": 68,
+          "missed_failures": 57,
+          "miss_rate": 0.8382352941176471,
+          "alarm_days_per_season": 5.243333333333333,
+          "watch_days_per_season": 51.64666666666667,
+          "mean_lead_days_when_caught": 6.454545454545454
+        }
+      },
+      "logged_transitions": 42928,
+      "ope_one_step_proxy": {
+        "learned": -1.801012540370683,
+        "logging": -2.994499298930256,
+        "ess": 22303.735975529176,
+        "note": "per-step WIS proxy; compare with ONLINE returns above (ground truth in sim)"
+      },
+      "best_rule": "physics_rule",
+      "gain_vs_rule_mean": -0.88,
+      "gain_vs_rule_lcb95": -10.281491910999952,
+      "deploy_learned": false,
+      "note": "ONLINE returns in a physics simulator with REAL rainfall; hazard intercept is an ASSUMPTION (season-fail). Simulator results are not field results."
+    },
+    "repo/rl_env/rl_env_cmiss100_s0_report.json": {
+      "name": "rl_env_cmiss100",
+      "seed": 0,
+      "n_seasons": 360,
+      "slope_deg": 39.61807823181152,
+      "c_backcalc_kpa": 8.308995108003572,
+      "hazard_beta_fitted_on_real_events": 24.318121138151927,
+      "hazard_fit": {
+        "logit_intercept_case_control": -2.406528665875953,
+        "logit_slope_dfs": 24.318121138151927,
+        "n_fit": 736
+      },
+      "hazard_alpha": -7.014501285646119,
+      "season_fail_target": 0.3,
+      "season_fail_achieved_hold": 0.29999999999999993,
+      "C_FA": 5.0,
+      "C_miss": 100.0,
+      "policies": {
+        "always_hold": {
+          "return_mean": -22.666666666666668,
+          "return_sd": 41.86751591495354,
+          "episodes": 300,
+          "failures": 68,
+          "missed_failures": 68,
+          "miss_rate": 1.0,
+          "alarm_days_per_season": 0.0,
+          "watch_days_per_season": 0.0,
+          "mean_lead_days_when_caught": null
+        },
+        "always_alarm": {
+          "return_mean": -540.45,
+          "return_sd": 148.52793508293314,
+          "episodes": 300,
+          "failures": 68,
+          "missed_failures": 0,
+          "miss_rate": 0.0,
+          "alarm_days_per_season": 108.31666666666666,
+          "watch_days_per_season": 0.0,
+          "mean_lead_days_when_caught": 60.63235294117647
+        },
+        "caine_rule": {
+          "return_mean": -26.426666666666666,
+          "return_sd": 39.60300437536975,
+          "episodes": 300,
+          "failures": 68,
+          "missed_failures": 66,
+          "miss_rate": 0.9705882352941176,
+          "alarm_days_per_season": 0.06666666666666667,
+          "watch_days_per_season": 6.336666666666667,
+          "mean_lead_days_when_caught": 0.0
+        },
+        "physics_rule": {
+          "return_mean": -22.83,
+          "return_sd": 41.27518746171845,
+          "episodes": 300,
+          "failures": 68,
+          "missed_failures": 68,
+          "miss_rate": 1.0,
+          "alarm_days_per_season": 0.006666666666666667,
+          "watch_days_per_season": 0.64,
+          "mean_lead_days_when_caught": null
+        },
+        "oracle_true_hazard": {
+          "return_mean": -22.91,
+          "return_sd": 41.47732593437849,
+          "episodes": 300,
+          "failures": 68,
+          "missed_failures": 68,
+          "miss_rate": 1.0,
+          "alarm_days_per_season": 0.006666666666666667,
+          "watch_days_per_season": 0.55,
+          "mean_lead_days_when_caught": null
+        },
+        "cql_learned": {
+          "return_mean": -22.5,
+          "return_sd": 41.42660175941702,
+          "episodes": 300,
+          "failures": 68,
+          "missed_failures": 68,
+          "miss_rate": 1.0,
+          "alarm_days_per_season": 0.0,
+          "watch_days_per_season": 0.17333333333333334,
+          "mean_lead_days_when_caught": null
+        },
+        "cql_learned_shielded": {
+          "return_mean": -22.5,
+          "return_sd": 41.42660175941702,
+          "episodes": 300,
+          "failures": 68,
+          "missed_failures": 68,
+          "miss_rate": 1.0,
+          "alarm_days_per_season": 0.0,
+          "watch_days_per_season": 0.17333333333333334,
+          "mean_lead_days_when_caught": null
+        }
+      },
+      "logged_transitions": 42928,
+      "ope_one_step_proxy": {
+        "learned": -0.23692691849830144,
+        "logging": -2.0945810213853164,
+        "ess": 33147.47746262402,
+        "note": "per-step WIS proxy; compare with ONLINE returns above (ground truth in sim)"
+      },
+      "best_rule": "always_hold",
+      "gain_vs_rule_mean": 0.16666666666666666,
+      "gain_vs_rule_lcb95": -0.30140350819133643,
+      "deploy_learned": false,
+      "note": "ONLINE returns in a physics simulator with REAL rainfall; hazard intercept is an ASSUMPTION (season-fail). Simulator results are not field results."
+    },
+    "repo/rl_env/rl_env_cmiss5000_s0_report.json": {
+      "name": "rl_env_cmiss5000",
+      "seed": 0,
+      "n_seasons": 360,
+      "slope_deg": 39.61807823181152,
+      "c_backcalc_kpa": 8.308995108003572,
+      "hazard_beta_fitted_on_real_events": 24.318120532087878,
+      "hazard_fit": {
+        "logit_intercept_case_control": -2.4065286447765306,
+        "logit_slope_dfs": 24.318120532087878,
+        "n_fit": 736
+      },
+      "hazard_alpha": -7.014501250099142,
+      "season_fail_target": 0.3,
+      "season_fail_achieved_hold": 0.30000000000000004,
+      "C_FA": 5.0,
+      "C_miss": 5000.0,
+      "policies": {
+        "always_hold": {
+          "return_mean": -1133.3333333333333,
+          "return_sd": 2093.375795747678,
+          "episodes": 300,
+          "failures": 68,
+          "missed_failures": 68,
+          "miss_rate": 1.0,
+          "alarm_days_per_season": 0.0,
+          "watch_days_per_season": 0.0,
+          "mean_lead_days_when_caught": null
+        },
+        "always_alarm": {
+          "return_mean": -540.45,
+          "return_sd": 148.52793508293314,
+          "episodes": 300,
+          "failures": 68,
+          "missed_failures": 0,
+          "miss_rate": 0.0,
+          "alarm_days_per_season": 108.31666666666666,
+          "watch_days_per_season": 0.0,
+          "mean_lead_days_when_caught": 60.63235294117647
+        },
+        "caine_rule": {
+          "return_mean": -998.26,
+          "return_sd": 1923.642657148151,
+          "episodes": 300,
+          "failures": 68,
+          "missed_failures": 66,
+          "miss_rate": 0.9705882352941176,
+          "alarm_days_per_season": 0.06666666666666667,
+          "watch_days_per_season": 6.336666666666667,
+          "mean_lead_days_when_caught": 0.0
+        },
+        "physics_rule": {
+          "return_mean": -478.05,
+          "return_sd": 463.44566114414465,
+          "episodes": 300,
+          "failures": 68,
+          "missed_failures": 13,
+          "miss_rate": 0.19117647058823528,
+          "alarm_days_per_season": 65.59,
+          "watch_days_per_season": 42.72666666666667,
+          "mean_lead_days_when_caught": 34.69090909090909
+        },
+        "oracle_true_hazard": {
+          "return_mean": -478.4766666666667,
+          "return_sd": 463.4844579798646,
+          "episodes": 300,
+          "failures": 68,
+          "missed_failures": 13,
+          "miss_rate": 0.19117647058823528,
+          "alarm_days_per_season": 65.69666666666667,
+          "watch_days_per_season": 42.62,
+          "mean_lead_days_when_caught": 33.49090909090909
+        },
+        "cql_learned": {
+          "return_mean": -486.8233333333333,
+          "return_sd": 467.4828540052447,
+          "episodes": 300,
+          "failures": 68,
+          "missed_failures": 13,
+          "miss_rate": 0.19117647058823528,
+          "alarm_days_per_season": 67.78333333333333,
+          "watch_days_per_season": 40.53333333333333,
+          "mean_lead_days_when_caught": 34.6
+        },
+        "cql_learned_shielded": {
+          "return_mean": -486.8233333333333,
+          "return_sd": 467.4828540052447,
+          "episodes": 300,
+          "failures": 68,
+          "missed_failures": 13,
+          "miss_rate": 0.19117647058823528,
+          "alarm_days_per_season": 67.78333333333333,
+          "watch_days_per_season": 40.53333333333333,
+          "mean_lead_days_when_caught": 34.6
+        }
+      },
+      "logged_transitions": 42928,
+      "ope_one_step_proxy": {
+        "learned": -4.353204736551162,
+        "logging": -6.033872012881183,
+        "ess": 25577.882109684557,
+        "note": "per-step WIS proxy; compare with ONLINE returns above (ground truth in sim)"
+      },
+      "best_rule": "physics_rule",
+      "gain_vs_rule_mean": -8.773333333333333,
+      "gain_vs_rule_lcb95": -31.927251217632097,
+      "deploy_learned": false,
+      "note": "ONLINE returns in a physics simulator with REAL rainfall; hazard intercept is an ASSUMPTION (season-fail). Simulator results are not field results."
+    }
+  },
+  "dry_run_present": false
+}

@@ -1,0 +1,109 @@
+{
+  "name": "rl_env_cmiss100",
+  "seed": 0,
+  "n_seasons": 360,
+  "slope_deg": 39.61807823181152,
+  "c_backcalc_kpa": 8.308995108003572,
+  "hazard_beta_fitted_on_real_events": 24.318121138151927,
+  "hazard_fit": {
+    "logit_intercept_case_control": -2.406528665875953,
+    "logit_slope_dfs": 24.318121138151927,
+    "n_fit": 736
+  },
+  "hazard_alpha": -7.014501285646119,
+  "season_fail_target": 0.3,
+  "season_fail_achieved_hold": 0.29999999999999993,
+  "C_FA": 5.0,
+  "C_miss": 100.0,
+  "policies": {
+    "always_hold": {
+      "return_mean": -22.666666666666668,
+      "return_sd": 41.86751591495354,
+      "episodes": 300,
+      "failures": 68,
+      "missed_failures": 68,
+      "miss_rate": 1.0,
+      "alarm_days_per_season": 0.0,
+      "watch_days_per_season": 0.0,
+      "mean_lead_days_when_caught": null
+    },
+    "always_alarm": {
+      "return_mean": -540.45,
+      "return_sd": 148.52793508293314,
+      "episodes": 300,
+      "failures": 68,
+      "missed_failures": 0,
+      "miss_rate": 0.0,
+      "alarm_days_per_season": 108.31666666666666,
+      "watch_days_per_season": 0.0,
+      "mean_lead_days_when_caught": 60.63235294117647
+    },
+    "caine_rule": {
+      "return_mean": -26.426666666666666,
+      "return_sd": 39.60300437536975,
+      "episodes": 300,
+      "failures": 68,
+      "missed_failures": 66,
+      "miss_rate": 0.9705882352941176,
+      "alarm_days_per_season": 0.06666666666666667,
+      "watch_days_per_season": 6.336666666666667,
+      "mean_lead_days_when_caught": 0.0
+    },
+    "physics_rule": {
+      "return_mean": -22.83,
+      "return_sd": 41.27518746171845,
+      "episodes": 300,
+      "failures": 68,
+      "missed_failures": 68,
+      "miss_rate": 1.0,
+      "alarm_days_per_season": 0.006666666666666667,
+      "watch_days_per_season": 0.64,
+      "mean_lead_days_when_caught": null
+    },
+    "oracle_true_hazard": {
+      "return_mean": -22.91,
+      "return_sd": 41.47732593437849,
+      "episodes": 300,
+      "failures": 68,
+      "missed_failures": 68,
+      "miss_rate": 1.0,
+      "alarm_days_per_season": 0.006666666666666667,
+      "watch_days_per_season": 0.55,
+      "mean_lead_days_when_caught": null
+    },
+    "cql_learned": {
+      "return_mean": -22.5,
+      "return_sd": 41.42660175941702,
+      "episodes": 300,
+      "failures": 68,
+      "missed_failures": 68,
+      "miss_rate": 1.0,
+      "alarm_days_per_season": 0.0,
+      "watch_days_per_season": 0.17333333333333334,
+      "mean_lead_days_when_caught": null
+    },
+    "cql_learned_shielded": {
+      "return_mean": -22.5,
+      "return_sd": 41.42660175941702,
+      "episodes": 300,
+      "failures": 68,
+      "missed_failures": 68,
+      "miss_rate": 1.0,
+      "alarm_days_per_season": 0.0,
+      "watch_days_per_season": 0.17333333333333334,
+      "mean_lead_days_when_caught": null
+    }
+  },
+  "logged_transitions": 42928,
+  "ope_one_step_proxy": {
+    "learned": -0.23692691849830144,
+    "logging": -2.0945810213853164,
+    "ess": 33147.47746262402,
+    "note": "per-step WIS proxy; compare with ONLINE returns above (ground truth in sim)"
+  },
+  "best_rule": "always_hold",
+  "gain_vs_rule_mean": 0.16666666666666666,
+  "gain_vs_rule_lcb95": -0.30140350819133643,
+  "deploy_learned": false,
+  "note": "ONLINE returns in a physics simulator with REAL rainfall; hazard intercept is an ASSUMPTION (season-fail). Simulator results are not field results."
+}

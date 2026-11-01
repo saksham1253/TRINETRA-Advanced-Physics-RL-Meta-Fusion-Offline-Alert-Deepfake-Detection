@@ -1,0 +1,98 @@
+{
+  "spatial_cv": true,
+  "admitted": false,
+  "baselines": {
+    "climatology": {
+      "real_win": false,
+      "ci_low": -0.311759256918127
+    },
+    "logistic": {
+      "real_win": false,
+      "ci_low": -0.1758648001630194
+    }
+  },
+  "metrics": {},
+  "note": "NOT ADMITTED \u2014 no performance may be claimed (Rule 16)",
+  "value_score_model": -0.04216073781291163,
+  "calibration": {
+    "ece": 0.23552061894982296,
+    "mce": 0.4889130629745185,
+    "brier": 0.22756128017211566,
+    "reliability": 0.07052278604548796,
+    "resolution": 0.08570202404413124,
+    "uncertainty": 0.2469927159209157
+  },
+  "name": "zeroshot",
+  "oof_roc_auc": 0.889284888595487,
+  "oof_pr_auc": 0.9203640680049443,
+  "oof_n": 3410,
+  "oof_pos_rate": 0.5548387096774193,
+  "oof_recall_at_fpr05": 0.607293868921776,
+  "oof_recall_at_fpr01": 0.4587737843551797,
+  "test_roc_auc": 0.9991522633744856,
+  "test_pr_auc": 0.9994791298949015,
+  "test_n": 1023,
+  "test_pos_rate": 0.6334310850439883,
+  "test_recall_at_fpr05": 1.0,
+  "test_recall_at_fpr01": 0.9891975308641975,
+  "run_id": "zeroshot-20261031-1732-0",
+  "seed": 0,
+  "dry_run": false,
+  "ece_raw": 0.23552061894982296,
+  "ece_crossfit_calibrated": 0.17289833045103903,
+  "test_ece_calibrated": 0.21782398571423098,
+  "stress": {
+    "stress_weather": {
+      "n": 1000,
+      "n_neg": 1000,
+      "n_pos": 0,
+      "temperature": 4.136909952263199,
+      "mean_prob_neg_cal": 0.5887583465645382,
+      "fa_rate_at_0p5_cal": 0.624,
+      "fa_rate_at_pstar_cal": 1.0,
+      "fa_rate_at_0p5_raw": 0.624
+    },
+    "stress_small_flames": {
+      "n": 600,
+      "n_neg": 600,
+      "n_pos": 0,
+      "temperature": 4.136909952263199,
+      "mean_prob_neg_cal": 0.6352113726117137,
+      "fa_rate_at_0p5_cal": 0.8,
+      "fa_rate_at_pstar_cal": 1.0,
+      "fa_rate_at_0p5_raw": 0.8
+    },
+    "stress_scenes": {
+      "n": 800,
+      "n_neg": 800,
+      "n_pos": 0,
+      "temperature": 4.136909952263199,
+      "mean_prob_neg_cal": 0.4380832378316708,
+      "fa_rate_at_0p5_cal": 0.2725,
+      "fa_rate_at_pstar_cal": 1.0,
+      "fa_rate_at_0p5_raw": 0.2725
+    },
+    "heldout_firedataset": {
+      "n": 823,
+      "n_neg": 185,
+      "n_pos": 638,
+      "temperature": 4.136909952263199,
+      "mean_prob_neg_cal": 0.404539489270542,
+      "fa_rate_at_0p5_cal": 0.1891891891891892,
+      "fa_rate_at_pstar_cal": 1.0,
+      "fa_rate_at_0p5_raw": 0.1891891891891892,
+      "recall_at_0p5_cal": 1.0
+    },
+    "heldout_homefire": {
+      "n": 1300,
+      "n_neg": 33,
+      "n_pos": 1267,
+      "temperature": 4.136909952263199,
+      "mean_prob_neg_cal": 0.4981810050412871,
+      "fa_rate_at_0p5_cal": 0.45454545454545453,
+      "fa_rate_at_pstar_cal": 1.0,
+      "fa_rate_at_0p5_raw": 0.45454545454545453,
+      "recall_at_0p5_cal": 0.8366219415943172
+    }
+  }
+}

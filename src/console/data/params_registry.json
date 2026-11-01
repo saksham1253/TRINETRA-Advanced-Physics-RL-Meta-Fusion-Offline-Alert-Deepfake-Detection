@@ -1,0 +1,1620 @@
+{
+ "generated_by": "tools/extract_params.py",
+ "params": [
+  {
+   "id": "fire.Q_kW",
+   "group": "Fire physics",
+   "label": "Heat release rate Q",
+   "unit": "kW",
+   "default": 2000,
+   "file": "src/trinetra/ws1a_firephys/established_ef.py",
+   "range": [
+    50,
+    50000
+   ],
+   "hard": [
+    50,
+    50000
+   ],
+   "step": 50,
+   "scale": "log",
+   "cls": "A",
+   "module": "fire_phys",
+   "equation": "L = 0.235 Q^{2/5} - 1.02 D  (Heskestad)",
+   "lower": "Smaller flames, lower plume, weaker Byram buoyancy",
+   "regime": "Heskestad correlation is for pool / area fires; very small Q with large D gives negative L (outside regime)",
+   "live": false,
+   "kind": "number",
+   "options": null,
+   "ref": {
+    "file": "TRINETRA/trinetra/src/trinetra/ws1a_firephys/established_ef.py",
+    "line": 16
+   },
+   "raise": "Taller flames, stronger plume"
+  },
+  {
+   "id": "fire.D_m",
+   "group": "Fire physics",
+   "label": "Fire base diameter D",
+   "unit": "m",
+   "default": 3.0,
+   "file": "src/trinetra/ws1a_firephys/established_ef.py",
+   "range": [
+    0.3,
+    30
+   ],
+   "hard": [
+    0.3,
+    30
+   ],
+   "step": 0.1,
+   "scale": "linear",
+   "cls": "A",
+   "module": "fire_phys",
+   "equation": "f = 1.5 D^{-1/2}  (puffing frequency)",
+   "lower": "Faster flicker, shorter flame",
+   "regime": null,
+   "live": false,
+   "kind": "number",
+   "options": null,
+   "ref": {
+    "file": "TRINETRA/trinetra/src/trinetra/ws1a_firephys/established_ef.py",
+    "line": 21
+   },
+   "raise": "Slower flicker, flame height drops by 1.02 per m"
+  },
+  {
+   "id": "fire.Qc_kW_m",
+   "group": "Fire physics",
+   "label": "Convective intensity per front length Q_c",
+   "unit": "kW/m",
+   "default": 800,
+   "file": "src/trinetra/ws1a_firephys/established_ef.py",
+   "range": [
+    10,
+    20000
+   ],
+   "hard": [
+    10,
+    20000
+   ],
+   "step": 10,
+   "scale": "log",
+   "cls": "A",
+   "module": "fire_phys",
+   "equation": "N_c = 2 g Q_c / (rho c_p T_inf U^3)",
+   "lower": "Lower N_c: wind-dominated, physics consistency drops",
+   "regime": null,
+   "live": false,
+   "kind": "number",
+   "options": null,
+   "ref": {
+    "file": "TRINETRA/trinetra/src/trinetra/ws1a_firephys/established_ef.py",
+    "line": 36
+   },
+   "raise": "Higher N_c: plume-dominated"
+  },
+  {
+   "id": "fire.wind_ms",
+   "group": "Fire physics",
+   "label": "Wind speed U",
+   "unit": "m/s",
+   "default": 4.0,
+   "file": "src/trinetra/ws1a_firephys/gate.py",
+   "range": [
+    0.2,
+    25
+   ],
+   "hard": [
+    0.2,
+    25
+   ],
+   "step": 0.1,
+   "scale": "linear",
+   "cls": "A",
+   "module": "fire_phys",
+   "equation": "N_c ∝ U^{-3};  c = clip(N_c / 2, 0.3, 1)",
+   "lower": "Plume-dominated regime, full consistency",
+   "regime": null,
+   "live": false,
+   "kind": "number",
+   "options": null,
+   "ref": {
+    "file": "TRINETRA/trinetra/src/trinetra/ws1a_firephys/gate.py",
+    "line": 26
+   },
+   "raise": "Wind-dominated regime, consistency falls toward 0.3"
+  },
+  {
+   "id": "fire.T_inf",
+   "group": "Fire physics",
+   "label": "Ambient temperature T_inf",
+   "unit": "K",
+   "default": 293,
+   "file": "src/trinetra/ws1a_firephys/established_ef.py",
+   "range": [
+    260,
+    325
+   ],
+   "hard": [
+    260,
+    325
+   ],
+   "step": 1,
+   "scale": "linear",
+   "cls": "A",
+   "module": "fire_phys",
+   "equation": "ΔT0 = 9.1 (T_inf/(g c_p² ρ²))^{1/3} Q_c^{2/3} (z−z0)^{-5/3}",
+   "lower": "Slightly lower plume excess temperature",
+   "regime": null,
+   "live": false,
+   "kind": "number",
+   "options": null,
+   "ref": {
+    "file": "TRINETRA/trinetra/src/trinetra/ws1a_firephys/established_ef.py",
+    "line": 26
+   },
+   "raise": "Slightly higher plume excess temperature"
+  },
+  {
+   "id": "fire.nc_full",
+   "group": "Fire physics",
+   "label": "Byram N_c for full consistency",
+   "unit": "-",
+   "default": 2.0,
+   "file": "src/trinetra/ws1a_firephys/gate.py",
+   "range": [
+    0.5,
+    5
+   ],
+   "hard": [
+    0.5,
+    5
+   ],
+   "step": 0.1,
+   "scale": "linear",
+   "cls": "A",
+   "module": "fire_phys",
+   "equation": "c = clip(N_c / N_full, c_min, 1)",
+   "lower": "Fewer scenes down-weighted",
+   "regime": null,
+   "live": false,
+   "kind": "number",
+   "options": null,
+   "ref": {
+    "file": "TRINETRA/trinetra/src/trinetra/ws1a_firephys/gate.py",
+    "line": 52
+   },
+   "raise": "More scenes treated as wind-dominated"
+  },
+  {
+   "id": "fire.c_min",
+   "group": "Fire physics",
+   "label": "Minimum physics consistency",
+   "unit": "-",
+   "default": 0.3,
+   "file": "src/trinetra/ws1a_firephys/gate.py",
+   "range": [
+    0,
+    1
+   ],
+   "hard": [
+    0,
+    1
+   ],
+   "step": 0.05,
+   "scale": "linear",
+   "cls": "A",
+   "module": "fire_phys",
+   "equation": "c = clip(N_c / N_full, c_min, 1)",
+   "lower": "Implausible regimes can almost silence the fire expert",
+   "regime": null,
+   "live": false,
+   "kind": "number",
+   "options": null,
+   "ref": {
+    "file": "TRINETRA/trinetra/src/trinetra/ws1a_firephys/gate.py",
+    "line": 52
+   },
+   "raise": "Physics can barely down-weight"
+  },
+  {
+   "id": "fire.u_base",
+   "group": "Fire physics",
+   "label": "Fire gate base uncertainty",
+   "unit": "-",
+   "default": 0.15,
+   "file": "src/trinetra/ws1a_firephys/gate.py",
+   "range": [
+    0,
+    0.6
+   ],
+   "hard": [
+    0,
+    0.6
+   ],
+   "step": 0.01,
+   "scale": "linear",
+   "cls": "A",
+   "module": "fire_phys",
+   "equation": "u = 0.15 + 0.4 (1 − c) + u_ND2",
+   "lower": "Fire expert gets more weight in fusion",
+   "regime": null,
+   "live": false,
+   "kind": "number",
+   "options": null,
+   "ref": {
+    "file": "TRINETRA/trinetra/src/trinetra/ws1a_firephys/gate.py",
+    "line": 77
+   },
+   "raise": "Fire expert gets less weight (exp(−u/τ))"
+  },
+  {
+   "id": "fire.iot_bonus",
+   "group": "Fire physics",
+   "label": "IoT multi-node consistency bonus",
+   "unit": "-",
+   "default": 0.1,
+   "file": "src/trinetra/ws1a_firephys/gate.py",
+   "range": [
+    0,
+    0.5
+   ],
+   "hard": [
+    0,
+    0.5
+   ],
+   "step": 0.01,
+   "scale": "linear",
+   "cls": "A",
+   "module": "fire_phys",
+   "equation": "c ← clip(c + bonus) if ≥2 nodes agree",
+   "lower": "Corroboration matters less",
+   "regime": null,
+   "live": false,
+   "kind": "number",
+   "options": null,
+   "ref": {
+    "file": "TRINETRA/trinetra/src/trinetra/ws1a_firephys/gate.py",
+    "line": 75
+   },
+   "raise": "Corroboration matters more"
+  },
+  {
+   "id": "fire.nd1_sigma",
+   "group": "Fire physics",
+   "label": "ND-1 flicker tolerance σ (Class C, default off)",
+   "unit": "Hz",
+   "default": 0.3,
+   "file": "src/trinetra/ws1a_firephys/novel_nd.py",
+   "range": [
+    0.05,
+    1.5
+   ],
+   "hard": [
+    0.05,
+    1.5
+   ],
+   "step": 0.05,
+   "scale": "linear",
+   "cls": "C",
+   "module": "fire_phys",
+   "equation": "consistency = exp(−(f_obs − f_alias)² / 2σ²)",
+   "lower": "Stricter flicker match",
+   "regime": null,
+   "live": false,
+   "kind": "number",
+   "options": null,
+   "ref": {
+    "file": "TRINETRA/trinetra/src/trinetra/ws1a_firephys/novel_nd.py",
+    "line": 36
+   },
+   "raise": "Looser flicker match"
+  },
+  {
+   "id": "geo.caine_a",
+   "group": "Landslide physics",
+   "label": "Caine I-D coefficient a",
+   "unit": "mm/h",
+   "default": 14.0,
+   "file": "src/trinetra/ws1b_geophys/gate.py",
+   "range": [
+    2,
+    40
+   ],
+   "hard": [
+    2,
+    40
+   ],
+   "step": 0.5,
+   "scale": "linear",
+   "cls": "A",
+   "module": "geo_phys",
+   "equation": "I = a D^{-b}  (Caine 1980)",
+   "lower": "Threshold lower: more exceedances",
+   "regime": "Must be re-fitted locally; the global Caine values are a prior only",
+   "live": false,
+   "kind": "number",
+   "options": null,
+   "ref": {
+    "file": "TRINETRA/trinetra/src/trinetra/ws1b_geophys/gate.py",
+    "line": 35
+   },
+   "raise": "Threshold higher: fewer exceedances"
+  },
+  {
+   "id": "geo.caine_b",
+   "group": "Landslide physics",
+   "label": "Caine I-D exponent b",
+   "unit": "-",
+   "default": 0.39,
+   "file": "src/trinetra/ws1b_geophys/gate.py",
+   "range": [
+    0.1,
+    0.9
+   ],
+   "hard": [
+    0.1,
+    0.9
+   ],
+   "step": 0.01,
+   "scale": "linear",
+   "cls": "A",
+   "module": "geo_phys",
+   "equation": "I = a D^{-b}",
+   "lower": "Long rains need more intensity",
+   "regime": null,
+   "live": false,
+   "kind": "number",
+   "options": null,
+   "ref": {
+    "file": "TRINETRA/trinetra/src/trinetra/ws1b_geophys/gate.py",
+    "line": 35
+   },
+   "raise": "Long rains trigger at lower intensity"
+  },
+  {
+   "id": "geo.k_fs",
+   "group": "Landslide physics",
+   "label": "FS-to-probability steepness k",
+   "unit": "-",
+   "default": 4.0,
+   "file": "src/trinetra/ws1b_geophys/gate.py",
+   "range": [
+    0.5,
+    12
+   ],
+   "hard": [
+    0.5,
+    12
+   ],
+   "step": 0.5,
+   "scale": "linear",
+   "cls": "A",
+   "module": "geo_phys",
+   "equation": "p_FS = σ(k (1 − FS))",
+   "lower": "Soft response around FS = 1",
+   "regime": null,
+   "live": false,
+   "kind": "number",
+   "options": null,
+   "ref": {
+    "file": "TRINETRA/trinetra/src/trinetra/ws1b_geophys/gate.py",
+    "line": 49
+   },
+   "raise": "Sharp switch at FS = 1"
+  },
+  {
+   "id": "geo.lead_h",
+   "group": "Landslide physics",
+   "label": "Fukuzono lead horizon",
+   "unit": "h",
+   "default": 48,
+   "file": "src/trinetra/ws1b_geophys/gate.py",
+   "range": [
+    6,
+    240
+   ],
+   "hard": [
+    6,
+    240
+   ],
+   "step": 1,
+   "scale": "linear",
+   "cls": "A",
+   "module": "geo_phys",
+   "equation": "p_fk = clip(1 − lead / H) · r²",
+   "lower": "Only imminent failures count",
+   "regime": null,
+   "live": false,
+   "kind": "number",
+   "options": null,
+   "ref": {
+    "file": "TRINETRA/trinetra/src/trinetra/ws1b_geophys/gate.py",
+    "line": 73
+   },
+   "raise": "Earlier creep forecasts count"
+  },
+  {
+   "id": "geo.phi",
+   "group": "Landslide physics",
+   "label": "Friction angle φ'",
+   "unit": "deg",
+   "default": 32.0,
+   "file": "kaggle/geo_meta_fusion.py",
+   "range": [
+    20,
+    45
+   ],
+   "hard": [
+    20,
+    45
+   ],
+   "step": 0.5,
+   "scale": "linear",
+   "cls": "A",
+   "module": "geo_phys",
+   "equation": "FS = [c' + (γ z cos²β − u_w) tan φ'] / (γ z sinβ cosβ)",
+   "lower": "Lower FS (less stable)",
+   "regime": null,
+   "live": false,
+   "kind": "number",
+   "options": null,
+   "ref": {
+    "file": "TRINETRA/trinetra/kaggle/geo_meta_fusion.py",
+    "line": 117
+   },
+   "raise": "Higher FS (more stable)"
+  },
+  {
+   "id": "geo.gamma",
+   "group": "Landslide physics",
+   "label": "Soil unit weight γ",
+   "unit": "kN/m³",
+   "default": 19.0,
+   "file": "kaggle/geo_meta_fusion.py",
+   "range": [
+    15,
+    22
+   ],
+   "hard": [
+    15,
+    22
+   ],
+   "step": 0.1,
+   "scale": "linear",
+   "cls": "A",
+   "module": "geo_phys",
+   "equation": "FS (infinite slope)",
+   "lower": "Slightly higher FS",
+   "regime": null,
+   "live": false,
+   "kind": "number",
+   "options": null,
+   "ref": {
+    "file": "TRINETRA/trinetra/kaggle/geo_meta_fusion.py",
+    "line": 117
+   },
+   "raise": "Slightly lower FS (driving stress grows)"
+  },
+  {
+   "id": "geo.z",
+   "group": "Landslide physics",
+   "label": "Slip-surface depth z",
+   "unit": "m",
+   "default": 2.0,
+   "file": "kaggle/geo_meta_fusion.py",
+   "range": [
+    0.5,
+    6
+   ],
+   "hard": [
+    0.5,
+    6
+   ],
+   "step": 0.1,
+   "scale": "linear",
+   "cls": "A",
+   "module": "geo_phys",
+   "equation": "FS (infinite slope)",
+   "lower": "Cohesion dominates: higher FS",
+   "regime": null,
+   "live": false,
+   "kind": "number",
+   "options": null,
+   "ref": {
+    "file": "TRINETRA/trinetra/kaggle/geo_meta_fusion.py",
+    "line": 117
+   },
+   "raise": "Deeper slip: lower FS"
+  },
+  {
+   "id": "geo.D0",
+   "group": "Landslide physics",
+   "label": "Hydraulic diffusivity D0 (Iverson)",
+   "unit": "m²/h",
+   "default": 4.32,
+   "file": "kaggle/run_hackathon.sh",
+   "range": [
+    0.1,
+    50
+   ],
+   "hard": [
+    0.1,
+    50
+   ],
+   "step": 0.1,
+   "scale": "log",
+   "cls": "A",
+   "module": "geo_phys",
+   "equation": "ψ = (I_z/K_z) √(4 D1 t) ierfc(Z/√(4 D1 t)),  D1 = D0 / cos²β",
+   "lower": "Slower pore-pressure rise",
+   "regime": null,
+   "live": false,
+   "kind": "number",
+   "options": null,
+   "ref": {
+    "file": "TRINETRA/trinetra/kaggle/run_hackathon.sh",
+    "line": 149
+   },
+   "raise": "Faster pore-pressure rise"
+  },
+  {
+   "id": "fusion.model",
+   "group": "Fusion",
+   "label": "Averaging technique",
+   "unit": "",
+   "default": "FM-1",
+   "file": "configs/fusion.json",
+   "range": [
+    0,
+    0
+   ],
+   "hard": [
+    0,
+    0
+   ],
+   "step": 1,
+   "scale": "linear",
+   "cls": "B",
+   "module": "fusion",
+   "equation": "FM-1: p = Σ w̃_i p_i / Σ w̃_i",
+   "lower": "",
+   "regime": null,
+   "live": true,
+   "kind": "enum",
+   "options": [
+    "FM-1",
+    "PHARAOH",
+    "GMF",
+    "STACK",
+    "MEAN",
+    "MEDIAN",
+    "MAX"
+   ],
+   "ref": {
+    "file": "TRINETRA/trinetra/configs/fusion.json",
+    "line": 2
+   },
+   "raise": ""
+  },
+  {
+   "id": "fusion.tau",
+   "group": "Fusion",
+   "label": "Uncertainty temperature τ",
+   "unit": "-",
+   "default": 0.5,
+   "file": "configs/fusion.json",
+   "range": [
+    0.05,
+    2
+   ],
+   "hard": [
+    0.05,
+    2
+   ],
+   "step": 0.05,
+   "scale": "linear",
+   "cls": "B",
+   "module": "fusion",
+   "equation": "w̃_i = r_i c_i exp(−u_i / τ)",
+   "lower": "Uncertain experts are suppressed hard",
+   "regime": null,
+   "live": true,
+   "kind": "number",
+   "options": null,
+   "ref": {
+    "file": "TRINETRA/trinetra/configs/fusion.json",
+    "line": 2
+   },
+   "raise": "Uncertainty barely changes weights"
+  },
+  {
+   "id": "fusion.lambda",
+   "group": "Fusion",
+   "label": "Conflict-to-uncertainty λ (NF-3)",
+   "unit": "-",
+   "default": 0.3,
+   "file": "configs/fusion.json",
+   "range": [
+    0,
+    1.5
+   ],
+   "hard": [
+    0,
+    1.5
+   ],
+   "step": 0.05,
+   "scale": "linear",
+   "cls": "B",
+   "module": "fusion",
+   "equation": "U* = Σ w_i u_i + λ D(p)",
+   "lower": "Disagreement adds little uncertainty",
+   "regime": null,
+   "live": true,
+   "kind": "number",
+   "options": null,
+   "ref": {
+    "file": "TRINETRA/trinetra/configs/fusion.json",
+    "line": 2
+   },
+   "raise": "Disagreement quickly marks alerts uncertain"
+  },
+  {
+   "id": "fusion.kappa",
+   "group": "Fusion",
+   "label": "PHARAOH order gain κ (Class C)",
+   "unit": "-",
+   "default": 2.0,
+   "file": "src/trinetra/ws5_fusion_rl/pharaoh.py",
+   "range": [
+    0,
+    8
+   ],
+   "hard": [
+    0,
+    8
+   ],
+   "step": 0.1,
+   "scale": "linear",
+   "cls": "C",
+   "module": "fusion",
+   "equation": "ρ = 1 + κ D S;  F_ρ = (Σ w_i p_i^ρ)^{1/ρ}",
+   "lower": "Closer to the weighted mean",
+   "regime": null,
+   "live": true,
+   "kind": "number",
+   "options": null,
+   "ref": {
+    "file": "TRINETRA/trinetra/src/trinetra/ws5_fusion_rl/pharaoh.py",
+    "line": 18
+   },
+   "raise": "Bends toward max when a credible alarm exists"
+  },
+  {
+   "id": "fusion.nf1_sigma",
+   "group": "Fusion",
+   "label": "NF-1 physics-consistency σ",
+   "unit": "-",
+   "default": 0.25,
+   "file": "src/trinetra/ws5_fusion_rl/nf.py",
+   "range": [
+    0.05,
+    1
+   ],
+   "hard": [
+    0.05,
+    1
+   ],
+   "step": 0.01,
+   "scale": "linear",
+   "cls": "B",
+   "module": "fusion",
+   "equation": "c_i = exp(−((p_i − φ)_+)² / 2σ²)",
+   "lower": "Experts claiming more than physics are penalised hard",
+   "regime": null,
+   "live": true,
+   "kind": "number",
+   "options": null,
+   "ref": {
+    "file": "TRINETRA/trinetra/src/trinetra/ws5_fusion_rl/nf.py",
+    "line": 16
+   },
+   "raise": "Physics penalty is mild"
+  },
+  {
+   "id": "fusion.residual_cap",
+   "group": "Fusion",
+   "label": "GMF residual cap",
+   "unit": "-",
+   "default": 0.1,
+   "file": "src/trinetra/ws5_fusion_rl/gmf.py",
+   "range": [
+    0,
+    0.3
+   ],
+   "hard": [
+    0,
+    0.3
+   ],
+   "step": 0.01,
+   "scale": "linear",
+   "cls": "B",
+   "module": "fusion",
+   "equation": "p = clip(base + clip(r, ±cap))",
+   "lower": "Learned head can barely move the base",
+   "regime": null,
+   "live": true,
+   "kind": "number",
+   "options": null,
+   "ref": {
+    "file": "TRINETRA/trinetra/src/trinetra/ws5_fusion_rl/gmf.py",
+    "line": 36
+   },
+   "raise": "Learned head can move the base more"
+  },
+  {
+   "id": "trust.fire_cnn",
+   "group": "Fusion",
+   "label": "Reliability r: fire CNN",
+   "unit": "-",
+   "default": 0.8,
+   "file": "src/trinetra/ws5_fusion_rl/adapters.py",
+   "range": [
+    0,
+    0.95
+   ],
+   "hard": [
+    0,
+    0.95
+   ],
+   "step": 0.01,
+   "scale": "linear",
+   "cls": "SYSTEM",
+   "module": "fusion",
+   "equation": "w̃_i = r_i c_i exp(−u_i/τ),  r ≤ cap 0.95",
+   "lower": "Fire CNN counts less",
+   "regime": null,
+   "live": true,
+   "kind": "number",
+   "options": null,
+   "ref": {
+    "file": "TRINETRA/trinetra/src/trinetra/ws5_fusion_rl/adapters.py",
+    "line": 23
+   },
+   "raise": "Fire CNN counts more (capped)"
+  },
+  {
+   "id": "trust.zeroshot",
+   "group": "Fusion",
+   "label": "Reliability r: CLIP zero-shot",
+   "unit": "-",
+   "default": 0.4,
+   "file": "src/trinetra/ws5_fusion_rl/adapters.py",
+   "range": [
+    0,
+    0.5
+   ],
+   "hard": [
+    0,
+    0.5
+   ],
+   "step": 0.01,
+   "scale": "linear",
+   "cls": "SYSTEM",
+   "module": "fusion",
+   "equation": "r ≤ cap 0.50 (complement only)",
+   "lower": "Zero-shot counts less",
+   "regime": null,
+   "live": true,
+   "kind": "number",
+   "options": null,
+   "ref": {
+    "file": "TRINETRA/trinetra/src/trinetra/ws5_fusion_rl/adapters.py",
+    "line": 30
+   },
+   "raise": "Zero-shot counts more (capped)"
+  },
+  {
+   "id": "trust.clip_probe",
+   "group": "Fusion",
+   "label": "Reliability r: CLIP probe",
+   "unit": "-",
+   "default": 0.75,
+   "file": "src/trinetra/ws5_fusion_rl/adapters.py",
+   "range": [
+    0,
+    0.9
+   ],
+   "hard": [
+    0,
+    0.9
+   ],
+   "step": 0.01,
+   "scale": "linear",
+   "cls": "SYSTEM",
+   "module": "fusion",
+   "equation": "r ≤ cap 0.90",
+   "lower": "Probe counts less",
+   "regime": null,
+   "live": true,
+   "kind": "number",
+   "options": null,
+   "ref": {
+    "file": "TRINETRA/trinetra/src/trinetra/ws5_fusion_rl/adapters.py",
+    "line": 32
+   },
+   "raise": "Probe counts more (capped)"
+  },
+  {
+   "id": "trust.deepfake",
+   "group": "Fusion",
+   "label": "Reliability r: deepfake check",
+   "unit": "-",
+   "default": 0.3,
+   "file": "src/trinetra/ws5_fusion_rl/adapters.py",
+   "range": [
+    0,
+    0.4
+   ],
+   "hard": [
+    0,
+    0.4
+   ],
+   "step": 0.01,
+   "scale": "linear",
+   "cls": "SYSTEM",
+   "module": "fusion",
+   "equation": "r ≤ cap 0.40 (low trust, Rule 19)",
+   "lower": "Authenticity check counts less",
+   "regime": null,
+   "live": true,
+   "kind": "number",
+   "options": null,
+   "ref": {
+    "file": "TRINETRA/trinetra/src/trinetra/ws5_fusion_rl/adapters.py",
+    "line": 28
+   },
+   "raise": "Authenticity check counts more (capped)"
+  },
+  {
+   "id": "trust.iot",
+   "group": "Fusion",
+   "label": "Reliability r: IoT smoke/heat",
+   "unit": "-",
+   "default": 0.8,
+   "file": "src/trinetra/ws5_fusion_rl/adapters.py",
+   "range": [
+    0,
+    0.95
+   ],
+   "hard": [
+    0,
+    0.95
+   ],
+   "step": 0.01,
+   "scale": "linear",
+   "cls": "SYSTEM",
+   "module": "fusion",
+   "equation": "r ≤ cap 0.95",
+   "lower": "IoT counts less",
+   "regime": null,
+   "live": true,
+   "kind": "number",
+   "options": null,
+   "ref": {
+    "file": "TRINETRA/trinetra/src/trinetra/ws5_fusion_rl/adapters.py",
+    "line": 33
+   },
+   "raise": "IoT counts more (capped)"
+  },
+  {
+   "id": "cost.C_FA",
+   "group": "Decision",
+   "label": "Cost of a false alarm C_FA",
+   "unit": "units",
+   "default": 5.0,
+   "file": "configs/default.json",
+   "range": [
+    0.5,
+    50
+   ],
+   "hard": [
+    0.5,
+    50
+   ],
+   "step": 0.5,
+   "scale": "linear",
+   "cls": "SYSTEM",
+   "module": "decision",
+   "equation": "p* = C_FA / (C_FA + C_miss)",
+   "lower": "Lower p*: more alerts",
+   "regime": null,
+   "live": true,
+   "kind": "number",
+   "options": null,
+   "ref": {
+    "file": "TRINETRA/trinetra/configs/default.json",
+    "line": 3
+   },
+   "raise": "Higher p*: fewer alerts"
+  },
+  {
+   "id": "cost.C_miss",
+   "group": "Decision",
+   "label": "Cost of a missed event C_miss",
+   "unit": "units",
+   "default": 100.0,
+   "file": "configs/default.json",
+   "range": [
+    5,
+    5000
+   ],
+   "hard": [
+    5,
+    5000
+   ],
+   "step": 5,
+   "scale": "log",
+   "cls": "SYSTEM",
+   "module": "decision",
+   "equation": "p* = C_FA / (C_FA + C_miss)",
+   "lower": "Higher p*: fewer alerts, more misses",
+   "regime": null,
+   "live": true,
+   "kind": "number",
+   "options": null,
+   "ref": {
+    "file": "TRINETRA/trinetra/configs/default.json",
+    "line": 3
+   },
+   "raise": "Lower p*: more alerts, more false alarms"
+  },
+  {
+   "id": "dec.orange_mult",
+   "group": "Decision",
+   "label": "WARNING cut point (× p*)",
+   "unit": "×p*",
+   "default": 4.0,
+   "file": "src/trinetra/ws5_fusion_rl/decision.py",
+   "range": [
+    1.5,
+    9
+   ],
+   "hard": [
+    1.5,
+    9
+   ],
+   "step": 0.1,
+   "scale": "linear",
+   "cls": "SYSTEM",
+   "module": "decision",
+   "equation": "GREEN < p* ≤ YELLOW < 4p* ≤ ORANGE < 10p* ≤ RED",
+   "lower": "More alerts reach WARNING",
+   "regime": null,
+   "live": true,
+   "kind": "number",
+   "options": null,
+   "ref": {
+    "file": "TRINETRA/trinetra/src/trinetra/ws5_fusion_rl/decision.py",
+    "line": 31
+   },
+   "raise": "Fewer alerts reach WARNING"
+  },
+  {
+   "id": "dec.red_mult",
+   "group": "Decision",
+   "label": "EMERGENCY cut point (× p*)",
+   "unit": "×p*",
+   "default": 10.0,
+   "file": "src/trinetra/ws5_fusion_rl/decision.py",
+   "range": [
+    4,
+    20
+   ],
+   "hard": [
+    4,
+    20
+   ],
+   "step": 0.5,
+   "scale": "linear",
+   "cls": "SYSTEM",
+   "module": "decision",
+   "equation": "ORANGE < 10p* ≤ RED",
+   "lower": "More alerts reach EMERGENCY",
+   "regime": null,
+   "live": true,
+   "kind": "number",
+   "options": null,
+   "ref": {
+    "file": "TRINETRA/trinetra/src/trinetra/ws5_fusion_rl/decision.py",
+    "line": 31
+   },
+   "raise": "Fewer alerts reach EMERGENCY"
+  },
+  {
+   "id": "dec.uncertain",
+   "group": "Decision",
+   "label": "Abstain when U* above",
+   "unit": "-",
+   "default": 0.6,
+   "file": "src/trinetra/ws5_fusion_rl/decision.py",
+   "range": [
+    0.1,
+    1
+   ],
+   "hard": [
+    0.1,
+    1
+   ],
+   "step": 0.01,
+   "scale": "linear",
+   "cls": "SYSTEM",
+   "module": "decision",
+   "equation": "uncertain = U* > threshold → escalate to a human",
+   "lower": "More alerts flagged for review",
+   "regime": null,
+   "live": true,
+   "kind": "number",
+   "options": null,
+   "ref": {
+    "file": "TRINETRA/trinetra/src/trinetra/ws5_fusion_rl/decision.py",
+    "line": 72
+   },
+   "raise": "Fewer alerts flagged for review"
+  },
+  {
+   "id": "shield.tilt",
+   "group": "Decision",
+   "label": "Shield: tilt rate for EMERGENCY",
+   "unit": "deg/day",
+   "default": 5.0,
+   "file": "src/trinetra/ws5_fusion_rl/shield.py",
+   "range": [
+    1,
+    20
+   ],
+   "hard": [
+    1,
+    20
+   ],
+   "step": 0.5,
+   "scale": "linear",
+   "cls": "SYSTEM",
+   "module": "shield",
+   "equation": "tilt rate > T and ≥ 2 nodes agree → floor RED",
+   "lower": "Shield raises earlier",
+   "regime": null,
+   "live": false,
+   "kind": "number",
+   "options": null,
+   "ref": {
+    "file": "TRINETRA/trinetra/src/trinetra/ws5_fusion_rl/shield.py",
+    "line": 33
+   },
+   "raise": "Shield raises later"
+  },
+  {
+   "id": "shield.rain24",
+   "group": "Decision",
+   "label": "Shield: 24 h rain on high-susceptibility slope",
+   "unit": "mm",
+   "default": 150.0,
+   "file": "src/trinetra/ws5_fusion_rl/shield.py",
+   "range": [
+    50,
+    400
+   ],
+   "hard": [
+    50,
+    400
+   ],
+   "step": 5,
+   "scale": "linear",
+   "cls": "SYSTEM",
+   "module": "shield",
+   "equation": "rain_24h > R and high susceptibility → floor ORANGE",
+   "lower": "Shield raises earlier",
+   "regime": null,
+   "live": false,
+   "kind": "number",
+   "options": null,
+   "ref": {
+    "file": "TRINETRA/trinetra/src/trinetra/ws5_fusion_rl/shield.py",
+    "line": 37
+   },
+   "raise": "Shield raises later"
+  },
+  {
+   "id": "cctv.window",
+   "group": "Detection",
+   "label": "Temporal validator window",
+   "unit": "frames",
+   "default": 5,
+   "file": "src/trinetra/ws4_cctv/__init__.py",
+   "range": [
+    1,
+    20
+   ],
+   "hard": [
+    1,
+    20
+   ],
+   "step": 1,
+   "scale": "linear",
+   "cls": "SYSTEM",
+   "module": "cctv",
+   "equation": "confirm if ≥ m of the last W frames ≥ thr",
+   "lower": "Faster but more glint false alarms",
+   "regime": null,
+   "live": true,
+   "kind": "number",
+   "options": null,
+   "ref": {
+    "file": "TRINETRA/trinetra/src/trinetra/ws4_cctv/__init__.py",
+    "line": 42
+   },
+   "raise": "Slower, rejects more transients"
+  },
+  {
+   "id": "cctv.min_frames",
+   "group": "Detection",
+   "label": "Validator: frames required",
+   "unit": "frames",
+   "default": 3,
+   "file": "src/trinetra/ws4_cctv/__init__.py",
+   "range": [
+    1,
+    20
+   ],
+   "hard": [
+    1,
+    20
+   ],
+   "step": 1,
+   "scale": "linear",
+   "cls": "SYSTEM",
+   "module": "cctv",
+   "equation": "confirm if ≥ m of the last W frames ≥ thr",
+   "lower": "Confirms faster",
+   "regime": null,
+   "live": true,
+   "kind": "number",
+   "options": null,
+   "ref": {
+    "file": "TRINETRA/trinetra/src/trinetra/ws4_cctv/__init__.py",
+    "line": 42
+   },
+   "raise": "Confirms slower"
+  },
+  {
+   "id": "cctv.thr",
+   "group": "Detection",
+   "label": "Validator: frame confidence threshold",
+   "unit": "-",
+   "default": 0.5,
+   "file": "src/trinetra/ws4_cctv/__init__.py",
+   "range": [
+    0.05,
+    0.95
+   ],
+   "hard": [
+    0.05,
+    0.95
+   ],
+   "step": 0.01,
+   "scale": "linear",
+   "cls": "SYSTEM",
+   "module": "cctv",
+   "equation": "frame counts if p ≥ thr",
+   "lower": "More frames count as fire",
+   "regime": null,
+   "live": true,
+   "kind": "number",
+   "options": null,
+   "ref": {
+    "file": "TRINETRA/trinetra/src/trinetra/ws4_cctv/__init__.py",
+    "line": 42
+   },
+   "raise": "Fewer frames count as fire"
+  },
+  {
+   "id": "lora.sf",
+   "group": "LoRa",
+   "label": "Spreading factor SF",
+   "unit": "",
+   "default": 10,
+   "file": "src/trinetra/ws3_alert/last_mile.py",
+   "range": [
+    7,
+    12
+   ],
+   "hard": [
+    7,
+    12
+   ],
+   "step": 1,
+   "scale": "linear",
+   "cls": "A",
+   "module": "lora",
+   "equation": "T_sym = 2^SF / BW;  sensitivity SX1276 (BW 125 kHz)",
+   "lower": "Shorter airtime, shorter range",
+   "regime": null,
+   "live": false,
+   "kind": "number",
+   "options": null,
+   "ref": {
+    "file": "TRINETRA/trinetra/src/trinetra/ws3_alert/last_mile.py",
+    "line": 112
+   },
+   "raise": "Longer range, much longer airtime"
+  },
+  {
+   "id": "lora.tx_dbm",
+   "group": "LoRa",
+   "label": "Transmit power",
+   "unit": "dBm",
+   "default": 30.0,
+   "file": "src/trinetra/ws3_alert/last_mile.py",
+   "range": [
+    2,
+    30
+   ],
+   "hard": [
+    2,
+    30
+   ],
+   "step": 1,
+   "scale": "linear",
+   "cls": "A",
+   "module": "lora",
+   "equation": "budget = P_tx + G_tx + G_rx − L_cable − (S_SF + M_fade);  ≤ 1 W (WPC GSR 1048(E))",
+   "lower": "Shorter range, less battery",
+   "regime": "India 865-867 MHz licence-exempt limit: 1 W transmit, 4 W EIRP (as cited in last_mile.py)",
+   "live": false,
+   "kind": "number",
+   "options": null,
+   "ref": {
+    "file": "TRINETRA/trinetra/src/trinetra/ws3_alert/last_mile.py",
+    "line": 49
+   },
+   "raise": "Longer range"
+  },
+  {
+   "id": "lora.fade",
+   "group": "LoRa",
+   "label": "Fade margin",
+   "unit": "dB",
+   "default": 15.0,
+   "file": "src/trinetra/ws3_alert/last_mile.py",
+   "range": [
+    0,
+    30
+   ],
+   "hard": [
+    0,
+    30
+   ],
+   "step": 1,
+   "scale": "linear",
+   "cls": "A",
+   "module": "lora",
+   "equation": "budget − M_fade",
+   "lower": "Longer planned range, less robust",
+   "regime": null,
+   "live": false,
+   "kind": "number",
+   "options": null,
+   "ref": {
+    "file": "TRINETRA/trinetra/src/trinetra/ws3_alert/last_mile.py",
+    "line": 50
+   },
+   "raise": "Shorter planned range, more robust"
+  },
+  {
+   "id": "lora.n_forest",
+   "group": "LoRa",
+   "label": "Path-loss exponent: hill forest (ASSUMPTION)",
+   "unit": "-",
+   "default": 3.0,
+   "file": "src/trinetra/ws3_alert/last_mile.py",
+   "range": [
+    2.0,
+    4.5
+   ],
+   "hard": [
+    2.0,
+    4.5
+   ],
+   "step": 0.05,
+   "scale": "linear",
+   "cls": "A",
+   "module": "lora",
+   "equation": "PL(d) = FSPL(1 m) + 10 n log10(d)",
+   "lower": "Links reach further",
+   "regime": null,
+   "live": false,
+   "kind": "number",
+   "options": null,
+   "ref": {
+    "file": "TRINETRA/trinetra/src/trinetra/ws3_alert/last_mile.py",
+    "line": 30
+   },
+   "raise": "Links reach less far"
+  },
+  {
+   "id": "lora.payload",
+   "group": "LoRa",
+   "label": "Alert payload size",
+   "unit": "bytes",
+   "default": 24,
+   "file": "src/trinetra/ws3_alert/last_mile.py",
+   "range": [
+    8,
+    51
+   ],
+   "hard": [
+    8,
+    51
+   ],
+   "step": 1,
+   "scale": "linear",
+   "cls": "A",
+   "module": "lora",
+   "equation": "Semtech time-on-air (AN1200.13)",
+   "lower": "Shorter airtime",
+   "regime": null,
+   "live": false,
+   "kind": "number",
+   "options": null,
+   "ref": {
+    "file": "TRINETRA/trinetra/src/trinetra/ws3_alert/last_mile.py",
+    "line": 113
+   },
+   "raise": "Longer airtime (max 51 B in plan)"
+  },
+  {
+   "id": "lora.deadline",
+   "group": "LoRa",
+   "label": "Warning deadline",
+   "unit": "min",
+   "default": 10.0,
+   "file": "src/trinetra/ws3_alert/last_mile.py",
+   "range": [
+    2,
+    60
+   ],
+   "hard": [
+    2,
+    60
+   ],
+   "step": 1,
+   "scale": "linear",
+   "cls": "SYSTEM",
+   "module": "lora",
+   "equation": "reached if minutes ≤ deadline",
+   "lower": "Fewer villages count as reached",
+   "regime": null,
+   "live": false,
+   "kind": "number",
+   "options": null,
+   "ref": {
+    "file": "TRINETRA/trinetra/src/trinetra/ws3_alert/last_mile.py",
+    "line": 115
+   },
+   "raise": "More villages count as reached"
+  },
+  {
+   "id": "lora.max_hop",
+   "group": "LoRa",
+   "label": "Maximum planned hop",
+   "unit": "km",
+   "default": 30.0,
+   "file": "src/trinetra/ws3_alert/last_mile.py",
+   "range": [
+    2,
+    60
+   ],
+   "hard": [
+    2,
+    60
+   ],
+   "step": 1,
+   "scale": "linear",
+   "cls": "A",
+   "module": "lora",
+   "equation": "hop allowed if d ≤ min(range, cap) and terrain clears",
+   "lower": "More hops needed",
+   "regime": null,
+   "live": false,
+   "kind": "number",
+   "options": null,
+   "ref": {
+    "file": "TRINETRA/trinetra/src/trinetra/ws3_alert/last_mile.py",
+    "line": 122
+   },
+   "raise": "Longer hops allowed"
+  },
+  {
+   "id": "lora.runner",
+   "group": "LoRa",
+   "label": "Runner speed (human relay)",
+   "unit": "km/h",
+   "default": 2.5,
+   "file": "src/trinetra/ws3_alert/last_mile.py",
+   "range": [
+    1,
+    6
+   ],
+   "hard": [
+    1,
+    6
+   ],
+   "step": 0.1,
+   "scale": "linear",
+   "cls": "SYSTEM",
+   "module": "lora",
+   "equation": "t = t_source + d / v",
+   "lower": "Slower human relay",
+   "regime": null,
+   "live": false,
+   "kind": "number",
+   "options": null,
+   "ref": {
+    "file": "TRINETRA/trinetra/src/trinetra/ws3_alert/last_mile.py",
+    "line": 116
+   },
+   "raise": "Faster human relay"
+  },
+  {
+   "id": "lora.siren_contour",
+   "group": "LoRa",
+   "label": "Siren alerting contour",
+   "unit": "dB",
+   "default": 70.0,
+   "file": "src/trinetra/ws3_alert/last_mile.py",
+   "range": [
+    55,
+    90
+   ],
+   "hard": [
+    55,
+    90
+   ],
+   "step": 1,
+   "scale": "linear",
+   "cls": "A",
+   "module": "lora",
+   "equation": "L(r) = L_ref − 20 log10(r / r_ref) − α (r − r_ref)",
+   "lower": "Larger audible radius",
+   "regime": null,
+   "live": false,
+   "kind": "number",
+   "options": null,
+   "ref": {
+    "file": "TRINETRA/trinetra/src/trinetra/ws3_alert/last_mile.py",
+    "line": 120
+   },
+   "raise": "Smaller audible radius"
+  },
+  {
+   "id": "lora.duty",
+   "group": "LoRa",
+   "label": "Duty-cycle limit",
+   "unit": "%",
+   "default": 1.0,
+   "file": "src/trinetra/common/config.py",
+   "range": [
+    0.1,
+    10
+   ],
+   "hard": [
+    0.1,
+    10
+   ],
+   "step": 0.1,
+   "scale": "linear",
+   "cls": "SYSTEM",
+   "module": "lora",
+   "equation": "airtime per hour ≤ duty × 3600 s",
+   "lower": "Fewer retransmissions allowed",
+   "regime": "Repo default 1 %; verify the current WPC rule for 865-867 MHz before any field use",
+   "live": false,
+   "kind": "number",
+   "options": null,
+   "ref": {
+    "file": "TRINETRA/trinetra/src/trinetra/common/config.py",
+    "line": 27
+   },
+   "raise": "More retransmissions allowed"
+  },
+  {
+   "id": "fusion.prior",
+   "group": "Fusion",
+   "label": "Deployment base rate (prior-shift correction, PROPOSED)",
+   "unit": "-",
+   "default": 0.555,
+   "file": null,
+   "range": [
+    0.001,
+    0.555
+   ],
+   "hard": [
+    0.0001,
+    0.999
+   ],
+   "step": 0.001,
+   "scale": "log",
+   "cls": "SURROGATE",
+   "module": "fusion",
+   "equation": "p' = p·π'/π / (p·π'/π + (1−p)(1−π')/(1−π)),  π = 0.555 (evidence-bank prevalence)",
+   "lower": "Probabilities are rescaled to a rarer-event world: far fewer alerts",
+   "regime": "PROPOSED, not in the repo. The OOF probabilities were calibrated on a set where 55 % of images contain fire; a deployed camera sees fire far less often.",
+   "live": true,
+   "kind": "number",
+   "options": null,
+   "citation": "Saerens, Latinne, Decaestecker (2002), Neural Computation 14(1):21-41; proposal, not in repo",
+   "ref": null,
+   "raise": "π' = π: no correction (repo behaviour)"
+  },
+  {
+   "id": "sur.ros",
+   "group": "Fire spread (SURROGATE)",
+   "label": "Head rate of spread",
+   "unit": "m/min",
+   "default": 8.0,
+   "file": null,
+   "range": [
+    0.5,
+    60
+   ],
+   "hard": [
+    0.1,
+    120
+   ],
+   "step": 0.5,
+   "scale": "log",
+   "cls": "SURROGATE",
+   "module": "fire_spread",
+   "equation": "R_head = R0 × wind and slope factors (scenario input)",
+   "lower": "Perimeter grows slower",
+   "regime": "SURROGATE: TRINETRA has no fire-spread model; this drives the visual perimeter only",
+   "live": false,
+   "kind": "number",
+   "options": null,
+   "citation": "external: Anderson (1983) USDA INT-305 length-to-breadth; Richards (1990) ellipse; not in repo",
+   "ref": null,
+   "raise": "Perimeter grows faster"
+  },
+  {
+   "id": "sur.lb",
+   "group": "Fire spread (SURROGATE)",
+   "label": "Use wind-driven ellipse (Anderson L/B)",
+   "unit": "",
+   "default": 1,
+   "file": null,
+   "range": [
+    0,
+    1
+   ],
+   "hard": [
+    0,
+    1
+   ],
+   "step": 1,
+   "scale": "linear",
+   "cls": "SURROGATE",
+   "module": "fire_spread",
+   "equation": "L/B = 0.936 e^{0.2566 U} + 0.461 e^{−0.1548 U} − 0.397  (U in mi/h)",
+   "lower": "Circular perimeter",
+   "regime": null,
+   "live": false,
+   "kind": "toggle",
+   "options": null,
+   "citation": "external: Anderson (1983) USDA INT-305 length-to-breadth; Richards (1990) ellipse; not in repo",
+   "ref": null,
+   "raise": "Wind-elongated perimeter"
+  }
+ ],
+ "unresolved": []
+}

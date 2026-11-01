@@ -1,0 +1,29 @@
+{
+  "pinn_units": {
+    "t": "days",
+    "rain": "mm/h",
+    "Z": "m",
+    "D0_arg_for_train_geo_pinn": 4.32,
+    "beta_deg_arg": 39.61807823181152
+  },
+  "n_rows": 736,
+  "n_pos": 184,
+  "n_with_dem": 736,
+  "soil_assumptions": {
+    "c_prime": 5.0,
+    "phi": 32.0,
+    "gamma": 19.0,
+    "z": 2.0,
+    "K_z": 1e-05,
+    "D0": 5e-05,
+    "psi0": 0.0
+  },
+  "design": "case-control, controls=3",
+  "bbox": [
+    29.0,
+    33.0,
+    76.0,
+    81.0
+  ],
+  "country": "India"
+}

@@ -1,0 +1,219 @@
+{
+  "name": "geo_fusion",
+  "seed": 1,
+  "run_id": "geo_fusion-20261101-0145-1",
+  "pairing": "REAL (same place, same day for every expert)",
+  "n": 736,
+  "n_pos": 184,
+  "n_blocks": 101,
+  "experts": [
+    "rain",
+    "caine",
+    "dfs",
+    "geo_gate"
+  ],
+  "pinn": "not provided",
+  "admitted": false,
+  "gate_input": "FM-1 cross-fit calibrated OOF",
+  "baselines": {
+    "climatology": {
+      "mean_cost_saving_per_sample": 0.020380434782608696,
+      "ci_low": 0.0,
+      "ci_high": 0.06188118811881188,
+      "ci_level": 0.95,
+      "ci_method": "bca",
+      "n_blocks": 101,
+      "real_win": false
+    },
+    "rain_only_oof": {
+      "mean_cost_saving_per_sample": 0.12907608695652173,
+      "ci_low": -0.462592365976385,
+      "ci_high": 1.2648078930261013,
+      "ci_level": 0.95,
+      "ci_method": "bca",
+      "n_blocks": 101,
+      "real_win": false
+    }
+  },
+  "oof_roc_auc": 0.7794285601764335,
+  "oof_pr_auc": 0.506717990584918,
+  "oof_recall_at_fpr05": 0.18478260869565216,
+  "value_score_model": 0.005434782608695676,
+  "ece_crossfit_calibrated": 0.06414369192989312,
+  "fm1_minus_rain_auc": {
+    "mean": -0.003137146706419729,
+    "ci95": [
+      -0.015948362876355416,
+      0.00903448347613359
+    ]
+  },
+  "fm1_minus_stacked_auc": {
+    "mean": -0.0027515955526336935,
+    "ci95": [
+      -0.013119775793730068,
+      0.00761887583157671
+    ]
+  },
+  "best_rule_by_auc": "single: rain",
+  "mean_u_star": 0.3748743995358507,
+  "frac_uncertain_u_gt_0p6": 0.0,
+  "rules": {
+    "FM-1 (calibrated)": {
+      "roc_auc": 0.7794285601764335,
+      "pr_auc": 0.506717990584918,
+      "n": 736,
+      "pos_rate": 0.25,
+      "recall_at_fpr05": 0.18478260869565216,
+      "recall_at_fpr01": 0.03804347826086957,
+      "ece": 0.06414369192989312,
+      "value_score": 0.005434782608695676,
+      "miss_rate": 0.0,
+      "false_alarm_rate": 0.9945652173913043
+    },
+    "FM-1 raw": {
+      "roc_auc": 0.7789264335223692,
+      "pr_auc": 0.5060298849354893,
+      "n": 736,
+      "pos_rate": 0.25,
+      "recall_at_fpr05": 0.1793478260869565,
+      "recall_at_fpr01": 0.03804347826086957,
+      "ece": 0.07472535830781682,
+      "value_score": 0.0,
+      "miss_rate": 0.0,
+      "false_alarm_rate": 1.0
+    },
+    "FM-1 + physics shield": {
+      "roc_auc": 0.7794285601764335,
+      "pr_auc": 0.506717990584918,
+      "n": 736,
+      "pos_rate": 0.25,
+      "recall_at_fpr05": 0.18478260869565216,
+      "recall_at_fpr01": 0.03804347826086957,
+      "ece": 0.06414369192989312,
+      "value_score": 0.005434782608695676,
+      "miss_rate": 0.0,
+      "false_alarm_rate": 0.9945652173913043
+    },
+    "PHARAOH": {
+      "roc_auc": 0.7799700693131695,
+      "pr_auc": 0.5078745775160334,
+      "n": 736,
+      "pos_rate": 0.25,
+      "recall_at_fpr05": 0.19021739130434784,
+      "recall_at_fpr01": 0.03804347826086957,
+      "ece": 0.07361404270322926,
+      "value_score": 0.0,
+      "miss_rate": 0.0,
+      "false_alarm_rate": 1.0
+    },
+    "plain mean": {
+      "roc_auc": 0.7807380277252678,
+      "pr_auc": 0.5125961504672065,
+      "n": 736,
+      "pos_rate": 0.25,
+      "recall_at_fpr05": 0.20108695652173914,
+      "recall_at_fpr01": 0.03804347826086957,
+      "ece": 0.06318248258712235,
+      "value_score": 0.0,
+      "miss_rate": 0.0,
+      "false_alarm_rate": 1.0
+    },
+    "median": {
+      "roc_auc": 0.7744860586011342,
+      "pr_auc": 0.49851209878631375,
+      "n": 736,
+      "pos_rate": 0.25,
+      "recall_at_fpr05": 0.16304347826086957,
+      "recall_at_fpr01": 0.03260869565217391,
+      "ece": 0.053226710029253624,
+      "value_score": 0.009057971014492794,
+      "miss_rate": 0.0,
+      "false_alarm_rate": 0.9909420289855072
+    },
+    "max": {
+      "roc_auc": 0.769267879647133,
+      "pr_auc": 0.5116597288633351,
+      "n": 736,
+      "pos_rate": 0.25,
+      "recall_at_fpr05": 0.24456521739130435,
+      "recall_at_fpr01": 0.04891304347826087,
+      "ece": 0.11361755301978393,
+      "value_score": 0.0,
+      "miss_rate": 0.0,
+      "false_alarm_rate": 1.0
+    },
+    "physics-only mean": {
+      "roc_auc": 0.7747715816005041,
+      "pr_auc": 0.4978149741563968,
+      "n": 736,
+      "pos_rate": 0.25,
+      "recall_at_fpr05": 0.15760869565217392,
+      "recall_at_fpr01": 0.043478260869565216,
+      "ece": 0.06846970178344948,
+      "value_score": 0.0,
+      "miss_rate": 0.0,
+      "false_alarm_rate": 1.0
+    },
+    "stacked logistic (rain+physics)": {
+      "roc_auc": 0.782333018273472,
+      "pr_auc": 0.5111732631845064,
+      "n": 736,
+      "pos_rate": 0.25,
+      "recall_at_fpr05": 0.22282608695652173,
+      "recall_at_fpr01": 0.03804347826086957,
+      "ece": 0.022829955006645412,
+      "value_score": 0.007246376811594235,
+      "miss_rate": 0.02717391304347826,
+      "false_alarm_rate": 0.8115942028985508
+    },
+    "single: rain": {
+      "roc_auc": 0.7827859168241966,
+      "pr_auc": 0.517616067785498,
+      "n": 736,
+      "pos_rate": 0.25,
+      "recall_at_fpr05": 0.2391304347826087,
+      "recall_at_fpr01": 0.043478260869565216,
+      "ece": 0.02414501092157589,
+      "value_score": -0.02898550724637672,
+      "miss_rate": 0.03260869565217391,
+      "false_alarm_rate": 0.8115942028985508
+    },
+    "single: caine": {
+      "roc_auc": 0.7566261027095148,
+      "pr_auc": 0.495249969987417,
+      "n": 736,
+      "pos_rate": 0.25,
+      "recall_at_fpr05": 0.22282608695652173,
+      "recall_at_fpr01": 0.08152173913043478,
+      "ece": 0.04544450418524706,
+      "value_score": 0.05434782608695654,
+      "miss_rate": 0.021739130434782608,
+      "false_alarm_rate": 0.8007246376811594
+    },
+    "single: dfs": {
+      "roc_auc": 0.7456383900441084,
+      "pr_auc": 0.4704888542157252,
+      "n": 736,
+      "pos_rate": 0.25,
+      "recall_at_fpr05": 0.17391304347826086,
+      "recall_at_fpr01": 0.043478260869565216,
+      "ece": 0.061015951035644875,
+      "value_score": 0.0,
+      "miss_rate": 0.0,
+      "false_alarm_rate": 1.0
+    },
+    "single: geo_gate": {
+      "roc_auc": 0.7049218257718967,
+      "pr_auc": 0.45090735586807645,
+      "n": 736,
+      "pos_rate": 0.25,
+      "recall_at_fpr05": 0.16304347826086957,
+      "recall_at_fpr01": 0.03804347826086957,
+      "ece": 0.03060077708434582,
+      "value_score": -0.061594202898550776,
+      "miss_rate": 0.010869565217391304,
+      "false_alarm_rate": 0.9891304347826086
+    }
+  },
+  "note": "case-control design: base rate is artificial; AUC/recall are the headline, value score is indicative"
+}

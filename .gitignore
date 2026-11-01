@@ -16,3 +16,11 @@ __pycache__/
 *.pyc
 .DS_Store
 Thumbs.db
+
+# App build / env (never commit secrets)
+dist/
+build/
+.cache/
+.vite/
+.env*
+*.tsbuildinfo

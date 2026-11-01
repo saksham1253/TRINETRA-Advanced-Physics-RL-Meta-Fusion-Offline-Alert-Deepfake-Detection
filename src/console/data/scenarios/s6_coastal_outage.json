@@ -1,0 +1,6 @@
+{ "id": "s6-coastal-outage", "title": "Coastal communication outage (cyclone module PLANNED)", "summary": "Communication failure along the Odisha coast. The cyclone physics module is a specification only (TRINETRA/docs/13_CYCLONE_MODULE_SPEC.md), so no wind field or surge is simulated; this scenario shows only the outage and the console's empty, honest cyclone panel.",
+  "seed": 6606, "regionId": "od-puri", "hazard": "FIRE", "durationMin": 180, "stepMin": 2,
+  "weather": { "wind_ms": 14.0, "wind_from_deg": 135, "temp_K": 300 },
+  "incidents": [],
+  "background": { "count": 22, "regionIds": ["od-puri"], "iotShare": 0.1 },
+  "network": { "outageAtMin": 20 }, "planned": ["cyclone wind field (Holland profile)", "storm surge", "IBTrACS historical replay"] }

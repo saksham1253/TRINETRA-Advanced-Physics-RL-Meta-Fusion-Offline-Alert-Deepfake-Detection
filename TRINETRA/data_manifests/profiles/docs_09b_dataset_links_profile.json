@@ -1,0 +1,121 @@
+{
+  "path": "docs/09b_dataset_links.csv",
+  "delimiter": ",",
+  "encoding": "utf-8-sig",
+  "rows": 54,
+  "columns": 18,
+  "field_names": [
+    "ID",
+    "name",
+    "modules",
+    "task",
+    "link",
+    "mirror_or_kaggle",
+    "size_full",
+    "size_subset",
+    "samples",
+    "labels",
+    "license",
+    "access",
+    "age_domain_gap",
+    "known_problems",
+    "role",
+    "format_adapter",
+    "status",
+    "fetched_by"
+  ],
+  "duplicate_rows": 0,
+  "candidate_group_keys": [],
+  "column_profile": {
+    "ID": {
+      "type": "string",
+      "missing": 0,
+      "unique": 54
+    },
+    "name": {
+      "type": "string",
+      "missing": 0,
+      "unique": 54
+    },
+    "modules": {
+      "type": "string",
+      "missing": 0,
+      "unique": 54
+    },
+    "task": {
+      "type": "string",
+      "missing": 0,
+      "unique": 50
+    },
+    "link": {
+      "type": "string",
+      "missing": 0,
+      "unique": 54
+    },
+    "mirror_or_kaggle": {
+      "type": "string",
+      "missing": 33,
+      "unique": 20
+    },
+    "size_full": {
+      "type": "string",
+      "missing": 0,
+      "unique": 51
+    },
+    "size_subset": {
+      "type": "string",
+      "missing": 0,
+      "unique": 31
+    },
+    "samples": {
+      "type": "string",
+      "missing": 2,
+      "unique": 39
+    },
+    "labels": {
+      "type": "string",
+      "missing": 1,
+      "unique": 47
+    },
+    "license": {
+      "type": "string",
+      "missing": 0,
+      "unique": 37
+    },
+    "access": {
+      "type": "string",
+      "missing": 0,
+      "unique": 18
+    },
+    "age_domain_gap": {
+      "type": "string",
+      "missing": 0,
+      "unique": 50
+    },
+    "known_problems": {
+      "type": "string",
+      "missing": 0,
+      "unique": 52
+    },
+    "role": {
+      "type": "string",
+      "missing": 0,
+      "unique": 50
+    },
+    "format_adapter": {
+      "type": "string",
+      "missing": 0,
+      "unique": 44
+    },
+    "status": {
+      "type": "string",
+      "missing": 0,
+      "unique": 22
+    },
+    "fetched_by": {
+      "type": "string",
+      "missing": 0,
+      "unique": 1
+    }
+  }
+}

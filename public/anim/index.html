@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>TRINETRA Live Flow</title>
+<style>
+:root{--bg:#0B1238;--bg2:#101A4A;--panel:#16205A;--panel2:#1C2868;--line:#2E3D85;--text:#F4F1EA;--dim:#B9C2E3;
+--ember:#FF6B35;--amber:#FFB703;--saffron:#F57C1F;--teal:#2EC4B6;--blue:#5B8DEF;--green:#3DDC97;--violet:#A78BFA;--gold:#F2B705;}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:#070C28;color:var(--text);font-family:Inter,"IBM Plex Sans","Segoe UI",system-ui,-apple-system,Roboto,sans-serif;overflow:hidden}
+#wrap{position:fixed;inset:0;display:flex;align-items:center;justify-content:center}
+#stage{width:100vw;height:100vh;display:block}
+.mono{font-family:"JetBrains Mono","IBM Plex Mono",Consolas,Menlo,monospace}
+#cap{position:fixed;left:50%;bottom:86px;transform:translateX(-50%);max-width:min(1500px,92vw);padding:12px 22px;border-radius:14px;
+ background:rgba(7,12,40,.82);border:1px solid var(--line);font-size:clamp(18px,1.55vw,26px);line-height:1.35;text-align:center;pointer-events:none;transition:opacity .25s}
+#cap:empty{opacity:0}
+#bar{position:fixed;left:0;right:0;bottom:0;padding:10px 18px 12px;background:linear-gradient(transparent,rgba(5,9,30,.95) 35%);display:flex;flex-direction:column;gap:8px;transition:opacity .3s}
+#scrub{position:relative;height:22px;cursor:pointer}
+#scrub .track{position:absolute;left:0;right:0;top:9px;height:4px;border-radius:2px;background:#2A3780}
+#scrub .fill{position:absolute;left:0;top:9px;height:4px;border-radius:2px;background:var(--saffron)}
+#scrub .mk{position:absolute;top:3px;width:2px;height:16px;background:#8C98D6}
+#scrub .mk span{position:absolute;top:-20px;left:-4px;font-size:12px;color:var(--dim);white-space:nowrap}
+#ctl{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:15px}
+#ctl button,#ctl select{background:var(--panel);color:var(--text);border:1px solid var(--line);border-radius:8px;padding:6px 11px;font:inherit;cursor:pointer}
+#ctl button:hover,#ctl select:hover{border-color:var(--saffron)}
+#ctl button[aria-pressed=true]{background:var(--saffron);color:#0B1238;border-color:var(--saffron);font-weight:700}
+#ctl .sp{flex:1}
+#time{min-width:108px;text-align:center;color:var(--dim)}
+#scene{color:var(--gold);font-weight:600}
+body.presenter #bar,body.record #bar{opacity:0;pointer-events:none}
+body.presenter:hover #bar{opacity:1;pointer-events:auto}
+body.presenter,body.record{cursor:none}
+body.record #cap{bottom:40px}
+#explore{position:fixed;inset:0;background:rgba(5,9,30,.94);display:none;flex-direction:column;z-index:20}
+body.exploring #explore{display:flex}
+#ex-top{display:flex;align-items:center;gap:8px;padding:14px 20px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+#ex-top h2{margin:0 14px 0 0;font-size:22px}
+#ex-top button{background:var(--panel);color:var(--text);border:1px solid var(--line);border-radius:8px;padding:7px 12px;font:inherit;font-size:15px;cursor:pointer}
+#ex-top button[aria-selected=true]{background:var(--saffron);color:#0B1238;font-weight:700}
+#ex-body{flex:1;display:flex;min-height:0}
+#ex-main{flex:1;overflow:auto;padding:18px 22px}
+#ex-side{width:min(520px,40vw);border-left:1px solid var(--line);overflow:auto;padding:18px 20px;background:var(--bg)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:0 0 12px}
+.card h3{margin:0 0 6px;font-size:18px}
+.grid{display:grid;gap:12px}
+.chip{display:inline-block;border-radius:999px;padding:1px 9px;font-size:13px;font-weight:700;margin:0 4px 2px 0;white-space:nowrap}
+.o-REAL_RESULT{border:1.5px solid var(--teal);color:var(--teal)}
+.o-REAL_CONFIG{border:1.5px solid var(--blue);color:#9DB8FF}
+.o-PAPER{border:1.5px solid #fff;color:#fff}
+.o-ILLUSTRATIVE{border:1.5px dashed var(--amber);color:var(--amber)}
+.src{font-size:13px;color:var(--dim);word-break:break-all}
+.dim{color:var(--dim)}
+table{border-collapse:collapse;width:100%;font-size:15px}
+td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+tr.click{cursor:pointer} tr.click:hover{background:var(--panel2)}
+input[type=range]{width:100%}
+.k{font-size:13px;color:var(--dim)}
+.pending{background:#FDE68A;color:#5A3A00}
+.o-WORKED{border:1.5px solid var(--green);color:var(--green)}
+.o-SIM{border:1.5px dashed var(--amber);color:var(--amber)}
+.flrow{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr 40px;gap:12px;align-items:center;padding:6px 0;border-bottom:1px solid var(--line)}
+#vid{position:fixed;inset:0;background:rgba(5,9,30,.95);display:none;align-items:center;justify-content:center;z-index:30}
+body.video #vid{display:flex}
+#vid-box{width:min(1600px,94vw)}
+#vid-top{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+#vid-top button{background:var(--panel);color:var(--text);border:1px solid var(--line);border-radius:8px;padding:7px 12px;font:inherit;cursor:pointer}
+#vid-el{width:100%;border-radius:12px;background:#000;border:1px solid var(--line)}
+.node{cursor:pointer}
+.node:hover rect{stroke:var(--gold)!important}
+@media (prefers-reduced-motion: reduce){#cap{transition:none}}
+</style>
+</head>
+<body>
+<div id="wrap"><svg id="stage" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid meet" role="img" aria-label="TRINETRA Live Flow animation"></svg></div>
+<div id="cap" aria-live="polite"></div>
+<div id="bar">
+  <div id="scrub" role="slider" aria-label="Timeline" tabindex="0"><div class="track"></div><div class="fill"></div></div>
+  <div id="ctl">
+    <button id="b-play" aria-label="Play or pause (space)">Pause</button>
+    <button id="b-prev" aria-label="Previous scene">◀ Scene</button>
+    <button id="b-next" aria-label="Next scene">Scene ▶</button>
+    <span id="time" class="mono">0:00 / 4:55</span>
+    <span id="scene"></span>
+    <span class="sp"></span>
+    <select id="b-speed" aria-label="Speed"><option>0.5</option><option selected>1</option><option>1.5</option><option>2</option></select>
+    <select id="b-cap" aria-label="Captions"><option value="en">Captions: English</option><option value="hi" selected>Captions: Hinglish</option><option value="off">Captions: off</option></select>
+    <button id="b-src" aria-pressed="false" title="Show sources (S)">Sources</button>
+    <button id="b-rm" aria-pressed="false" title="Reduced motion (M)">Reduced motion</button>
+    <button id="b-pres" aria-pressed="false" title="Presenter mode (P)">Presenter</button>
+    <button id="b-vid" title="Watch the recorded video">▶ Video</button>
+    <button id="b-ex" title="Explore mode (E)">Explore</button>
+    <button id="b-fs" title="Full screen (F)">⛶</button>
+  </div>
+</div>
+<div id="vid" role="dialog" aria-label="Recorded video"><div id="vid-box"><div id="vid-top"><b id="vid-title">TRINETRA Live Flow</b><span id="vid-note" class="k"></span><span style="flex:1"></span><button id="vid-close">Close</button></div><video id="vid-el" controls playsinline preload="metadata"></video></div></div>
+<div id="explore" role="dialog" aria-label="Explore mode">
+  <div id="ex-top"><h2>TRINETRA · Explore</h2><span id="ex-tabs"></span><span style="flex:1"></span><span id="ex-complete" class="k"></span><button id="ex-close">Back to film (E)</button></div>
+  <div id="ex-body"><div id="ex-main"></div><div id="ex-side"><div class="dim">Click any node, dataset or row to see what it is, why it exists, its formula, parameters, data and result, each with its source.</div></div></div>
+</div>
+<script src="data/animation_data.js"></script>
+<script src="data/script.js"></script>
+<script src="data/last_mile.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

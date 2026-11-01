@@ -1,0 +1,107 @@
+{
+  "used": {
+    "B": "B final (7d27ec16_out_B_final.zip)",
+    "P": "repo results/ (geo, GLOF, RL env, Geo-PINN)"
+  },
+  "scorecard": [
+    {
+      "hazard": "Fire / smoke (CCTV)",
+      "expert": "fire_cnn",
+      "metric": "-",
+      "value": null,
+      "admitted": null,
+      "source": "-",
+      "note": "not measured"
+    },
+    {
+      "hazard": "Fire / smoke (CCTV)",
+      "expert": "colorhist",
+      "metric": "-",
+      "value": null,
+      "admitted": null,
+      "source": "-",
+      "note": "not measured"
+    },
+    {
+      "hazard": "Fire / smoke (zero-shot)",
+      "expert": "zeroshot",
+      "metric": "ROC-AUC OOF / held-out",
+      "value": "0.889 / 0.999",
+      "admitted": "0/1",
+      "source": "B final (7d27ec16_out_B_final.zip)",
+      "note": "1 seed(s)"
+    },
+    {
+      "hazard": "Fire / smoke (few-shot CLIP)",
+      "expert": "clip_probe",
+      "metric": "-",
+      "value": null,
+      "admitted": null,
+      "source": "B final (7d27ec16_out_B_final.zip)",
+      "note": "not measured"
+    },
+    {
+      "hazard": "Fake media",
+      "expert": "deepfake",
+      "metric": "-",
+      "value": null,
+      "admitted": null,
+      "source": "-",
+      "note": "not measured"
+    },
+    {
+      "hazard": "Landslide (physics, zero training)",
+      "expert": "caine_ratio",
+      "metric": "ROC-AUC spatial OOF",
+      "value": "0.758",
+      "admitted": "physics (no gate needed)",
+      "source": "repo/geo_large/geo_physics_s0_report.json",
+      "note": "184 real events, 101 blocks"
+    },
+    {
+      "hazard": "GLOF (lake area \u2192 volume)",
+      "expert": "glof_physics",
+      "metric": "exponent b (95% CI)",
+      "value": "1.13 (0.71-1.50)",
+      "admitted": "fit",
+      "source": "repo/glof/glof_physics_report.json",
+      "note": "n 21"
+    },
+    {
+      "hazard": "RL alarm policy (C_miss 100)",
+      "expert": "cql_learned vs physics_rule",
+      "metric": "return CQL / rule / oracle",
+      "value": "-22.5 / -22.8 / -22.9",
+      "admitted": "deploy False",
+      "source": "repo/rl_env/rl_env_cmiss100_s0_report.json",
+      "note": "LCB -0.30; SIMULATOR"
+    },
+    {
+      "hazard": "RL alarm policy (C_miss 1000)",
+      "expert": "cql_learned vs physics_rule",
+      "metric": "return CQL / rule / oracle",
+      "value": "-200.9 / -200.0 / -200.0",
+      "admitted": "deploy False",
+      "source": "repo/rl_env/rl_env_cmiss1000_s0_report.json",
+      "note": "LCB -10.28; SIMULATOR"
+    },
+    {
+      "hazard": "RL alarm policy (C_miss 5000)",
+      "expert": "cql_learned vs physics_rule",
+      "metric": "return CQL / rule / oracle",
+      "value": "-486.8 / -478.1 / -478.5",
+      "admitted": "deploy False",
+      "source": "repo/rl_env/rl_env_cmiss5000_s0_report.json",
+      "note": "LCB -31.93; SIMULATOR"
+    },
+    {
+      "hazard": "Landslide (Geo-PINN)",
+      "expert": "geo_pinn",
+      "metric": "ROC-AUC OOF / held-out",
+      "value": "0.716",
+      "admitted": "0/1",
+      "source": "repo results/geo_pinn",
+      "note": "1 seed(s)"
+    }
+  ]
+}

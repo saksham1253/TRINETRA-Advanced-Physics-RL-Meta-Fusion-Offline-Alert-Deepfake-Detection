@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+Devanagari:wght@500;700&family=STIX+Two+Text:ital,wght@0,400;0,600;1,400&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'IBM Plex Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+  --color-ink: #16181d;
+  --color-paper: #f4f2ec;
+  --color-rule: #d9d5ca;
+  --color-muted: #6b6a64;
+  --color-signal: #c2410c;
+  --color-ok: #2f6b4f;
+  --color-warn: #a16207;
+}
+
+@layer base {
+  body {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Deck: on screen show the scaled viewer; when printing show every slide at 1920x1080, one per page. */
+.deck-print { display: none; }
+.deck-slide .font-mono { font-family: 'JetBrains Mono', 'IBM Plex Mono', monospace; }
+@media print {
+  @page { size: 1920px 1080px; margin: 0; }
+  html, body { background: #F57C1F !important; }
+  .deck-screen { display: none !important; }
+  .deck-print { display: block; }
+  .deck-page { width: 1920px; height: 1080px; break-after: page; page-break-after: always; overflow: hidden; }
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+
+/* ---------- TRINETRA Command Console tokens (design/tokens.json). Values switch with [data-theme] on .trn ---------- */
+@theme inline {
+  --color-trn-bg: var(--trn-bg);
+  --color-trn-surface: var(--trn-surface);
+  --color-trn-raised: var(--trn-raised);
+  --color-trn-line: var(--trn-hairline);
+  --color-trn-scrim: var(--trn-scrim);
+  --color-trn-text: var(--trn-text);
+  --color-trn-text2: var(--trn-text2);
+  --color-trn-text3: var(--trn-text3);
+  --color-trn-brand: var(--trn-brand);
+  --color-trn-brand2: var(--trn-brand-bright);
+  --color-trn-gold: var(--trn-gold);
+  --color-trn-advisory: var(--trn-advisory);
+  --color-trn-watch: var(--trn-watch);
+  --color-trn-warning: var(--trn-warning);
+  --color-trn-emergency: var(--trn-emergency);
+  --color-trn-a: var(--trn-class-a);
+  --color-trn-b: var(--trn-class-b);
+  --color-trn-c: var(--trn-class-c);
+  --font-trn: 'Inter Variable', 'Noto Sans Devanagari', ui-sans-serif, system-ui, sans-serif;
+  --font-trn-display: 'Space Grotesk Variable', 'Inter Variable', 'Noto Sans Devanagari', sans-serif;
+  --font-trn-mono: 'JetBrains Mono Variable', ui-monospace, monospace;
+}

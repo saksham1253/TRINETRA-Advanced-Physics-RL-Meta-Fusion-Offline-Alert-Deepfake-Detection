@@ -1,0 +1,8 @@
+{ "id": "s8-landslide", "title": "Rain-driven landslide with tilt sensors (Chamoli)", "summary": "A synthetic rain event (heavy burst from 01:30) loads a 38 degree debris slope. Infinite-slope FS, Iverson pore pressure and the Caine I-D ratio are computed every step; three tilt nodes feed the safety shield.",
+  "seed": 8808, "regionId": "uk-chamoli", "hazard": "LANDSLIDE", "durationMin": 480, "stepMin": 4,
+  "weather": { "wind_ms": 3.0, "wind_from_deg": 200, "temp_K": 289 },
+  "incidents": [ { "id": "L1", "label": "Debris slope above highway", "kind": "landslide", "lon": 79.53, "lat": 30.53, "startMin": 0, "cameras": 0, "iot": 3,
+      "slope": { "beta_deg": 38, "c_prime": 6.0, "z": 2.0, "D0": 4.32, "K_z": 0.036, "psi_steady": -0.4, "high_susceptibility": true } } ],
+  "rain": [ [0, 4], [90, 28], [210, 12], [330, 2] ],
+  "background": { "count": 0, "regionIds": ["uk-chamoli"], "iotShare": 0 },
+  "network": { "outageAtMin": null } }

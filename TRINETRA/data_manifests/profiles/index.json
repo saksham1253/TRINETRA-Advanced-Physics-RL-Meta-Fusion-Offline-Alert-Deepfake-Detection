@@ -1,0 +1,17 @@
+[
+  {
+    "input": "docs/09b_dataset_links.csv",
+    "profile": "data_manifests/profiles/docs_09b_dataset_links_profile.json",
+    "rows": 54
+  },
+  {
+    "input": "results/geo_large/geo_events.csv",
+    "profile": "data_manifests/profiles/geo_large_geo_events_profile.json",
+    "rows": 736
+  },
+  {
+    "input": "results/geo_small/geo_events.csv",
+    "profile": "data_manifests/profiles/geo_small_geo_events_profile.json",
+    "rows": 112
+  }
+]

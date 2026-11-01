@@ -1,0 +1,6 @@
+{ "id": "s5-fire-outage", "title": "Fire with network outage (Chamoli)", "summary": "Same slope fire as scenario 1, but at 01:20 the internet and cellular network fail across the valley. Warnings must reach villages over the LoRa mesh, sirens and human relay.",
+  "seed": 5505, "regionId": "uk-chamoli", "hazard": "FIRE", "durationMin": 300, "stepMin": 2,
+  "weather": { "wind_ms": 7.0, "wind_from_deg": 225, "temp_K": 291 },
+  "incidents": [ { "id": "F1", "label": "Forest fire above villages", "kind": "fire", "lon": 79.47, "lat": 30.42, "startMin": 30, "Qc_kW_m": 1200, "Q_kW": 6000, "D_m": 5, "ros_m_min": 10, "cameras": 2, "iot": 3 } ],
+  "background": { "count": 24, "regionIds": ["uk-chamoli"], "iotShare": 0.2 },
+  "network": { "outageAtMin": 80 }, "lora": true }

@@ -1,0 +1,100 @@
+{
+  "name": "geo_physics",
+  "seed": 0,
+  "n": 112,
+  "n_pos": 28,
+  "n_blocks": 15,
+  "design": "case-control (controls = same place, other monsoon days)",
+  "scores": {
+    "caine_ratio": {
+      "roc_auc": 0.7534013605442177,
+      "pr_auc": 0.5297497085218226,
+      "n": 112,
+      "pos_rate": 0.25,
+      "recall_at_fpr05": 0.14285714285714285,
+      "recall_at_fpr01": 0.14285714285714285,
+      "n_scored": 112
+    },
+    "dFS_iverson": {
+      "roc_auc": 0.7597789115646258,
+      "pr_auc": 0.5350026912963235,
+      "n": 112,
+      "pos_rate": 0.25,
+      "recall_at_fpr05": 0.2857142857142857,
+      "recall_at_fpr01": 0.07142857142857142,
+      "n_scored": 112
+    },
+    "geo_gate_repo": {
+      "roc_auc": 0.7619047619047619,
+      "pr_auc": 0.5520945123825054,
+      "n": 112,
+      "pos_rate": 0.25,
+      "recall_at_fpr05": 0.14285714285714285,
+      "recall_at_fpr01": 0.14285714285714285,
+      "n_scored": 112
+    },
+    "logit_rain": {
+      "roc_auc": 0.6687925170068028,
+      "pr_auc": 0.402433791253178,
+      "n": 112,
+      "pos_rate": 0.25,
+      "recall_at_fpr05": 0.10714285714285714,
+      "recall_at_fpr01": 0.07142857142857142,
+      "n_scored": 112,
+      "ece": 0.11383522464888088,
+      "value_score": -0.29761904761904767
+    },
+    "logit_physics": {
+      "roc_auc": 0.7593537414965986,
+      "pr_auc": 0.5153232928181863,
+      "n": 112,
+      "pos_rate": 0.25,
+      "recall_at_fpr05": 0.21428571428571427,
+      "recall_at_fpr01": 0.07142857142857142,
+      "n_scored": 112,
+      "ece": 0.05741850224826705,
+      "value_score": 0.1785714285714286
+    },
+    "logit_hybrid": {
+      "roc_auc": 0.7355442176870748,
+      "pr_auc": 0.47338723225464524,
+      "n": 112,
+      "pos_rate": 0.25,
+      "recall_at_fpr05": 0.17857142857142858,
+      "recall_at_fpr01": 0.03571428571428571,
+      "n_scored": 112,
+      "ece": 0.0567861230738772,
+      "value_score": 0.23809523809523814
+    }
+  },
+  "hybrid_minus_rain_auc": {
+    "mean": 0.07007821110103055,
+    "ci95": [
+      0.020806622774944928,
+      0.12466100437732734
+    ],
+    "n_boot": 1000
+  },
+  "physics_minus_rain_auc": {
+    "mean": 0.09482819422040868,
+    "ci95": [
+      0.05233514118457309,
+      0.144174432938856
+    ],
+    "n_boot": 1000
+  },
+  "real_win_hybrid_vs_rain_costloss": {
+    "mean_cost_saving_per_sample": 2.0089285714285716,
+    "ci_low": 0.08333333333333333,
+    "ci_high": 8.80739096560487,
+    "ci_level": 0.95,
+    "ci_method": "bca",
+    "n_blocks": 15,
+    "real_win": true
+  },
+  "oof_roc_auc": 0.7355442176870748,
+  "oof_recall_at_fpr05": 0.17857142857142858,
+  "physics_only_caine_auc": 0.7534013605442177,
+  "physics_only_dfs_auc": 0.7597789115646258,
+  "note": "Soil parameters ASSUMED; absolute FS uncalibrated. Physics adds value only if the CI of hybrid-minus-rain AUC excludes 0. Small n -> wide CIs."
+}

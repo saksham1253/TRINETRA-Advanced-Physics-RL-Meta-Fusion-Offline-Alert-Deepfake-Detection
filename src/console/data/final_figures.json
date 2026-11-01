@@ -1,0 +1,274 @@
+[
+ {
+  "file": "figures/extra/G01_auc_per_seed.png",
+  "name": "G01_auc_per_seed.png",
+  "group": "extra",
+  "title": "Har model ka ROC-AUC, har seed alag dot",
+  "explain": "Har dot ek seed (alag random start) ka result hai, kaali line average. Dots paas-paas = model stable hai. clip_probe aur fire_meta_fusion sabse upar (~0.95), colour histogram baseline sabse neeche (~0.68). Landslide models (geo_pinn, geo_fusion) ~0.72-0.78 par hain, kyunki wahan sirf barish + DEM jaise mote features hain.",
+  "url": "results/figures/extra/G01_auc_per_seed.png"
+ },
+ {
+  "file": "figures/extra/G02_metrics_compare.png",
+  "name": "G02_metrics_compare.png",
+  "group": "extra",
+  "title": "ROC-AUC vs PR-AUC vs recall@FPR5%",
+  "explain": "ROC-AUC = ranking kitni achhi. PR-AUC = jab model 'aag' bole to kitna sahi. Recall@FPR5% = sabse practical: agar 100 me se sirf 5 galat alarm allow hain, to kitni asli aag pakdi. Colour histogram ka recall bahut kam, clip_probe/stack ~0.8 se upar.",
+  "url": "results/figures/extra/G02_metrics_compare.png"
+ },
+ {
+  "file": "figures/extra/G03_generalisation.png",
+  "name": "G03_generalisation.png",
+  "group": "extra",
+  "title": "Same-source vs naya source",
+  "explain": "Fire models naye dataset (DeepFire forest photos) par bhi tike. Deepfake model CIFAKE par 0.96 tha, par naye generator wali images par 0.45 (sikke se bhi kharab). Isliye deepfake ko sirf 'low-trust down-weighter' rakha, alarm dene wala nahi.",
+  "url": "results/figures/extra/G03_generalisation.png"
+ },
+ {
+  "file": "figures/extra/G04_confuser_false_alarms.png",
+  "name": "G04_confuser_false_alarms.png",
+  "group": "extra",
+  "title": "Confuser images par false alarm",
+  "explain": "Ye sab images me khatarnak aag NAHI hai (fog, candle, normal sadak/jungle). Bar jitna lamba, utni baar model ne galti se 'aag' bola. Candle/small flames sabse mushkil hain, kyunki wo sach me aag hi hai, bas khatarnak nahi. Isi ke liye S account ka confuser-aware retrain bana (R9 graph).",
+  "url": "results/figures/extra/G04_confuser_false_alarms.png"
+ },
+ {
+  "file": "figures/extra/G05_video_validator.png",
+  "name": "G05_video_validator.png",
+  "group": "extra",
+  "title": "Video: raw vs temporal validator",
+  "explain": "Ek frame par aag dikhna kaafi nahi; validator dekhta hai ki aag kai frames tak lagatar dikhe aur flicker kare. Isse false-alarm videos thode kam hote hain. n sirf 49 videos hai, isliye ye 'counts' hain, pakka number nahi.",
+  "url": "results/figures/extra/G05_video_validator.png"
+ },
+ {
+  "file": "figures/extra/G06_fire_meta_rules.png",
+  "name": "G06_fire_meta_rules.png",
+  "group": "extra",
+  "title": "Fire meta-fusion: kaunsa jodne ka tareeka best",
+  "explain": "Chaar fire experts (CNN, CLIP zero-shot, CLIP probe, colour) ko jodne ke tareeke: stacked logistic (meta), FM-1 (hamara uncertainty-weighted fusion), mean, max, aur akela expert. Stack lagbhag clip_probe ke barabar hai, upar nahi, isliye gate ne admit nahi kiya. Imaandaar result: jab ek expert pehle se itna strong ho, jodne se fayda kam milta hai.",
+  "url": "results/figures/extra/G06_fire_meta_rules.png"
+ },
+ {
+  "file": "figures/extra/G07_geo_fusion_rules.png",
+  "name": "G07_geo_fusion_rules.png",
+  "group": "extra",
+  "title": "Landslide fusion rules (PR-AUC)",
+  "explain": "Blue = akela signal (barish model, Caine line, dFS, geo gate). Purple = jodne ke tareeke (FM-1, PHARAOH, median, max, physics shield, stacked logistic). Same 736 asli rows par sab compare hue, seeds ka average.",
+  "url": "results/figures/extra/G07_geo_fusion_rules.png"
+ },
+ {
+  "file": "figures/extra/G08_landslide_features.png",
+  "name": "G08_landslide_features.png",
+  "group": "extra",
+  "title": "Landslide ke features ka distribution",
+  "explain": "Orange = jis din landslide hua, grey = usi jagah ka normal din. Jahan orange right ki taraf khiska hai (barish, Caine ratio, dFS), wahi feature kaam ka hai. Slope aur elevation me farak kam hai kyunki control din usi jagah ke hain (sirf mausam badla).",
+  "url": "results/figures/extra/G08_landslide_features.png"
+ },
+ {
+  "file": "figures/extra/G09_caine_scatter.png",
+  "name": "G09_caine_scatter.png",
+  "group": "extra",
+  "title": "Caine threshold scatter",
+  "explain": "Har dot ek din. Laal line = Caine ki global seema. NASA POWER ki barish DAILY hai (ghante wali nahi), isliye intensity average ho jaati hai aur lagbhag saare dots line ke neeche aate hain; D bhi 24 h ke multiples me hai. Isliye hum line ko yes/no ki tarah nahi, ratio I/I_crit (line ke kitna paas) ko score ki tarah use karte hain. Bina training ke ye score 184 Indian events par ROC-AUC 0.758 deta hai. Orange dots upar-right ki taraf zyada hain: lambi + tez barish = zyada khatra.",
+  "url": "results/figures/extra/G09_caine_scatter.png"
+ },
+ {
+  "file": "figures/extra/G10_glof_power_laws.png",
+  "name": "G10_glof_power_laws.png",
+  "group": "extra",
+  "title": "GLOF: jheel ka area -> paani -> flood peak",
+  "explain": "Glacial jheel jitni badi, utna paani (V = a A^b), aur jitna paani utna bada flood peak (Q = a V^b). Area-volume fit b = 1.13 (CI 0.71-1.50). Points kam hain (21 aur 31), isliye CI chauda hai; ye rough screening ke liye hai, exact prediction ke liye nahi.",
+  "url": "results/figures/extra/G10_glof_power_laws.png"
+ },
+ {
+  "file": "figures/extra/G11_rl_env_policies.png",
+  "name": "G11_rl_env_policies.png",
+  "group": "extra",
+  "title": "RL environment ke policies",
+  "explain": "Simulator me 360 monsoon seasons. C_miss = ek missed landslide ki keemat (false alarm = 5). always_hold = kabhi alarm nahi. Jab miss mehenga hai (5000) to physics rule always_hold se ~2.4x behtar hai. Learned RL (CQL) rule ke barabar hi hai (scorecard: oracle bhi lagbhag same), isliye gate ne rule rakha. Ye imaandaar negative result hai: RL ke liye jagah hi nahi bachi.",
+  "url": "results/figures/extra/G11_rl_env_policies.png"
+ },
+ {
+  "file": "figures/extra/G12_offline_rl_gain.png",
+  "name": "G12_offline_rl_gain.png",
+  "group": "extra",
+  "title": "Offline RL ka gain aur uska lower bound",
+  "explain": "Purple = RL rule se kitna behtar (average), laal = 95% confidence ka lower bound. In-sample number optimistic tha; jab honest held-out folds par test kiya to lower bound 0 se neeche gaya, isliye deploy 0/3. Rule hi chalega.",
+  "url": "results/figures/extra/G12_offline_rl_gain.png"
+ },
+ {
+  "file": "figures/extra/G13_score_distributions.png",
+  "name": "G13_score_distributions.png",
+  "group": "extra",
+  "title": "Model kitna confident hai: score distribution",
+  "explain": "Grey = bina aag ki images, orange = aag wali. Achha model dono pahaad alag-alag rakhta hai (grey left, orange right). Fire CNN me dono kaafi overlap karte hain, CLIP probe aur stack me saaf alag hain.",
+  "url": "results/figures/extra/G13_score_distributions.png"
+ },
+ {
+  "file": "figures/extra/G14_confusion_matrices.png",
+  "name": "G14_confusion_matrices.png",
+  "group": "extra",
+  "title": "Confusion matrix (threshold 0.5, OOF)",
+  "explain": "Upar-left = sahi 'no fire', neeche-right = sahi 'fire'. Upar-right = false alarm, neeche-left = chhooti aag (sabse khatarnak). Asli system 0.5 nahi, cost-loss threshold p* use karta hai (P03 chapter), jo chhooti aag ko aur kam karta hai.",
+  "url": "results/figures/extra/G14_confusion_matrices.png"
+ },
+ {
+  "file": "figures/physics/01_fs_vs_pore_pressure.png",
+  "name": "01_fs_vs_pore_pressure.png",
+  "group": "physics",
+  "title": "FS vs pore pressure",
+  "explain": "Mitti me paani ka dabaav badhe to factor of safety girta hai; FS < 1 = slope girega. Steep slope = kam margin.",
+  "url": "results/figures/physics/01_fs_vs_pore_pressure.png"
+ },
+ {
+  "file": "figures/physics/02_iverson_pressure_head.png",
+  "name": "02_iverson_pressure_head.png",
+  "group": "physics",
+  "title": "Iverson pressure head",
+  "explain": "Barish ke baad paani dheere-dheere gehraai tak pahunchta hai; isliye landslide barish ke kuch ghante/din baad aata hai.",
+  "url": "results/figures/physics/02_iverson_pressure_head.png"
+ },
+ {
+  "file": "figures/physics/03_caine_threshold.png",
+  "name": "03_caine_threshold.png",
+  "group": "physics",
+  "title": "Caine threshold",
+  "explain": "Lambi barish ko kam intensity chahiye girane ke liye: I = 14.82 D^-0.39 (log-log par seedhi line).",
+  "url": "results/figures/physics/03_caine_threshold.png"
+ },
+ {
+  "file": "figures/physics/04_fukuzono_inverse_velocity.png",
+  "name": "04_fukuzono_inverse_velocity.png",
+  "group": "physics",
+  "title": "Fukuzono inverse velocity",
+  "explain": "Girne se pehle slope tez hota jaata hai; 1/velocity ki line zero ko jahan chhooti hai, wahi failure time ka andaza.",
+  "url": "results/figures/physics/04_fukuzono_inverse_velocity.png"
+ },
+ {
+  "file": "figures/physics/05_fire_physics.png",
+  "name": "05_fire_physics.png",
+  "group": "physics",
+  "title": "Fire physics",
+  "explain": "Flame height (Heskestad), Byram number (hawa vs aag), flicker frequency: camera jo dekhe wo physics se match kare.",
+  "url": "results/figures/physics/05_fire_physics.png"
+ },
+ {
+  "file": "figures/physics/06_plume_temperature.png",
+  "name": "06_plume_temperature.png",
+  "group": "physics",
+  "title": "Plume temperature",
+  "explain": "Aag ke upar garam hawa ka tapmaan oonchai ke saath girta hai (McCaffrey).",
+  "url": "results/figures/physics/06_plume_temperature.png"
+ },
+ {
+  "file": "figures/physics/07_cost_loss_and_prior_shift.png",
+  "name": "07_cost_loss_and_prior_shift.png",
+  "group": "physics",
+  "title": "Cost-loss p*",
+  "explain": "Galat alarm ki keemat 5, chhooti aag ki 100 -> p* = 5/105 = 0.048. Is se upar probability = alarm.",
+  "url": "results/figures/physics/07_cost_loss_and_prior_shift.png"
+ },
+ {
+  "file": "figures/physics/08_lora_range_airtime.png",
+  "name": "08_lora_range_airtime.png",
+  "group": "physics",
+  "title": "LoRa range + airtime",
+  "explain": "Spreading factor badhao to range badhti hai par message bhejne me zyada time lagta hai.",
+  "url": "results/figures/physics/08_lora_range_airtime.png"
+ },
+ {
+  "file": "figures/physics/09_fresnel_real_terrain.png",
+  "name": "09_fresnel_real_terrain.png",
+  "group": "physics",
+  "title": "Fresnel zone, asli terrain",
+  "explain": "Gateway se gaon tak radio line ke beech pahad aata hai; relay oonchi jagah chahiye.",
+  "url": "results/figures/physics/09_fresnel_real_terrain.png"
+ },
+ {
+  "file": "figures/physics/10_noisy_or.png",
+  "name": "10_noisy_or.png",
+  "group": "physics",
+  "title": "Noisy-OR",
+  "explain": "Physics signals jodte waqt ek bhi signal khatra bole to combined risk kabhi kam nahi hota.",
+  "url": "results/figures/physics/10_noisy_or.png"
+ },
+ {
+  "file": "figures/results/R0_scorecard_all_auc.png",
+  "name": "R0_scorecard_all_auc.png",
+  "group": "results",
+  "title": "Har measured ROC-AUC ek chart par",
+  "explain": "Orange = same-source (OOF, spatial CV), blue = naya dataset (held-out). 0.5 = sikka uchhalna. Ek nazar me dikhta hai kaunsa model tikta hai (fire, CLIP) aur kaunsa naye data par gir jaata hai (deepfake).",
+  "url": "results/figures/results/R0_scorecard_all_auc.png"
+ },
+ {
+  "file": "figures/results/R1_fire_roc_oof_and_heldout.png",
+  "name": "R1_fire_roc_oof_and_heldout.png",
+  "group": "results",
+  "title": "Fire ROC curves (OOF + held-out)",
+  "explain": "Curve jitna upar-left, utna achha. CLIP probe aur stack sabse upar; fire CNN neeche. Right panel = naya dataset (DeepFire), jahan sab models kaafi achhe hain.",
+  "url": "results/figures/results/R1_fire_roc_oof_and_heldout.png"
+ },
+ {
+  "file": "figures/results/R2_calibration.png",
+  "name": "R2_calibration.png",
+  "group": "results",
+  "title": "Calibration",
+  "explain": "Model jo probability bole, kya utna hi sach hota hai? Diagonal line = perfect. Temperature scaling ke baad lines diagonal ke paas hain, isliye p* threshold par bharosa kar sakte hain.",
+  "url": "results/figures/results/R2_calibration.png"
+ },
+ {
+  "file": "figures/results/R3_alert_flood_vs_base_rate.png",
+  "name": "R3_alert_flood_vs_base_rate.png",
+  "group": "results",
+  "title": "Base-rate correction",
+  "explain": "Asli duniya me aag bahut kam hoti hai (1% ya kam), training me 55%. Prior-shift correction se false alarm bahut girte hain, par per-image detection bhi girti hai; video me aag kai frames tak dikhti hai, isliye incident pakda jaata hai. Ye PROPOSAL hai, repo me default nahi.",
+  "url": "results/figures/results/R3_alert_flood_vs_base_rate.png"
+ },
+ {
+  "file": "figures/results/R4_landslide_auc.png",
+  "name": "R4_landslide_auc.png",
+  "group": "results",
+  "title": "Landslide: physics bina training",
+  "explain": "Blue = physics jo kisi data par fit nahi hui (Caine, dFS, geo gate). Phir bhi ROC-AUC ~0.75. Barish logistic aur FM-1 fusion thoda upar. Geo-PINN laal line.",
+  "url": "results/figures/results/R4_landslide_auc.png"
+ },
+ {
+  "file": "figures/results/R5_rl_heldout.png",
+  "name": "R5_rl_heldout.png",
+  "group": "results",
+  "title": "RL held-out",
+  "explain": "Learned RL (CQL), fixed rule, tuned rule, always-alarm: reward per image. RL tuned rule se behtar nahi hua, isliye deploy nahi.",
+  "url": "results/figures/results/R5_rl_heldout.png"
+ },
+ {
+  "file": "figures/results/R6_generalisation_gap.png",
+  "name": "R6_generalisation_gap.png",
+  "group": "results",
+  "title": "Generalisation gap",
+  "explain": "Same source vs naya source. Deepfake 0.96 se 0.45 par gira: isliye wo sirf down-weighter hai.",
+  "url": "results/figures/results/R6_generalisation_gap.png"
+ },
+ {
+  "file": "figures/results/R7_crossmodal_video.png",
+  "name": "R7_crossmodal_video.png",
+  "group": "results",
+  "title": "Cross-modal video",
+  "explain": "FireSense 49 videos par har stream ka (detection - false alarm), temporal validator ke baad. Stack +0.47, clip_probe +0.32, fire CNN +0.01: video par teeno experts ko jodna sach me kaam aaya. n chhota hai (49 videos), isliye ise counts ki tarah padho.",
+  "url": "results/figures/results/R7_crossmodal_video.png"
+ },
+ {
+  "file": "figures/results/R8_crossmodal_confusers.png",
+  "name": "R8_crossmodal_confusers.png",
+  "group": "results",
+  "title": "Cross-modal confusers",
+  "explain": "Weather, candle, scenes par har stream ka false-alarm rate. Kam = achha.",
+  "url": "results/figures/results/R8_crossmodal_confusers.png"
+ },
+ {
+  "file": "figures/results/R9_stress_retrain.png",
+  "name": "R9_stress_retrain.png",
+  "group": "results",
+  "title": "Confuser-aware retrain (S)",
+  "explain": "Ek confuser type training se bahar rakha (unseen), baaki do par hard-negative training. Barabar recall 0.90 par unseen confuser par false alarms: CLIP probe 0.43 -> 0.32, stack 0.35 -> 0.16, aur DeepFire AUC 0.998 -> 0.997 (girna 0.01 se kam). Gate 3/3 seeds ADMITTED: TRINETRA ka pehla admitted learned upgrade.",
+  "url": "results/figures/results/R9_stress_retrain.png"
+ }
+]

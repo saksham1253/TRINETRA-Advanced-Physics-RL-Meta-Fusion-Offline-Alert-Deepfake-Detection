@@ -1,0 +1,41 @@
+{
+  "name": "figma-make-app",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "format": "oxfmt",
+    "test": "vitest run",
+    "golden": "python3 tools/export_golden.py && vitest run src/console/engine",
+    "build:data": "python3 tools/build_geo_pack.py && python3 tools/cache_terrain.py && python3 tools/extract_params.py && python3 tools/export_evidence_bank.py",
+    "demo:offline": "python3 tools/stamp_build.py && vite build && vite preview --host 0.0.0.0 --port 4173",
+    "gateway": "python3 tools/mock_gateway.py --port 8765"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "^5.3.0",
+    "@fontsource-variable/jetbrains-mono": "^5.3.0",
+    "@fontsource-variable/space-grotesk": "^5.3.0",
+    "@fontsource/noto-sans-devanagari": "^5.3.0",
+    "lucide-react": "^1.66.0",
+    "maplibre-gl": "^6.16.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "zustand": "^5.0.16"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.0.0",
+    "@types/geojson": "^7946.0.16",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^6.0.0",
+    "oxfmt": "^0.2.0",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.7.0",
+    "vite": "^8.0.5",
+    "vitest": "^5.0.5"
+  }
+}

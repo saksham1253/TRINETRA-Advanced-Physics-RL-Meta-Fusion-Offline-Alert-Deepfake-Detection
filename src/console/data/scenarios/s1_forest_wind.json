@@ -1,0 +1,6 @@
+{ "id": "s1-forest-wind", "title": "Forest fire under strong wind (Chamoli)", "summary": "A fire starts in pine and oak forest above a valley road at 00:40 and spreads with a 9 m/s up-valley wind. Two cameras and three IoT nodes cover the slope; 28 other cameras in the district see no fire.",
+  "seed": 1101, "regionId": "uk-chamoli", "hazard": "FIRE", "durationMin": 360, "stepMin": 2,
+  "weather": { "wind_ms": 9.0, "wind_from_deg": 225, "temp_K": 291 },
+  "incidents": [ { "id": "F1", "label": "Forest fire, slope above valley road", "kind": "fire", "lon": 79.47, "lat": 30.42, "startMin": 40, "Qc_kW_m": 1500, "Q_kW": 8000, "D_m": 6, "ros_m_min": 12, "cameras": 2, "iot": 3, "fuel": "chir pine and oak (synthetic)" } ],
+  "background": { "count": 28, "regionIds": ["uk-chamoli"], "iotShare": 0.2 },
+  "network": { "outageAtMin": null } }

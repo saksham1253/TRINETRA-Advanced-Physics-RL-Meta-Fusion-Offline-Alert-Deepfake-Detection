@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "trinetra/live_event/1.0",
+  "title": "TRINETRA live / replay event",
+  "type": "object",
+  "required": ["schema_version", "mode", "model", "source_id", "location", "timestamp_utc", "modules", "fusion", "decision", "network"],
+  "properties": {
+    "schema_version": { "const": "1.0" },
+    "mode": { "enum": ["LIVE", "REPLAY", "SIM"] },
+    "model": { "type": "object", "required": ["name", "version", "run_id"], "properties": {
+      "name": { "type": "string" }, "version": { "type": "string" }, "run_id": { "type": "string" }, "checkpoint_hash": { "type": ["string", "null"] }, "trained_on": { "type": "string" } } },
+    "source_id": { "type": "string" },
+    "location": { "type": "object", "required": ["lat", "lon", "location_origin"], "properties": {
+      "lat": { "type": "number", "minimum": -90, "maximum": 90 }, "lon": { "type": "number", "minimum": -180, "maximum": 180 },
+      "elevation": { "type": ["number", "null"] }, "accuracy_m": { "type": ["number", "null"] }, "location_origin": { "enum": ["SURVEYED", "ESTIMATED", "SYNTHETIC"] } } },
+    "timestamp_utc": { "type": "string" },
+    "modules": { "type": "array", "items": { "type": "object", "required": ["id", "status", "origin"], "properties": {
+      "id": { "type": "string" }, "status": { "enum": ["IMPLEMENTED", "PLANNED"] }, "score": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
+      "uncertainty": { "type": ["number", "null"], "minimum": 0, "maximum": 1 }, "validity_flag": { "type": ["boolean", "null"] },
+      "origin": { "enum": ["LIVE", "REPLAYED", "SIMULATED", "REAL-OOF"] }, "parameters_used": { "type": "object" } } } },
+    "physics": { "type": "array" },
+    "fusion": { "type": "object", "required": ["technique", "calibrated_probability", "uncertainty", "abstained"], "properties": {
+      "technique": { "type": "string" }, "inputs": { "type": "array" }, "weights": { "type": "array" },
+      "calibrated_probability": { "type": "number", "minimum": 0, "maximum": 1 }, "uncertainty": { "type": "number", "minimum": 0, "maximum": 1 },
+      "abstained": { "type": "boolean" }, "reason": { "type": ["string", "null"] }, "cost_ratio": { "type": "number" }, "threshold": { "type": "number" } } },
+    "decision": { "type": "object", "required": ["tier", "requires_approval"], "properties": {
+      "tier": { "enum": ["GREEN", "YELLOW", "ORANGE", "RED"] }, "requires_approval": { "const": true },
+      "explanation_template_id": { "type": "string" }, "explanation_values": { "type": "object" } } },
+    "network": { "type": "object", "properties": { "internet": { "type": "boolean" }, "cellular": { "type": "boolean" }, "lora": { "type": "boolean" } } },
+    "ground_truth": { "type": ["object", "null"] },
+    "notes": { "type": ["string", "null"] }
+  }
+}

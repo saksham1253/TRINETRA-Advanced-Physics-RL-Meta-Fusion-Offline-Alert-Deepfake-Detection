@@ -1,0 +1,4 @@
+# Component library (code: src/console/ui/primitives.tsx; tokens: design/tokens.json)
+Chip (tones: neutral, muted, brand, gold, advisory, watch, warning, emergency, a, b, c) · ClassChip (A, B, C, System, Surrogate, Data) · OriginChip (Simulated, Replayed, Live, Real model score) · StatusChip (Implemented, Simulated, Planned) · ClaimChip (C0–C4) · SevShape / SevBadge (Watch circle, Warning diamond, Emergency octagon; hollow = known false alarm) · Button (default, primary, ghost, danger; 32 px) · IconButton (32 px, Lucide 1.5 px) · Tabs (gold underline) · Section · Stat (display numerals) · Toggle · Kbd.
+Rules: 8 px spacing, radii 4/8, severity colours only for severity, gold only for selection, no glow on panels, tabular numbers, sentence case, units with every number.
+Six screens: national view, hyperparameter lab, alert dive, evidence and explain, LoRa offline mesh, live model and replay.

@@ -1,0 +1,135 @@
+1
+00:00:00,500 --> 00:00:05,300
+India needs warnings that do not guess blindly.
+
+2
+00:00:05,500 --> 00:00:14,800
+TRINETRA: three eyes. See the evidence. Reason with physics and uncertainty. Respond with a human in the loop.
+
+3
+00:00:15,500 --> 00:00:22,800
+Surveys and reports agree: where early warning is weak, people die. WMO's 2023 country survey finds about eight times higher mortality.
+
+4
+00:00:23,000 --> 00:00:31,300
+Just 24 hours of warning can cut damage by about 30 percent. Odisha went from about 10,000 cyclone deaths in 1999 to 64 in Fani.
+
+5
+00:00:31,500 --> 00:00:39,800
+Warning systems fail in 14 documented ways: false alarms, late detection, one fragile sensor, fake media, inflated evaluation.
+
+6
+00:00:40,000 --> 00:00:49,800
+Each tile flips to TRINETRA's answer, with an honest chip: built, or measured by us.
+
+7
+00:00:50,500 --> 00:00:58,800
+The original datasets are huge: far too big for a 36-hour prototype.
+
+8
+00:00:59,000 --> 00:01:08,800
+So we draw a small, seeded, stratified subset from each one, and record exactly how.
+
+9
+00:01:09,000 --> 00:01:19,800
+Tables are mapped to one schema. The landslide pack: 736 rows in, 736 out, zero dropped, 101 spatial groups.
+
+10
+00:01:20,000 --> 00:01:26,800
+The leakage trap: a random split puts frames of the same video in train and test, and the score looks fake-good.
+
+11
+00:01:27,000 --> 00:01:32,800
+A grouped split keeps every video, site and block whole. A different dataset waits in the vault for the held-out test.
+
+12
+00:01:33,000 --> 00:01:39,800
+Then every split flows to the module that needs it: train, validation, held-out or stress.
+
+13
+00:01:40,500 --> 00:01:48,800
+Simulated replay: steam rises in a kitchen. The fire detector's score climbs.
+
+14
+00:01:49,000 --> 00:01:58,800
+Zero-shot hesitates between smoke and steam. Physics expects a growing plume; the region does not grow like fire.
+
+15
+00:01:59,000 --> 00:02:08,800
+Flicker is outside the band physics predicts for a flame of this size, so physics consistency drops and the detector loses weight.
+
+16
+00:02:09,000 --> 00:02:19,800
+Fused risk stays low. Lowest tier, a log entry, no public alert. A dumb threshold would have rung. Evidence did not agree.
+
+17
+00:02:20,500 --> 00:02:28,800
+Same layout, simulated replay of a real fire. Early smoke is small; every score is weak on its own.
+
+18
+00:02:29,000 --> 00:02:37,800
+But the observed growth follows the physics curve, and flicker sits inside the predicted band.
+
+19
+00:02:38,000 --> 00:02:47,800
+Experts converge, the uncertainty halo narrows, and fused risk crosses the cost-based line. A miss costs 20 times a false alarm.
+
+20
+00:02:48,000 --> 00:02:59,800
+The operator sees the evidence and the reasons, and approves. Only then does a tiered alert go out through authorised channels.
+
+21
+00:03:00,500 --> 00:03:07,800
+A dramatic fire video arrives from social media. Placeholder imagery, labelled synthetic.
+
+22
+00:03:08,000 --> 00:03:15,800
+The authenticity check flags it, and its trust drops: r prime equals r times one minus p-fake.
+
+23
+00:03:16,000 --> 00:03:24,800
+Camera, satellite and weather do not corroborate it. It is downgraded and cannot raise the alert. Misinformation is screened before it moves the system.
+
+24
+00:03:25,500 --> 00:03:33,800
+Inside the fusion engine: each expert's weight is reliability times physics consistency times e to the minus uncertainty over tau.
+
+25
+00:03:34,000 --> 00:03:41,800
+Worked example from the code: three experts disagree, the doubtful one weighs only 0.147, the fused risk is 0.63, level RED.
+
+26
+00:03:42,000 --> 00:03:49,800
+Now switch the averaging rule on a hard case: an outlier, a miscalibrated expert and a correlated pair. Watch the output and its uncertainty.
+
+27
+00:03:50,000 --> 00:03:54,800
+Calibration is measured on real out-of-fold scores, with the temperature fitted on other folds only.
+
+28
+00:03:55,500 --> 00:04:04,800
+Physics turns rain, slope and pixels into checkable claims. Each model has a class chip and its real parameters from the code.
+
+29
+00:04:05,000 --> 00:04:13,800
+Real data: on catalogued landslide days the Caine ratio sits higher than on the same sites' normal monsoon days.
+
+30
+00:04:14,000 --> 00:04:24,800
+A derived term collapses back to its parent: with no pore pressure, the FS drop is zero. And a model outside its regime is not trusted.
+
+31
+00:04:25,500 --> 00:04:32,800
+Cyclone mode is planned, not built: wind-profile physics, forecasts, ground evidence and misinformation screening.
+
+32
+00:04:33,000 --> 00:04:39,800
+An evacuation planner would only advise. A human decides.
+
+33
+00:04:40,500 --> 00:04:48,300
+Measured: physics alone reaches AUC 0.758 on 184 real landslides. Our RL never beat the physics rule, so it stays off. Zero-shot was not admitted.
+
+34
+00:04:48,500 --> 00:04:54,800
+TRINETRA complements certified alarms and official warnings. A human approves every public alert.

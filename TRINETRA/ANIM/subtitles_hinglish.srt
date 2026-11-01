@@ -1,0 +1,135 @@
+1
+00:00:00,500 --> 00:00:05,300
+India ko aisi warnings chahiye jo andhere me teer na chalayein.
+
+2
+00:00:05,500 --> 00:00:14,800
+TRINETRA: teen aankhein. Saboot dekho, physics aur uncertainty se socho, aur insaan ke saath jawab do.
+
+3
+00:00:15,500 --> 00:00:22,800
+Surveys aur reports ek hi baat kehte hain: jahan early warning kamzor hai, wahan maut zyada. WMO ke 2023 survey me lagbhag aath guna.
+
+4
+00:00:23,000 --> 00:00:31,300
+Sirf 24 ghante pehle ki warning se damage lagbhag 30 percent kam. Odisha me 1999 me lagbhag 10,000 maut, Fani me 64.
+
+5
+00:00:31,500 --> 00:00:39,800
+Warning systems 14 documented tareekon se fail hote hain: false alarm, der se pakadna, ek kamzor sensor, fake media, jhoothe evaluation numbers.
+
+6
+00:00:40,000 --> 00:00:49,800
+Har tile palat ke TRINETRA ka jawab dikhata hai, imaandaar chip ke saath: bana hua, ya humne khud measure kiya.
+
+7
+00:00:50,500 --> 00:00:58,800
+Asli datasets bahut bade hain: 36 ghante ke prototype ke liye bahut zyada.
+
+8
+00:00:59,000 --> 00:01:08,800
+Isliye har ek se chhota, seeded, stratified subset lete hain, aur exactly likhte hain kaise.
+
+9
+00:01:09,000 --> 00:01:19,800
+Tables ek schema me map hoti hain. Landslide pack: 736 rows andar, 736 bahar, zero drop, 101 spatial groups.
+
+10
+00:01:20,000 --> 00:01:26,800
+Leakage trap: random split me ek hi video ke frames train aur test dono me, aur number jhootha bada dikhta hai.
+
+11
+00:01:27,000 --> 00:01:32,800
+Grouped split har video, site aur block ko poora ek taraf rakhta hai. Ek alag dataset vault me held-out test ke liye.
+
+12
+00:01:33,000 --> 00:01:39,800
+Phir har split us module tak jaata hai jise zarurat hai: train, validation, held-out ya stress.
+
+13
+00:01:40,500 --> 00:01:48,800
+Simulated replay: kitchen me bhaap uth rahi hai. Fire detector ka score badhta hai.
+
+14
+00:01:49,000 --> 00:01:58,800
+Zero-shot dhuan aur bhaap ke beech atakta hai. Physics badhte plume ki ummeed karti hai; ye aag ki tarah nahi badhta.
+
+15
+00:01:59,000 --> 00:02:08,800
+Flicker us band ke bahar hai jo is size ki lau ke liye physics batati hai, isliye consistency girti hai aur detector ka weight kam hota hai.
+
+16
+00:02:09,000 --> 00:02:19,800
+Fused risk kam rehta hai. Sabse neecha tier, ek log entry, koi public alert nahi. Seedha threshold bajta. Saboot sahmat nahi the.
+
+17
+00:02:20,500 --> 00:02:28,800
+Wahi layout, asli aag ka simulated replay. Shuru me dhuan chhota hai; har score akele kamzor hai.
+
+18
+00:02:29,000 --> 00:02:37,800
+Par dekha gaya growth physics curve ke saath chalta hai, aur flicker predicted band ke andar hai.
+
+19
+00:02:38,000 --> 00:02:47,800
+Experts milte hain, uncertainty ka gola sikudta hai, aur fused risk cost-based line paar karta hai. Miss ki keemat false alarm se 20 guna.
+
+20
+00:02:48,000 --> 00:02:59,800
+Operator saboot aur wajah dekhta hai, aur approve karta hai. Tabhi tiered alert authorised channels se jaata hai.
+
+21
+00:03:00,500 --> 00:03:07,800
+Social media se ek dramatic aag ka video aata hai. Placeholder image, synthetic label ke saath.
+
+22
+00:03:08,000 --> 00:03:15,800
+Authenticity check ise flag karta hai, aur iska trust girta hai: r prime barabar r guna ek minus p-fake.
+
+23
+00:03:16,000 --> 00:03:24,800
+Camera, satellite aur weather iski pushti nahi karte. Ye neeche kar diya jaata hai aur alert nahi badha sakta.
+
+24
+00:03:25,500 --> 00:03:33,800
+Fusion engine ke andar: har expert ka weight reliability guna physics consistency guna e ki power minus uncertainty by tau.
+
+25
+00:03:34,000 --> 00:03:41,800
+Code se worked example: teen experts asahmat, shaky wale ka weight sirf 0.147, fused risk 0.63, level RED.
+
+26
+00:03:42,000 --> 00:03:49,800
+Ab ek mushkil case pe averaging rule badlo: ek outlier, ek galat-calibrated expert aur ek correlated jodi. Output aur uncertainty dekho.
+
+27
+00:03:50,000 --> 00:03:54,800
+Calibration asli out-of-fold scores pe naapi jaati hai, temperature sirf doosre folds pe fit hota hai.
+
+28
+00:03:55,500 --> 00:04:04,800
+Physics barish, dhalaan aur pixels ko check hone wale daavon me badalti hai. Har model ka class chip aur code ke asli parameters.
+
+29
+00:04:05,000 --> 00:04:13,800
+Asli data: landslide wale din Caine ratio unhi jagahon ke normal monsoon dinon se upar hota hai.
+
+30
+00:04:14,000 --> 00:04:24,800
+Derived term apne parent pe wapas aata hai: pore pressure zero to FS drop zero. Aur apne regime ke bahar model pe bharosa nahi.
+
+31
+00:04:25,500 --> 00:04:32,800
+Cyclone mode planned hai, bana nahi: wind-profile physics, forecasts, zameeni saboot aur fake news screening.
+
+32
+00:04:33,000 --> 00:04:39,800
+Evacuation planner sirf salah dega. Faisla insaan karega.
+
+33
+00:04:40,500 --> 00:04:48,300
+Measured: akeli physics 184 asli landslides pe AUC 0.758. Hamara RL physics rule ko nahi hara paya, isliye off. Zero-shot admit nahi hua.
+
+34
+00:04:48,500 --> 00:04:54,800
+TRINETRA certified alarms aur official warnings ka saathi hai. Har public alert insaan approve karta hai.

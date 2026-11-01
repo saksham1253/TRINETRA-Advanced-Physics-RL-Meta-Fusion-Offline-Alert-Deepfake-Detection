@@ -1,0 +1,177 @@
+{
+  "pack": "prototype-v1",
+  "models": {
+    "ready_pack": {
+      "n_seeds": 1,
+      "runs": [
+        {
+          "file": "ready_pack_report.json",
+          "run_id": null,
+          "seed": null,
+          "dry_run": false
+        }
+      ]
+    },
+    "zeroshot": {
+      "n_seeds": 1,
+      "runs": [
+        {
+          "file": "zeroshot/zeroshot_s0_report.json",
+          "run_id": "zeroshot-20261031-1732-0",
+          "seed": 0,
+          "oof_roc_auc": 0.889284888595487,
+          "oof_pr_auc": 0.9203640680049443,
+          "oof_recall_at_fpr05": 0.607293868921776,
+          "test_roc_auc": 0.9991522633744856,
+          "test_pr_auc": 0.9994791298949015,
+          "test_recall_at_fpr05": 1.0,
+          "admitted": false,
+          "value_score_model": -0.04216073781291163,
+          "ece_crossfit_calibrated": 0.17289833045103903,
+          "test_ece_calibrated": 0.21782398571423098,
+          "test_n": 1023,
+          "stress:stress_weather:fa_rate_at_0p5_cal": 0.624,
+          "stress:stress_weather:fa_rate_at_pstar_cal": 1.0,
+          "stress:stress_weather:mean_prob_neg_cal": 0.5887583465645382,
+          "stress:stress_small_flames:fa_rate_at_0p5_cal": 0.8,
+          "stress:stress_small_flames:fa_rate_at_pstar_cal": 1.0,
+          "stress:stress_small_flames:mean_prob_neg_cal": 0.6352113726117137,
+          "stress:stress_scenes:fa_rate_at_0p5_cal": 0.2725,
+          "stress:stress_scenes:fa_rate_at_pstar_cal": 1.0,
+          "stress:stress_scenes:mean_prob_neg_cal": 0.4380832378316708,
+          "stress:heldout_firedataset:fa_rate_at_0p5_cal": 0.1891891891891892,
+          "stress:heldout_firedataset:fa_rate_at_pstar_cal": 1.0,
+          "stress:heldout_firedataset:mean_prob_neg_cal": 0.404539489270542,
+          "stress:heldout_firedataset:recall_at_0p5_cal": 1.0,
+          "stress:heldout_homefire:fa_rate_at_0p5_cal": 0.45454545454545453,
+          "stress:heldout_homefire:fa_rate_at_pstar_cal": 1.0,
+          "stress:heldout_homefire:mean_prob_neg_cal": 0.4981810050412871,
+          "stress:heldout_homefire:recall_at_0p5_cal": 0.8366219415943172,
+          "raw_ece": 0.23552061894982296,
+          "raw_brier": 0.22756128017211566,
+          "dry_run": false
+        }
+      ],
+      "stress:heldout_firedataset:mean_prob_neg_cal": {
+        "mean": 0.404539489270542,
+        "sd": 0.0
+      },
+      "stress:heldout_firedataset:recall_at_0p5_cal": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "raw_ece": {
+        "mean": 0.23552061894982296,
+        "sd": 0.0
+      },
+      "value_score_model": {
+        "mean": -0.04216073781291163,
+        "sd": 0.0
+      },
+      "stress:stress_small_flames:fa_rate_at_pstar_cal": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "stress:stress_scenes:mean_prob_neg_cal": {
+        "mean": 0.4380832378316708,
+        "sd": 0.0
+      },
+      "test_pr_auc": {
+        "mean": 0.9994791298949015,
+        "sd": 0.0
+      },
+      "test_recall_at_fpr05": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "ece_crossfit_calibrated": {
+        "mean": 0.17289833045103903,
+        "sd": 0.0
+      },
+      "stress:stress_scenes:fa_rate_at_pstar_cal": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "stress:heldout_homefire:mean_prob_neg_cal": {
+        "mean": 0.4981810050412871,
+        "sd": 0.0
+      },
+      "test_ece_calibrated": {
+        "mean": 0.21782398571423098,
+        "sd": 0.0
+      },
+      "oof_pr_auc": {
+        "mean": 0.9203640680049443,
+        "sd": 0.0
+      },
+      "stress:stress_weather:mean_prob_neg_cal": {
+        "mean": 0.5887583465645382,
+        "sd": 0.0
+      },
+      "oof_roc_auc": {
+        "mean": 0.889284888595487,
+        "sd": 0.0
+      },
+      "stress:heldout_homefire:fa_rate_at_pstar_cal": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "raw_brier": {
+        "mean": 0.22756128017211566,
+        "sd": 0.0
+      },
+      "test_roc_auc": {
+        "mean": 0.9991522633744856,
+        "sd": 0.0
+      },
+      "stress:heldout_firedataset:fa_rate_at_pstar_cal": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "stress:heldout_homefire:recall_at_0p5_cal": {
+        "mean": 0.8366219415943172,
+        "sd": 0.0
+      },
+      "stress:stress_scenes:fa_rate_at_0p5_cal": {
+        "mean": 0.2725,
+        "sd": 0.0
+      },
+      "stress:heldout_homefire:fa_rate_at_0p5_cal": {
+        "mean": 0.45454545454545453,
+        "sd": 0.0
+      },
+      "test_n": {
+        "mean": 1023.0,
+        "sd": 0.0
+      },
+      "stress:stress_weather:fa_rate_at_pstar_cal": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "stress:heldout_firedataset:fa_rate_at_0p5_cal": {
+        "mean": 0.1891891891891892,
+        "sd": 0.0
+      },
+      "stress:stress_small_flames:mean_prob_neg_cal": {
+        "mean": 0.6352113726117137,
+        "sd": 0.0
+      },
+      "stress:stress_small_flames:fa_rate_at_0p5_cal": {
+        "mean": 0.8,
+        "sd": 0.0
+      },
+      "oof_recall_at_fpr05": {
+        "mean": 0.607293868921776,
+        "sd": 0.0
+      },
+      "stress:stress_weather:fa_rate_at_0p5_cal": {
+        "mean": 0.624,
+        "sd": 0.0
+      },
+      "admitted": "0/1"
+    }
+  },
+  "fusion": null,
+  "geo": {},
+  "dry_run_present": false
+}

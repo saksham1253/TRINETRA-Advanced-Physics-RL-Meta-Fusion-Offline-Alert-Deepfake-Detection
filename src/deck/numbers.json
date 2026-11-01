@@ -1,0 +1,486 @@
+{
+ "tests": {
+  "v": "128/128",
+  "m": "unit tests passing after all fixes",
+  "src": "trinetra/run_tests.py",
+  "label": "OUR RESULT",
+  "slide": [
+   7
+  ]
+ },
+ "gates": {
+  "v": "6/6",
+  "m": "honesty/safety CI gates",
+  "src": "trinetra/scripts/ci_gates.py",
+  "label": "OUR RESULT",
+  "slide": [
+   7
+  ]
+ },
+ "bugs": {
+  "v": "31",
+  "m": "code/data bugs found by running the code and fixed",
+  "src": "docs/BUG_STATUS.md",
+  "label": "OUR RESULT",
+  "slide": [
+   7
+  ]
+ },
+ "datasets": {
+  "v": "54",
+  "m": "datasets in the prototype pack (link-checked)",
+  "src": "docs/09b_dataset_links.csv",
+  "label": "OUR RESULT",
+  "slide": [
+   1,
+   4,
+   7
+  ]
+ },
+ "papers": {
+  "v": "797",
+  "m": "unique papers indexed; 157 links checked, 8 title mismatches",
+  "src": "docs/11_paper_links.csv",
+  "label": "OUR RESULT",
+  "slide": [
+   1,
+   7
+  ]
+ },
+ "geo_events": {
+  "v": "184",
+  "m": "real rain-triggered landslide events (NASA GLC, 29-33N 76-81E)",
+  "src": "results/geo_large/geo_meta.json",
+  "label": "OUR RESULT",
+  "slide": [
+   1,
+   3,
+   4,
+   7
+  ]
+ },
+ "geo_rows": {
+  "v": "736",
+  "m": "events + 552 same-site control monsoon days; 101 spatial blocks",
+  "src": "results/geo_large",
+  "label": "OUR RESULT",
+  "slide": [
+   3,
+   4
+  ]
+ },
+ "auc_caine": {
+  "v": "0.758",
+  "m": "ROC-AUC, Caine I-D physics, no fitting (spatial-block OOF)",
+  "src": "results/geo_large/geo_physics_s0_report.json",
+  "label": "OUR RESULT",
+  "slide": [
+   3,
+   7
+  ]
+ },
+ "auc_dfs": {
+  "v": "0.750",
+  "m": "ROC-AUC, dFS Iverson+FS physics, no fitting",
+  "src": "results/geo_large",
+  "label": "OUR RESULT",
+  "slide": [
+   3
+  ]
+ },
+ "auc_gate": {
+  "v": "0.712",
+  "m": "ROC-AUC, repo geo gate with back-analysed c'",
+  "src": "results/geo_large",
+  "label": "OUR RESULT",
+  "slide": [
+   3
+  ]
+ },
+ "auc_rain": {
+  "v": "0.781",
+  "m": "ROC-AUC, logistic on rain (data baseline)",
+  "src": "results/geo_large",
+  "label": "OUR RESULT",
+  "slide": [
+   3,
+   7
+  ]
+ },
+ "auc_phys_logit": {
+  "v": "0.773",
+  "m": "ROC-AUC, logistic on physics features",
+  "src": "results/geo_large",
+  "label": "OUR RESULT",
+  "slide": [
+   3
+  ]
+ },
+ "auc_hybrid": {
+  "v": "0.780",
+  "m": "ROC-AUC, logistic rain + physics",
+  "src": "results/geo_large",
+  "label": "OUR RESULT",
+  "slide": [
+   3,
+   7
+  ]
+ },
+ "ece_hybrid": {
+  "v": "0.030",
+  "m": "ECE of the hybrid model (OOF)",
+  "src": "results/geo_large",
+  "label": "OUR RESULT",
+  "slide": [
+   4,
+   7
+  ]
+ },
+ "phys_minus_rain_L": {
+  "v": "-0.007 [-0.024, +0.011]",
+  "m": "AUC physics-minus-rain, 95% block-bootstrap CI (large set): no proven gain",
+  "src": "results/geo_large",
+  "label": "OUR RESULT",
+  "slide": [
+   3,
+   7
+  ]
+ },
+ "phys_minus_rain_S": {
+  "v": "+0.095 [+0.052, +0.144]",
+  "m": "same on the small Chamoli tile (112 rows, 15 blocks): did not survive more data",
+  "src": "results/geo_small/geo_physics_s0_report.json",
+  "label": "OUR RESULT",
+  "slide": [
+   3,
+   7
+  ]
+ },
+ "glof_av": {
+  "v": "b = 1.13 [0.71, 1.50]",
+  "m": "GLOF V = a*A^b, n = 21, R2(log) 0.72",
+  "src": "results/glof/glof_physics_report.json",
+  "label": "OUR RESULT",
+  "slide": [
+   3
+  ]
+ },
+ "glof_vq": {
+  "v": "d = 0.54 [0.36, 0.79]",
+  "m": "GLOF Qp = c*V^d, n = 31, R2(log) 0.36",
+  "src": "results/glof/glof_physics_report.json",
+  "label": "OUR RESULT",
+  "slide": [
+   3
+  ]
+ },
+ "rl_seasons": {
+  "v": "360",
+  "m": "real monsoon rain seasons in the RL simulator (NASA POWER)",
+  "src": "results/rl_env/rl_env_cmiss100_s0_report.json",
+  "label": "OUR RESULT",
+  "slide": [
+   5
+  ]
+ },
+ "rl_beta": {
+  "v": "24.3",
+  "m": "hazard slope on dFS fitted on the real events",
+  "src": "results/rl_env",
+  "label": "OUR RESULT",
+  "slide": [
+   5
+  ]
+ },
+ "rl100_alarm": {
+  "v": "-540.5",
+  "m": "return, always-alarm (C_miss = 100)",
+  "src": "results/rl_env",
+  "label": "OUR RESULT (SIMULATOR)",
+  "slide": [
+   5
+  ]
+ },
+ "rl100_rule": {
+  "v": "-22.8",
+  "m": "return, physics rule (C_miss = 100)",
+  "src": "results/rl_env",
+  "label": "OUR RESULT (SIMULATOR)",
+  "slide": [
+   5
+  ]
+ },
+ "rl100_cql": {
+  "v": "-22.5",
+  "m": "return, CQL shielded; 95% LCB of gain -0.30, so not deployed",
+  "src": "results/rl_env",
+  "label": "OUR RESULT (SIMULATOR)",
+  "slide": [
+   5,
+   7
+  ]
+ },
+ "rl_high_cost": {
+  "v": "C_miss 1000: hold -226.7, rule -200.0, CQL -200.9 (LCB -10.3). C_miss 5000: hold -1133.3, rule -478.1, CQL -486.8 (LCB -31.9)",
+  "m": "high-miss-cost sensitivity; physics rule = oracle; CQL not deployed at any cost",
+  "src": "results/rl_env/rl_env_cmiss1000_s0_report.json, rl_env_cmiss5000_s0_report.json",
+  "label": "OUR RESULT (SIMULATOR)",
+  "slide": [
+   5,
+   7
+  ]
+ },
+ "pstar": {
+  "v": "0.0476",
+  "m": "p* = C_FA/(C_FA+C_miss), C_FA = 5, C_miss = 100",
+  "src": "trinetra/configs/default.json",
+  "label": "CONFIG",
+  "slide": [
+   5
+  ]
+ },
+ "ex_w": {
+  "v": "0.603 / 0.655 / 0.147",
+  "m": "effective weights CCTV / sensor stream (generic) / media check",
+  "src": "docs/07 §A (computed with repo code)",
+  "label": "WORKED EXAMPLE",
+  "slide": [
+   5
+  ]
+ },
+ "ex_p": {
+  "v": "0.6335",
+  "m": "FM-1 fused risk; U* 0.2465; level RED; PHARAOH 0.6456",
+  "src": "docs/07 §A",
+  "label": "WORKED EXAMPLE",
+  "slide": [
+   5
+  ]
+ },
+ "vision": {
+  "v": "PARTIAL",
+  "m": "zero-shot measured (not admitted); fire CNN, media, EO still running",
+  "src": "kaggle/run_hackathon.sh fire|zeroshot|deepfake|eo",
+  "label": "PENDING",
+  "slide": [
+   4,
+   7
+  ]
+ },
+ "targets": {
+  "v": "TBD",
+  "m": "acceptance targets (false alarms per camera-day, time to detection): NOT FOUND IN REPO",
+  "src": "-",
+  "label": "TBD",
+  "slide": [
+   1
+  ]
+ },
+ "wfc": {
+  "v": "84.48% F1",
+  "m": "WildFireCan-MMD: trained custom model beats zero-shot VLMs (abstract)",
+  "src": "2504.13231 via ws4_cctv/zero_shot_design.md",
+  "label": "PAPER REPORTS",
+  "slide": [
+   6
+  ]
+ },
+ "evaclip": {
+  "v": "82.0% top-1",
+  "m": "EVA-CLIP zero-shot ImageNet (abstract)",
+  "src": "2303.15389 via ws4_cctv/zero_shot_design.md",
+  "label": "PAPER REPORTS",
+  "slide": [
+   6
+  ]
+ },
+ "rl100_hold": {
+  "v": "-22.7",
+  "m": "return, always-hold (C_miss = 100)",
+  "src": "results/rl_env",
+  "label": "OUR RESULT (SIMULATOR)",
+  "slide": [
+   5
+  ]
+ },
+ "rl100_caine": {
+  "v": "-26.4",
+  "m": "return, Caine rule (C_miss = 100)",
+  "src": "results/rl_env",
+  "label": "OUR RESULT (SIMULATOR)",
+  "slide": [
+   5
+  ]
+ },
+ "rl100_oracle": {
+  "v": "-22.9",
+  "m": "return, oracle with true hazard (C_miss = 100)",
+  "src": "results/rl_env",
+  "label": "OUR RESULT (SIMULATOR)",
+  "slide": [
+   5
+  ]
+ },
+ "auc_pinn": {
+  "v": "0.716",
+  "m": "ROC-AUC, Geo-PINN (trained, physics loss), spatial OOF; NOT admitted (did not beat baselines with CI); ECE 0.099",
+  "src": "results/geo_pinn/geo_pinn_s0_report.json",
+  "label": "OUR RESULT",
+  "slide": [
+   3,
+   7
+  ]
+ },
+ "zs_auc": {
+  "v": "0.889",
+  "m": "ROC-AUC, zero-shot CLIP ViT-B-32 fire-or-smoke, D-Fire group-CV OOF, n 3,410 (final run; phase2 0.891, n 2,546)",
+  "src": "results/zeroshot_final/zeroshot_s0_report.json",
+  "label": "OUR RESULT",
+  "slide": [
+   5,
+   6
+  ]
+ },
+ "zs_recall05": {
+  "v": "0.607",
+  "m": "recall at 5% false-alarm rate, zero-shot OOF (D-Fire)",
+  "src": "results/zeroshot_final/zeroshot_s0_report.json",
+  "label": "OUR RESULT",
+  "slide": [
+   5,
+   6
+  ]
+ },
+ "zs_heldout_auc": {
+  "v": "0.999",
+  "m": "ROC-AUC on held-out DeepFire forest images (deduped vs D-Fire, n 1,023); an easy set, not a field claim",
+  "src": "results/zeroshot_final/zeroshot_s0_report.json",
+  "label": "OUR RESULT",
+  "slide": [
+   5,
+   6
+  ]
+ },
+ "zs_ece": {
+  "v": "0.236 → 0.173",
+  "m": "ECE raw → after cross-fit temperature calibration (OOF); still poorly calibrated",
+  "src": "results/zeroshot_final/zeroshot_s0_report.json",
+  "label": "OUR RESULT",
+  "slide": [
+   5,
+   6
+  ]
+ },
+ "zs_admit": {
+  "v": "NOT ADMITTED",
+  "m": "did not beat climatology or a recalibrated-logistic baseline on cost-weighted value score with CI (p* = 0.048)",
+  "src": "results/zeroshot_final/zeroshot_s0_report.json",
+  "label": "OUR RESULT",
+  "slide": [
+   5,
+   6
+  ]
+ },
+ "zs_fa_weather": {
+  "v": "62%",
+  "m": "false alarms at p = 0.5 on 1,000 weather images (fog/smog, sandstorm, lightning, rain)",
+  "src": "results/zeroshot_final/zeroshot_s0_report.json",
+  "label": "OUR RESULT",
+  "slide": [
+   5,
+   6
+  ]
+ },
+ "zs_fa_flames": {
+  "v": "80%",
+  "m": "false alarms at p = 0.5 on 600 candle / lighter / matchstick flames",
+  "src": "results/zeroshot_final/zeroshot_s0_report.json",
+  "label": "OUR RESULT",
+  "slide": [
+   5,
+   6
+  ]
+ },
+ "zs_fa_scenes": {
+  "v": "27%",
+  "m": "false alarms at p = 0.5 on 800 normal street / building / forest / mountain scenes",
+  "src": "results/zeroshot_final/zeroshot_s0_report.json",
+  "label": "OUR RESULT",
+  "slide": [
+   5,
+   6
+  ]
+ },
+ "uk_dm_5yr": {
+  "v": "₹5,178 cr",
+  "m": "Uttarakhand disaster-management allocation, 2021–26",
+  "src": "TRINETRA/results/uttarakhand_cost_benefit.json",
+  "label": "OFFICIAL",
+  "slide": [
+   1
+  ]
+ },
+ "uk_dm_annual": {
+  "v": "₹1,035.6 cr/yr",
+  "m": "annual average disaster-management allocation",
+  "src": "TRINETRA/results/uttarakhand_cost_benefit.json",
+  "label": "DERIVED",
+  "slide": [
+   1
+  ]
+ },
+ "uk_rr_annual": {
+  "v": "₹724.9 cr/yr",
+  "m": "response/relief + recovery/reconstruction comparison envelope",
+  "src": "TRINETRA/results/uttarakhand_cost_benefit.json",
+  "label": "DERIVED",
+  "slide": [
+   1
+  ]
+ },
+ "uk_network_cost": {
+  "v": "₹1.5–3.0 cr",
+  "m": "first-year priority network: 500 slope nodes, 50 rain stations, 95 gateways, redundant servers/integration",
+  "src": "TRINETRA/results/uttarakhand_cost_benefit.json",
+  "label": "PLANNING",
+  "slide": [
+   1
+  ]
+ },
+ "uk_avoidable_low": {
+  "v": "₹3.6 cr/yr",
+  "m": "potential gross avoided public burden, low scenario",
+  "src": "TRINETRA/results/uttarakhand_cost_benefit.json",
+  "label": "SCENARIO",
+  "slide": [
+   1
+  ]
+ },
+ "uk_avoidable_base": {
+  "v": "₹18.8 cr/yr",
+  "m": "potential gross avoided public burden, base scenario",
+  "src": "TRINETRA/results/uttarakhand_cost_benefit.json",
+  "label": "SCENARIO",
+  "slide": [
+   1
+  ]
+ },
+ "uk_2013_cost": {
+  "v": "₹3,964.1 cr",
+  "m": "Uttarakhand 2013 disaster damage and recovery needs (JRDNA)",
+  "src": "TRINETRA/results/uttarakhand_cost_benefit.json",
+  "label": "OFFICIAL",
+  "slide": [
+   1
+  ]
+ },
+ "uk_2013_roads": {
+  "v": "₹2,710.3 cr",
+  "m": "roads and bridges in Uttarakhand 2013 JRDNA",
+  "src": "TRINETRA/results/uttarakhand_cost_benefit.json",
+  "label": "OFFICIAL",
+  "slide": [
+   1
+  ]
+ }
+}

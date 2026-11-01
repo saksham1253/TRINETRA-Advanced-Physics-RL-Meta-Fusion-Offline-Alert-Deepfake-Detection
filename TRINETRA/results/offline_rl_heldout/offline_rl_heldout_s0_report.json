@@ -1,0 +1,118 @@
+{
+  "name": "offline_rl_heldout",
+  "seed": 0,
+  "n": 3410,
+  "n_blocks": 366,
+  "evaluation": "block-held-out folds, TRUE realized reward from labels (no OPE)",
+  "cache": "../results/fire_meta/fire_meta_cache.npz",
+  "policies": {
+    "cql": {
+      "reward_per_row": -2.466275659824047,
+      "miss_rate": 0.017970401691331923,
+      "watch_rate": 0.13577712609970674,
+      "alarm_rate_on_negatives": 0.4505928853754941,
+      "action_freq": [
+        428,
+        463,
+        2519
+      ]
+    },
+    "rule": {
+      "reward_per_row": -2.5879765395894427,
+      "miss_rate": 0.007928118393234672,
+      "watch_rate": 0.1941348973607038,
+      "alarm_rate_on_negatives": 0.31620553359683795,
+      "action_freq": [
+        478,
+        662,
+        2270
+      ]
+    },
+    "rule_tuned": {
+      "reward_per_row": -2.5357771260997066,
+      "miss_rate": 0.01004228329809725,
+      "watch_rate": 0.13958944281524927,
+      "alarm_rate_on_negatives": 0.6067193675889329,
+      "action_freq": [
+        174,
+        476,
+        2760
+      ]
+    },
+    "always_alarm": {
+      "reward_per_row": -2.225806451612903,
+      "miss_rate": 0.0,
+      "watch_rate": 0.0,
+      "alarm_rate_on_negatives": 1.0,
+      "action_freq": [
+        0,
+        0,
+        3410
+      ]
+    },
+    "always_hold": {
+      "reward_per_row": -55.483870967741936,
+      "miss_rate": 1.0,
+      "watch_rate": 0.0,
+      "alarm_rate_on_negatives": 0.0,
+      "action_freq": [
+        3410,
+        0,
+        0
+      ]
+    },
+    "oracle": {
+      "reward_per_row": 0.0,
+      "miss_rate": 0.0,
+      "watch_rate": 0.0,
+      "alarm_rate_on_negatives": 0.0,
+      "action_freq": [
+        1518,
+        0,
+        1892
+      ]
+    }
+  },
+  "gain_vs_rule": {
+    "mean": 0.1217008797653959,
+    "ci95": [
+      -0.4767223318696325,
+      0.7293300079323893
+    ]
+  },
+  "gain_vs_rule_tuned": {
+    "mean": 0.06950146627565983,
+    "ci95": [
+      -0.5044767330739999,
+      0.6238994244466413
+    ]
+  },
+  "gain_vs_rule_mean": 0.1217008797653959,
+  "gain_vs_rule_lcb95": -0.4767223318696325,
+  "gain_vs_tuned_rule_mean": 0.06950146627565983,
+  "gain_vs_tuned_rule_lcb95": -0.5044767330739999,
+  "tuned_cuts_per_fold": [
+    [
+      0.007315234126340484,
+      0.05019897271627586
+    ],
+    [
+      0.07452141297525136,
+      0.12137795298252703
+    ],
+    [
+      0.006836054282782957,
+      0.07017209008372895
+    ],
+    [
+      0.006768584319077785,
+      0.0692209466909571
+    ],
+    [
+      0.006750829065471162,
+      0.05572765290842537
+    ]
+  ],
+  "deploy_learned": false,
+  "note": "KEEP the rule: CQL does not beat both rules on held-out blocks (95% LCB)"
+}

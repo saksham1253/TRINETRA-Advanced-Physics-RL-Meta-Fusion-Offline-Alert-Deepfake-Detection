@@ -1,0 +1,49 @@
+{
+  "currency": "INR crore",
+  "official_baselines": {
+    "uttarakhand_disaster_management_allocation_2021_26_cr": 5178,
+    "annual_total_allocation_cr": 1035.6,
+    "annual_response_relief_cr": 414.24,
+    "annual_recovery_reconstruction_cr": 310.68,
+    "annual_preparedness_capacity_cr": 103.56,
+    "annual_mitigation_cr": 207.12,
+    "jrdna_2013_total_cr": 3964.1,
+    "jrdna_2013_roads_bridges_cr": 2710.3
+  },
+  "eligible_annual_envelope_cr": 724.92,
+  "network_cost_ranges_cr": {
+    "pilot_50_nodes": [0.3, 0.6],
+    "priority_500_nodes": [1.5, 3.0],
+    "scale_1500_nodes": [4.5, 8.0]
+  },
+  "scenarios": {
+    "low": {
+      "addressable_hazard_share": 0.1,
+      "warning_effectiveness": 0.1,
+      "operational_realisation": 0.5,
+      "annual_potential_gross_avoided_burden_cr": 3.6246,
+      "2013_event_cross_check_cr": 19.8205
+    },
+    "base": {
+      "addressable_hazard_share": 0.2,
+      "warning_effectiveness": 0.2,
+      "operational_realisation": 0.65,
+      "annual_potential_gross_avoided_burden_cr": 18.84792,
+      "2013_event_cross_check_cr": 103.0666
+    },
+    "high_sensitivity": {
+      "addressable_hazard_share": 0.3,
+      "warning_effectiveness": 0.3,
+      "operational_realisation": 0.75,
+      "annual_potential_gross_avoided_burden_cr": 48.9321,
+      "2013_event_cross_check_cr": 267.57675
+    }
+  },
+  "sources": {
+    "finance_commission": "FC-XV Volume I, Chapter 8 para 8.53-8.55 and Table 10.13",
+    "jrdna": "Government of Uttarakhand-World Bank-ADB JRDNA 2013, Table 1",
+    "early_warning": "Global Commission on Adaptation, Adapt Now (2019)",
+    "component_quotes": "ElectronicsComp product listings, accessed 2026-10-31"
+  },
+  "warning": "Potential gross avoided public burden; not guaranteed cash saving, forecast or field result. Procurement cost ranges include unverified allowances for enclosure, UPS, civil work, server security and installation."
+}

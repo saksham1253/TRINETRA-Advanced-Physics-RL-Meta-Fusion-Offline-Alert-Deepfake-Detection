@@ -1,0 +1,689 @@
+{
+  "pack": "prototype-v1",
+  "models": {
+    "ready_pack": {
+      "n_seeds": 1,
+      "runs": [
+        {
+          "file": "B_final/ready_pack_report.json",
+          "run_id": null,
+          "seed": null,
+          "dry_run": false
+        }
+      ]
+    },
+    "zeroshot": {
+      "n_seeds": 1,
+      "runs": [
+        {
+          "file": "B_final/zeroshot/zeroshot_s0_report.json",
+          "run_id": "zeroshot-20261031-1732-0",
+          "seed": 0,
+          "oof_roc_auc": 0.889284888595487,
+          "oof_pr_auc": 0.9203640680049443,
+          "oof_recall_at_fpr05": 0.607293868921776,
+          "test_roc_auc": 0.9991522633744856,
+          "test_pr_auc": 0.9994791298949015,
+          "test_recall_at_fpr05": 1.0,
+          "admitted": false,
+          "value_score_model": -0.04216073781291163,
+          "ece_crossfit_calibrated": 0.17289833045103903,
+          "test_ece_calibrated": 0.21782398571423098,
+          "test_n": 1023,
+          "stress:stress_weather:fa_rate_at_0p5_cal": 0.624,
+          "stress:stress_weather:fa_rate_at_pstar_cal": 1.0,
+          "stress:stress_weather:mean_prob_neg_cal": 0.5887583465645382,
+          "stress:stress_small_flames:fa_rate_at_0p5_cal": 0.8,
+          "stress:stress_small_flames:fa_rate_at_pstar_cal": 1.0,
+          "stress:stress_small_flames:mean_prob_neg_cal": 0.6352113726117137,
+          "stress:stress_scenes:fa_rate_at_0p5_cal": 0.2725,
+          "stress:stress_scenes:fa_rate_at_pstar_cal": 1.0,
+          "stress:stress_scenes:mean_prob_neg_cal": 0.4380832378316708,
+          "stress:heldout_firedataset:fa_rate_at_0p5_cal": 0.1891891891891892,
+          "stress:heldout_firedataset:fa_rate_at_pstar_cal": 1.0,
+          "stress:heldout_firedataset:mean_prob_neg_cal": 0.404539489270542,
+          "stress:heldout_firedataset:recall_at_0p5_cal": 1.0,
+          "stress:heldout_homefire:fa_rate_at_0p5_cal": 0.45454545454545453,
+          "stress:heldout_homefire:fa_rate_at_pstar_cal": 1.0,
+          "stress:heldout_homefire:mean_prob_neg_cal": 0.4981810050412871,
+          "stress:heldout_homefire:recall_at_0p5_cal": 0.8366219415943172,
+          "raw_ece": 0.23552061894982296,
+          "raw_brier": 0.22756128017211566,
+          "dry_run": false
+        }
+      ],
+      "stress:stress_weather:mean_prob_neg_cal": {
+        "mean": 0.5887583465645382,
+        "sd": 0.0
+      },
+      "stress:stress_scenes:fa_rate_at_pstar_cal": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "stress:stress_weather:fa_rate_at_pstar_cal": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "test_n": {
+        "mean": 1023.0,
+        "sd": 0.0
+      },
+      "stress:stress_scenes:mean_prob_neg_cal": {
+        "mean": 0.4380832378316708,
+        "sd": 0.0
+      },
+      "value_score_model": {
+        "mean": -0.04216073781291163,
+        "sd": 0.0
+      },
+      "stress:heldout_firedataset:mean_prob_neg_cal": {
+        "mean": 0.404539489270542,
+        "sd": 0.0
+      },
+      "stress:stress_weather:fa_rate_at_0p5_cal": {
+        "mean": 0.624,
+        "sd": 0.0
+      },
+      "test_roc_auc": {
+        "mean": 0.9991522633744856,
+        "sd": 0.0
+      },
+      "stress:stress_scenes:fa_rate_at_0p5_cal": {
+        "mean": 0.2725,
+        "sd": 0.0
+      },
+      "stress:heldout_firedataset:fa_rate_at_0p5_cal": {
+        "mean": 0.1891891891891892,
+        "sd": 0.0
+      },
+      "stress:stress_small_flames:fa_rate_at_0p5_cal": {
+        "mean": 0.8,
+        "sd": 0.0
+      },
+      "test_ece_calibrated": {
+        "mean": 0.21782398571423098,
+        "sd": 0.0
+      },
+      "raw_brier": {
+        "mean": 0.22756128017211566,
+        "sd": 0.0
+      },
+      "oof_pr_auc": {
+        "mean": 0.9203640680049443,
+        "sd": 0.0
+      },
+      "oof_roc_auc": {
+        "mean": 0.889284888595487,
+        "sd": 0.0
+      },
+      "test_recall_at_fpr05": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "stress:heldout_firedataset:fa_rate_at_pstar_cal": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "raw_ece": {
+        "mean": 0.23552061894982296,
+        "sd": 0.0
+      },
+      "oof_recall_at_fpr05": {
+        "mean": 0.607293868921776,
+        "sd": 0.0
+      },
+      "stress:heldout_homefire:fa_rate_at_0p5_cal": {
+        "mean": 0.45454545454545453,
+        "sd": 0.0
+      },
+      "stress:stress_small_flames:mean_prob_neg_cal": {
+        "mean": 0.6352113726117137,
+        "sd": 0.0
+      },
+      "stress:heldout_homefire:recall_at_0p5_cal": {
+        "mean": 0.8366219415943172,
+        "sd": 0.0
+      },
+      "stress:stress_small_flames:fa_rate_at_pstar_cal": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "stress:heldout_homefire:fa_rate_at_pstar_cal": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "ece_crossfit_calibrated": {
+        "mean": 0.17289833045103903,
+        "sd": 0.0
+      },
+      "test_pr_auc": {
+        "mean": 0.9994791298949015,
+        "sd": 0.0
+      },
+      "stress:heldout_homefire:mean_prob_neg_cal": {
+        "mean": 0.4981810050412871,
+        "sd": 0.0
+      },
+      "stress:heldout_firedataset:recall_at_0p5_cal": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "admitted": "0/1"
+    },
+    "geo_pinn": {
+      "n_seeds": 1,
+      "runs": [
+        {
+          "file": "repo/geo_pinn/geo_pinn_s0_report.json",
+          "run_id": "geo_pinn-20261031-1105-0",
+          "seed": 0,
+          "oof_roc_auc": 0.7160375315059861,
+          "oof_pr_auc": 0.4625424351390813,
+          "oof_recall_at_fpr05": 0.22826086956521738,
+          "admitted": false,
+          "value_score_model": 0.0,
+          "raw_ece": 0.09898779341829536,
+          "raw_brier": 0.17464051783416076,
+          "dry_run": false
+        }
+      ],
+      "oof_pr_auc": {
+        "mean": 0.4625424351390813,
+        "sd": 0.0
+      },
+      "oof_roc_auc": {
+        "mean": 0.7160375315059861,
+        "sd": 0.0
+      },
+      "value_score_model": {
+        "mean": 0.0,
+        "sd": 0.0
+      },
+      "raw_ece": {
+        "mean": 0.09898779341829536,
+        "sd": 0.0
+      },
+      "oof_recall_at_fpr05": {
+        "mean": 0.22826086956521738,
+        "sd": 0.0
+      },
+      "raw_brier": {
+        "mean": 0.17464051783416076,
+        "sd": 0.0
+      },
+      "admitted": "0/1"
+    }
+  },
+  "fusion": null,
+  "geo": {
+    "repo/geo_large/geo_physics_s0_report.json": {
+      "name": "geo_physics",
+      "seed": 0,
+      "n": 736,
+      "n_pos": 184,
+      "n_blocks": 101,
+      "design": "case-control (controls = same place, other monsoon days)",
+      "scores": {
+        "caine_ratio": {
+          "roc_auc": 0.7581866335853812,
+          "pr_auc": 0.49936304570687573,
+          "n": 736,
+          "pos_rate": 0.25,
+          "recall_at_fpr05": 0.20108695652173914,
+          "recall_at_fpr01": 0.08695652173913043,
+          "n_scored": 736
+        },
+        "dFS_iverson": {
+          "roc_auc": 0.7501870667926906,
+          "pr_auc": 0.47899457958643155,
+          "n": 736,
+          "pos_rate": 0.25,
+          "recall_at_fpr05": 0.19021739130434784,
+          "recall_at_fpr01": 0.07065217391304347,
+          "n_scored": 736
+        },
+        "geo_gate_repo": {
+          "roc_auc": 0.7118482199117833,
+          "pr_auc": 0.47783409726981935,
+          "n": 736,
+          "pos_rate": 0.25,
+          "recall_at_fpr05": 0.20108695652173914,
+          "recall_at_fpr01": 0.09782608695652174,
+          "n_scored": 736
+        },
+        "logit_rain": {
+          "roc_auc": 0.7806789540012602,
+          "pr_auc": 0.5097620754871837,
+          "n": 736,
+          "pos_rate": 0.25,
+          "recall_at_fpr05": 0.21739130434782608,
+          "recall_at_fpr01": 0.043478260869565216,
+          "n_scored": 736,
+          "ece": 0.027913327680864044,
+          "value_score": -0.019927536231884035
+        },
+        "logit_physics": {
+          "roc_auc": 0.7729993698802773,
+          "pr_auc": 0.49345588487004977,
+          "n": 736,
+          "pos_rate": 0.25,
+          "recall_at_fpr05": 0.1956521739130435,
+          "recall_at_fpr01": 0.07608695652173914,
+          "n_scored": 736,
+          "ece": 0.03352998473665269,
+          "value_score": 0.009057971014492794
+        },
+        "logit_hybrid": {
+          "roc_auc": 0.7803540485192186,
+          "pr_auc": 0.5039130118946558,
+          "n": 736,
+          "pos_rate": 0.25,
+          "recall_at_fpr05": 0.22282608695652173,
+          "recall_at_fpr01": 0.02717391304347826,
+          "n_scored": 736,
+          "ece": 0.030439548050861527,
+          "value_score": -0.016304347826086918
+        }
+      },
+      "hybrid_minus_rain_auc": {
+        "mean": -0.00023531395748424588,
+        "ci95": [
+          -0.003707383706846096,
+          0.0036147559357454654
+        ],
+        "n_boot": 1000
+      },
+      "physics_minus_rain_auc": {
+        "mean": -0.007366338326561129,
+        "ci95": [
+          -0.02424010363376176,
+          0.011266142851836204
+        ],
+        "n_boot": 1000
+      },
+      "real_win_hybrid_vs_rain_costloss": {
+        "mean_cost_saving_per_sample": 0.01358695652173913,
+        "ci_low": -0.04596888260254597,
+        "ci_high": 0.1112903159339258,
+        "ci_level": 0.95,
+        "ci_method": "bca",
+        "n_blocks": 101,
+        "real_win": false
+      },
+      "oof_roc_auc": 0.7803540485192186,
+      "oof_recall_at_fpr05": 0.22282608695652173,
+      "physics_only_caine_auc": 0.7581866335853812,
+      "physics_only_dfs_auc": 0.7501870667926906,
+      "note": "Soil parameters ASSUMED; absolute FS uncalibrated. Physics adds value only if the CI of hybrid-minus-rain AUC excludes 0. Small n -> wide CIs."
+    },
+    "repo/glof/glof_physics_report.json": {
+      "name": "glof_physics",
+      "source": "hmaglofdb_v4.csv",
+      "records": 766,
+      "repeat_flag_Y": 450,
+      "area_volume": {
+        "n": 21,
+        "coef": 1.3961338006489397,
+        "exponent": 1.1320091162951673,
+        "r2_log": 0.7186391146758924,
+        "exponent_ci95": [
+          0.7112340996126426,
+          1.4960858157878896
+        ],
+        "log10_rmse": 0.4865371406874073,
+        "x_range": [
+          14703.0,
+          4330000.0
+        ]
+      },
+      "volume_peakQ": {
+        "n": 31,
+        "coef": 0.29069479295633055,
+        "exponent": 0.5350959199772437,
+        "r2_log": 0.3627614174345666,
+        "exponent_ci95": [
+          0.3600616951401991,
+          0.7888000708027495
+        ],
+        "log10_rmse": 0.8236413247948962,
+        "x_range": [
+          26000.0,
+          1350300000.0
+        ]
+      },
+      "not_testable": {
+        "GH-13 Froehlich Qp=c V^p h_b^q": "no breach-height column",
+        "Costa-Schuster Qp=0.763 PE^0.42": "no dam height -> no potential energy"
+      },
+      "note": "Class B empirical fits on HMAGLOFDB; small n; heterogeneous sources (moraine/ice/landslide dams mixed)."
+    },
+    "repo/rl_env/rl_env_cmiss1000_s0_report.json": {
+      "name": "rl_env_cmiss1000",
+      "seed": 0,
+      "n_seasons": 360,
+      "slope_deg": 39.61807823181152,
+      "c_backcalc_kpa": 8.308995108003572,
+      "hazard_beta_fitted_on_real_events": 24.318120532087878,
+      "hazard_fit": {
+        "logit_intercept_case_control": -2.4065286447765306,
+        "logit_slope_dfs": 24.318120532087878,
+        "n_fit": 736
+      },
+      "hazard_alpha": -7.014501250099142,
+      "season_fail_target": 0.3,
+      "season_fail_achieved_hold": 0.30000000000000004,
+      "C_FA": 5.0,
+      "C_miss": 1000.0,
+      "policies": {
+        "always_hold": {
+          "return_mean": -226.66666666666666,
+          "return_sd": 418.67515914953555,
+          "episodes": 300,
+          "failures": 68,
+          "missed_failures": 68,
+          "miss_rate": 1.0,
+          "alarm_days_per_season": 0.0,
+          "watch_days_per_season": 0.0,
+          "mean_lead_days_when_caught": null
+        },
+        "always_alarm": {
+          "return_mean": -540.45,
+          "return_sd": 148.52793508293314,
+          "episodes": 300,
+          "failures": 68,
+          "missed_failures": 0,
+          "miss_rate": 0.0,
+          "alarm_days_per_season": 108.31666666666666,
+          "watch_days_per_season": 0.0,
+          "mean_lead_days_when_caught": 60.63235294117647
+        },
+        "caine_rule": {
+          "return_mean": -204.92666666666668,
+          "return_sd": 384.1299623246741,
+          "episodes": 300,
+          "failures": 68,
+          "missed_failures": 66,
+          "miss_rate": 0.9705882352941176,
+          "alarm_days_per_season": 0.06666666666666667,
+          "watch_days_per_season": 6.336666666666667,
+          "mean_lead_days_when_caught": 0.0
+        },
+        "physics_rule": {
+          "return_mean": -200.0,
+          "return_sd": 274.07477081993517,
+          "episodes": 300,
+          "failures": 68,
+          "missed_failures": 55,
+          "miss_rate": 0.8088235294117647,
+          "alarm_days_per_season": 5.53,
+          "watch_days_per_season": 46.013333333333335,
+          "mean_lead_days_when_caught": 7.0
+        },
+        "oracle_true_hazard": {
+          "return_mean": -200.01333333333332,
+          "return_sd": 274.8821319927668,
+          "episodes": 300,
+          "failures": 68,
+          "missed_failures": 55,
+          "miss_rate": 0.8088235294117647,
+          "alarm_days_per_season": 5.483333333333333,
+          "watch_days_per_season": 46.26,
+          "mean_lead_days_when_caught": 8.384615384615385
+        },
+        "cql_learned": {
+          "return_mean": -200.88,
+          "return_sd": 259.6737933125585,
+          "episodes": 300,
+          "failures": 68,
+          "missed_failures": 57,
+          "miss_rate": 0.8382352941176471,
+          "alarm_days_per_season": 5.243333333333333,
+          "watch_days_per_season": 51.64666666666667,
+          "mean_lead_days_when_caught": 6.454545454545454
+        },
+        "cql_learned_shielded": {
+          "return_mean": -200.88,
+          "return_sd": 259.6737933125585,
+          "episodes": 300,
+          "failures": 68,
+          "missed_failures": 57,
+          "miss_rate": 0.8382352941176471,
+          "alarm_days_per_season": 5.243333333333333,
+          "watch_days_per_season": 51.64666666666667,
+          "mean_lead_days_when_caught": 6.454545454545454
+        }
+      },
+      "logged_transitions": 42928,
+      "ope_one_step_proxy": {
+        "learned": -1.801012540370683,
+        "logging": -2.994499298930256,
+        "ess": 22303.735975529176,
+        "note": "per-step WIS proxy; compare with ONLINE returns above (ground truth in sim)"
+      },
+      "best_rule": "physics_rule",
+      "gain_vs_rule_mean": -0.88,
+      "gain_vs_rule_lcb95": -10.281491910999952,
+      "deploy_learned": false,
+      "note": "ONLINE returns in a physics simulator with REAL rainfall; hazard intercept is an ASSUMPTION (season-fail). Simulator results are not field results."
+    },
+    "repo/rl_env/rl_env_cmiss100_s0_report.json": {
+      "name": "rl_env_cmiss100",
+      "seed": 0,
+      "n_seasons": 360,
+      "slope_deg": 39.61807823181152,
+      "c_backcalc_kpa": 8.308995108003572,
+      "hazard_beta_fitted_on_real_events": 24.318121138151927,
+      "hazard_fit": {
+        "logit_intercept_case_control": -2.406528665875953,
+        "logit_slope_dfs": 24.318121138151927,
+        "n_fit": 736
+      },
+      "hazard_alpha": -7.014501285646119,
+      "season_fail_target": 0.3,
+      "season_fail_achieved_hold": 0.29999999999999993,
+      "C_FA": 5.0,
+      "C_miss": 100.0,
+      "policies": {
+        "always_hold": {
+          "return_mean": -22.666666666666668,
+          "return_sd": 41.86751591495354,
+          "episodes": 300,
+          "failures": 68,
+          "missed_failures": 68,
+          "miss_rate": 1.0,
+          "alarm_days_per_season": 0.0,
+          "watch_days_per_season": 0.0,
+          "mean_lead_days_when_caught": null
+        },
+        "always_alarm": {
+          "return_mean": -540.45,
+          "return_sd": 148.52793508293314,
+          "episodes": 300,
+          "failures": 68,
+          "missed_failures": 0,
+          "miss_rate": 0.0,
+          "alarm_days_per_season": 108.31666666666666,
+          "watch_days_per_season": 0.0,
+          "mean_lead_days_when_caught": 60.63235294117647
+        },
+        "caine_rule": {
+          "return_mean": -26.426666666666666,
+          "return_sd": 39.60300437536975,
+          "episodes": 300,
+          "failures": 68,
+          "missed_failures": 66,
+          "miss_rate": 0.9705882352941176,
+          "alarm_days_per_season": 0.06666666666666667,
+          "watch_days_per_season": 6.336666666666667,
+          "mean_lead_days_when_caught": 0.0
+        },
+        "physics_rule": {
+          "return_mean": -22.83,
+          "return_sd": 41.27518746171845,
+          "episodes": 300,
+          "failures": 68,
+          "missed_failures": 68,
+          "miss_rate": 1.0,
+          "alarm_days_per_season": 0.006666666666666667,
+          "watch_days_per_season": 0.64,
+          "mean_lead_days_when_caught": null
+        },
+        "oracle_true_hazard": {
+          "return_mean": -22.91,
+          "return_sd": 41.47732593437849,
+          "episodes": 300,
+          "failures": 68,
+          "missed_failures": 68,
+          "miss_rate": 1.0,
+          "alarm_days_per_season": 0.006666666666666667,
+          "watch_days_per_season": 0.55,
+          "mean_lead_days_when_caught": null
+        },
+        "cql_learned": {
+          "return_mean": -22.5,
+          "return_sd": 41.42660175941702,
+          "episodes": 300,
+          "failures": 68,
+          "missed_failures": 68,
+          "miss_rate": 1.0,
+          "alarm_days_per_season": 0.0,
+          "watch_days_per_season": 0.17333333333333334,
+          "mean_lead_days_when_caught": null
+        },
+        "cql_learned_shielded": {
+          "return_mean": -22.5,
+          "return_sd": 41.42660175941702,
+          "episodes": 300,
+          "failures": 68,
+          "missed_failures": 68,
+          "miss_rate": 1.0,
+          "alarm_days_per_season": 0.0,
+          "watch_days_per_season": 0.17333333333333334,
+          "mean_lead_days_when_caught": null
+        }
+      },
+      "logged_transitions": 42928,
+      "ope_one_step_proxy": {
+        "learned": -0.23692691849830144,
+        "logging": -2.0945810213853164,
+        "ess": 33147.47746262402,
+        "note": "per-step WIS proxy; compare with ONLINE returns above (ground truth in sim)"
+      },
+      "best_rule": "always_hold",
+      "gain_vs_rule_mean": 0.16666666666666666,
+      "gain_vs_rule_lcb95": -0.30140350819133643,
+      "deploy_learned": false,
+      "note": "ONLINE returns in a physics simulator with REAL rainfall; hazard intercept is an ASSUMPTION (season-fail). Simulator results are not field results."
+    },
+    "repo/rl_env/rl_env_cmiss5000_s0_report.json": {
+      "name": "rl_env_cmiss5000",
+      "seed": 0,
+      "n_seasons": 360,
+      "slope_deg": 39.61807823181152,
+      "c_backcalc_kpa": 8.308995108003572,
+      "hazard_beta_fitted_on_real_events": 24.318120532087878,
+      "hazard_fit": {
+        "logit_intercept_case_control": -2.4065286447765306,
+        "logit_slope_dfs": 24.318120532087878,
+        "n_fit": 736
+      },
+      "hazard_alpha": -7.014501250099142,
+      "season_fail_target": 0.3,
+      "season_fail_achieved_hold": 0.30000000000000004,
+      "C_FA": 5.0,
+      "C_miss": 5000.0,
+      "policies": {
+        "always_hold": {
+          "return_mean": -1133.3333333333333,
+          "return_sd": 2093.375795747678,
+          "episodes": 300,
+          "failures": 68,
+          "missed_failures": 68,
+          "miss_rate": 1.0,
+          "alarm_days_per_season": 0.0,
+          "watch_days_per_season": 0.0,
+          "mean_lead_days_when_caught": null
+        },
+        "always_alarm": {
+          "return_mean": -540.45,
+          "return_sd": 148.52793508293314,
+          "episodes": 300,
+          "failures": 68,
+          "missed_failures": 0,
+          "miss_rate": 0.0,
+          "alarm_days_per_season": 108.31666666666666,
+          "watch_days_per_season": 0.0,
+          "mean_lead_days_when_caught": 60.63235294117647
+        },
+        "caine_rule": {
+          "return_mean": -998.26,
+          "return_sd": 1923.642657148151,
+          "episodes": 300,
+          "failures": 68,
+          "missed_failures": 66,
+          "miss_rate": 0.9705882352941176,
+          "alarm_days_per_season": 0.06666666666666667,
+          "watch_days_per_season": 6.336666666666667,
+          "mean_lead_days_when_caught": 0.0
+        },
+        "physics_rule": {
+          "return_mean": -478.05,
+          "return_sd": 463.44566114414465,
+          "episodes": 300,
+          "failures": 68,
+          "missed_failures": 13,
+          "miss_rate": 0.19117647058823528,
+          "alarm_days_per_season": 65.59,
+          "watch_days_per_season": 42.72666666666667,
+          "mean_lead_days_when_caught": 34.69090909090909
+        },
+        "oracle_true_hazard": {
+          "return_mean": -478.4766666666667,
+          "return_sd": 463.4844579798646,
+          "episodes": 300,
+          "failures": 68,
+          "missed_failures": 13,
+          "miss_rate": 0.19117647058823528,
+          "alarm_days_per_season": 65.69666666666667,
+          "watch_days_per_season": 42.62,
+          "mean_lead_days_when_caught": 33.49090909090909
+        },
+        "cql_learned": {
+          "return_mean": -486.8233333333333,
+          "return_sd": 467.4828540052447,
+          "episodes": 300,
+          "failures": 68,
+          "missed_failures": 13,
+          "miss_rate": 0.19117647058823528,
+          "alarm_days_per_season": 67.78333333333333,
+          "watch_days_per_season": 40.53333333333333,
+          "mean_lead_days_when_caught": 34.6
+        },
+        "cql_learned_shielded": {
+          "return_mean": -486.8233333333333,
+          "return_sd": 467.4828540052447,
+          "episodes": 300,
+          "failures": 68,
+          "missed_failures": 13,
+          "miss_rate": 0.19117647058823528,
+          "alarm_days_per_season": 67.78333333333333,
+          "watch_days_per_season": 40.53333333333333,
+          "mean_lead_days_when_caught": 34.6
+        }
+      },
+      "logged_transitions": 42928,
+      "ope_one_step_proxy": {
+        "learned": -4.353204736551162,
+        "logging": -6.033872012881183,
+        "ess": 25577.882109684557,
+        "note": "per-step WIS proxy; compare with ONLINE returns above (ground truth in sim)"
+      },
+      "best_rule": "physics_rule",
+      "gain_vs_rule_mean": -8.773333333333333,
+      "gain_vs_rule_lcb95": -31.927251217632097,
+      "deploy_learned": false,
+      "note": "ONLINE returns in a physics simulator with REAL rainfall; hazard intercept is an ASSUMPTION (season-fail). Simulator results are not field results."
+    }
+  },
+  "dry_run_present": false
+}

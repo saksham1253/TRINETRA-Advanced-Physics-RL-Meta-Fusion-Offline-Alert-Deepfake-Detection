@@ -1,0 +1,16 @@
+{ "id": "s4-confusers", "title": "Fog, steam and sunset confusers (no fire)", "summary": "No fire exists. Ten cameras see real hard negatives (the highest-scoring non-fire images in the evidence bank: fog, glare, steam-like scenes). The system should stay restrained.",
+  "seed": 4404, "regionId": "kl-wayanad", "hazard": "FIRE", "durationMin": 240, "stepMin": 2,
+  "weather": { "wind_ms": 2.0, "wind_from_deg": 240, "temp_K": 294 },
+  "incidents": [
+    { "id": "N1", "label": "Valley fog bank", "kind": "confuser", "confuser": "fog", "lon": 76.02, "lat": 11.62, "startMin": 30, "cameras": 1, "iot": 1 },
+    { "id": "N2", "label": "Morning fog over tea estate", "kind": "confuser", "confuser": "fog", "lon": 76.15, "lat": 11.70, "startMin": 20, "cameras": 1, "iot": 0 },
+    { "id": "N3", "label": "Steam from a processing unit", "kind": "confuser", "confuser": "steam", "lon": 76.09, "lat": 11.78, "startMin": 50, "cameras": 1, "iot": 1 },
+    { "id": "N4", "label": "Low sun glare", "kind": "confuser", "confuser": "sunset", "lon": 75.92, "lat": 11.55, "startMin": 150, "cameras": 1, "iot": 0 },
+    { "id": "N5", "label": "Mist on reservoir", "kind": "confuser", "confuser": "fog", "lon": 76.25, "lat": 11.66, "startMin": 10, "cameras": 1, "iot": 0 },
+    { "id": "N6", "label": "Steam vent", "kind": "confuser", "confuser": "steam", "lon": 75.98, "lat": 11.85, "startMin": 90, "cameras": 1, "iot": 0 },
+    { "id": "N7", "label": "Fog on ghat road", "kind": "confuser", "confuser": "fog", "lon": 76.30, "lat": 11.52, "startMin": 40, "cameras": 1, "iot": 0 },
+    { "id": "N8", "label": "Dust haze", "kind": "confuser", "confuser": "fog", "lon": 76.06, "lat": 11.49, "startMin": 110, "cameras": 1, "iot": 0 },
+    { "id": "N9", "label": "Orange evening sky", "kind": "confuser", "confuser": "sunset", "lon": 76.20, "lat": 11.86, "startMin": 160, "cameras": 1, "iot": 0 },
+    { "id": "N10", "label": "Cooking smoke plume", "kind": "confuser", "confuser": "steam", "lon": 75.85, "lat": 11.73, "startMin": 60, "cameras": 1, "iot": 1 } ],
+  "background": { "count": 20, "regionIds": ["kl-wayanad"], "iotShare": 0.2 },
+  "network": { "outageAtMin": null } }

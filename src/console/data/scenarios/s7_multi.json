@@ -1,0 +1,16 @@
+{ "id": "s7-multi", "title": "National multi-incident stress test", "summary": "Six fires in six regions plus four confuser sites, with 140 background cameras in towns across India. Shows alert load, false alarms and the outcome counters at national scale.",
+  "seed": 7707, "regionId": null, "hazard": "FIRE", "durationMin": 360, "stepMin": 2,
+  "weather": { "wind_ms": 5.0, "wind_from_deg": 250, "temp_K": 298 },
+  "incidents": [
+    { "id": "F1", "label": "Himalayan forest fire", "kind": "fire", "lon": 79.47, "lat": 30.42, "startMin": 40, "Qc_kW_m": 1500, "Q_kW": 8000, "D_m": 6, "ros_m_min": 12, "cameras": 2, "iot": 3 },
+    { "id": "F2", "label": "Western Ghats forest fire", "kind": "fire", "lon": 76.08, "lat": 11.68, "startMin": 90, "Qc_kW_m": 900, "Q_kW": 5000, "D_m": 5, "ros_m_min": 8, "cameras": 1, "iot": 1 },
+    { "id": "F3", "label": "Dry deciduous forest fire", "kind": "fire", "lon": 80.62, "lat": 22.28, "startMin": 60, "Qc_kW_m": 1100, "Q_kW": 6000, "D_m": 6, "ros_m_min": 14, "cameras": 1, "iot": 2 },
+    { "id": "F4", "label": "Crop-residue fire", "kind": "fire", "lon": 75.97, "lat": 30.31, "startMin": 30, "Qc_kW_m": 300, "Q_kW": 1500, "D_m": 4, "ros_m_min": 20, "cameras": 1, "iot": 0 },
+    { "id": "F5", "label": "Industrial fire (synthetic)", "kind": "fire", "lon": 72.93, "lat": 20.37, "startMin": 150, "Qc_kW_m": 6000, "Q_kW": 40000, "D_m": 12, "ros_m_min": 2, "cameras": 2, "iot": 3 },
+    { "id": "F6", "label": "Coastal scrub fire", "kind": "fire", "lon": 86.05, "lat": 19.92, "startMin": 200, "Qc_kW_m": 600, "Q_kW": 3000, "D_m": 4, "ros_m_min": 9, "cameras": 1, "iot": 0 },
+    { "id": "N1", "label": "Fog bank", "kind": "confuser", "confuser": "fog", "lon": 76.15, "lat": 11.70, "startMin": 20, "cameras": 1, "iot": 0 },
+    { "id": "N2", "label": "Steam plume", "kind": "confuser", "confuser": "steam", "lon": 72.98, "lat": 20.41, "startMin": 60, "cameras": 1, "iot": 1 },
+    { "id": "N3", "label": "Sunset glare", "kind": "confuser", "confuser": "sunset", "lon": 80.55, "lat": 22.35, "startMin": 300, "cameras": 1, "iot": 0 },
+    { "id": "N4", "label": "Dust haze", "kind": "confuser", "confuser": "fog", "lon": 76.30, "lat": 30.45, "startMin": 120, "cameras": 1, "iot": 0 } ],
+  "background": { "count": 140, "national": true, "iotShare": 0.1 },
+  "network": { "outageAtMin": null } }

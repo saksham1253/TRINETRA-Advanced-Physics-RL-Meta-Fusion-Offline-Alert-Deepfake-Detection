@@ -1,0 +1,34 @@
+{
+  "spatial_cv": true,
+  "admitted": false,
+  "baselines": {
+    "climatology": {
+      "real_win": false,
+      "ci_low": 0.0
+    },
+    "logistic": {
+      "real_win": false,
+      "ci_low": 0.0
+    }
+  },
+  "metrics": {},
+  "note": "NOT ADMITTED \u2014 no performance may be claimed (Rule 16)",
+  "value_score_model": 0.0,
+  "calibration": {
+    "ece": 0.09898779341829536,
+    "mce": 0.19500774145126343,
+    "brier": 0.17464051783416076,
+    "reliability": 0.011715102422757195,
+    "resolution": 0.024223963278314366,
+    "uncertainty": 0.1875
+  },
+  "name": "geo_pinn",
+  "oof_roc_auc": 0.7160375315059861,
+  "oof_pr_auc": 0.4625424351390813,
+  "oof_n": 736,
+  "oof_pos_rate": 0.25,
+  "oof_recall_at_fpr05": 0.22826086956521738,
+  "oof_recall_at_fpr01": 0.02717391304347826,
+  "run_id": "geo_pinn-20261031-1105-0",
+  "seed": 0
+}

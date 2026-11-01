@@ -1,0 +1,120 @@
+{
+ "dataset": "/kaggle/input/datasets/happyparsi/trinetra-dataset",
+ "selected": {
+  "DFIRE": "/kaggle/input/datasets/happyparsi/trinetra-dataset/Smoke-Fire-Detection-YOLO",
+  "DFIRE_NOYAML": "/kaggle/input/datasets/happyparsi/trinetra-dataset/Smoke-Fire-Detection-YOLO/data/val",
+  "HOMEFIRE": "/kaggle/input/datasets/happyparsi/trinetra-dataset/Home fire dataset/val",
+  "DEEPFIRE": [
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Forest Fire Dataset/Forest Fire Dataset",
+   "Training/fire",
+   "Training/nofire"
+  ],
+  "FIREDS": [
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/FIRE Dataset/fire_dataset",
+   "fire_images",
+   "non_fire_images"
+  ],
+  "WEATHER": [
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Weather Image Recognition/dataset",
+   [
+    "fogsmog",
+    "sandstorm",
+    "lightning",
+    "rain"
+   ]
+  ],
+  "SCENES": [
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Intel Image Classification Dataset/Intel-Image-Classification/train",
+   [
+    "street",
+    "buildings",
+    "forest",
+    "mountain"
+   ]
+  ],
+  "CANDLE": [
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Flame Dataset (CandleLighterMatch Stick Flames )/Flame",
+   "train/images"
+  ]
+ },
+ "all_candidates": {
+  "FIREDS": [
+   [
+    "/kaggle/input/datasets/happyparsi/trinetra-dataset/FIRE Dataset/fire_dataset",
+    "fire_images",
+    "non_fire_images"
+   ]
+  ],
+  "DFIRE": [
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Flame Dataset (CandleLighterMatch Stick Flames )/Flame",
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Smoke-Fire-Detection-YOLO",
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/WildFire-Smoke-Dataset-Yolo/WildFire_Smoke_Dataset_YOLO"
+  ],
+  "CANDLE": [
+   [
+    "/kaggle/input/datasets/happyparsi/trinetra-dataset/Flame Dataset (CandleLighterMatch Stick Flames )/Flame",
+    "train/images"
+   ]
+  ],
+  "DEEPFIRE": [
+   [
+    "/kaggle/input/datasets/happyparsi/trinetra-dataset/Forest Fire Dataset/Forest Fire Dataset",
+    "Training/fire",
+    "Training/nofire"
+   ]
+  ],
+  "HOMEFIRE_NOYAML": [
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Home fire dataset/test",
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Home fire dataset/train",
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Home fire dataset/val"
+  ],
+  "SCENES": [
+   [
+    "/kaggle/input/datasets/happyparsi/trinetra-dataset/Intel Image Classification Dataset/Intel-Image-Classification/test",
+    [
+     "street",
+     "buildings",
+     "forest",
+     "mountain"
+    ]
+   ],
+   [
+    "/kaggle/input/datasets/happyparsi/trinetra-dataset/Intel Image Classification Dataset/Intel-Image-Classification/train",
+    [
+     "street",
+     "buildings",
+     "forest",
+     "mountain"
+    ]
+   ],
+   [
+    "/kaggle/input/datasets/happyparsi/trinetra-dataset/Intel Image Classification Dataset/Intel-Image-Classification/val",
+    [
+     "street",
+     "buildings",
+     "forest",
+     "mountain"
+    ]
+   ]
+  ],
+  "DFIRE_NOYAML": [
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Smoke-Fire-Detection-YOLO/data/test",
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Smoke-Fire-Detection-YOLO/data/train",
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/Smoke-Fire-Detection-YOLO/data/val",
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/WildFire-Smoke-Dataset-Yolo/WildFire_Smoke_Dataset_YOLO/test",
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/WildFire-Smoke-Dataset-Yolo/WildFire_Smoke_Dataset_YOLO/train",
+   "/kaggle/input/datasets/happyparsi/trinetra-dataset/WildFire-Smoke-Dataset-Yolo/WildFire_Smoke_Dataset_YOLO/valid"
+  ],
+  "WEATHER": [
+   [
+    "/kaggle/input/datasets/happyparsi/trinetra-dataset/Weather Image Recognition/dataset",
+    [
+     "fogsmog",
+     "sandstorm",
+     "lightning",
+     "rain"
+    ]
+   ]
+  ]
+ }
+}

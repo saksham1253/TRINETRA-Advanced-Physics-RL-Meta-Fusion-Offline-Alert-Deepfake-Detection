@@ -1,0 +1,6 @@
+{ "id": "s2-industrial", "title": "Industrial fire, low wind (Vapi belt)", "summary": "A warehouse fire inside an industrial estate at 01:10 with low wind and a strong buoyant plume. Synthetic markers only; no real facility is represented.",
+  "seed": 2202, "regionId": "gj-vapi", "hazard": "FIRE", "durationMin": 240, "stepMin": 2,
+  "weather": { "wind_ms": 1.5, "wind_from_deg": 270, "temp_K": 303 },
+  "incidents": [ { "id": "F1", "label": "Industrial unit fire (synthetic)", "kind": "fire", "lon": 72.93, "lat": 20.37, "startMin": 70, "Qc_kW_m": 6000, "Q_kW": 40000, "D_m": 12, "ros_m_min": 2, "cameras": 3, "iot": 4, "fuel": "stored materials (synthetic)" } ],
+  "background": { "count": 18, "regionIds": ["gj-vapi"], "iotShare": 0.5 },
+  "network": { "outageAtMin": null } }

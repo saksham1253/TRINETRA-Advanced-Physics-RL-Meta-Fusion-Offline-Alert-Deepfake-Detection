@@ -1,0 +1,41 @@
+{
+  "name": "glof_physics",
+  "source": "hmaglofdb_v4.csv",
+  "records": 766,
+  "repeat_flag_Y": 450,
+  "area_volume": {
+    "n": 21,
+    "coef": 1.3961338006489397,
+    "exponent": 1.1320091162951673,
+    "r2_log": 0.7186391146758924,
+    "exponent_ci95": [
+      0.7112340996126426,
+      1.4960858157878896
+    ],
+    "log10_rmse": 0.4865371406874073,
+    "x_range": [
+      14703.0,
+      4330000.0
+    ]
+  },
+  "volume_peakQ": {
+    "n": 31,
+    "coef": 0.29069479295633055,
+    "exponent": 0.5350959199772437,
+    "r2_log": 0.3627614174345666,
+    "exponent_ci95": [
+      0.3600616951401991,
+      0.7888000708027495
+    ],
+    "log10_rmse": 0.8236413247948962,
+    "x_range": [
+      26000.0,
+      1350300000.0
+    ]
+  },
+  "not_testable": {
+    "GH-13 Froehlich Qp=c V^p h_b^q": "no breach-height column",
+    "Costa-Schuster Qp=0.763 PE^0.42": "no dam height -> no potential energy"
+  },
+  "note": "Class B empirical fits on HMAGLOFDB; small n; heterogeneous sources (moraine/ice/landslide dams mixed)."
+}

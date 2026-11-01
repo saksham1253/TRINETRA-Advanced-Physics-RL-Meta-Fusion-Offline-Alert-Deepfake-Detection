@@ -1,0 +1,12 @@
+{
+  "note": "Demo regions for pre-cached terrain. Place names are public geography; every incident, sensor, node and village marker placed inside them is SYNTHETIC.",
+  "national": { "id": "IN", "bbox": [67.5, 6.0, 98.0, 37.5], "zmin": 3, "zmax": 7 },
+  "regions": [
+    { "id": "uk-chamoli", "name": "Chamoli, Uttarakhand (Himalaya)", "state": "Uttarakhand", "bbox": [79.15, 30.15, 80.05, 30.85], "zmax": 12, "use": "steep-terrain fire, landslide, LoRa mesh" },
+    { "id": "kl-wayanad", "name": "Wayanad, Kerala (Western Ghats)", "state": "Kerala", "bbox": [75.75, 11.45, 76.35, 11.95], "zmax": 11, "use": "Western Ghats forest fire, landslide" },
+    { "id": "mp-kanha", "name": "Kanha, Madhya Pradesh (Central India)", "state": "Madhya Pradesh", "bbox": [80.3, 22.05, 81.0, 22.5], "zmax": 11, "use": "dry deciduous forest fire" },
+    { "id": "pb-sangrur", "name": "Sangrur-Patiala belt, Punjab", "state": "Punjab", "bbox": [75.6, 30.0, 76.6, 30.6], "zmax": 10, "use": "crop-residue burning cluster" },
+    { "id": "gj-vapi", "name": "Vapi industrial belt, Gujarat", "state": "Gujarat", "bbox": [72.8, 20.25, 73.1, 20.5], "zmax": 11, "use": "industrial fire (synthetic markers only)" },
+    { "id": "od-puri", "name": "Puri-Paradip coast, Odisha", "state": "Odisha", "bbox": [85.7, 19.7, 86.8, 20.4], "zmax": 10, "use": "coastal outage, cyclone (PLANNED)" }
+  ]
+}

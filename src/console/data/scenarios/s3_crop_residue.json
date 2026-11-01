@@ -1,0 +1,14 @@
+{ "id": "s3-crop-residue", "title": "Crop-residue burning cluster (Punjab)", "summary": "Eight small field fires start between 00:20 and 03:00 across the Sangrur-Patiala belt. Fires are small and short-lived, so detection is harder; there is no IoT coverage.",
+  "seed": 3303, "regionId": "pb-sangrur", "hazard": "FIRE", "durationMin": 300, "stepMin": 2,
+  "weather": { "wind_ms": 3.0, "wind_from_deg": 300, "temp_K": 296 },
+  "incidents": [
+    { "id": "F1", "label": "Field fire 1", "kind": "fire", "lon": 75.82, "lat": 30.22, "startMin": 20, "Qc_kW_m": 300, "Q_kW": 1500, "D_m": 4, "ros_m_min": 20, "cameras": 1, "iot": 0 },
+    { "id": "F2", "label": "Field fire 2", "kind": "fire", "lon": 75.97, "lat": 30.31, "startMin": 44, "Qc_kW_m": 250, "Q_kW": 1200, "D_m": 4, "ros_m_min": 18, "cameras": 1, "iot": 0 },
+    { "id": "F3", "label": "Field fire 3", "kind": "fire", "lon": 76.12, "lat": 30.18, "startMin": 70, "Qc_kW_m": 350, "Q_kW": 1800, "D_m": 5, "ros_m_min": 22, "cameras": 1, "iot": 0 },
+    { "id": "F4", "label": "Field fire 4", "kind": "fire", "lon": 76.31, "lat": 30.42, "startMin": 96, "Qc_kW_m": 200, "Q_kW": 900, "D_m": 3, "ros_m_min": 15, "cameras": 1, "iot": 0 },
+    { "id": "F5", "label": "Field fire 5", "kind": "fire", "lon": 75.71, "lat": 30.47, "startMin": 120, "Qc_kW_m": 300, "Q_kW": 1500, "D_m": 4, "ros_m_min": 20, "cameras": 1, "iot": 0 },
+    { "id": "F6", "label": "Field fire 6", "kind": "fire", "lon": 76.44, "lat": 30.11, "startMin": 140, "Qc_kW_m": 280, "Q_kW": 1300, "D_m": 4, "ros_m_min": 19, "cameras": 1, "iot": 0 },
+    { "id": "F7", "label": "Field fire 7", "kind": "fire", "lon": 76.05, "lat": 30.53, "startMin": 162, "Qc_kW_m": 320, "Q_kW": 1600, "D_m": 4, "ros_m_min": 21, "cameras": 1, "iot": 0 },
+    { "id": "F8", "label": "Field fire 8", "kind": "fire", "lon": 76.22, "lat": 30.27, "startMin": 180, "Qc_kW_m": 260, "Q_kW": 1200, "D_m": 4, "ros_m_min": 18, "cameras": 1, "iot": 0 } ],
+  "background": { "count": 26, "regionIds": ["pb-sangrur"], "iotShare": 0 },
+  "network": { "outageAtMin": null } }

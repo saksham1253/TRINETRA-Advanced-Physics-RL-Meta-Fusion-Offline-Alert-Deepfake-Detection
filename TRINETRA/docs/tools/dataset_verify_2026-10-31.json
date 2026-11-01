@@ -1,0 +1,549 @@
+{
+ "date": "2026-10-31",
+ "kaggle": {
+  "phylake1337/fire-dataset": {
+   "ok": true,
+   "title": "FIRE Dataset",
+   "mb": 408.8,
+   "license": "CC0: Public Domain",
+   "subtitle": "Outdoor-fire images and non-fire images for computer vision tasks.",
+   "desc": "### Context\nThe dataset was created by my team during the NASA Space Apps Challenge in 2018, the goal was using the dataset to develop a model that can recognize the images with fire.\nIf you seek more info about the Context or the challenge, then you can visit [Our team page](https://2018.spaceappschallenge.org/challenges/volcanoes-icebergs-and-asteroids-oh-my/real-time-fire-app/teams/the-faze/stream).\n\n### Content\nData was collected to train a model to distinguish between the images that contain fire (fire images) and regular images (non-fire images), so the whole problem was **binary classification**.\n\nData is divided into 2 folders, **fire_images** folder contains 755 outdoor-fire images some of them contains heavy smoke, the other one is **non-fire_images** which contain 244 nature images (eg: forest, tree, grass, river, people, foggy forest, lake, animal, road, and waterfall).\n\nHint"
+  },
+  "alik05/forest-fire-dataset": {
+   "ok": true,
+   "title": "Forest Fire Dataset",
+   "mb": 175.9,
+   "license": "Attribution 4.0 International (CC BY 4.0)",
+   "subtitle": "An image dataset for Forest Fire detection problem",
+   "desc": "This dataset is curated to address the forest fire detection problem. All images in the dataset are 3-channeled with resolution of 250 \u00d7 250. The images were retrieved by searching various search terms in multiple search engines. Afterwards, these images are thoroughly investigated to crop and remove the inappropriate components such as people, fire-extinguishing machinery etc in order to ensure that each image only contain the relevant fire region. The dataset is designed for binary problem of Fire and No-Fire detection in the forests landscape. It is a balanced dataset consisting of 1900 images in total, where 950 images belong to each class. The dataset is divided into 80:20 for training and testing purposes in the proposed study.\n\nPlease cite this article if you use this dataset in your research:\nA. Khan, B. Hassan, S. Khan, R. Ahmed and A. Adnan, \u201cDeepFire: A Novel Dataset and Deep "
+  },
+  "dataclusterlabs/fire-and-smoke-dataset": {
+   "ok": true,
+   "title": "Fire and Smoke Dataset",
+   "mb": 93.3,
+   "license": "Data files \u00a9 Original Authors",
+   "subtitle": "Dataset for early detection of Fire and Smoke, Smart cameras, Fire alarm systems",
+   "desc": "### **This dataset is collected by DataCluster Labs. To download full dataset or to submit a request for your new data collection needs, please drop a mail to:&nbsp;[sales@datacluster.ai](mailto:sales@datacluster.ai)**\n\nThis dataset is an extremely challenging set of over 7000+ original Fire and Smoke images captured and crowdsourced from over 400+ urban and rural areas, where each image is **manually reviewed and verified** by computer vision professionals at Datacluster Labs.\n\nOptimized for Generative AI, Visual Question Answering, Image Classification, and LMM development, this dataset provides a strong basis for achieving robust model performance.\n\n### **Dataset Features**\n\n- Dataset size   : 7000+\n- Captured by  : Over 1000+ crowdsource contributors\n- Resolution     : 98% images HD and above (1920x1080 and above)\n- Location        : Captured with 400+ cities accross India\n- Diversit"
+  },
+  "ahemateja19bec1025/wildfiresmokedatasetyolo": {
+   "ok": true,
+   "title": "WildFire-Smoke-Dataset-Yolo",
+   "mb": 28.6,
+   "license": "CC0: Public Domain",
+   "subtitle": "\ud83d\udd25\ud83d\udd25\ud83d\udd25 Fireup against the Wild Fire",
+   "desc": "This is the dataset for training a YOLO object detection model. This dataset contains all the train, test, valid splits for training a yolo model for detecting wildfire smoke.\n\nPlease upvote if this dataset is helpful."
+  },
+  "sayedgamal99/smoke-fire-detection-yolo": {
+   "ok": true,
+   "title": "Smoke-Fire-Detection-YOLO",
+   "mb": 3118.3,
+   "license": "CC0: Public Domain",
+   "subtitle": "Smoke and Fire Detection Dataset for YOLO",
+   "desc": "# D-Fire Dataset for Smoke and Fire Detection\n\nThis dataset is an enhanced version of the original D-Fire dataset, designed to facilitate smoke and fire detection tasks. It has been restructured to include a validation split, making it more accessible and user-friendly.\n\n#### Explore Flare Guard\n\nIntroducing **[Flare Guard](https://github.com/sayedgamal99/Real-Time-Smoke-Fire-Detection-YOLO11)** \u2014 an advanced, open-source solution for real-time fire and smoke detection. \n\nThis system uses **YOLOv11**, an advanced object detection model, to monitor live video feeds and detect fire hazards in real-time. Detected threats trigger instant alerts via **Telegram** and **WhatsApp** for rapid response.\n\n### \ud83d\udd17 **Quick Access Links**\n- \ud83d\udcc2 **[GitHub Repository](https://github.com/sayedgamal99/Real-Time-Smoke-Fire-Detection-YOLO11)** \u2013 Access the full source code and documentation.\n- \ud83c\udfa5 **[LinkedIn Pro"
+  },
+  "jehanbhathena/weather-dataset": {
+   "ok": true,
+   "title": "Weather Image Recognition",
+   "mb": 636.7,
+   "license": "CC0: Public Domain",
+   "subtitle": "This dataset contains labeled 6862 images of different types of weather ",
+   "desc": "# Context\nThis dataset contains 6862 images of different types of weather, it can be used to implement weather classification based on the photo.\n\n# Content\nThe pictures are divided into 11 classes: dew, fog/smog, frost, glaze, hail, lightning , rain, rainbow, rime, sandstorm and snow.\n\n#Acknowledgements\n### Citation\n@data{DVN/M8JQCR_2021,\nauthor = {Xiao, Haixia},\npublisher = {Harvard Dataverse},\ntitle = {{Weather phenomenon database (WEAPD)}},\nyear = {2021},\nversion = {V1},\ndoi = {10.7910/DVN/M8JQCR},\nurl = {https://doi.org/10.7910/DVN/M8JQCR}\n}\n#Note\nAfter @sebastiendelprat rightly pointed out, some of the Images are fake and I have removed them "
+  },
+  "deepcontractor/smoke-detection-dataset": {
+   "ok": true,
+   "title": "Smoke Detection Dataset ",
+   "mb": 5.8,
+   "license": "Other (specified in description)",
+   "subtitle": "Detect smoke with the help of IOT data and trigger a fire alarm.",
+   "desc": "# Quick Start Guide\n\nProblem Type : Binary Classification\nTarget Variable : Fire Alarm\n\n# Context \n\nA smoke detector is a device that senses smoke, typically as an indicator of fire. Smoke detectors are usually housed in plastic enclosures, typically shaped like a disk about 150 millimetres (6 in) in diameter and 25 millimetres (1 in) thick, but shape and size vary.\n\n--&gt; Types of Smoke Detectors\n\n1. Photoelectric Smoke Detector\n\nA photoelectric smoke detector contains a source of infrared, visible, or ultraviolet light, a lens, and a photoelectric receiver. In some types, the light emitted by the light source passes through the air being tested and reaches the photosensor. The received light intensity will be reduced due to scattering from particles of smoke, air-borne dust, or other substances; the circuitry detects the light intensity and generates an alarm if it is below a specifie"
+  },
+  "uciml/gas-sensor-array-under-dynamic-gas-mixtures": {
+   "ok": true,
+   "title": "Gas sensor array under dynamic gas mixtures",
+   "mb": 2562.5,
+   "license": "Database: Open Database, Contents: Database Contents",
+   "subtitle": "Time series data for Ethylene and Methane in air, and Ethylene and CO in air",
+   "desc": "### Context\n\nThis data set contains the acquired time series from 16 chemical sensors exposed to gas mixtures at varying concentration levels. In particular, we generated two gas mixtures: Ethylene and Methane in air, and Ethylene and CO in air. Each measurement was constructed by the continuous acquisition of the 16-sensor array signals for a duration of about 12 hours without interruption. \n\nThe data set was collected in a gas delivery platform facility at the ChemoSignals Laboratory in the BioCircuits Institute, University of California San Diego. The measurement system platform provides versatility for obtaining the desired concentrations of the chemical substances of interest with high accuracy and in a highly reproducible manner. \n\nThe sensor array included 16 chemical sensors (Figaro Inc., US) of 4 different types: TGS-2600, TGS-2602, TGS-2610, TGS-2620 (4 units of each type). The"
+  },
+  "garystafford/environmental-sensor-data-132k": {
+   "ok": true,
+   "title": "Environmental Sensor Telemetry Data",
+   "mb": 61.9,
+   "license": "CC0: Public Domain",
+   "subtitle": "Temperature, humidity, CO, liquid petroleum gas (LPG), smoke, light, and motion",
+   "desc": "### Context\n\nEnvironmental sensor telemetry data, detailed in the blog post, [Getting Started with IoT Analytics on AWS](http://tinyurl.com/iot-analytics-aws), published on [Towards Data Science](https://towardsdatascience.com).\n\n\n### Content\n\nThe data was generated from a series of three identical, custom-built, breadboard-based sensor arrays. Each array was connected to a Raspberry Pi devices. Each of the three IoT devices was placed in a physical location with varied environmental conditions.\n\n\n```text\n| device            | environmental conditions                 |\n|-------------------|------------------------------------------|\n| 00:0f:00:70:91:0a | stable conditions, cooler and more humid |\n| 1c:bf:ce:15:ec:4d | highly variable temperature and humidity |\n| b8:27:eb:bf:9d:51 | stable conditions, warmer and dryer      |\n```\n\nEach IoT device collected a total of seven different readin"
+  },
+  "orvile/ucsd-anomaly-dataset": {
+   "ok": true,
+   "title": "UCSD Anomaly Dataset",
+   "mb": 1160.6,
+   "license": "Attribution 4.0 International (CC BY 4.0)",
+   "subtitle": "UCSD Dataset for Real-World Pedestrian Anomaly Detection and Localization",
+   "desc": " The UCSD Anomaly Detection Dataset was acquired with a stationary camera mounted at an elevation, overlooking pedestrian walkways. The crowd density in the walkways was variable, ranging from sparse to very crowded. In the normal setting, the video contains only pedestrians. Abnormal events are due to either:\n\n    the circulation of non pedestrian entities in the walkways\n    anomalous pedestrian motion patterns\n\nCommonly occurring anomalies include bikers, skaters, small carts, and people walking across a walkway or in the grass that surrounds it. A few instances of people in wheelchair were also recorded. All abnormalities are naturally occurring, i.e. they were not staged for the purposes of assembling the dataset. The data was split into 2 subsets, each corresponding to a different scene. The video footage recorded from each scene was split into various clips of around 200 frames.\n\n"
+  },
+  "odins0n/ucf-crime-dataset": {
+   "ok": true,
+   "title": "UCF Crime Dataset",
+   "mb": 11573.4,
+   "license": "CC0: Public Domain",
+   "subtitle": "Real-world Anomaly Detection in Surveillance Videos",
+   "desc": "## Context\n\nThe dataset contains extracted images from the UCF crime dataset used for Real-world Anomaly Detection in Surveillance Videos\n\n## Content\n\nThe dataset contains images extracted from every video from the UCF Crime Dataset.\nEvery 10th frame is extracted from each full-length video and combined for every video in that class.\nAll the images are of size 64*64 and in ```.png``` format\n\nThe dataset has a total of 14 Classes : \n```\n1. Abuse \n2. Arrest'\n3. Arson\n4. Assault\n5. Burglary\n6. Explosion\n7. Fighting\n8. Normal Videos\n9. RoadAccidents\n10. Robbery\n11. Shooting\n12. Shoplifting\n13. Stealing\n14. Vandalism\n```\n\nThe total image count for the train subset is 1,266,345.\nThe total image count for the test subset is 111,308.\n\n## Acknowledgements\n\nAll videos used for frame extraction were obtained from [UCF CRIME OFFICIAL DATASET](https://www.crcv.ucf.edu/projects/real-world).\nOfficial D"
+  },
+  "boltzmannbrain/nab": {
+   "ok": true,
+   "title": "Numenta Anomaly Benchmark (NAB)",
+   "mb": 9.6,
+   "license": "Other (specified in description)",
+   "subtitle": "Dataset and scoring for detecting anomalies in streaming data",
+   "desc": "The Numenta Anomaly Benchmark (NAB) is a novel benchmark for evaluating algorithms for anomaly detection in streaming, online applications. It is comprised of over 50 labeled real-world and artificial timeseries data files plus a novel scoring mechanism designed for real-time applications. All of the data and code is fully open-source, with extensive documentation, and a scoreboard of anomaly detection algorithms: **[github.com/numenta/NAB][1]**. The full dataset is included here, but please go to the repo for details on how to evaluate anomaly detection algorithms on NAB.\n\n\n##NAB Data Corpus\n\nThe NAB corpus of 58 timeseries data files is designed to provide data for research in streaming anomaly detection. It is comprised of both real-world and artifical timeseries data containing labeled anomalous periods of behavior. Data are ordered, timestamped, single-valued metrics. All data files"
+  },
+  "birdy654/cifake-real-and-ai-generated-synthetic-images": {
+   "ok": true,
+   "title": "CIFAKE: Real and AI-Generated Synthetic Images",
+   "mb": 110.7,
+   "license": "Other (specified in description)",
+   "subtitle": "Can Computer Vision detect when images have been generated by AI?",
+   "desc": "# CIFAKE: Real and AI-Generated Synthetic Images\nThe quality of AI-generated images has rapidly increased, leading to concerns of authenticity and trustworthiness.\n\nCIFAKE is a dataset that contains 60,000 synthetically-generated images and 60,000 real images (collected from CIFAR-10). Can computer vision techniques be used to detect when an image is real or has been generated by AI?\n\nFurther information on this dataset can be found here: [Bird, J.J. and Lotfi, A., 2024. CIFAKE: Image Classification and Explainable Identification of AI-Generated Synthetic Images. IEEE Access.](https://ieeexplore.ieee.org/abstract/document/10409290)\n\n## Dataset details\nThe dataset contains two classes - REAL and FAKE. \n\nFor REAL, we collected the images from Krizhevsky & Hinton's [CIFAR-10 dataset](https://www.cs.toronto.edu/~kriz/cifar.html)\n\nFor the FAKE images, we generated the equivalent of CIFAR-10 w"
+  },
+  "sachchitkunichetty/rvf10k": {
+   "ok": true,
+   "title": "Real vs Fake Faces - 10k",
+   "mb": 287.8,
+   "license": "CC BY-NC-SA 4.0",
+   "subtitle": "Classify Real vs Fake Faces!",
+   "desc": "Dataset of 10k Real vs. Fake Faces. Used in the W24 semester to run the [Real vs Fake Face Detection project](https://github.com/MichiganDataScienceTeam/W24-RvF) for the Michigan Data Science Team. \n\nWith deepfakes and photoshop running amok, can you train a machine learning algorithm to distinguish real faces from fake faces? \n\n## Usage\nThis dataset has the following folder structure\n```bash\nrvf10k\n\u251c\u2500\u2500 dataset-metadata.json\n\u251c\u2500\u2500 train\n\u2502   \u251c\u2500\u2500 fake\n\u2502   \u2514\u2500\u2500 real\n\u251c\u2500\u2500 train.csv\n\u251c\u2500\u2500 valid\n\u2502   \u251c\u2500\u2500 fake\n\u2502   \u2514\u2500\u2500 real\n\u2514\u2500\u2500 valid.csv\n```\nThe `train` folder contains all images in the training set, which totals to 7000 images. Of these images, 3500 are real and 3500 are fake. The `train.csv` file contains metadata for each image.\n\nThe `valid` folder contains all images in the validation set, which totals to 3000 images. Of these images, 1500 are real and 1500 are fake. The `valid.csv` file contains m"
+  },
+  "kshitizbhargava/deepfake-face-images": {
+   "ok": true,
+   "title": "StyleGan-StyleGan2 Deepfake Face Images",
+   "mb": 257.6,
+   "license": "MIT",
+   "subtitle": "DeepFake Face Image Recognition Dataset",
+   "desc": "## **Overview**\nWith the rapid advancement of deep learning and generative adversarial networks (GANs), deepfake technology has seen significant improvements, making it increasingly challenging to distinguish real from fake images. To aid in the development of more robust deepfake detection models, we introduce a comprehensive dataset that combines and augments two widely used datasets, ensuring diversity, balance, and generalizability.\n\n## **Dataset Composition**\nThis dataset is built by merging and augmenting two existing datasets, each containing face images from distinct sources. By integrating these datasets, we ensure that the model trained on this data can generalize well across different domains.\n\n### **1. [140k Real and Fake Faces Dataset](https://www.kaggle.com/datasets/xhlulu/140k-real-and-fake-faces)**\n- Contains **140,000 images** (70,000 real and 70,000 fake).\n- **Real imag"
+  },
+  "vstepanenko/disaster-tweets": {
+   "ok": true,
+   "title": "Disaster Tweets",
+   "mb": 1.6,
+   "license": "CC0: Public Domain",
+   "subtitle": "Real or Not? NLP with Disaster Tweets challenge add-on",
+   "desc": "### Context\n\nThe file contains over 11,000 tweets associated with disaster keywords like \u201ccrash\u201d, \u201cquarantine\u201d, and \u201cbush fires\u201d as well as the location and keyword itself. The data structure was inherited from [Disasters on social media](https://appen.com/resources/datasets/)\n\nThe tweets were collected on Jan 14th, 2020.\n\nSome of the topics people were tweeting:\n- The eruption of Taal Volcano in Batangas, Philippines\n- Coronavirus\n- Bushfires in Australia\n- Iran downing of the airplane flight PS752\n\n\nDisclaimer: The dataset contains text that may be considered profane, vulgar, or offensive.\n\n\n### Inspiration\nThe intention was to enrich the already available data for this topic with newly collected and manually classified tweets.\nThe initial source **[Disasters on social media](https://appen.com/resources/datasets/)** which is used in **[Real or Not? NLP with Disaster Tweets](https://www"
+  },
+  "seaninggg/crisismmd-multimodal-crisis-dataset": {
+   "ok": true,
+   "title": "CrisisMMD: Multimodal Crisis Dataset",
+   "mb": 2018.2,
+   "license": "Apache 2.0",
+   "subtitle": "",
+   "desc": ""
+  },
+  "yash9439/eng-hinglish-machine-translation": {
+   "ok": true,
+   "title": "Eng-Hinglish Machine Translation",
+   "mb": 1.5,
+   "license": "Apache 2.0",
+   "subtitle": "9000 English to Hinglish Translated Sentences",
+   "desc": "The above Dataset contain Tab Seperated English to Hinglish Translated Sentences.\n\nIt contain 3 files:\ntrain.txt : 7000 Sentences\ndev.txt : 1000 Sentences\ntest.txt : 1000 Sentences"
+  },
+  "varpit94/disaster-images-dataset": {
+   "ok": true,
+   "title": "Disaster Images Dataset",
+   "mb": 689.2,
+   "license": "Other (specified in description)",
+   "subtitle": "Can you classify disasters by images?",
+   "desc": "### Context\n\nThis dataset contains images for each disaster. Images are placed in folders with disaster name. Images with no damage are also available, for model training purposes. Can you develop a model to classify images into type of disaster?\n\nIf you have any suggestions/improvements in the dataset, please feel free to message me."
+  },
+  "noaa/hurricane-database": {
+   "ok": true,
+   "title": "Hurricanes and Typhoons, 1851-2014",
+   "mb": 9.5,
+   "license": "CC0: Public Domain",
+   "subtitle": "Location, wind, and pressure of tropical cyclones in Atlantic and Pacific Oceans",
+   "desc": "# Context \n\nThe National Hurricane Center (NHC) conducts a post-storm analysis of each tropical cyclone in the Atlantic\nbasin (i.e., North Atlantic Ocean, Gulf of Mexico, and Caribbean Sea) and and the North Pacific Ocean to determine the official assessment of the cyclone's history. This analysis makes use of all available observations, including those that may not have been available in real time. In addition, NHC conducts ongoing reviews of any retrospective tropical cyclone analyses brought to its attention and on a regular basis updates the historical record to reflect\nchanges introduced.\n\n\n# Content\n\nThe NHC publishes the tropical cyclone historical database in a format known as HURDAT, short for HURricane DATabase. These databases (Atlantic HURDAT2 and NE/NC Pacific HURDAT2) contain six-hourly information on the location, maximum winds, central pressure, and (starting in 2004) siz"
+  },
+  "sshubam/insat3d-infrared-raw-cyclone-images-20132021": {
+   "ok": true,
+   "title": "INSAT3D Infrared & Raw Cyclone Imagery (2012-2021)",
+   "mb": 47.5,
+   "license": "CC0: Public Domain",
+   "subtitle": "For making CycloNets that can make a change",
+   "desc": "Image Dataset containing **all** INSAT3D captured INFRARED and RAW Cyclone Imagery over the Indian Ocean fronm 2012 to 2021 along with each Cyclone Image intensity in KNOTS. The Raw Data has been sourced from the [MOSDAC server](https://mosdac.gov.in/cyclone-genesis/archive/) and I have labelled each Image by locating the timestamp with its respective coordinate in the intensity-time graph of each cyclone directory.\nOriginally curated by [Sshubam Verma](https://www.kaggle.com/sshubam)\nCheck out [this Notebook](https://www.kaggle.com/code/sshubam/cyclone-intensity-estimation) on the dataset "
+  },
+  "invincible15/cyclone-paths-ibtracs-north-indian-ocean": {
+   "ok": true,
+   "title": "Cyclone Paths IBTRACS North Indian Ocean",
+   "mb": 26.7,
+   "license": "Unknown",
+   "subtitle": "",
+   "desc": ""
+  },
+  "kmader/satellite-images-of-hurricane-damage": {
+   "ok": true,
+   "title": "Satellite Images of Hurricane Damage",
+   "mb": 61.8,
+   "license": "Attribution 4.0 International (CC BY 4.0)",
+   "subtitle": "Detecting Damaged Buildings",
+   "desc": "### Overview\nThe data are satellite images from Texas after Hurricane Harvey divided into two groups (damage and no_damage). The goal is to make a model which can automatically identify if a given region is likely to contain flooding damage.\n\n### Source\nData originally taken from: https://ieee-dataport.org/open-access/detecting-damaged-buildings-post-hurricane-satellite-imagery-based-customized and can be cited with http://dx.doi.org/10.21227/sdad-1e56 and the original paper is here: https://arxiv.org/abs/1807.01688\n"
+  },
+  "brsdincer/leo-satellite-global-fire-data-1-year-nasa": {
+   "ok": true,
+   "title": "LEO SATELLITE GLOBAL FIRE DATA / 1 YEAR / NASA",
+   "mb": 3896.6,
+   "license": "Database: Open Database, Contents: Database Contents",
+   "subtitle": "MODIS-VIIRS / 2020-2021 & 2021-2022 JUNE 01 / ALL POINTS",
+   "desc": "## LEO SATELLITE GLOBAL FIRE DATA\n \n&gt; NASA's Fire Information for Resource Management System\n\n&gt; NASA's Land, Atmosphere Near real-time Capability for EOS (LANCE) system\n\n### VIIRS\n\n- The Visible Infrared Imaging Radiometer Suite (VIIRS) 375 m thermal anomalies / active fire product provides data from the VIIRS sensor aboard the joint NASA/NOAA Suomi National Polar-orbiting Partnership (Suomi NPP) and NOAA-20 satellites. The 375 m data complements Moderate Resolution Imaging Spectroradiometer (MODIS) fire detection; they both show good agreement in hotspot detection but the improved spatial resolution of the 375 m data provides a greater response over fires of relatively small areas and provides improved mapping of large fire perimeters. The 375 m data also has improved nighttime performance. Consequently, these data are well suited for use in support of fire management (e.g., near "
+  },
+  "nelgiriyewithana/indian-weather-repository-daily-snapshot": {
+   "ok": true,
+   "title": "Indian Weather Repository ( Daily Updating )",
+   "mb": 0.0,
+   "license": "Other (specified in description)",
+   "subtitle": "Real-Time Data with Daily Updates | Everyday Analysis Made Easy",
+   "desc": "# Description:\n\n&gt; This dataset provides **real-time weather information for major cities in India**. Unlike forecast data, this dataset offers a comprehensive set of features that reflect the **current weather conditions**. <br> **Starting from August 29, 2023**. <br>**It provides over 40+ features**, including temperature, wind, pressure, precipitation, humidity, visibility, and air quality measurements. This dataset is a valuable resource for analyzing **India's present weather trends** and exploring the relationships between various weather parameters.\n\n[![DOI](https://zenodo.org/badge/DOI/10.34740/KAGGLE/DSV/8429205.svg)](https://www.kaggle.com/nelgiriyewithana/datasets)\n\n\n# Key Features:\n\n&gt;- **country**: *Country of the weather data*\n- **location_name**: *Name of the location (city)*\n- **region**: *Administrative region of the location*\n- **latitude**: *Latitude coordinate of "
+  },
+  "rajanand/rainfall-in-india": {
+   "ok": true,
+   "title": "Rainfall in India",
+   "mb": 0.6,
+   "license": "CC BY-SA 4.0",
+   "subtitle": "Sub-division wise monthly data for 115 years from 1901-2015.",
+   "desc": "<div>\n<a href=\"https://link.rajanand.org/newsletter\" target=\"_blank\">\n<img src=\"https://link.rajanand.org/banner-01\" alt=\"Data Newsletter\" style=\"width: 700px; height: 120px\"></a>\n</div>\n---\n\n\n\n\n\n### Context\nThis data set contains monthly rainfall detail of 36 meteorological sub-divisions of India.\n\n### Content\nTime Period: 1901 - 2015\n\nGranularity: Monthly\n\nLocation: 36 meteorological sub-divisions in India \n\nRainfall unit: mm \n\n### Acknowledgements\n\n[India Meteorological Department(IMD)](http://www.imd.gov.in) Govt. of India has shared this [dataset](https://data.gov.in/catalog/rainfall-india) \nunder [Govt. Open Data License - India](https://data.gov.in/government-open-data-license-india).\n \n---\n<div>\n<a href=\"https://link.rajanand.org/newsletter\" target=\"_blank\">\n<img src=\"https://link.rajanand.org/banner-01\" alt=\"Data Newsletter\" style=\"width: 700px; height: 120px\"></a>\n</div>\n"
+  },
+  "fantineh/next-day-wildfire-spread": {
+   "ok": true,
+   "title": "Next Day Wildfire Spread",
+   "mb": 3955.9,
+   "license": "Attribution 4.0 International (CC BY 4.0)",
+   "subtitle": "A Data Set to Predict Wildfire Spreading from Remote-Sensing Data",
+   "desc": "### Context\n\nPredicting wildfire spread is critical for land management and disaster preparedness. To this end, we present **`Next Day Wildfire Spread,'** a curated, large-scale, multivariate data set of historical wildfires aggregating nearly a decade of remote-sensing data across the United States. In contrast to existing fire data sets based on Earth observation satellites, this data set combines 2D fire data with many explanatory variables (e.g., topography, vegetation, weather, drought index, population density) aligned over 2D regions, providing a feature-rich data set for machine learning applications. This data set can be used as a benchmark for developing wildfire propagation models based on remote sensing data for a lead time of one day.\n\n### Content\n\nWe aggregate the data across the contiguous United States from 2012 to 2020. The data set has a total of 18,445 samples. Each sa"
+  },
+  "brycehopkins/flame-3-computer-vision-subset-sycan-marsh": {
+   "ok": true,
+   "title": "FLAME 3 Computer Vision Subset (Sycan Marsh)",
+   "mb": 7535.5,
+   "license": "MIT",
+   "subtitle": " UAV-Collected Radiometric Thermal and Visual Spectrum Wildfire Imagery",
+   "desc": "FLAME 3 is the third dataset in the FLAME series of aerial UAV-collected side-by-side multi-spectral wildlands fire imagery (see [FLAME 1](https://ieee-dataport.org/open-access/flame-dataset-aerial-imagery-pile-burn-detection-using-drones-uavs) and [FLAME 2](https://ieee-dataport.org/open-access/flame-2-fire-detection-and-modeling-aerial-multi-spectral-image-dataset)). This set is a single-burn subset of the Larger FLAME 3 dataset focusing specifically on Computer Vision tasks such as fire detection and segmentation. Included are 622 image quartets labeled Fire and 116 image quartets labeled No Fire. The No Fire images are of the surrounding forestry of the prescribed burn plot. Each image quartet is composed of four images - a raw RGB image, a raw thermal image, a corrected FOV RGB image, and a thermal TIFF. Each of the four data types are detailed in the below Table 1. More information"
+  },
+  "muratkokludataset/acoustic-extinguisher-fire-dataset": {
+   "ok": true,
+   "title": "Acoustic Extinguisher Fire Dataset",
+   "mb": 1.0,
+   "license": "CC0: Public Domain",
+   "subtitle": "Acoustic Extinguisher Fire Dataset",
+   "desc": "DATASET: https://www.muratkoklu.com/datasets/\nCV:https://www.muratkoklu.com/en/publications/\n\nYavuz Selim TASPINAR, Murat KOKLU and Mustafa ALTIN\n\nCitation Request :\n1: KOKLU M., TASPINAR Y.S.,  (2021).  Determining the Extinguishing Status of Fuel Flames With Sound Wave by Machine Learning Methods.  IEEE Access, 9, pp.86207-86216, Doi: 10.1109/ACCESS.2021.3088612\nLink: https://ieeexplore.ieee.org/document/9452168 (Open Access)\nhttps://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9452168\n\n2: TASPINAR Y.S., KOKLU M., ALTIN M., (2021).  Classification of Flame Extinction Based on Acoustic Oscillations using Artificial Intelligence Methods.  Case Studies in Thermal Engineering, 28, 101561, Doi: 10.1016/j.csite.2021.101561\nLink: https://www.sciencedirect.com/science/article/pii/S2214157X21007243  (Open Access) https://www.sciencedirect.com/sdfe/reader/pii/S2214157X21007243/pdf\n\n3: TASPIN"
+  },
+  "gabrielbgutierrez/satellite-data-on-australia-fires": {
+   "ok": true,
+   "title": "Satellite Data on Australian Fires",
+   "mb": 410.4,
+   "license": "CC0: Public Domain",
+   "subtitle": "NASA MODIS satellite data 2000-2019",
+   "desc": "### Context\n\nThere isn't a lot of datasets that provide historical data about fires in Australia. So I compiled data from NASA's MODIS satellite MODIS/Aqua + Terra Thermal Anomalies/Fire locations that provides data from hotspots/fires on Australia since 2000\n\n\n### Content\n\nThe dataset provides info of NASA [MODIS Satellite](https://earthdata.nasa.gov/earth-observation-data/near-real-time/firms) since 2000\n\n\n### Acknowledgements\n\nI want to give credit to [Carlos Paradis](https://www.kaggle.com/carlosparadis) for inspiring me to make a more complete dataset. If you want to check more recent data than is provided here you can check his [dataset](https://www.kaggle.com/carlosparadis/fires-from-space-australia-and-new-zeland) \n\nWe acknowledge the use of data and imagery from LANCE FIRMS operated by NASA's Earth Science Data and Information System (ESDIS) with funding provided by NASA Headqua"
+  },
+  "reorioll/fire-smoke-steam": {
+   "ok": true,
+   "title": "Fire_Smoke_Steam",
+   "mb": 13124.9,
+   "license": "Unknown",
+   "subtitle": "",
+   "desc": ""
+  },
+  "chrisfilo/firesense": {
+   "ok": true,
+   "title": "FIRESENSE",
+   "mb": 1226.8,
+   "license": "Attribution 4.0 International (CC BY 4.0)",
+   "subtitle": "videos for flame and smoke detection",
+   "desc": "The FIRESENSE database, developed within the FP7-ENV-244088\n''FIRESENSE - Fire Detection and Management through a Multi-Sensor Network for\nthe Protection of Cultural Heritage Areas from the Risk of Fire and Extreme\nWeather\" project contains videos for testing flame and smoke detection algorithms.\n\nSpecifically:\n\na) for flame detection 11 positive and 16 negative videos are provided, while\nb) for smoke detection, 13 positive and 9 negative videos are provided.\n\n## Acknowledgements\n\nResults using this database are presented in many papers, including:\n\nK. Dimitropoulos, P. Barmpoutis, N. Grammali"
+  },
+  "blourdhuraju/intel-image-classification-dataset": {
+   "ok": true,
+   "title": "Intel Image Classification Dataset",
+   "mb": 258.3,
+   "license": "CC0: Public Domain",
+   "subtitle": "Clean and structured 6-class natural scene image dataset with predefined train",
+   "desc": "This dataset contains images of natural scenes organized into six semantic categories: buildings, forest, glacier, mountain, sea, and street. It is structured for supervised multi-class image classification tasks and includes predefined training, validation, and test splits.\n\nThe dataset is arranged in a directory format compatible with standard deep learning frameworks such as PyTorch and TensorFlow. Each split contains subdirectories corresponding to the class labels, where images are stored by category.\n\nDataset Structure\ndataset/\n\u251c\u2500\u2500 train/\n\u251c\u2500\u2500 val/\n\u2514\u2500\u2500 test/\n    \u251c\u2500\u2500 buildings/\n    \u251c\u2500\u2500 for"
+  },
+  "sreemantabarman/flame-dataset-candlelightermatch-stick-flames": {
+   "ok": true,
+   "title": "Flame Dataset (Candle,Lighter,Match Stick Flames )",
+   "mb": 165.6,
+   "license": "CC BY-NC-SA 4.0",
+   "subtitle": "",
+   "desc": "YOLO v8-Based Flame Detection Project\n\nOverview\n\nThis project implements a fire detection system using YOLO v8 deep learning model to detect flames in real-time. It processes video feeds from an IP camera or ESP32-CAM and provides alerts when fire is detected.\n\nFeatures\n\nReal-Time Fire Detection using a trained YOLO v8 model.\n\nLive Video Stream Processing from an IP camera or ESP32-CAM.\n\nBuzzer Alerts using Arduino and PyFirmata2.\n\nESP-NOW Communication for wireless alerts (optional).\n\nHardware Components\n\nESP32-CAM (or Mobile IP Camera for live streaming)\n\nLaptop/PC (for running YOLO v8 model"
+  },
+  "cashbowman/ai-generated-images-vs-real-images": {
+   "ok": true,
+   "title": "AI Generated Images vs Real Images",
+   "mb": 503.8,
+   "license": "Community Data License Agreement - Sharing - Version 1.0",
+   "subtitle": "Web scraped images: AI and Real. Can you tell the difference?",
+   "desc": "**The dataset is a captivating ensemble of images sourced from two distinct channels: web scraping and AI-generated content. The content covers many subjects; however, special emphasis was placed on these topics: people, animals, portraits, scenery, and psychedelics.**\n\n**Key Features:**\n\nWeb-Scraped Images: These images are harvested from various online sources across the web. Ranging from landscapes, paintings, psychedelic trips, and portraits, the web-scraped images offer a glimpse into the vast spectrum of digital imagery available online.\n\n**Projects and Applications:**\n\nImage Classificat"
+  },
+  "pengbo00/home-fire-dataset": {
+   "ok": true,
+   "title": "Home fire dataset",
+   "mb": 1827.0,
+   "license": "Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)",
+   "subtitle": "A YOLO-ready dataset for early detection of indoor fires",
+   "desc": "# Home Fire Detection Dataset (YOLO Format)\n\nThis dataset is created to support early detection of **indoor household fires** using object detection techniques like YOLO.    \n**This dataset is released for non-commercial research and academic use only.**  \nIf you use this dataset in your research, please refer to the **Citation** section below.\n\nIt contains **6,500 images** and corresponding annotation files in YOLO-compatible `.txt` format. The dataset is split into:\n\n- `train.zip`: 3,900 images  \n- `val.zip`: 1,300 images  \n- `test.zip`: 1,300 images  \n\nEach `.zip` archive includes both imag"
+  },
+  "tekbahadurkshetri/landslide4sense": {
+   "ok": true,
+   "title": "Landslide4Sense",
+   "mb": 8968.7,
+   "license": "Other (specified in description)",
+   "subtitle": "Landslide mapping from Sentinel2 dataset.",
+   "desc": "Landslides are a natural phenomenon with devastating consequences, frequent in many parts of the world. Thousands of small and medium-sized ground movements follow earthquakes or heavy rainfalls. Landslides have become more damaging in recent years due to climate change, population growth, and unplanned urbanization in unstable mountain areas. Early landslide detection is critical for quick respon"
+  },
+  "niyarrbarman/landslide-divided": {
+   "ok": true,
+   "title": "Landslide Segmentation",
+   "mb": 57.2,
+   "license": "CC0: Public Domain",
+   "subtitle": "Landslide Segmentation from Satellite Images",
+   "desc": "This dataset was originally made by IARAI for landslide4sense 2022. However the original dataset had many images with no annotations and they were difficult to read. This is a simplified version of the original dataset and has been clean so that there no zero annotation masks. \nHowever there are still partial annotation masks which could effect one's model metrics."
+  },
+  "nasa/landslide-events": {
+   "ok": true,
+   "title": "Landslides After Rainfall, 2007-2016",
+   "mb": 0.4,
+   "license": "CC0: Public Domain",
+   "subtitle": "Location and cause of landslide events around the world",
+   "desc": "# Context\n\nLandslides are one of the most pervasive hazards in the world, causing more than 11,500 fatalities in 70 countries since 2007. Saturating the soil on vulnerable slopes, intense and prolonged rainfall is the most frequent landslide trigger.\n\n\n# Content\n\nThe Global Landslide Catalog (GLC) was developed with the goal of identifying rainfall-triggered landslide events around the world, rega"
+  },
+  "smabrarrajin/sen1floods11-essentials": {
+   "ok": true,
+   "title": "SEN1FLOODS11-essentials",
+   "mb": 771.6,
+   "license": "Unknown",
+   "subtitle": "This is the hand labelled only PART of the SEN1FLOODS11 Dataset.",
+   "desc": ""
+  },
+  "rehanriaz1/sen1floods11-gis-dem-slope": {
+   "ok": true,
+   "title": "Sen1Floods11 GIS DEM Slope",
+   "mb": 67.1,
+   "license": "CC0: Public Domain",
+   "subtitle": "",
+   "desc": ""
+  },
+  "apollo2506/eurosat-dataset": {
+   "ok": true,
+   "title": "EuroSat Dataset",
+   "mb": 3053.8,
+   "license": "CC0: Public Domain",
+   "subtitle": "Dataset contains all the RGB and Bands images from Sentinel-2",
+   "desc": "### Context\n\nThis dataset is being used for classifying the use of land in geospatial images. The end goal for the classification is that the top 2 uses of land in an image are given as output to the user.\n\n### Content\n\nThis dataset contains images belonging to the EuroSat dataset. There are 2 folders, namely,\n- EuroSAT \u2192 Contains RGB images collected from the Sentinel Dataset.\n- EuroSATallBands \u2192"
+  },
+  "aatishshresthaa/glacial-lake-dataset": {
+   "ok": true,
+   "title": "Glacial Lake Dataset",
+   "mb": 108.5,
+   "license": "Attribution 4.0 International (CC BY 4.0)",
+   "subtitle": "Himalayan Glacial Lakes: Sentinel-2 Image Collection Dataset",
+   "desc": "The dataset provides a comprehensive assortment of snippets displaying images of Glacial Lakes taken from the stunning Himalayan region spanning Nepal, China, and Pakistan. These images have been extracted from the extensive Sentinel-2 image collection dataset. They are presented in false color bands, specifically Bands 8, 4, and 3, with a resolution of 400 x 400 pixels. These snippets offer a det"
+  },
+  "nsidcorg/glacier-inventory": {
+   "ok": true,
+   "title": "World Glacier Inventory",
+   "mb": 17.2,
+   "license": "CC0: Public Domain",
+   "subtitle": "Name, location, altitude, and area of every glacier on the planet",
+   "desc": "# Content\n\nThe World Glacier Inventory contains information for over 130,000 glaciers. Inventory parameters include geographic location, area, length, orientation, elevation, and classification. The WGI is based primarily on aerial photographs and maps with most glaciers having one data entry only. The data set can be viewed as a snapshot of the glacier distribution in the second half of the twent"
+  },
+  "simrankhalsa431/era5-and-imerg-dataset-for-cloudburst-prediction": {
+   "ok": true,
+   "title": "ERA5 and IMERG dataset for cloudburst prediction",
+   "mb": 16.9,
+   "license": "CC BY-NC-SA 4.0",
+   "subtitle": "Multi-Source Dataset for Early Warning & Extreme Rainfall Analysis",
+   "desc": "This dataset was developed for research on cloudburst risk estimation and early warning analysis in the Western Himalayan region of India. It combines atmospheric reanalysis variables from ERA5 with satellite-derived precipitation observations from GPM-IMERG to support machine learning-based extreme rainfall modeling. The dataset focuses on monsoon-season atmospheric conditions associated with hig"
+  },
+  "aceofstades/uttarakhand-wildfire-dataset": {
+   "ok": true,
+   "title": "Uttarakhand Wildfire Dataset",
+   "mb": 2885.2,
+   "license": "Attribution 4.0 International (CC BY 4.0)",
+   "subtitle": "Hourly 1 km weather, terrain, land cover and MODIS fire for Uttarakhand",
+   "desc": "# Uttarakhand Wildfire Feature Stack (1 km, hourly, Apr\u2013May 2016)\n\nCo-registered weather, terrain, land cover and MODIS active-fire labels on a\nsingle ~1 km grid over Uttarakhand, India, at hourly resolution.\n\n**File:** `final_feature_stack_RELEASE_v2.nc` \u2014 2.89 GB (NetCDF4, zlib level 1 + shuffle)\n**Grid:** 311 \u00d7 400 cells, EPSG:4326, cell size 0.009003\u00b0 lat \u00d7 0.009000\u00b0 lon (~1 km)\n**Extent:** 77"
+  },
+  "moonknightmarvel/india-elevation-grid-tif-file": {
+   "ok": true,
+   "title": "India Elevation Dataset (.TIF Geospatial Raster)",
+   "mb": 4536.6,
+   "license": "MIT",
+   "subtitle": "High-resolution GeoTIFF elevation raster dataset covering Indian terrain for GIS",
+   "desc": "This dataset contains elevation raster data of India stored in .tif / GeoTIFF format. The dataset represents terrain elevation values across different regions of India and can be used for geospatial analysis, environmental studies, mapping, hydrological simulations, terrain visualization, and machine learning research.\n\nThe GeoTIFF format preserves spatial referencing information, making it compat"
+  }
+ },
+ "http": {
+  "https://github.com/gaiasd/DFireDataset": {
+   "code": 200,
+   "final": "https://github.com/gaia-solutions-on-demand/DFireDataset"
+  },
+  "https://github.com/BinaLab/FloodNet-Supervised_v1.0": {
+   "code": 200,
+   "final": "https://github.com/BinaLab/FloodNet-Supervised_v1.0"
+  },
+  "https://github.com/numenta/NAB": {
+   "code": 200,
+   "final": "https://github.com/numenta/NAB"
+  },
+  "https://github.com/NetManAIOps/OmniAnomaly": {
+   "code": 200,
+   "final": "https://github.com/NetManAIOps/OmniAnomaly"
+  },
+  "https://github.com/hendrycks/robustness": {
+   "code": 200,
+   "final": "https://github.com/hendrycks/robustness"
+  },
+  "https://archive.ics.uci.edu/dataset/224/gas+sensor+array+drift+dataset": {
+   "code": 200,
+   "final": "https://archive.ics.uci.edu/dataset/224/gas+sensor+array+drift+dataset"
+  },
+  "https://www.ncei.noaa.gov/products/international-best-track-archive": {
+   "code": 200,
+   "final": "https://www.ncei.noaa.gov/products/international-best-track-archive"
+  },
+  "https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r01/access/csv/ibtracs.NI.list.v04r01.csv": {
+   "code": 200,
+   "final": "https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r01/access/csv/ibtracs.NI.list.v04r01.csv"
+  },
+  "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M,RH2M,WS2M&community=RE&longitude=77.2&latitude=28.6&start=20240101&end=20240105&format=JSON": {
+   "code": 200,
+   "final": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M,RH2M,WS2M&community=RE&longitude=77.2&latitude=28.6&start=20240101&end=20240105&fo"
+  },
+  "https://firms.modaps.eosdis.nasa.gov/country/": {
+   "code": 200,
+   "final": "https://firms.modaps.eosdis.nasa.gov/country/"
+  },
+  "https://firms.modaps.eosdis.nasa.gov/data/country/": {
+   "code": 404,
+   "err": "HTTP Error 404: Not Found"
+  },
+  "https://crisisnlp.qcri.org/crisismmd": {
+   "code": 403,
+   "err": "HTTP Error 403: Forbidden"
+  },
+  "https://crisisnlp.qcri.org/humaid_dataset": {
+   "code": 403,
+   "err": "HTTP Error 403: Forbidden"
+  },
+  "https://www.hpwren.ucsd.edu/FIgLib/": {
+   "code": 200,
+   "final": "https://www.hpwren.ucsd.edu/FIgLib/"
+  },
+  "https://www.kaggle.com/competitions/nlp-getting-started": {
+   "code": 200,
+   "final": "https://www.kaggle.com/competitions/nlp-getting-started"
+  },
+  "https://ieee-dataport.org/open-access/flame-dataset-aerial-imagery-pile-burn-detection-using-drones-uavs": {
+   "code": 200,
+   "final": "https://ieee-dataport.org/open-access/flame-dataset-aerial-imagery-pile-burn-detection-using-drones-uavs"
+  },
+  "https://www.svcl.ucsd.edu/projects/anomaly/dataset.htm": {
+   "code": 522,
+   "err": "HTTP Error 522: <none>"
+  },
+  "https://www.cse.cuhk.edu.hk/leojia/projects/detectabnormal/dataset.html": {
+   "code": 200,
+   "final": "https://www.cse.cuhk.edu.hk/leojia/projects/detectabnormal/dataset.html"
+  },
+  "https://mausam.imd.gov.in/": {
+   "code": 200,
+   "final": "https://mausam.imd.gov.in/"
+  },
+  "https://rsmcnewdelhi.imd.gov.in/": {
+   "code": 200,
+   "final": "https://rsmcnewdelhi.imd.gov.in/"
+  },
+  "https://www.mosdac.gov.in/": {
+   "code": 200,
+   "final": "https://www.mosdac.gov.in/"
+  },
+  "https://bhuvan.nrsc.gov.in/": {
+   "code": 200,
+   "final": "https://bhuvan.nrsc.gov.in/ngmaps"
+  },
+  "https://data.gov.in/": {
+   "code": 521,
+   "err": "HTTP Error 521: <none>"
+  },
+  "https://gymnasium.farama.org/": {
+   "code": 200,
+   "final": "https://gymnasium.farama.org/"
+  },
+  "https://pettingzoo.farama.org/": {
+   "code": 200,
+   "final": "https://pettingzoo.farama.org/"
+  },
+  "https://eclipse.dev/sumo/": {
+   "code": 200,
+   "final": "https://eclipse.dev/sumo/"
+  },
+  "https://github.com/Farama-Foundation/Gymnasium": {
+   "code": 200,
+   "final": "https://github.com/Farama-Foundation/Gymnasium"
+  },
+  "https://github.com/eclipse-sumo/sumo": {
+   "code": 200,
+   "final": "https://github.com/eclipse-sumo/sumo"
+  },
+  "https://github.com/mlfoundations/open_clip": {
+   "code": 200,
+   "final": "https://github.com/mlfoundations/open_clip"
+  },
+  "https://huggingface.co/openai/clip-vit-base-patch32": {
+   "code": 200,
+   "final": "https://huggingface.co/openai/clip-vit-base-patch32"
+  },
+  "https://www.nist.gov/el/fcd": {
+   "code": 200,
+   "final": "https://www.nist.gov/el/fcd"
+  },
+  "https://github.com/firemodels/fds": {
+   "code": 200,
+   "final": "https://github.com/firemodels/fds"
+  },
+  "https://figshare.com/articles/dataset/RescueNet_A_High_Resolution_UAV_Semantic_Segmentation_Benchmark_Dataset_for_Natural_Disaster_Damage_Assessment/22044587": {
+   "code": 202,
+   "final": "https://figshare.com/articles/dataset/RescueNet_A_High_Resolution_UAV_Semantic_Segmentation_Benchmark_Dataset_for_Natural_Disaster_Damage_Assessment/2"
+  },
+  "https://xview2.org/": {
+   "code": 200,
+   "final": "https://xview2.org/"
+  },
+  "https://gpm.nasa.gov/data/imerg": {
+   "code": 200,
+   "final": "https://gpm.nasa.gov/data/imerg"
+  },
+  "https://cds.climate.copernicus.eu/": {
+   "code": 200,
+   "final": "https://cds.climate.copernicus.eu/"
+  },
+  "https://github.com/rtatman/": {
+   "code": 200,
+   "final": "https://github.com/rtatman/"
+  },
+  "https://zenodo.org/records/3959823": {
+   "code": 403,
+   "err": "HTTP Error 403: Forbidden"
+  }
+ },
+ "http_geo_2026-10-31": {
+  "copernicus_dem_N30E079": "200, 41.7 MB, no login",
+  "nasa_power_PRECTOTCORR": "200 real response (Chamoli Feb 2021)",
+  "gesdisc_imerg_daily_dir": "200 listing; download needs Earthdata login",
+  "earthdata_register": "200",
+  "asf_vertex": "200",
+  "copernicus_dataspace": "200",
+  "hephaestus_github": "200 MIT; data via Dropbox (302->200, size header absent)",
+  "hmaglofdb_v4_github_raw": "200, 460 KB",
+  "icimod_rds": "200",
+  "nasa_glc_csv": "200, 8.48 MB (via catalog.data.gov)",
+  "comet_licsar_portal": "403 to bot (open in browser)",
+  "landslide4sense_github": "200"
+ }
+}

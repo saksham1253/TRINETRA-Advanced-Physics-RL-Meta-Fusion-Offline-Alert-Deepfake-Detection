@@ -1,0 +1,194 @@
+{
+  "used": {
+    "A": "A final (208063b0_out_A_final.zip)",
+    "B": "B final (c443cff4_out_B_final (1).zip)",
+    "C": "C final (dcb480c7_out_C_final.zip)",
+    "F": "F final (60f8f99a_out_F_final.zip)",
+    "S": "S final (b54dc175_out_S_final.zip)",
+    "X": "X final (4c8ecc31_out_X_final (1).zip)",
+    "Z fire meta-fusion (fresh)": "re-run in Z on the attached runs",
+    "P": "repo results/ (geo, GLOF, RL env, Geo-PINN)"
+  },
+  "scorecard": [
+    {
+      "hazard": "Fire / smoke (CCTV)",
+      "expert": "fire_cnn",
+      "metric": "ROC-AUC OOF / held-out",
+      "value": "0.768 / 0.972",
+      "admitted": "0/3",
+      "source": "A final (208063b0_out_A_final.zip)",
+      "note": "3 seed(s)"
+    },
+    {
+      "hazard": "Fire / smoke (CCTV)",
+      "expert": "colorhist",
+      "metric": "ROC-AUC OOF / held-out",
+      "value": "0.681",
+      "admitted": null,
+      "source": "A final (208063b0_out_A_final.zip)",
+      "note": "3 seed(s)"
+    },
+    {
+      "hazard": "Fire / smoke (zero-shot)",
+      "expert": "zeroshot",
+      "metric": "ROC-AUC OOF / held-out",
+      "value": "0.917 / 1.000",
+      "admitted": "0/1",
+      "source": "B final (c443cff4_out_B_final (1).zip)",
+      "note": "1 seed(s)"
+    },
+    {
+      "hazard": "Fire / smoke (few-shot CLIP)",
+      "expert": "clip_probe",
+      "metric": "ROC-AUC OOF / held-out",
+      "value": "0.962 / 0.998",
+      "admitted": "0/1",
+      "source": "B final (c443cff4_out_B_final (1).zip)",
+      "note": "1 seed(s)"
+    },
+    {
+      "hazard": "Fire META-FUSION (stack: fire_cnn + zeroshot + clip_probe + colorhist)",
+      "expert": "fire_meta_fusion",
+      "metric": "ROC-AUC OOF / held-out; stack \u2212 best single AUC",
+      "value": "0.951 / 0.999; -0.008",
+      "admitted": "0/3",
+      "source": "repo results/fire_meta",
+      "note": "REAL pairing; 3 seed(s)"
+    },
+    {
+      "hazard": "Fake media",
+      "expert": "deepfake",
+      "metric": "ROC-AUC OOF / held-out",
+      "value": "0.961 / 0.450",
+      "admitted": "0/3",
+      "source": "C final (dcb480c7_out_C_final.zip)",
+      "note": "3 seed(s)"
+    },
+    {
+      "hazard": "Fire video (temporal validator)",
+      "expert": "video",
+      "metric": "false-alarm videos raw \u2192 validated",
+      "value": "0.893 \u2192 0.853",
+      "admitted": null,
+      "source": "A final (208063b0_out_A_final.zip)",
+      "note": "small n: quote counts"
+    },
+    {
+      "hazard": "Landslide (physics, zero training)",
+      "expert": "caine_ratio",
+      "metric": "ROC-AUC spatial OOF",
+      "value": "0.758",
+      "admitted": "physics (no gate needed)",
+      "source": "repo/geo_large/geo_physics_s0_report.json",
+      "note": "184 real events, 101 blocks"
+    },
+    {
+      "hazard": "GLOF (lake area \u2192 volume)",
+      "expert": "glof_physics",
+      "metric": "exponent b (95% CI)",
+      "value": "1.13 (0.71-1.50)",
+      "admitted": "fit",
+      "source": "repo/glof/glof_physics_report.json",
+      "note": "n 21"
+    },
+    {
+      "hazard": "RL alarm policy (C_miss 100)",
+      "expert": "cql_learned vs physics_rule",
+      "metric": "return CQL / rule / oracle",
+      "value": "-22.5 / -22.8 / -22.9",
+      "admitted": "deploy False",
+      "source": "repo/rl_env/rl_env_cmiss100_s0_report.json",
+      "note": "LCB -0.30; SIMULATOR"
+    },
+    {
+      "hazard": "RL alarm policy (C_miss 1000)",
+      "expert": "cql_learned vs physics_rule",
+      "metric": "return CQL / rule / oracle",
+      "value": "-200.9 / -200.0 / -200.0",
+      "admitted": "deploy False",
+      "source": "repo/rl_env/rl_env_cmiss1000_s0_report.json",
+      "note": "LCB -10.28; SIMULATOR"
+    },
+    {
+      "hazard": "RL alarm policy (C_miss 5000)",
+      "expert": "cql_learned vs physics_rule",
+      "metric": "return CQL / rule / oracle",
+      "value": "-486.8 / -478.1 / -478.5",
+      "admitted": "deploy False",
+      "source": "repo/rl_env/rl_env_cmiss5000_s0_report.json",
+      "note": "LCB -31.93; SIMULATOR"
+    },
+    {
+      "hazard": "Landslide (Geo-PINN)",
+      "expert": "geo_pinn",
+      "metric": "ROC-AUC OOF / held-out",
+      "value": "0.716",
+      "admitted": "0/1",
+      "source": "repo results/geo_pinn",
+      "note": "1 seed(s)"
+    },
+    {
+      "hazard": "Landslide META-FUSION (physics + rain, FM-1)",
+      "expert": "geo_fusion",
+      "metric": "ROC-AUC OOF (calibrated FM-1)",
+      "value": "0.779",
+      "admitted": "0/3",
+      "source": "repo results/ (geo, GLOF, RL env, Geo-PINN)",
+      "note": "REAL pairing; 3 seed(s)"
+    },
+    {
+      "hazard": "RL on fused alerts",
+      "expert": "offline_rl",
+      "metric": "gain vs rule (LCB)",
+      "value": "+0.615 (+0.237)",
+      "admitted": "deploy 3/3",
+      "source": "F final (60f8f99a_out_F_final.zip)",
+      "note": ""
+    },
+    {
+      "hazard": "RL on REAL-paired fire meta-fusion",
+      "expert": "offline_rl_real",
+      "metric": "gain vs rule (LCB)",
+      "value": "+1.076 (+0.773)",
+      "admitted": "deploy 3/3",
+      "source": "repo results/offline_rl_real",
+      "note": "3 seed(s); OPE in-sample (optimistic)"
+    },
+    {
+      "hazard": "RL HELD-OUT (block folds, true reward)",
+      "expert": "offline_rl_heldout",
+      "metric": "CQL gain vs rule / vs tuned rule (LCB)",
+      "value": "+0.485 (-0.081) / -0.015 (-0.433)",
+      "admitted": "deploy 0/3",
+      "source": "repo results/offline_rl_heldout",
+      "note": "3 seed(s); replaces the in-sample OPE number"
+    },
+    {
+      "hazard": "Fire CROSS-MODAL (per-frame stack + temporal validator, FireSense)",
+      "expert": "crossmodal",
+      "metric": "video J (detect \u2212 FA): stack / clip_probe / fire_cnn",
+      "value": "+0.467 / +0.320 / +0.008",
+      "admitted": null,
+      "source": "X final (4c8ecc31_out_X_final (1).zip)",
+      "note": "3 seed(s); small n (49 videos)"
+    },
+    {
+      "hazard": "Fire CONFUSER-AWARE retrain (leave-one-confuser-set-out)",
+      "expert": "stress",
+      "metric": "FA at equal recall 0.90: probe base \u2192 conf / stack base \u2192 conf; DeepFire AUC base \u2192 conf",
+      "value": "0.427 \u2192 0.319 / 0.346 \u2192 0.157; 0.998 \u2192 0.997",
+      "admitted": "3/3",
+      "source": "S final (b54dc175_out_S_final.zip)",
+      "note": "3 seed(s)"
+    },
+    {
+      "hazard": "Fusion (all experts)",
+      "expert": "p_zeroshot",
+      "metric": "value score (best rule) / FM-1",
+      "value": "0.108 / 0.005",
+      "admitted": null,
+      "source": "F final (60f8f99a_out_F_final.zip)",
+      "note": "SYNTHETIC pairing of real OOF scores"
+    }
+  ]
+}

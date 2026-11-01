@@ -1,0 +1,189 @@
+{
+  "path": "results/geo_large/geo_events.csv",
+  "delimiter": ",",
+  "encoding": "utf-8-sig",
+  "rows": 736,
+  "columns": 22,
+  "field_names": [
+    "event_id",
+    "lat",
+    "lon",
+    "day",
+    "label",
+    "slope_p90_deg",
+    "elev_m",
+    "rain_1d",
+    "rain_3d",
+    "rain_7d",
+    "rain_15d",
+    "rain_30d",
+    "rain_max3",
+    "caine_D_h",
+    "caine_I_mmh",
+    "caine_ratio",
+    "psi_m",
+    "fs",
+    "fs_dry",
+    "dfs",
+    "c_backcalc_kpa",
+    "fs_backcalc"
+  ],
+  "duplicate_rows": 0,
+  "candidate_group_keys": [
+    "event_id"
+  ],
+  "column_profile": {
+    "event_id": {
+      "type": "integer",
+      "missing": 0,
+      "unique": 184,
+      "min": 653.0,
+      "max": 9490.0
+    },
+    "lat": {
+      "type": "number",
+      "missing": 0,
+      "unique": 180,
+      "min": 29.1585,
+      "max": 32.7571
+    },
+    "lon": {
+      "type": "number",
+      "missing": 0,
+      "unique": 181,
+      "min": 76.1201,
+      "max": 80.3657
+    },
+    "day": {
+      "type": "string",
+      "missing": 0,
+      "unique": 525
+    },
+    "label": {
+      "type": "integer",
+      "missing": 0,
+      "unique": 2,
+      "min": 0.0,
+      "max": 1.0
+    },
+    "slope_p90_deg": {
+      "type": "number",
+      "missing": 0,
+      "unique": 183,
+      "min": 3.6512558460235596,
+      "max": 59.103111267089844
+    },
+    "elev_m": {
+      "type": "number",
+      "missing": 0,
+      "unique": 183,
+      "min": 228.37657165527344,
+      "max": 5594.52294921875
+    },
+    "rain_1d": {
+      "type": "number",
+      "missing": 0,
+      "unique": 503,
+      "min": 0.0,
+      "max": 162.88
+    },
+    "rain_3d": {
+      "type": "number",
+      "missing": 0,
+      "unique": 639,
+      "min": 0.0,
+      "max": 364.96999999999997
+    },
+    "rain_7d": {
+      "type": "number",
+      "missing": 0,
+      "unique": 687,
+      "min": 0.0,
+      "max": 481.22999999999996
+    },
+    "rain_15d": {
+      "type": "number",
+      "missing": 0,
+      "unique": 702,
+      "min": 0.06999999999999999,
+      "max": 578.28
+    },
+    "rain_30d": {
+      "type": "number",
+      "missing": 0,
+      "unique": 707,
+      "min": 1.63,
+      "max": 793.7
+    },
+    "rain_max3": {
+      "type": "number",
+      "missing": 0,
+      "unique": 571,
+      "min": 0.0,
+      "max": 162.88
+    },
+    "caine_D_h": {
+      "type": "number",
+      "missing": 0,
+      "unique": 30,
+      "min": 24.0,
+      "max": 720.0
+    },
+    "caine_I_mmh": {
+      "type": "number",
+      "missing": 0,
+      "unique": 536,
+      "min": 0.0,
+      "max": 2.4503472222222222
+    },
+    "caine_ratio": {
+      "type": "number",
+      "missing": 0,
+      "unique": 540,
+      "min": 2.4669159252518017e-07,
+      "max": 1.2615498759897215
+    },
+    "psi_m": {
+      "type": "number",
+      "missing": 0,
+      "unique": 735,
+      "min": 0.0006693317333609066,
+      "max": 0.7064534952740013
+    },
+    "fs": {
+      "type": "number",
+      "missing": 0,
+      "unique": 735,
+      "min": 0.5726761901762942,
+      "max": 11.805642078818689
+    },
+    "fs_dry": {
+      "type": "number",
+      "missing": 0,
+      "unique": 183,
+      "min": 0.6725486754978763,
+      "max": 11.862566714626606
+    },
+    "dfs": {
+      "type": "number",
+      "missing": 0,
+      "unique": 735,
+      "min": 0.00021835869282149645,
+      "max": 0.39161384685531786
+    },
+    "c_backcalc_kpa": {
+      "type": "number",
+      "missing": 0,
+      "unique": 163,
+      "min": 0.0,
+      "max": 13.831534421521773
+    },
+    "fs_backcalc": {
+      "type": "number",
+      "missing": 0,
+      "unique": 735,
+      "min": 0.9713215448940477,
+      "max": 9.735294756267244
+    }
+  }
+}
