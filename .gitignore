@@ -24,3 +24,7 @@ build/
 .vite/
 .env*
 *.tsbuildinfo
+
+# editor / agent metadata
+.figaro/
+.figma/
