@@ -26,7 +26,7 @@ out of training), mostly over **3 seeds**. A model enters the live system only i
 | **−55% false alarms** on unseen look-alikes (stack 0.35 → 0.16 at equal 90% recall); DeepFire AUC kept 0.998 → 0.997 | Confuser-aware retraining **admitted 3/3 seeds** — our first learned upgrade that passed the gate |
 | **0.758 ROC-AUC** on 184 real Indian landslides, **zero training** | A 1980 physics law (Caine) + NASA rainfall already works; FM-1 fusion with rain → 0.779 |
 | **+0.47** video score (detection − false alarm) with 3 models + temporal check | Best single model +0.32, our CNN alone +0.01 (49 FireSense videos, small n) |
-| **0.999 ROC-AUC** on a fire dataset never used in training | Trained on D-Fire, tested on DeepFire after de-duplication |
+| **0.986 ROC-AUC** on a fire dataset never used in training | Trained on D-Fire, tested on DeepFire after de-duplication |
 | Deepfake 0.961 → **0.450** on new generators · RL **not deployed** (held-out LCB −0.08) · stacking **not admitted** | We report failures too; the simple rules stay in charge |
 
 ---
